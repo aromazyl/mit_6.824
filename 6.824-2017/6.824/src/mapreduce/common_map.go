@@ -34,7 +34,7 @@ func doMap(
 	file.Close()
 	res := mapF(inFile, inFile)
 	for r := 0; r < nReduce; r++ {
-		file, err := os.Create(fmt.Sprintf("%s-%d-%d", inFile, i, mapTaskNumber))
+		file, err := os.Create(reduceName(jobName, mapTaskNumber, r))
 		if err != nil {
 			log.Fatal("DoMap: ", err)
 		}
