@@ -6,6 +6,10 @@ package mapreduce
 // (reduceF) for each key, and writes the output to disk.
 import "fmt"
 import "sort"
+import "strconv"
+import "os"
+import "log"
+import "encoding/json"
 
 func MergeName(fileName string, ReduceJob int) string {
 	return "mrtmp." + fileName + "-res-" + strconv.Itoa(ReduceJob)
@@ -37,12 +41,12 @@ func doReduce(
 		}
 		file.Close()
 	}
-	keys := make([]string)
+	keys := make([]string, 0)
 	for k := range kvs {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	p := MergeName(outFile, jobName)
+	p := MergeName(outFile, reduceTaskNumber)
 	file, err := os.Create(p)
 	if err != nil {
 		log.Fatal("DoReduce: create", err)

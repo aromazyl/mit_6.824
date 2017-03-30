@@ -1,9 +1,10 @@
 package mapreduce
 
 import (
+	"encoding/json"
 	"fmt"
 	"hash/fnv"
-	"json"
+	"log"
 	"os"
 )
 
@@ -27,7 +28,7 @@ func doMap(
 	}
 	size := fi.Size()
 	b := make([]byte, size)
-	_, err := file.Read(b)
+	_, err = file.Read(b)
 	if err != nil {
 		log.Fatal("DoMap: ", err)
 	}
@@ -39,9 +40,9 @@ func doMap(
 			log.Fatal("DoMap: ", err)
 		}
 		enc := json.NewEncoder(file)
-		for k, v := range res {
-			if ihash(fmt.Sprintf("%s-%s", k, v))%nReduce == r {
-				err := enc.Encode(&KeyValue{k, v})
+		for _, kv := range res {
+			if ihash(fmt.Sprintf("%s-%s", kv.Key, kv.Value))%nReduce == r {
+				err := enc.Encode(&kv)
 				if err != nil {
 					log.Fatal("DoMap: ", err)
 				}
