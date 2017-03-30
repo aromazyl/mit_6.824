@@ -33,7 +33,7 @@ func doMap(
 		log.Fatal("DoMap: ", err)
 	}
 	file.Close()
-	res := mapF(inFile, inFile)
+	res := mapF(inFile, string(b))
 	for r := 0; r < nReduce; r++ {
 		file, err := os.Create(reduceName(jobName, mapTaskNumber, r))
 		if err != nil {
@@ -41,7 +41,7 @@ func doMap(
 		}
 		enc := json.NewEncoder(file)
 		for _, kv := range res {
-			if ihash(fmt.Sprintf("%s-%s", kv.Key, kv.Value))%nReduce == r {
+			if ihash(fmt.Sprintf("%s", kv.Key))%nReduce == r {
 				err := enc.Encode(&kv)
 				if err != nil {
 					log.Fatal("DoMap: ", err)

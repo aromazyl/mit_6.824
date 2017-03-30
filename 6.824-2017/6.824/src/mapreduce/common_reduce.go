@@ -33,7 +33,7 @@ func doReduce(
 		dec := json.NewDecoder(file)
 		for {
 			var kv KeyValue
-			err = dec.Decode(kv)
+			err = dec.Decode(&kv)
 			if err != nil {
 				break
 			}
@@ -41,20 +41,19 @@ func doReduce(
 		}
 		file.Close()
 	}
-	keys := make([]string, 0)
+	var keys []string
 	for k := range kvs {
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	p := MergeName(outFile, reduceTaskNumber)
-	file, err := os.Create(p)
+	// p := MergeName(outFile, reduceTaskNumber)
+	file, err := os.Create(outFile)
 	if err != nil {
 		log.Fatal("DoReduce: create", err)
 	}
 	enc := json.NewEncoder(file)
 	for _, k := range keys {
-		res := reduceF(k, kvs[k])
-		enc.Encode(KeyValue{k, res})
+		enc.Encode(KeyValue{k, reduceF(k, kvs[k])})
 	}
 	file.Close()
 	//
