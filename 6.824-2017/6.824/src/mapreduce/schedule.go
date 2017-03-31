@@ -11,7 +11,7 @@ import "sync"
 // are the inputs to the map phase, one per map task. nReduce is the
 // number of reduce tasks. the registerChan argument yields a stream
 // of registered workers; each item is the worker's RPC address,
-// suitable for passing to call(). registerChan will yield all
+// suitable for passing to Call(). registerChan will yield all
 // existing registered workers (if any) and new ones as they register.
 //
 func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, registerChan chan string) {
@@ -36,24 +36,33 @@ func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, re
 	// TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
 	//
 	var workers []*rpc.Client
-	for workerAddress := range registerChan {
-		c, err := rpc.Dial("unix", workerAddress)
-		if err != nil {
-			log.Fatal("Dial worker: ", err)
+	for {
+		log.Println("get address")
+		workerAddress, ok := <-registerChan
+		if !ok {
+			break
 		}
+		log.Println("Dial: ", workerAddress)
+		c, errx := rpc.Dial("unix", workerAddress)
+		if errx != nil {
+			log.Fatal("Dail: ", errx)
+		}
+		log.Println("Dail Sucess: ", workerAddress)
 		workers = append(workers, c)
 	}
+
+	log.Println("worker collection success: %d", len(workers))
 	if phase == mapPhase {
 		var wait_group sync.WaitGroup
 		for idx, filename := range mapFiles {
 			idx := idx
 			filename := filename
 			work_client := workers[idx%len(workers)]
-			args := make(DoTaskArgs{jobName, filename, mapPhase, idx, len(mapFiles)})
+			args := DoTaskArgs{jobName, filename, mapPhase, idx, len(mapFiles)}
 			var reply *struct{}
 			wait_group.Add(1)
 			go func() {
-				work_client.call("Worker.DoTask", &args, reply)
+				work_client.Call("Worker.DoTask", &args, reply)
 				wait_group.Done()
 			}()
 		}
@@ -61,12 +70,15 @@ func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, re
 	} else {
 		var wait_group sync.WaitGroup
 
-		for i := 0; i < nReduce; i++ {
-			args := make(DoTaskArgs{jobName, filename, reducePhase, i, nReduce})
+		for idx, filename := range mapFiles {
+			idx := idx
+			filename := filename
+			work_client := workers[idx%len(workers)]
+			args := DoTaskArgs{jobName, filename, reducePhase, idx, nReduce}
+			var reply *struct{}
 			wait_group.Add(1)
-			work_client := workers[i%nReduce]
 			go func() {
-				work_client.call("Worker.DoTask", &args, reply)
+				work_client.Call("Worker.DoTask", &args, reply)
 				wait_group.Done()
 			}()
 		}
