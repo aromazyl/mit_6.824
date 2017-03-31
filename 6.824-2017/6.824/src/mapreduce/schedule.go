@@ -1,9 +1,12 @@
 package mapreduce
 
 import "fmt"
-import "net/rpc"
-import "log"
+
+// import "net/rpc"
+// import "log"
 import "sync"
+
+// import "time"
 
 //
 // schedule() starts and waits for all tasks in the given phase (Map
@@ -15,18 +18,18 @@ import "sync"
 // existing registered workers (if any) and new ones as they register.
 //
 func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, registerChan chan string) {
-	var ntasks int
+	var nTasks int
 	var n_other int // number of inputs (for reduce) or outputs (for map)
 	switch phase {
 	case mapPhase:
-		ntasks = len(mapFiles)
+		nTasks = len(mapFiles)
 		n_other = nReduce
 	case reducePhase:
-		ntasks = nReduce
+		nTasks = nReduce
 		n_other = len(mapFiles)
 	}
 
-	fmt.Printf("Schedule: %v %v tasks (%d I/Os)\n", ntasks, phase, n_other)
+	fmt.Printf("Schedule: %v %v tasks (%d I/Os)\n", nTasks, phase, n_other)
 
 	// All ntasks tasks have to be scheduled on workers, and only once all of
 	// them have been completed successfully should the function return.
@@ -35,54 +38,34 @@ func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, re
 	//
 	// TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
 	//
-	var workers []*rpc.Client
+	// var workers []*rpc.Client
+	// label1:
+	i := 0
+	workerChan := make(chan string)
+	var wg sync.WaitGroup
+	wg.Add(nTasks)
+loop1:
 	for {
-		log.Println("get address")
-		workerAddress, ok := <-registerChan
-		if !ok {
+		var workerAddress string
+		select {
+		case workerAddress = <-registerChan:
+			break
+		case workerAddress = <-workerChan:
 			break
 		}
-		log.Println("Dial: ", workerAddress)
-		c, errx := rpc.Dial("unix", workerAddress)
-		if errx != nil {
-			log.Fatal("Dail: ", errx)
-		}
-		log.Println("Dail Sucess: ", workerAddress)
-		workers = append(workers, c)
-	}
-
-	log.Println("worker collection success: %d", len(workers))
-	if phase == mapPhase {
-		var wait_group sync.WaitGroup
-		for idx, filename := range mapFiles {
-			idx := idx
-			filename := filename
-			work_client := workers[idx%len(workers)]
-			args := DoTaskArgs{jobName, filename, mapPhase, idx, len(mapFiles)}
+		go func(worker string, index int) {
+			args := DoTaskArgs{jobName, mapFiles[index], phase, index, n_other}
 			var reply *struct{}
-			wait_group.Add(1)
-			go func() {
-				work_client.Call("Worker.DoTask", &args, reply)
-				wait_group.Done()
-			}()
+			call(worker, "Worker.DoTask", &args, reply)
+			wg.Done()
+			workerChan <- worker
+		}(workerAddress, i)
+		i++
+		if i == nTasks {
+			break loop1
 		}
-		wait_group.Wait()
-	} else {
-		var wait_group sync.WaitGroup
-
-		for idx, filename := range mapFiles {
-			idx := idx
-			filename := filename
-			work_client := workers[idx%len(workers)]
-			args := DoTaskArgs{jobName, filename, reducePhase, idx, nReduce}
-			var reply *struct{}
-			wait_group.Add(1)
-			go func() {
-				work_client.Call("Worker.DoTask", &args, reply)
-				wait_group.Done()
-			}()
-		}
-		wait_group.Wait()
 	}
+	wg.Wait()
+
 	fmt.Printf("Schedule: %v phase done\n", phase)
 }
