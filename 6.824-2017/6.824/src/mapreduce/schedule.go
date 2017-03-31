@@ -3,7 +3,7 @@ package mapreduce
 import "fmt"
 
 // import "net/rpc"
-// import "log"
+import "log"
 import "sync"
 
 // import "time"
@@ -41,31 +41,45 @@ func schedule(jobName string, mapFiles []string, nReduce int, phase jobPhase, re
 	// var workers []*rpc.Client
 	// label1:
 	i := 0
-	workerChan := make(chan string)
+	workerChan := make(chan string, 2)
 	var wg sync.WaitGroup
 	wg.Add(nTasks)
 loop1:
 	for {
 		var workerAddress string
+		log.Println("get worker address")
 		select {
 		case workerAddress = <-registerChan:
 			break
 		case workerAddress = <-workerChan:
 			break
 		}
+		log.Println("got worker address")
 		go func(worker string, index int) {
 			args := DoTaskArgs{jobName, mapFiles[index], phase, index, n_other}
-			var reply *struct{}
-			call(worker, "Worker.DoTask", &args, reply)
+			var reply struct{}
+			ok := call(worker, "Worker.DoTask", &args, &reply)
+			for !ok {
+				go func(w string) { workerChan <- w }(worker)
+				select {
+				case worker = <-registerChan:
+					break
+				case worker = <-workerChan:
+					break
+				}
+				ok = call(worker, "Worker.DoTask", &args, &reply)
+			}
 			wg.Done()
 			workerChan <- worker
 		}(workerAddress, i)
 		i++
 		if i == nTasks {
+			fmt.Println("tasks done")
+			wg.Wait()
+			fmt.Println("wait done")
 			break loop1
 		}
 	}
-	wg.Wait()
 
 	fmt.Printf("Schedule: %v phase done\n", phase)
 }

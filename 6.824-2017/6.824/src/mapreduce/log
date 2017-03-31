@@ -1,0 +1,5666 @@
+2017/03/31 17:42:00 method CleanupFiles has wrong number of ins: 1
+2017/03/31 17:42:00 method Lock has wrong number of ins: 1
+2017/03/31 17:42:00 method Unlock has wrong number of ins: 1
+2017/03/31 17:42:00 method Wait has wrong number of ins: 1
+/var/tmp/824-501/mr24826-master: Starting Map/Reduce task test
+Schedule: 100 Map tasks (50 I/Os)
+2017/03/31 17:42:00 get worker address
+2017/03/31 17:42:00 method Lock has wrong number of ins: 1
+2017/03/31 17:42:00 method Unlock has wrong number of ins: 1
+2017/03/31 17:42:00 method Lock has wrong number of ins: 1
+2017/03/31 17:42:00 method Unlock has wrong number of ins: 1
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #1 on file 824-mrinput-1.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: given Map task #0 on file 824-mrinput-0.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #1 done
+/var/tmp/824-501/mr24826-worker0: Map task #0 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #3 on file 824-mrinput-3.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: given Map task #2 on file 824-mrinput-2.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #3 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker1: Map task #2 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #4 on file 824-mrinput-4.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: given Map task #5 on file 824-mrinput-5.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #5 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #6 on file 824-mrinput-6.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #4 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #7 on file 824-mrinput-7.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #6 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #8 on file 824-mrinput-8.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #7 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #9 on file 824-mrinput-9.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #8 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #10 on file 824-mrinput-10.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #9 done
+2017/03/31 17:42:00 got worker address
+2017/03/31 17:42:00 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #11 on file 824-mrinput-11.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #10 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #12 on file 824-mrinput-12.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #11 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #13 on file 824-mrinput-13.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #12 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #14 on file 824-mrinput-14.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #13 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #15 on file 824-mrinput-15.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #14 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #16 on file 824-mrinput-16.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #15 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #17 on file 824-mrinput-17.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #16 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #18 on file 824-mrinput-18.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #17 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #19 on file 824-mrinput-19.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #18 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #20 on file 824-mrinput-20.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #19 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #21 on file 824-mrinput-21.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #20 done
+/var/tmp/824-501/mr24826-worker0: Map task #21 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #22 on file 824-mrinput-22.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: given Map task #23 on file 824-mrinput-23.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #23 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #24 on file 824-mrinput-24.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #22 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #25 on file 824-mrinput-25.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #24 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #26 on file 824-mrinput-26.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #25 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #27 on file 824-mrinput-27.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #26 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #28 on file 824-mrinput-28.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #27 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #29 on file 824-mrinput-29.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #28 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #30 on file 824-mrinput-30.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #29 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #31 on file 824-mrinput-31.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #30 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #32 on file 824-mrinput-32.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #31 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #33 on file 824-mrinput-33.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #32 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #34 on file 824-mrinput-34.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #33 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #35 on file 824-mrinput-35.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #34 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #36 on file 824-mrinput-36.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #35 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #37 on file 824-mrinput-37.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #36 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #38 on file 824-mrinput-38.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #37 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #39 on file 824-mrinput-39.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #38 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #40 on file 824-mrinput-40.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #39 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #41 on file 824-mrinput-41.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #40 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #42 on file 824-mrinput-42.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #41 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #43 on file 824-mrinput-43.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #42 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #44 on file 824-mrinput-44.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #43 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #45 on file 824-mrinput-45.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #44 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #46 on file 824-mrinput-46.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #45 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #47 on file 824-mrinput-47.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #46 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #48 on file 824-mrinput-48.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #47 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #49 on file 824-mrinput-49.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #48 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #50 on file 824-mrinput-50.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #49 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #51 on file 824-mrinput-51.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #50 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #52 on file 824-mrinput-52.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #51 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #53 on file 824-mrinput-53.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #52 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: Map task #53 done
+/var/tmp/824-501/mr24826-worker0: given Map task #54 on file 824-mrinput-54.txt (nios: 50)
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #55 on file 824-mrinput-55.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #54 done
+/var/tmp/824-501/mr24826-worker1: Map task #55 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #57 on file 824-mrinput-57.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: given Map task #56 on file 824-mrinput-56.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #56 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #58 on file 824-mrinput-58.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #57 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #59 on file 824-mrinput-59.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #58 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #60 on file 824-mrinput-60.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #59 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #61 on file 824-mrinput-61.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #60 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #62 on file 824-mrinput-62.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #61 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #63 on file 824-mrinput-63.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #62 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #64 on file 824-mrinput-64.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #63 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #65 on file 824-mrinput-65.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #64 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #66 on file 824-mrinput-66.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #65 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #67 on file 824-mrinput-67.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #67 done
+/var/tmp/824-501/mr24826-worker0: Map task #66 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #68 on file 824-mrinput-68.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: given Map task #69 on file 824-mrinput-69.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #68 done
+/var/tmp/824-501/mr24826-worker0: Map task #69 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #70 on file 824-mrinput-70.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: given Map task #71 on file 824-mrinput-71.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #71 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #72 on file 824-mrinput-72.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #70 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #73 on file 824-mrinput-73.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #73 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #74 on file 824-mrinput-74.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #72 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #75 on file 824-mrinput-75.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #74 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #76 on file 824-mrinput-76.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #75 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #77 on file 824-mrinput-77.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #76 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #78 on file 824-mrinput-78.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #77 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #79 on file 824-mrinput-79.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #78 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #80 on file 824-mrinput-80.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #79 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #81 on file 824-mrinput-81.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #81 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: Map task #80 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #82 on file 824-mrinput-82.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: given Map task #83 on file 824-mrinput-83.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #83 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #84 on file 824-mrinput-84.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #82 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #85 on file 824-mrinput-85.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #84 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #86 on file 824-mrinput-86.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #85 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #87 on file 824-mrinput-87.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #87 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #88 on file 824-mrinput-88.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #86 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #89 on file 824-mrinput-89.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #88 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #90 on file 824-mrinput-90.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #89 done
+2017/03/31 17:42:01 got worker address
+2017/03/31 17:42:01 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #91 on file 824-mrinput-91.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #90 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #92 on file 824-mrinput-92.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #91 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #93 on file 824-mrinput-93.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #92 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #94 on file 824-mrinput-94.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #93 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #95 on file 824-mrinput-95.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #94 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #96 on file 824-mrinput-96.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #95 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #97 on file 824-mrinput-97.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #96 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Map task #98 on file 824-mrinput-98.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker1: Map task #97 done
+2017/03/31 17:42:02 got worker address
+/var/tmp/824-501/mr24826-worker1: given Map task #99 on file 824-mrinput-99.txt (nios: 50)
+/var/tmp/824-501/mr24826-worker0: Map task #98 done
+/var/tmp/824-501/mr24826-worker1: Map task #99 done
+Schedule: Map phase done
+Schedule: 50 Reduce tasks (100 I/Os)
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #0 on file 824-mrinput-0.txt (nios: 100)
+DoReduce: read mrtmp.test-0-0
+/var/tmp/824-501/mr24826-worker1: given Reduce task #1 on file 824-mrinput-1.txt (nios: 100)
+DoReduce: read mrtmp.test-0-1
+DoReduce: read mrtmp.test-1-0
+DoReduce: read mrtmp.test-1-1
+DoReduce: read mrtmp.test-2-0
+DoReduce: read mrtmp.test-2-1
+DoReduce: read mrtmp.test-3-0
+DoReduce: read mrtmp.test-3-1
+DoReduce: read mrtmp.test-4-0
+DoReduce: read mrtmp.test-4-1
+DoReduce: read mrtmp.test-5-0
+DoReduce: read mrtmp.test-5-1
+DoReduce: read mrtmp.test-6-0
+DoReduce: read mrtmp.test-6-1
+DoReduce: read mrtmp.test-7-0
+DoReduce: read mrtmp.test-7-1
+DoReduce: read mrtmp.test-8-0
+DoReduce: read mrtmp.test-8-1
+DoReduce: read mrtmp.test-9-0
+DoReduce: read mrtmp.test-9-1
+DoReduce: read mrtmp.test-10-0
+DoReduce: read mrtmp.test-10-1
+DoReduce: read mrtmp.test-11-0
+DoReduce: read mrtmp.test-11-1
+DoReduce: read mrtmp.test-12-0
+DoReduce: read mrtmp.test-12-1
+DoReduce: read mrtmp.test-13-0
+DoReduce: read mrtmp.test-13-1
+DoReduce: read mrtmp.test-14-0
+DoReduce: read mrtmp.test-14-1
+DoReduce: read mrtmp.test-15-0
+DoReduce: read mrtmp.test-15-1
+DoReduce: read mrtmp.test-16-0
+DoReduce: read mrtmp.test-16-1
+DoReduce: read mrtmp.test-17-0
+DoReduce: read mrtmp.test-17-1
+DoReduce: read mrtmp.test-18-0
+DoReduce: read mrtmp.test-18-1
+DoReduce: read mrtmp.test-19-0
+DoReduce: read mrtmp.test-19-1
+DoReduce: read mrtmp.test-20-0
+DoReduce: read mrtmp.test-20-1
+DoReduce: read mrtmp.test-21-1
+DoReduce: read mrtmp.test-21-0
+DoReduce: read mrtmp.test-22-1
+DoReduce: read mrtmp.test-22-0
+DoReduce: read mrtmp.test-23-1
+DoReduce: read mrtmp.test-23-0
+DoReduce: read mrtmp.test-24-1
+DoReduce: read mrtmp.test-24-0
+DoReduce: read mrtmp.test-25-1
+DoReduce: read mrtmp.test-26-1
+DoReduce: read mrtmp.test-25-0
+DoReduce: read mrtmp.test-27-1
+DoReduce: read mrtmp.test-26-0
+DoReduce: read mrtmp.test-28-1
+DoReduce: read mrtmp.test-29-1
+DoReduce: read mrtmp.test-27-0
+DoReduce: read mrtmp.test-30-1
+DoReduce: read mrtmp.test-28-0
+DoReduce: read mrtmp.test-31-1
+DoReduce: read mrtmp.test-29-0
+DoReduce: read mrtmp.test-32-1
+DoReduce: read mrtmp.test-30-0
+DoReduce: read mrtmp.test-33-1
+DoReduce: read mrtmp.test-31-0
+DoReduce: read mrtmp.test-34-1
+DoReduce: read mrtmp.test-32-0
+DoReduce: read mrtmp.test-35-1
+DoReduce: read mrtmp.test-33-0
+DoReduce: read mrtmp.test-36-1
+DoReduce: read mrtmp.test-34-0
+DoReduce: read mrtmp.test-37-1
+DoReduce: read mrtmp.test-35-0
+DoReduce: read mrtmp.test-38-1
+DoReduce: read mrtmp.test-36-0
+DoReduce: read mrtmp.test-39-1
+DoReduce: read mrtmp.test-37-0
+DoReduce: read mrtmp.test-40-1
+DoReduce: read mrtmp.test-38-0
+DoReduce: read mrtmp.test-41-1
+DoReduce: read mrtmp.test-39-0
+DoReduce: read mrtmp.test-40-0
+DoReduce: read mrtmp.test-42-1
+DoReduce: read mrtmp.test-41-0
+DoReduce: read mrtmp.test-42-0
+DoReduce: read mrtmp.test-43-1
+DoReduce: read mrtmp.test-44-1
+DoReduce: read mrtmp.test-43-0
+DoReduce: read mrtmp.test-45-1
+DoReduce: read mrtmp.test-44-0
+DoReduce: read mrtmp.test-46-1
+DoReduce: read mrtmp.test-45-0
+DoReduce: read mrtmp.test-47-1
+DoReduce: read mrtmp.test-46-0
+DoReduce: read mrtmp.test-48-1
+DoReduce: read mrtmp.test-47-0
+DoReduce: read mrtmp.test-49-1
+DoReduce: read mrtmp.test-48-0
+DoReduce: read mrtmp.test-50-1
+DoReduce: read mrtmp.test-49-0
+DoReduce: read mrtmp.test-51-1
+DoReduce: read mrtmp.test-50-0
+DoReduce: read mrtmp.test-52-1
+DoReduce: read mrtmp.test-51-0
+DoReduce: read mrtmp.test-53-1
+DoReduce: read mrtmp.test-52-0
+DoReduce: read mrtmp.test-54-1
+DoReduce: read mrtmp.test-53-0
+DoReduce: read mrtmp.test-55-1
+DoReduce: read mrtmp.test-54-0
+DoReduce: read mrtmp.test-56-1
+DoReduce: read mrtmp.test-55-0
+DoReduce: read mrtmp.test-57-1
+DoReduce: read mrtmp.test-56-0
+DoReduce: read mrtmp.test-58-1
+DoReduce: read mrtmp.test-57-0
+DoReduce: read mrtmp.test-59-1
+DoReduce: read mrtmp.test-58-0
+DoReduce: read mrtmp.test-60-1
+DoReduce: read mrtmp.test-59-0
+DoReduce: read mrtmp.test-61-1
+DoReduce: read mrtmp.test-60-0
+DoReduce: read mrtmp.test-62-1
+DoReduce: read mrtmp.test-61-0
+DoReduce: read mrtmp.test-63-1
+DoReduce: read mrtmp.test-62-0
+DoReduce: read mrtmp.test-64-1
+DoReduce: read mrtmp.test-63-0
+DoReduce: read mrtmp.test-65-1
+DoReduce: read mrtmp.test-64-0
+DoReduce: read mrtmp.test-66-1
+DoReduce: read mrtmp.test-65-0
+DoReduce: read mrtmp.test-67-1
+DoReduce: read mrtmp.test-66-0
+DoReduce: read mrtmp.test-68-1
+DoReduce: read mrtmp.test-67-0
+DoReduce: read mrtmp.test-69-1
+DoReduce: read mrtmp.test-68-0
+DoReduce: read mrtmp.test-70-1
+DoReduce: read mrtmp.test-69-0
+DoReduce: read mrtmp.test-71-1
+DoReduce: read mrtmp.test-70-0
+DoReduce: read mrtmp.test-72-1
+DoReduce: read mrtmp.test-71-0
+DoReduce: read mrtmp.test-73-1
+DoReduce: read mrtmp.test-72-0
+DoReduce: read mrtmp.test-73-0
+DoReduce: read mrtmp.test-74-1
+DoReduce: read mrtmp.test-74-0
+DoReduce: read mrtmp.test-75-1
+DoReduce: read mrtmp.test-75-0
+DoReduce: read mrtmp.test-76-1
+DoReduce: read mrtmp.test-76-0
+DoReduce: read mrtmp.test-77-1
+DoReduce: read mrtmp.test-77-0
+DoReduce: read mrtmp.test-78-1
+DoReduce: read mrtmp.test-78-0
+DoReduce: read mrtmp.test-79-1
+DoReduce: read mrtmp.test-79-0
+DoReduce: read mrtmp.test-80-1
+DoReduce: read mrtmp.test-80-0
+DoReduce: read mrtmp.test-81-1
+DoReduce: read mrtmp.test-81-0
+DoReduce: read mrtmp.test-82-1
+DoReduce: read mrtmp.test-82-0
+DoReduce: read mrtmp.test-83-1
+DoReduce: read mrtmp.test-83-0
+DoReduce: read mrtmp.test-84-1
+DoReduce: read mrtmp.test-84-0
+DoReduce: read mrtmp.test-85-1
+DoReduce: read mrtmp.test-85-0
+DoReduce: read mrtmp.test-86-0
+DoReduce: read mrtmp.test-86-1
+DoReduce: read mrtmp.test-87-0
+DoReduce: read mrtmp.test-87-1
+DoReduce: read mrtmp.test-88-1
+DoReduce: read mrtmp.test-88-0
+DoReduce: read mrtmp.test-89-0
+DoReduce: read mrtmp.test-89-1
+DoReduce: read mrtmp.test-90-0
+DoReduce: read mrtmp.test-90-1
+DoReduce: read mrtmp.test-91-0
+DoReduce: read mrtmp.test-91-1
+DoReduce: read mrtmp.test-92-0
+DoReduce: read mrtmp.test-92-1
+DoReduce: read mrtmp.test-93-0
+DoReduce: read mrtmp.test-93-1
+DoReduce: read mrtmp.test-94-0
+DoReduce: read mrtmp.test-94-1
+DoReduce: read mrtmp.test-95-0
+DoReduce: read mrtmp.test-95-1
+DoReduce: read mrtmp.test-96-0
+DoReduce: read mrtmp.test-96-1
+DoReduce: read mrtmp.test-97-0
+DoReduce: read mrtmp.test-97-1
+DoReduce: read mrtmp.test-98-0
+DoReduce: read mrtmp.test-98-1
+DoReduce: read mrtmp.test-99-0
+DoReduce: read mrtmp.test-99-1
+/var/tmp/824-501/mr24826-worker1: Reduce task #1 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #0 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #2 on file 824-mrinput-2.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker1: given Reduce task #3 on file 824-mrinput-3.txt (nios: 100)
+DoReduce: read mrtmp.test-0-2
+DoReduce: read mrtmp.test-0-3
+DoReduce: read mrtmp.test-1-2
+DoReduce: read mrtmp.test-1-3
+DoReduce: read mrtmp.test-2-2
+DoReduce: read mrtmp.test-2-3
+DoReduce: read mrtmp.test-3-2
+DoReduce: read mrtmp.test-3-3
+DoReduce: read mrtmp.test-4-2
+DoReduce: read mrtmp.test-4-3
+DoReduce: read mrtmp.test-5-2
+DoReduce: read mrtmp.test-5-3
+DoReduce: read mrtmp.test-6-2
+DoReduce: read mrtmp.test-6-3
+DoReduce: read mrtmp.test-7-2
+DoReduce: read mrtmp.test-7-3
+DoReduce: read mrtmp.test-8-3
+DoReduce: read mrtmp.test-8-2
+DoReduce: read mrtmp.test-9-3
+DoReduce: read mrtmp.test-9-2
+DoReduce: read mrtmp.test-10-2
+DoReduce: read mrtmp.test-10-3
+DoReduce: read mrtmp.test-11-2
+DoReduce: read mrtmp.test-11-3
+DoReduce: read mrtmp.test-12-2
+DoReduce: read mrtmp.test-12-3
+DoReduce: read mrtmp.test-13-2
+DoReduce: read mrtmp.test-13-3
+DoReduce: read mrtmp.test-14-2
+DoReduce: read mrtmp.test-14-3
+DoReduce: read mrtmp.test-15-3
+DoReduce: read mrtmp.test-15-2
+DoReduce: read mrtmp.test-16-3
+DoReduce: read mrtmp.test-16-2
+DoReduce: read mrtmp.test-17-3
+DoReduce: read mrtmp.test-17-2
+DoReduce: read mrtmp.test-18-3
+DoReduce: read mrtmp.test-18-2
+DoReduce: read mrtmp.test-19-3
+DoReduce: read mrtmp.test-19-2
+DoReduce: read mrtmp.test-20-2
+DoReduce: read mrtmp.test-20-3
+DoReduce: read mrtmp.test-21-2
+DoReduce: read mrtmp.test-21-3
+DoReduce: read mrtmp.test-22-2
+DoReduce: read mrtmp.test-22-3
+DoReduce: read mrtmp.test-23-2
+DoReduce: read mrtmp.test-24-2
+DoReduce: read mrtmp.test-23-3
+DoReduce: read mrtmp.test-25-2
+DoReduce: read mrtmp.test-24-3
+DoReduce: read mrtmp.test-26-2
+DoReduce: read mrtmp.test-25-3
+DoReduce: read mrtmp.test-27-2
+DoReduce: read mrtmp.test-26-3
+DoReduce: read mrtmp.test-28-2
+DoReduce: read mrtmp.test-27-3
+DoReduce: read mrtmp.test-29-2
+DoReduce: read mrtmp.test-28-3
+DoReduce: read mrtmp.test-30-2
+DoReduce: read mrtmp.test-29-3
+DoReduce: read mrtmp.test-30-3
+DoReduce: read mrtmp.test-31-2
+DoReduce: read mrtmp.test-31-3
+DoReduce: read mrtmp.test-32-2
+DoReduce: read mrtmp.test-32-3
+DoReduce: read mrtmp.test-33-2
+DoReduce: read mrtmp.test-33-3
+DoReduce: read mrtmp.test-34-2
+DoReduce: read mrtmp.test-34-3
+DoReduce: read mrtmp.test-35-2
+DoReduce: read mrtmp.test-35-3
+DoReduce: read mrtmp.test-36-2
+DoReduce: read mrtmp.test-36-3
+DoReduce: read mrtmp.test-37-2
+DoReduce: read mrtmp.test-37-3
+DoReduce: read mrtmp.test-38-3
+DoReduce: read mrtmp.test-38-2
+DoReduce: read mrtmp.test-39-3
+DoReduce: read mrtmp.test-39-2
+DoReduce: read mrtmp.test-40-3
+DoReduce: read mrtmp.test-41-3
+DoReduce: read mrtmp.test-40-2
+DoReduce: read mrtmp.test-42-3
+DoReduce: read mrtmp.test-41-2
+DoReduce: read mrtmp.test-42-2
+DoReduce: read mrtmp.test-43-3
+DoReduce: read mrtmp.test-43-2
+DoReduce: read mrtmp.test-44-3
+DoReduce: read mrtmp.test-44-2
+DoReduce: read mrtmp.test-45-3
+DoReduce: read mrtmp.test-45-2
+DoReduce: read mrtmp.test-46-3
+DoReduce: read mrtmp.test-46-2
+DoReduce: read mrtmp.test-47-3
+DoReduce: read mrtmp.test-47-2
+DoReduce: read mrtmp.test-48-3
+DoReduce: read mrtmp.test-48-2
+DoReduce: read mrtmp.test-49-3
+DoReduce: read mrtmp.test-49-2
+DoReduce: read mrtmp.test-50-3
+DoReduce: read mrtmp.test-50-2
+DoReduce: read mrtmp.test-51-3
+DoReduce: read mrtmp.test-51-2
+DoReduce: read mrtmp.test-52-3
+DoReduce: read mrtmp.test-52-2
+DoReduce: read mrtmp.test-53-3
+DoReduce: read mrtmp.test-53-2
+DoReduce: read mrtmp.test-54-3
+DoReduce: read mrtmp.test-54-2
+DoReduce: read mrtmp.test-55-2
+DoReduce: read mrtmp.test-55-3
+DoReduce: read mrtmp.test-56-2
+DoReduce: read mrtmp.test-56-3
+DoReduce: read mrtmp.test-57-2
+DoReduce: read mrtmp.test-57-3
+DoReduce: read mrtmp.test-58-2
+DoReduce: read mrtmp.test-58-3
+DoReduce: read mrtmp.test-59-2
+DoReduce: read mrtmp.test-59-3
+DoReduce: read mrtmp.test-60-2
+DoReduce: read mrtmp.test-60-3
+DoReduce: read mrtmp.test-61-2
+DoReduce: read mrtmp.test-61-3
+DoReduce: read mrtmp.test-62-2
+DoReduce: read mrtmp.test-62-3
+DoReduce: read mrtmp.test-63-2
+DoReduce: read mrtmp.test-63-3
+DoReduce: read mrtmp.test-64-3
+DoReduce: read mrtmp.test-64-2
+DoReduce: read mrtmp.test-65-2
+DoReduce: read mrtmp.test-65-3
+DoReduce: read mrtmp.test-66-2
+DoReduce: read mrtmp.test-67-2
+DoReduce: read mrtmp.test-66-3
+DoReduce: read mrtmp.test-68-2
+DoReduce: read mrtmp.test-69-2
+DoReduce: read mrtmp.test-67-3
+DoReduce: read mrtmp.test-70-2
+DoReduce: read mrtmp.test-68-3
+DoReduce: read mrtmp.test-71-2
+DoReduce: read mrtmp.test-69-3
+DoReduce: read mrtmp.test-72-2
+DoReduce: read mrtmp.test-70-3
+DoReduce: read mrtmp.test-73-2
+DoReduce: read mrtmp.test-71-3
+DoReduce: read mrtmp.test-74-2
+DoReduce: read mrtmp.test-72-3
+DoReduce: read mrtmp.test-75-2
+DoReduce: read mrtmp.test-73-3
+DoReduce: read mrtmp.test-76-2
+DoReduce: read mrtmp.test-74-3
+DoReduce: read mrtmp.test-77-2
+DoReduce: read mrtmp.test-75-3
+DoReduce: read mrtmp.test-78-2
+DoReduce: read mrtmp.test-76-3
+DoReduce: read mrtmp.test-79-2
+DoReduce: read mrtmp.test-77-3
+DoReduce: read mrtmp.test-80-2
+DoReduce: read mrtmp.test-78-3
+DoReduce: read mrtmp.test-81-2
+DoReduce: read mrtmp.test-79-3
+DoReduce: read mrtmp.test-80-3
+DoReduce: read mrtmp.test-82-2
+DoReduce: read mrtmp.test-81-3
+DoReduce: read mrtmp.test-83-2
+DoReduce: read mrtmp.test-82-3
+DoReduce: read mrtmp.test-84-2
+DoReduce: read mrtmp.test-83-3
+DoReduce: read mrtmp.test-85-2
+DoReduce: read mrtmp.test-84-3
+DoReduce: read mrtmp.test-86-2
+DoReduce: read mrtmp.test-87-2
+DoReduce: read mrtmp.test-85-3
+DoReduce: read mrtmp.test-88-2
+DoReduce: read mrtmp.test-86-3
+DoReduce: read mrtmp.test-89-2
+DoReduce: read mrtmp.test-87-3
+DoReduce: read mrtmp.test-90-2
+DoReduce: read mrtmp.test-88-3
+DoReduce: read mrtmp.test-91-2
+DoReduce: read mrtmp.test-89-3
+DoReduce: read mrtmp.test-92-2
+DoReduce: read mrtmp.test-90-3
+DoReduce: read mrtmp.test-93-2
+DoReduce: read mrtmp.test-94-2
+DoReduce: read mrtmp.test-91-3
+DoReduce: read mrtmp.test-95-2
+DoReduce: read mrtmp.test-92-3
+DoReduce: read mrtmp.test-96-2
+DoReduce: read mrtmp.test-93-3
+DoReduce: read mrtmp.test-97-2
+DoReduce: read mrtmp.test-94-3
+DoReduce: read mrtmp.test-98-2
+DoReduce: read mrtmp.test-95-3
+DoReduce: read mrtmp.test-99-2
+DoReduce: read mrtmp.test-96-3
+DoReduce: read mrtmp.test-97-3
+DoReduce: read mrtmp.test-98-3
+DoReduce: read mrtmp.test-99-3
+/var/tmp/824-501/mr24826-worker0: Reduce task #2 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #4 on file 824-mrinput-4.txt (nios: 100)
+DoReduce: read mrtmp.test-0-4
+DoReduce: read mrtmp.test-1-4
+DoReduce: read mrtmp.test-2-4
+/var/tmp/824-501/mr24826-worker1: Reduce task #3 done
+DoReduce: read mrtmp.test-3-4
+DoReduce: read mrtmp.test-4-4
+DoReduce: read mrtmp.test-5-4
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-6-4
+DoReduce: read mrtmp.test-7-4
+DoReduce: read mrtmp.test-8-4
+DoReduce: read mrtmp.test-9-4
+/var/tmp/824-501/mr24826-worker1: given Reduce task #5 on file 824-mrinput-5.txt (nios: 100)
+DoReduce: read mrtmp.test-0-5
+DoReduce: read mrtmp.test-10-4
+DoReduce: read mrtmp.test-1-5
+DoReduce: read mrtmp.test-11-4
+DoReduce: read mrtmp.test-2-5
+DoReduce: read mrtmp.test-12-4
+DoReduce: read mrtmp.test-3-5
+DoReduce: read mrtmp.test-13-4
+DoReduce: read mrtmp.test-4-5
+DoReduce: read mrtmp.test-14-4
+DoReduce: read mrtmp.test-5-5
+DoReduce: read mrtmp.test-15-4
+DoReduce: read mrtmp.test-16-4
+DoReduce: read mrtmp.test-6-5
+DoReduce: read mrtmp.test-17-4
+DoReduce: read mrtmp.test-7-5
+DoReduce: read mrtmp.test-18-4
+DoReduce: read mrtmp.test-8-5
+DoReduce: read mrtmp.test-19-4
+DoReduce: read mrtmp.test-9-5
+DoReduce: read mrtmp.test-20-4
+DoReduce: read mrtmp.test-10-5
+DoReduce: read mrtmp.test-21-4
+DoReduce: read mrtmp.test-11-5
+DoReduce: read mrtmp.test-22-4
+DoReduce: read mrtmp.test-12-5
+DoReduce: read mrtmp.test-13-5
+DoReduce: read mrtmp.test-23-4
+DoReduce: read mrtmp.test-14-5
+DoReduce: read mrtmp.test-24-4
+DoReduce: read mrtmp.test-15-5
+DoReduce: read mrtmp.test-25-4
+DoReduce: read mrtmp.test-16-5
+DoReduce: read mrtmp.test-26-4
+DoReduce: read mrtmp.test-17-5
+DoReduce: read mrtmp.test-27-4
+DoReduce: read mrtmp.test-18-5
+DoReduce: read mrtmp.test-28-4
+DoReduce: read mrtmp.test-19-5
+DoReduce: read mrtmp.test-29-4
+DoReduce: read mrtmp.test-20-5
+DoReduce: read mrtmp.test-30-4
+DoReduce: read mrtmp.test-21-5
+DoReduce: read mrtmp.test-31-4
+DoReduce: read mrtmp.test-22-5
+DoReduce: read mrtmp.test-32-4
+DoReduce: read mrtmp.test-23-5
+DoReduce: read mrtmp.test-33-4
+DoReduce: read mrtmp.test-24-5
+DoReduce: read mrtmp.test-34-4
+DoReduce: read mrtmp.test-35-4
+DoReduce: read mrtmp.test-25-5
+DoReduce: read mrtmp.test-36-4
+DoReduce: read mrtmp.test-26-5
+DoReduce: read mrtmp.test-27-5
+DoReduce: read mrtmp.test-37-4
+DoReduce: read mrtmp.test-28-5
+DoReduce: read mrtmp.test-38-4
+DoReduce: read mrtmp.test-29-5
+DoReduce: read mrtmp.test-39-4
+DoReduce: read mrtmp.test-30-5
+DoReduce: read mrtmp.test-40-4
+DoReduce: read mrtmp.test-31-5
+DoReduce: read mrtmp.test-41-4
+DoReduce: read mrtmp.test-32-5
+DoReduce: read mrtmp.test-33-5
+DoReduce: read mrtmp.test-42-4
+DoReduce: read mrtmp.test-34-5
+DoReduce: read mrtmp.test-43-4
+DoReduce: read mrtmp.test-35-5
+DoReduce: read mrtmp.test-44-4
+DoReduce: read mrtmp.test-36-5
+DoReduce: read mrtmp.test-45-4
+DoReduce: read mrtmp.test-37-5
+DoReduce: read mrtmp.test-38-5
+DoReduce: read mrtmp.test-46-4
+DoReduce: read mrtmp.test-39-5
+DoReduce: read mrtmp.test-47-4
+DoReduce: read mrtmp.test-40-5
+DoReduce: read mrtmp.test-48-4
+DoReduce: read mrtmp.test-41-5
+DoReduce: read mrtmp.test-42-5
+DoReduce: read mrtmp.test-49-4
+DoReduce: read mrtmp.test-43-5
+DoReduce: read mrtmp.test-50-4
+DoReduce: read mrtmp.test-51-4
+DoReduce: read mrtmp.test-44-5
+DoReduce: read mrtmp.test-52-4
+DoReduce: read mrtmp.test-45-5
+DoReduce: read mrtmp.test-53-4
+DoReduce: read mrtmp.test-54-4
+DoReduce: read mrtmp.test-46-5
+DoReduce: read mrtmp.test-55-4
+DoReduce: read mrtmp.test-47-5
+DoReduce: read mrtmp.test-56-4
+DoReduce: read mrtmp.test-48-5
+DoReduce: read mrtmp.test-57-4
+DoReduce: read mrtmp.test-49-5
+DoReduce: read mrtmp.test-58-4
+DoReduce: read mrtmp.test-59-4
+DoReduce: read mrtmp.test-50-5
+DoReduce: read mrtmp.test-60-4
+DoReduce: read mrtmp.test-51-5
+DoReduce: read mrtmp.test-61-4
+DoReduce: read mrtmp.test-52-5
+DoReduce: read mrtmp.test-53-5
+DoReduce: read mrtmp.test-62-4
+DoReduce: read mrtmp.test-54-5
+DoReduce: read mrtmp.test-63-4
+DoReduce: read mrtmp.test-55-5
+DoReduce: read mrtmp.test-64-4
+DoReduce: read mrtmp.test-56-5
+DoReduce: read mrtmp.test-65-4
+DoReduce: read mrtmp.test-57-5
+DoReduce: read mrtmp.test-66-4
+DoReduce: read mrtmp.test-58-5
+DoReduce: read mrtmp.test-67-4
+DoReduce: read mrtmp.test-59-5
+DoReduce: read mrtmp.test-68-4
+DoReduce: read mrtmp.test-60-5
+DoReduce: read mrtmp.test-69-4
+DoReduce: read mrtmp.test-61-5
+DoReduce: read mrtmp.test-70-4
+DoReduce: read mrtmp.test-62-5
+DoReduce: read mrtmp.test-63-5
+DoReduce: read mrtmp.test-71-4
+DoReduce: read mrtmp.test-64-5
+DoReduce: read mrtmp.test-72-4
+DoReduce: read mrtmp.test-65-5
+DoReduce: read mrtmp.test-73-4
+DoReduce: read mrtmp.test-66-5
+DoReduce: read mrtmp.test-74-4
+DoReduce: read mrtmp.test-67-5
+DoReduce: read mrtmp.test-75-4
+DoReduce: read mrtmp.test-68-5
+DoReduce: read mrtmp.test-76-4
+DoReduce: read mrtmp.test-69-5
+DoReduce: read mrtmp.test-77-4
+DoReduce: read mrtmp.test-70-5
+DoReduce: read mrtmp.test-71-5
+DoReduce: read mrtmp.test-78-4
+DoReduce: read mrtmp.test-72-5
+DoReduce: read mrtmp.test-79-4
+DoReduce: read mrtmp.test-73-5
+DoReduce: read mrtmp.test-80-4
+DoReduce: read mrtmp.test-74-5
+DoReduce: read mrtmp.test-81-4
+DoReduce: read mrtmp.test-75-5
+DoReduce: read mrtmp.test-82-4
+DoReduce: read mrtmp.test-76-5
+DoReduce: read mrtmp.test-77-5
+DoReduce: read mrtmp.test-83-4
+DoReduce: read mrtmp.test-78-5
+DoReduce: read mrtmp.test-79-5
+DoReduce: read mrtmp.test-84-4
+DoReduce: read mrtmp.test-80-5
+DoReduce: read mrtmp.test-85-4
+DoReduce: read mrtmp.test-81-5
+DoReduce: read mrtmp.test-86-4
+DoReduce: read mrtmp.test-82-5
+DoReduce: read mrtmp.test-87-4
+DoReduce: read mrtmp.test-83-5
+DoReduce: read mrtmp.test-84-5
+DoReduce: read mrtmp.test-88-4
+DoReduce: read mrtmp.test-85-5
+DoReduce: read mrtmp.test-89-4
+DoReduce: read mrtmp.test-86-5
+DoReduce: read mrtmp.test-90-4
+DoReduce: read mrtmp.test-87-5
+DoReduce: read mrtmp.test-91-4
+DoReduce: read mrtmp.test-88-5
+DoReduce: read mrtmp.test-92-4
+DoReduce: read mrtmp.test-93-4
+DoReduce: read mrtmp.test-89-5
+DoReduce: read mrtmp.test-94-4
+DoReduce: read mrtmp.test-95-4
+DoReduce: read mrtmp.test-90-5
+DoReduce: read mrtmp.test-96-4
+DoReduce: read mrtmp.test-91-5
+DoReduce: read mrtmp.test-97-4
+DoReduce: read mrtmp.test-92-5
+DoReduce: read mrtmp.test-98-4
+DoReduce: read mrtmp.test-93-5
+DoReduce: read mrtmp.test-99-4
+DoReduce: read mrtmp.test-94-5
+DoReduce: read mrtmp.test-95-5
+DoReduce: read mrtmp.test-96-5
+DoReduce: read mrtmp.test-97-5
+DoReduce: read mrtmp.test-98-5
+DoReduce: read mrtmp.test-99-5
+/var/tmp/824-501/mr24826-worker1: Reduce task #5 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #4 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #7 on file 824-mrinput-7.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker1: given Reduce task #6 on file 824-mrinput-6.txt (nios: 100)
+DoReduce: read mrtmp.test-0-7
+DoReduce: read mrtmp.test-0-6
+DoReduce: read mrtmp.test-1-7
+DoReduce: read mrtmp.test-1-6
+DoReduce: read mrtmp.test-2-6
+DoReduce: read mrtmp.test-2-7
+DoReduce: read mrtmp.test-3-6
+DoReduce: read mrtmp.test-3-7
+DoReduce: read mrtmp.test-4-7
+DoReduce: read mrtmp.test-4-6
+DoReduce: read mrtmp.test-5-7
+DoReduce: read mrtmp.test-5-6
+DoReduce: read mrtmp.test-6-7
+DoReduce: read mrtmp.test-6-6
+DoReduce: read mrtmp.test-7-7
+DoReduce: read mrtmp.test-7-6
+DoReduce: read mrtmp.test-8-7
+DoReduce: read mrtmp.test-8-6
+DoReduce: read mrtmp.test-9-7
+DoReduce: read mrtmp.test-9-6
+DoReduce: read mrtmp.test-10-7
+DoReduce: read mrtmp.test-10-6
+DoReduce: read mrtmp.test-11-7
+DoReduce: read mrtmp.test-11-6
+DoReduce: read mrtmp.test-12-7
+DoReduce: read mrtmp.test-12-6
+DoReduce: read mrtmp.test-13-7
+DoReduce: read mrtmp.test-13-6
+DoReduce: read mrtmp.test-14-7
+DoReduce: read mrtmp.test-14-6
+DoReduce: read mrtmp.test-15-7
+DoReduce: read mrtmp.test-15-6
+DoReduce: read mrtmp.test-16-7
+DoReduce: read mrtmp.test-16-6
+DoReduce: read mrtmp.test-17-7
+DoReduce: read mrtmp.test-17-6
+DoReduce: read mrtmp.test-18-7
+DoReduce: read mrtmp.test-18-6
+DoReduce: read mrtmp.test-19-7
+DoReduce: read mrtmp.test-19-6
+DoReduce: read mrtmp.test-20-7
+DoReduce: read mrtmp.test-20-6
+DoReduce: read mrtmp.test-21-7
+DoReduce: read mrtmp.test-21-6
+DoReduce: read mrtmp.test-22-7
+DoReduce: read mrtmp.test-22-6
+DoReduce: read mrtmp.test-23-7
+DoReduce: read mrtmp.test-23-6
+DoReduce: read mrtmp.test-24-7
+DoReduce: read mrtmp.test-24-6
+DoReduce: read mrtmp.test-25-7
+DoReduce: read mrtmp.test-26-7
+DoReduce: read mrtmp.test-25-6
+DoReduce: read mrtmp.test-27-7
+DoReduce: read mrtmp.test-26-6
+DoReduce: read mrtmp.test-28-7
+DoReduce: read mrtmp.test-27-6
+DoReduce: read mrtmp.test-28-6
+DoReduce: read mrtmp.test-29-7
+DoReduce: read mrtmp.test-29-6
+DoReduce: read mrtmp.test-30-7
+DoReduce: read mrtmp.test-30-6
+DoReduce: read mrtmp.test-31-7
+DoReduce: read mrtmp.test-31-6
+DoReduce: read mrtmp.test-32-7
+DoReduce: read mrtmp.test-32-6
+DoReduce: read mrtmp.test-33-7
+DoReduce: read mrtmp.test-33-6
+DoReduce: read mrtmp.test-34-7
+DoReduce: read mrtmp.test-34-6
+DoReduce: read mrtmp.test-35-7
+DoReduce: read mrtmp.test-35-6
+DoReduce: read mrtmp.test-36-7
+DoReduce: read mrtmp.test-36-6
+DoReduce: read mrtmp.test-37-7
+DoReduce: read mrtmp.test-37-6
+DoReduce: read mrtmp.test-38-7
+DoReduce: read mrtmp.test-38-6
+DoReduce: read mrtmp.test-39-7
+DoReduce: read mrtmp.test-39-6
+DoReduce: read mrtmp.test-40-7
+DoReduce: read mrtmp.test-40-6
+DoReduce: read mrtmp.test-41-7
+DoReduce: read mrtmp.test-42-7
+DoReduce: read mrtmp.test-41-6
+DoReduce: read mrtmp.test-43-7
+DoReduce: read mrtmp.test-42-6
+DoReduce: read mrtmp.test-44-7
+DoReduce: read mrtmp.test-43-6
+DoReduce: read mrtmp.test-44-6
+DoReduce: read mrtmp.test-45-7
+DoReduce: read mrtmp.test-45-6
+DoReduce: read mrtmp.test-46-7
+DoReduce: read mrtmp.test-46-6
+DoReduce: read mrtmp.test-47-7
+DoReduce: read mrtmp.test-47-6
+DoReduce: read mrtmp.test-48-7
+DoReduce: read mrtmp.test-48-6
+DoReduce: read mrtmp.test-49-7
+DoReduce: read mrtmp.test-49-6
+DoReduce: read mrtmp.test-50-7
+DoReduce: read mrtmp.test-50-6
+DoReduce: read mrtmp.test-51-7
+DoReduce: read mrtmp.test-51-6
+DoReduce: read mrtmp.test-52-7
+DoReduce: read mrtmp.test-52-6
+DoReduce: read mrtmp.test-53-7
+DoReduce: read mrtmp.test-53-6
+DoReduce: read mrtmp.test-54-7
+DoReduce: read mrtmp.test-54-6
+DoReduce: read mrtmp.test-55-7
+DoReduce: read mrtmp.test-55-6
+DoReduce: read mrtmp.test-56-7
+DoReduce: read mrtmp.test-56-6
+DoReduce: read mrtmp.test-57-7
+DoReduce: read mrtmp.test-57-6
+DoReduce: read mrtmp.test-58-7
+DoReduce: read mrtmp.test-58-6
+DoReduce: read mrtmp.test-59-7
+DoReduce: read mrtmp.test-59-6
+DoReduce: read mrtmp.test-60-7
+DoReduce: read mrtmp.test-60-6
+DoReduce: read mrtmp.test-61-7
+DoReduce: read mrtmp.test-61-6
+DoReduce: read mrtmp.test-62-7
+DoReduce: read mrtmp.test-62-6
+DoReduce: read mrtmp.test-63-7
+DoReduce: read mrtmp.test-63-6
+DoReduce: read mrtmp.test-64-7
+DoReduce: read mrtmp.test-64-6
+DoReduce: read mrtmp.test-65-7
+DoReduce: read mrtmp.test-65-6
+DoReduce: read mrtmp.test-66-7
+DoReduce: read mrtmp.test-66-6
+DoReduce: read mrtmp.test-67-7
+DoReduce: read mrtmp.test-67-6
+DoReduce: read mrtmp.test-68-7
+DoReduce: read mrtmp.test-68-6
+DoReduce: read mrtmp.test-69-7
+DoReduce: read mrtmp.test-69-6
+DoReduce: read mrtmp.test-70-7
+DoReduce: read mrtmp.test-70-6
+DoReduce: read mrtmp.test-71-7
+DoReduce: read mrtmp.test-71-6
+DoReduce: read mrtmp.test-72-7
+DoReduce: read mrtmp.test-72-6
+DoReduce: read mrtmp.test-73-7
+DoReduce: read mrtmp.test-73-6
+DoReduce: read mrtmp.test-74-7
+DoReduce: read mrtmp.test-74-6
+DoReduce: read mrtmp.test-75-7
+DoReduce: read mrtmp.test-75-6
+DoReduce: read mrtmp.test-76-6
+DoReduce: read mrtmp.test-76-7
+DoReduce: read mrtmp.test-77-7
+DoReduce: read mrtmp.test-77-6
+DoReduce: read mrtmp.test-78-7
+DoReduce: read mrtmp.test-78-6
+DoReduce: read mrtmp.test-79-7
+DoReduce: read mrtmp.test-79-6
+DoReduce: read mrtmp.test-80-6
+DoReduce: read mrtmp.test-80-7
+DoReduce: read mrtmp.test-81-6
+DoReduce: read mrtmp.test-81-7
+DoReduce: read mrtmp.test-82-6
+DoReduce: read mrtmp.test-82-7
+DoReduce: read mrtmp.test-83-6
+DoReduce: read mrtmp.test-83-7
+DoReduce: read mrtmp.test-84-6
+DoReduce: read mrtmp.test-84-7
+DoReduce: read mrtmp.test-85-6
+DoReduce: read mrtmp.test-85-7
+DoReduce: read mrtmp.test-86-6
+DoReduce: read mrtmp.test-86-7
+DoReduce: read mrtmp.test-87-7
+DoReduce: read mrtmp.test-87-6
+DoReduce: read mrtmp.test-88-7
+DoReduce: read mrtmp.test-88-6
+DoReduce: read mrtmp.test-89-7
+DoReduce: read mrtmp.test-89-6
+DoReduce: read mrtmp.test-90-7
+DoReduce: read mrtmp.test-90-6
+DoReduce: read mrtmp.test-91-7
+DoReduce: read mrtmp.test-91-6
+DoReduce: read mrtmp.test-92-7
+DoReduce: read mrtmp.test-92-6
+DoReduce: read mrtmp.test-93-7
+DoReduce: read mrtmp.test-93-6
+DoReduce: read mrtmp.test-94-7
+DoReduce: read mrtmp.test-94-6
+DoReduce: read mrtmp.test-95-7
+DoReduce: read mrtmp.test-95-6
+DoReduce: read mrtmp.test-96-7
+DoReduce: read mrtmp.test-96-6
+DoReduce: read mrtmp.test-97-7
+DoReduce: read mrtmp.test-97-6
+DoReduce: read mrtmp.test-98-6
+DoReduce: read mrtmp.test-98-7
+DoReduce: read mrtmp.test-99-6
+DoReduce: read mrtmp.test-99-7
+/var/tmp/824-501/mr24826-worker1: Reduce task #6 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #7 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #9 on file 824-mrinput-9.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker0: given Reduce task #8 on file 824-mrinput-8.txt (nios: 100)
+DoReduce: read mrtmp.test-0-9
+DoReduce: read mrtmp.test-0-8
+DoReduce: read mrtmp.test-1-8
+DoReduce: read mrtmp.test-1-9
+DoReduce: read mrtmp.test-2-8
+DoReduce: read mrtmp.test-2-9
+DoReduce: read mrtmp.test-3-8
+DoReduce: read mrtmp.test-3-9
+DoReduce: read mrtmp.test-4-8
+DoReduce: read mrtmp.test-4-9
+DoReduce: read mrtmp.test-5-8
+DoReduce: read mrtmp.test-5-9
+DoReduce: read mrtmp.test-6-8
+DoReduce: read mrtmp.test-6-9
+DoReduce: read mrtmp.test-7-8
+DoReduce: read mrtmp.test-7-9
+DoReduce: read mrtmp.test-8-8
+DoReduce: read mrtmp.test-8-9
+DoReduce: read mrtmp.test-9-8
+DoReduce: read mrtmp.test-9-9
+DoReduce: read mrtmp.test-10-8
+DoReduce: read mrtmp.test-10-9
+DoReduce: read mrtmp.test-11-8
+DoReduce: read mrtmp.test-11-9
+DoReduce: read mrtmp.test-12-8
+DoReduce: read mrtmp.test-12-9
+DoReduce: read mrtmp.test-13-8
+DoReduce: read mrtmp.test-14-8
+DoReduce: read mrtmp.test-13-9
+DoReduce: read mrtmp.test-15-8
+DoReduce: read mrtmp.test-14-9
+DoReduce: read mrtmp.test-16-8
+DoReduce: read mrtmp.test-15-9
+DoReduce: read mrtmp.test-17-8
+DoReduce: read mrtmp.test-16-9
+DoReduce: read mrtmp.test-18-8
+DoReduce: read mrtmp.test-17-9
+DoReduce: read mrtmp.test-19-8
+DoReduce: read mrtmp.test-18-9
+DoReduce: read mrtmp.test-20-8
+DoReduce: read mrtmp.test-19-9
+DoReduce: read mrtmp.test-21-8
+DoReduce: read mrtmp.test-20-9
+DoReduce: read mrtmp.test-22-8
+DoReduce: read mrtmp.test-21-9
+DoReduce: read mrtmp.test-23-8
+DoReduce: read mrtmp.test-22-9
+DoReduce: read mrtmp.test-24-8
+DoReduce: read mrtmp.test-23-9
+DoReduce: read mrtmp.test-25-8
+DoReduce: read mrtmp.test-24-9
+DoReduce: read mrtmp.test-26-8
+DoReduce: read mrtmp.test-25-9
+DoReduce: read mrtmp.test-27-8
+DoReduce: read mrtmp.test-26-9
+DoReduce: read mrtmp.test-28-8
+DoReduce: read mrtmp.test-27-9
+DoReduce: read mrtmp.test-29-8
+DoReduce: read mrtmp.test-28-9
+DoReduce: read mrtmp.test-30-8
+DoReduce: read mrtmp.test-31-8
+DoReduce: read mrtmp.test-29-9
+DoReduce: read mrtmp.test-32-8
+DoReduce: read mrtmp.test-30-9
+DoReduce: read mrtmp.test-33-8
+DoReduce: read mrtmp.test-34-8
+DoReduce: read mrtmp.test-31-9
+DoReduce: read mrtmp.test-35-8
+DoReduce: read mrtmp.test-32-9
+DoReduce: read mrtmp.test-36-8
+DoReduce: read mrtmp.test-33-9
+DoReduce: read mrtmp.test-37-8
+DoReduce: read mrtmp.test-34-9
+DoReduce: read mrtmp.test-38-8
+DoReduce: read mrtmp.test-35-9
+DoReduce: read mrtmp.test-39-8
+DoReduce: read mrtmp.test-36-9
+DoReduce: read mrtmp.test-40-8
+DoReduce: read mrtmp.test-41-8
+DoReduce: read mrtmp.test-37-9
+DoReduce: read mrtmp.test-42-8
+DoReduce: read mrtmp.test-38-9
+DoReduce: read mrtmp.test-43-8
+DoReduce: read mrtmp.test-39-9
+DoReduce: read mrtmp.test-44-8
+DoReduce: read mrtmp.test-40-9
+DoReduce: read mrtmp.test-45-8
+DoReduce: read mrtmp.test-41-9
+DoReduce: read mrtmp.test-46-8
+DoReduce: read mrtmp.test-42-9
+DoReduce: read mrtmp.test-47-8
+DoReduce: read mrtmp.test-43-9
+DoReduce: read mrtmp.test-48-8
+DoReduce: read mrtmp.test-44-9
+DoReduce: read mrtmp.test-49-8
+DoReduce: read mrtmp.test-45-9
+DoReduce: read mrtmp.test-50-8
+DoReduce: read mrtmp.test-46-9
+DoReduce: read mrtmp.test-51-8
+DoReduce: read mrtmp.test-47-9
+DoReduce: read mrtmp.test-52-8
+DoReduce: read mrtmp.test-48-9
+DoReduce: read mrtmp.test-53-8
+DoReduce: read mrtmp.test-49-9
+DoReduce: read mrtmp.test-54-8
+DoReduce: read mrtmp.test-50-9
+DoReduce: read mrtmp.test-55-8
+DoReduce: read mrtmp.test-51-9
+DoReduce: read mrtmp.test-56-8
+DoReduce: read mrtmp.test-52-9
+DoReduce: read mrtmp.test-57-8
+DoReduce: read mrtmp.test-53-9
+DoReduce: read mrtmp.test-58-8
+DoReduce: read mrtmp.test-54-9
+DoReduce: read mrtmp.test-59-8
+DoReduce: read mrtmp.test-55-9
+DoReduce: read mrtmp.test-60-8
+DoReduce: read mrtmp.test-56-9
+DoReduce: read mrtmp.test-61-8
+DoReduce: read mrtmp.test-57-9
+DoReduce: read mrtmp.test-62-8
+DoReduce: read mrtmp.test-58-9
+DoReduce: read mrtmp.test-63-8
+DoReduce: read mrtmp.test-59-9
+DoReduce: read mrtmp.test-64-8
+DoReduce: read mrtmp.test-60-9
+DoReduce: read mrtmp.test-65-8
+DoReduce: read mrtmp.test-61-9
+DoReduce: read mrtmp.test-66-8
+DoReduce: read mrtmp.test-62-9
+DoReduce: read mrtmp.test-67-8
+DoReduce: read mrtmp.test-63-9
+DoReduce: read mrtmp.test-68-8
+DoReduce: read mrtmp.test-64-9
+DoReduce: read mrtmp.test-69-8
+DoReduce: read mrtmp.test-65-9
+DoReduce: read mrtmp.test-70-8
+DoReduce: read mrtmp.test-66-9
+DoReduce: read mrtmp.test-71-8
+DoReduce: read mrtmp.test-67-9
+DoReduce: read mrtmp.test-72-8
+DoReduce: read mrtmp.test-68-9
+DoReduce: read mrtmp.test-73-8
+DoReduce: read mrtmp.test-69-9
+DoReduce: read mrtmp.test-74-8
+DoReduce: read mrtmp.test-70-9
+DoReduce: read mrtmp.test-75-8
+DoReduce: read mrtmp.test-71-9
+DoReduce: read mrtmp.test-76-8
+DoReduce: read mrtmp.test-72-9
+DoReduce: read mrtmp.test-77-8
+DoReduce: read mrtmp.test-73-9
+DoReduce: read mrtmp.test-78-8
+DoReduce: read mrtmp.test-74-9
+DoReduce: read mrtmp.test-79-8
+DoReduce: read mrtmp.test-75-9
+DoReduce: read mrtmp.test-80-8
+DoReduce: read mrtmp.test-76-9
+DoReduce: read mrtmp.test-81-8
+DoReduce: read mrtmp.test-77-9
+DoReduce: read mrtmp.test-82-8
+DoReduce: read mrtmp.test-78-9
+DoReduce: read mrtmp.test-83-8
+DoReduce: read mrtmp.test-79-9
+DoReduce: read mrtmp.test-84-8
+DoReduce: read mrtmp.test-80-9
+DoReduce: read mrtmp.test-85-8
+DoReduce: read mrtmp.test-81-9
+DoReduce: read mrtmp.test-86-8
+DoReduce: read mrtmp.test-82-9
+DoReduce: read mrtmp.test-87-8
+DoReduce: read mrtmp.test-83-9
+DoReduce: read mrtmp.test-88-8
+DoReduce: read mrtmp.test-84-9
+DoReduce: read mrtmp.test-89-8
+DoReduce: read mrtmp.test-85-9
+DoReduce: read mrtmp.test-86-9
+DoReduce: read mrtmp.test-90-8
+DoReduce: read mrtmp.test-87-9
+DoReduce: read mrtmp.test-91-8
+DoReduce: read mrtmp.test-88-9
+DoReduce: read mrtmp.test-92-8
+DoReduce: read mrtmp.test-89-9
+DoReduce: read mrtmp.test-93-8
+DoReduce: read mrtmp.test-90-9
+DoReduce: read mrtmp.test-94-8
+DoReduce: read mrtmp.test-91-9
+DoReduce: read mrtmp.test-95-8
+DoReduce: read mrtmp.test-92-9
+DoReduce: read mrtmp.test-96-8
+DoReduce: read mrtmp.test-93-9
+DoReduce: read mrtmp.test-97-8
+DoReduce: read mrtmp.test-94-9
+DoReduce: read mrtmp.test-98-8
+DoReduce: read mrtmp.test-95-9
+DoReduce: read mrtmp.test-99-8
+DoReduce: read mrtmp.test-96-9
+DoReduce: read mrtmp.test-97-9
+DoReduce: read mrtmp.test-98-9
+DoReduce: read mrtmp.test-99-9
+/var/tmp/824-501/mr24826-worker0: Reduce task #8 done
+/var/tmp/824-501/mr24826-worker1: Reduce task #9 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #10 on file 824-mrinput-10.txt (nios: 100)
+DoReduce: read mrtmp.test-0-10
+/var/tmp/824-501/mr24826-worker1: given Reduce task #11 on file 824-mrinput-11.txt (nios: 100)
+DoReduce: read mrtmp.test-1-10
+DoReduce: read mrtmp.test-0-11
+DoReduce: read mrtmp.test-2-10
+DoReduce: read mrtmp.test-1-11
+DoReduce: read mrtmp.test-2-11
+DoReduce: read mrtmp.test-3-10
+DoReduce: read mrtmp.test-4-10
+DoReduce: read mrtmp.test-3-11
+DoReduce: read mrtmp.test-4-11
+DoReduce: read mrtmp.test-5-10
+DoReduce: read mrtmp.test-5-11
+DoReduce: read mrtmp.test-6-10
+DoReduce: read mrtmp.test-6-11
+DoReduce: read mrtmp.test-7-10
+DoReduce: read mrtmp.test-7-11
+DoReduce: read mrtmp.test-8-10
+DoReduce: read mrtmp.test-8-11
+DoReduce: read mrtmp.test-9-10
+DoReduce: read mrtmp.test-9-11
+DoReduce: read mrtmp.test-10-10
+DoReduce: read mrtmp.test-10-11
+DoReduce: read mrtmp.test-11-10
+DoReduce: read mrtmp.test-12-10
+DoReduce: read mrtmp.test-11-11
+DoReduce: read mrtmp.test-13-10
+DoReduce: read mrtmp.test-14-10
+DoReduce: read mrtmp.test-12-11
+DoReduce: read mrtmp.test-15-10
+DoReduce: read mrtmp.test-13-11
+DoReduce: read mrtmp.test-14-11
+DoReduce: read mrtmp.test-16-10
+DoReduce: read mrtmp.test-15-11
+DoReduce: read mrtmp.test-17-10
+DoReduce: read mrtmp.test-16-11
+DoReduce: read mrtmp.test-18-10
+DoReduce: read mrtmp.test-17-11
+DoReduce: read mrtmp.test-19-10
+DoReduce: read mrtmp.test-18-11
+DoReduce: read mrtmp.test-20-10
+DoReduce: read mrtmp.test-19-11
+DoReduce: read mrtmp.test-20-11
+DoReduce: read mrtmp.test-21-10
+DoReduce: read mrtmp.test-21-11
+DoReduce: read mrtmp.test-22-10
+DoReduce: read mrtmp.test-23-10
+DoReduce: read mrtmp.test-22-11
+DoReduce: read mrtmp.test-24-10
+DoReduce: read mrtmp.test-23-11
+DoReduce: read mrtmp.test-25-10
+DoReduce: read mrtmp.test-24-11
+DoReduce: read mrtmp.test-26-10
+DoReduce: read mrtmp.test-25-11
+DoReduce: read mrtmp.test-27-10
+DoReduce: read mrtmp.test-26-11
+DoReduce: read mrtmp.test-28-10
+DoReduce: read mrtmp.test-27-11
+DoReduce: read mrtmp.test-29-10
+DoReduce: read mrtmp.test-28-11
+DoReduce: read mrtmp.test-30-10
+DoReduce: read mrtmp.test-29-11
+DoReduce: read mrtmp.test-31-10
+DoReduce: read mrtmp.test-32-10
+DoReduce: read mrtmp.test-30-11
+DoReduce: read mrtmp.test-33-10
+DoReduce: read mrtmp.test-31-11
+DoReduce: read mrtmp.test-34-10
+DoReduce: read mrtmp.test-32-11
+DoReduce: read mrtmp.test-33-11
+DoReduce: read mrtmp.test-35-10
+DoReduce: read mrtmp.test-34-11
+DoReduce: read mrtmp.test-36-10
+DoReduce: read mrtmp.test-35-11
+DoReduce: read mrtmp.test-37-10
+DoReduce: read mrtmp.test-36-11
+DoReduce: read mrtmp.test-38-10
+DoReduce: read mrtmp.test-37-11
+DoReduce: read mrtmp.test-39-10
+DoReduce: read mrtmp.test-40-10
+DoReduce: read mrtmp.test-38-11
+DoReduce: read mrtmp.test-41-10
+DoReduce: read mrtmp.test-39-11
+DoReduce: read mrtmp.test-42-10
+DoReduce: read mrtmp.test-40-11
+DoReduce: read mrtmp.test-41-11
+DoReduce: read mrtmp.test-43-10
+DoReduce: read mrtmp.test-44-10
+DoReduce: read mrtmp.test-42-11
+DoReduce: read mrtmp.test-45-10
+DoReduce: read mrtmp.test-43-11
+DoReduce: read mrtmp.test-46-10
+DoReduce: read mrtmp.test-44-11
+DoReduce: read mrtmp.test-47-10
+DoReduce: read mrtmp.test-45-11
+DoReduce: read mrtmp.test-48-10
+DoReduce: read mrtmp.test-46-11
+DoReduce: read mrtmp.test-49-10
+DoReduce: read mrtmp.test-50-10
+DoReduce: read mrtmp.test-47-11
+DoReduce: read mrtmp.test-51-10
+DoReduce: read mrtmp.test-48-11
+DoReduce: read mrtmp.test-52-10
+DoReduce: read mrtmp.test-49-11
+DoReduce: read mrtmp.test-53-10
+DoReduce: read mrtmp.test-54-10
+DoReduce: read mrtmp.test-50-11
+DoReduce: read mrtmp.test-55-10
+DoReduce: read mrtmp.test-51-11
+DoReduce: read mrtmp.test-56-10
+DoReduce: read mrtmp.test-52-11
+DoReduce: read mrtmp.test-57-10
+DoReduce: read mrtmp.test-53-11
+DoReduce: read mrtmp.test-58-10
+DoReduce: read mrtmp.test-54-11
+DoReduce: read mrtmp.test-59-10
+DoReduce: read mrtmp.test-55-11
+DoReduce: read mrtmp.test-60-10
+DoReduce: read mrtmp.test-56-11
+DoReduce: read mrtmp.test-61-10
+DoReduce: read mrtmp.test-57-11
+DoReduce: read mrtmp.test-62-10
+DoReduce: read mrtmp.test-58-11
+DoReduce: read mrtmp.test-63-10
+DoReduce: read mrtmp.test-59-11
+DoReduce: read mrtmp.test-64-10
+DoReduce: read mrtmp.test-60-11
+DoReduce: read mrtmp.test-65-10
+DoReduce: read mrtmp.test-61-11
+DoReduce: read mrtmp.test-66-10
+DoReduce: read mrtmp.test-62-11
+DoReduce: read mrtmp.test-67-10
+DoReduce: read mrtmp.test-63-11
+DoReduce: read mrtmp.test-68-10
+DoReduce: read mrtmp.test-64-11
+DoReduce: read mrtmp.test-69-10
+DoReduce: read mrtmp.test-65-11
+DoReduce: read mrtmp.test-70-10
+DoReduce: read mrtmp.test-66-11
+DoReduce: read mrtmp.test-71-10
+DoReduce: read mrtmp.test-67-11
+DoReduce: read mrtmp.test-72-10
+DoReduce: read mrtmp.test-68-11
+DoReduce: read mrtmp.test-73-10
+DoReduce: read mrtmp.test-69-11
+DoReduce: read mrtmp.test-74-10
+DoReduce: read mrtmp.test-70-11
+DoReduce: read mrtmp.test-75-10
+DoReduce: read mrtmp.test-71-11
+DoReduce: read mrtmp.test-76-10
+DoReduce: read mrtmp.test-72-11
+DoReduce: read mrtmp.test-77-10
+DoReduce: read mrtmp.test-73-11
+DoReduce: read mrtmp.test-78-10
+DoReduce: read mrtmp.test-74-11
+DoReduce: read mrtmp.test-79-10
+DoReduce: read mrtmp.test-75-11
+DoReduce: read mrtmp.test-80-10
+DoReduce: read mrtmp.test-76-11
+DoReduce: read mrtmp.test-81-10
+DoReduce: read mrtmp.test-77-11
+DoReduce: read mrtmp.test-82-10
+DoReduce: read mrtmp.test-78-11
+DoReduce: read mrtmp.test-83-10
+DoReduce: read mrtmp.test-79-11
+DoReduce: read mrtmp.test-84-10
+DoReduce: read mrtmp.test-80-11
+DoReduce: read mrtmp.test-81-11
+DoReduce: read mrtmp.test-85-10
+DoReduce: read mrtmp.test-82-11
+DoReduce: read mrtmp.test-83-11
+DoReduce: read mrtmp.test-86-10
+DoReduce: read mrtmp.test-84-11
+DoReduce: read mrtmp.test-87-10
+DoReduce: read mrtmp.test-85-11
+DoReduce: read mrtmp.test-88-10
+DoReduce: read mrtmp.test-86-11
+DoReduce: read mrtmp.test-89-10
+DoReduce: read mrtmp.test-87-11
+DoReduce: read mrtmp.test-90-10
+DoReduce: read mrtmp.test-88-11
+DoReduce: read mrtmp.test-91-10
+DoReduce: read mrtmp.test-89-11
+DoReduce: read mrtmp.test-92-10
+DoReduce: read mrtmp.test-90-11
+DoReduce: read mrtmp.test-93-10
+DoReduce: read mrtmp.test-91-11
+DoReduce: read mrtmp.test-94-10
+DoReduce: read mrtmp.test-92-11
+DoReduce: read mrtmp.test-95-10
+DoReduce: read mrtmp.test-93-11
+DoReduce: read mrtmp.test-96-10
+DoReduce: read mrtmp.test-94-11
+DoReduce: read mrtmp.test-97-10
+DoReduce: read mrtmp.test-95-11
+DoReduce: read mrtmp.test-98-10
+DoReduce: read mrtmp.test-96-11
+DoReduce: read mrtmp.test-99-10
+DoReduce: read mrtmp.test-97-11
+DoReduce: read mrtmp.test-98-11
+DoReduce: read mrtmp.test-99-11
+/var/tmp/824-501/mr24826-worker0: Reduce task #10 done
+/var/tmp/824-501/mr24826-worker1: Reduce task #11 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #12 on file 824-mrinput-12.txt (nios: 100)
+DoReduce: read mrtmp.test-0-12
+/var/tmp/824-501/mr24826-worker1: given Reduce task #13 on file 824-mrinput-13.txt (nios: 100)
+DoReduce: read mrtmp.test-0-13
+DoReduce: read mrtmp.test-1-12
+DoReduce: read mrtmp.test-1-13
+DoReduce: read mrtmp.test-2-12
+DoReduce: read mrtmp.test-2-13
+DoReduce: read mrtmp.test-3-12
+DoReduce: read mrtmp.test-3-13
+DoReduce: read mrtmp.test-4-12
+DoReduce: read mrtmp.test-5-12
+DoReduce: read mrtmp.test-4-13
+DoReduce: read mrtmp.test-5-13
+DoReduce: read mrtmp.test-6-12
+DoReduce: read mrtmp.test-7-12
+DoReduce: read mrtmp.test-6-13
+DoReduce: read mrtmp.test-8-12
+DoReduce: read mrtmp.test-7-13
+DoReduce: read mrtmp.test-9-12
+DoReduce: read mrtmp.test-8-13
+DoReduce: read mrtmp.test-10-12
+DoReduce: read mrtmp.test-9-13
+DoReduce: read mrtmp.test-10-13
+DoReduce: read mrtmp.test-11-12
+DoReduce: read mrtmp.test-12-12
+DoReduce: read mrtmp.test-11-13
+DoReduce: read mrtmp.test-13-12
+DoReduce: read mrtmp.test-12-13
+DoReduce: read mrtmp.test-14-12
+DoReduce: read mrtmp.test-13-13
+DoReduce: read mrtmp.test-15-12
+DoReduce: read mrtmp.test-14-13
+DoReduce: read mrtmp.test-16-12
+DoReduce: read mrtmp.test-15-13
+DoReduce: read mrtmp.test-17-12
+DoReduce: read mrtmp.test-16-13
+DoReduce: read mrtmp.test-18-12
+DoReduce: read mrtmp.test-17-13
+DoReduce: read mrtmp.test-19-12
+DoReduce: read mrtmp.test-18-13
+DoReduce: read mrtmp.test-20-12
+DoReduce: read mrtmp.test-19-13
+DoReduce: read mrtmp.test-20-13
+DoReduce: read mrtmp.test-21-12
+DoReduce: read mrtmp.test-21-13
+DoReduce: read mrtmp.test-22-12
+DoReduce: read mrtmp.test-23-12
+DoReduce: read mrtmp.test-22-13
+DoReduce: read mrtmp.test-24-12
+DoReduce: read mrtmp.test-23-13
+DoReduce: read mrtmp.test-25-12
+DoReduce: read mrtmp.test-24-13
+DoReduce: read mrtmp.test-26-12
+DoReduce: read mrtmp.test-27-12
+DoReduce: read mrtmp.test-25-13
+DoReduce: read mrtmp.test-28-12
+DoReduce: read mrtmp.test-26-13
+DoReduce: read mrtmp.test-29-12
+DoReduce: read mrtmp.test-27-13
+DoReduce: read mrtmp.test-30-12
+DoReduce: read mrtmp.test-28-13
+DoReduce: read mrtmp.test-31-12
+DoReduce: read mrtmp.test-29-13
+DoReduce: read mrtmp.test-32-12
+DoReduce: read mrtmp.test-30-13
+DoReduce: read mrtmp.test-33-12
+DoReduce: read mrtmp.test-31-13
+DoReduce: read mrtmp.test-34-12
+DoReduce: read mrtmp.test-32-13
+DoReduce: read mrtmp.test-35-12
+DoReduce: read mrtmp.test-33-13
+DoReduce: read mrtmp.test-36-12
+DoReduce: read mrtmp.test-34-13
+DoReduce: read mrtmp.test-37-12
+DoReduce: read mrtmp.test-35-13
+DoReduce: read mrtmp.test-38-12
+DoReduce: read mrtmp.test-36-13
+DoReduce: read mrtmp.test-39-12
+DoReduce: read mrtmp.test-37-13
+DoReduce: read mrtmp.test-40-12
+DoReduce: read mrtmp.test-38-13
+DoReduce: read mrtmp.test-41-12
+DoReduce: read mrtmp.test-39-13
+DoReduce: read mrtmp.test-42-12
+DoReduce: read mrtmp.test-40-13
+DoReduce: read mrtmp.test-41-13
+DoReduce: read mrtmp.test-43-12
+DoReduce: read mrtmp.test-42-13
+DoReduce: read mrtmp.test-44-12
+DoReduce: read mrtmp.test-43-13
+DoReduce: read mrtmp.test-45-12
+DoReduce: read mrtmp.test-44-13
+DoReduce: read mrtmp.test-46-12
+DoReduce: read mrtmp.test-45-13
+DoReduce: read mrtmp.test-47-12
+DoReduce: read mrtmp.test-46-13
+DoReduce: read mrtmp.test-48-12
+DoReduce: read mrtmp.test-47-13
+DoReduce: read mrtmp.test-49-12
+DoReduce: read mrtmp.test-50-12
+DoReduce: read mrtmp.test-48-13
+DoReduce: read mrtmp.test-51-12
+DoReduce: read mrtmp.test-49-13
+DoReduce: read mrtmp.test-52-12
+DoReduce: read mrtmp.test-50-13
+DoReduce: read mrtmp.test-53-12
+DoReduce: read mrtmp.test-51-13
+DoReduce: read mrtmp.test-54-12
+DoReduce: read mrtmp.test-52-13
+DoReduce: read mrtmp.test-55-12
+DoReduce: read mrtmp.test-53-13
+DoReduce: read mrtmp.test-56-12
+DoReduce: read mrtmp.test-54-13
+DoReduce: read mrtmp.test-57-12
+DoReduce: read mrtmp.test-55-13
+DoReduce: read mrtmp.test-58-12
+DoReduce: read mrtmp.test-56-13
+DoReduce: read mrtmp.test-59-12
+DoReduce: read mrtmp.test-57-13
+DoReduce: read mrtmp.test-60-12
+DoReduce: read mrtmp.test-58-13
+DoReduce: read mrtmp.test-61-12
+DoReduce: read mrtmp.test-59-13
+DoReduce: read mrtmp.test-62-12
+DoReduce: read mrtmp.test-60-13
+DoReduce: read mrtmp.test-63-12
+DoReduce: read mrtmp.test-61-13
+DoReduce: read mrtmp.test-64-12
+DoReduce: read mrtmp.test-62-13
+DoReduce: read mrtmp.test-65-12
+DoReduce: read mrtmp.test-63-13
+DoReduce: read mrtmp.test-66-12
+DoReduce: read mrtmp.test-64-13
+DoReduce: read mrtmp.test-67-12
+DoReduce: read mrtmp.test-65-13
+DoReduce: read mrtmp.test-68-12
+DoReduce: read mrtmp.test-66-13
+DoReduce: read mrtmp.test-69-12
+DoReduce: read mrtmp.test-67-13
+DoReduce: read mrtmp.test-70-12
+DoReduce: read mrtmp.test-68-13
+DoReduce: read mrtmp.test-71-12
+DoReduce: read mrtmp.test-69-13
+DoReduce: read mrtmp.test-72-12
+DoReduce: read mrtmp.test-70-13
+DoReduce: read mrtmp.test-73-12
+DoReduce: read mrtmp.test-71-13
+DoReduce: read mrtmp.test-74-12
+DoReduce: read mrtmp.test-72-13
+DoReduce: read mrtmp.test-75-12
+DoReduce: read mrtmp.test-73-13
+DoReduce: read mrtmp.test-76-12
+DoReduce: read mrtmp.test-74-13
+DoReduce: read mrtmp.test-77-12
+DoReduce: read mrtmp.test-75-13
+DoReduce: read mrtmp.test-78-12
+DoReduce: read mrtmp.test-76-13
+DoReduce: read mrtmp.test-79-12
+DoReduce: read mrtmp.test-77-13
+DoReduce: read mrtmp.test-78-13
+DoReduce: read mrtmp.test-80-12
+DoReduce: read mrtmp.test-79-13
+DoReduce: read mrtmp.test-81-12
+DoReduce: read mrtmp.test-80-13
+DoReduce: read mrtmp.test-82-12
+DoReduce: read mrtmp.test-81-13
+DoReduce: read mrtmp.test-83-12
+DoReduce: read mrtmp.test-82-13
+DoReduce: read mrtmp.test-84-12
+DoReduce: read mrtmp.test-83-13
+DoReduce: read mrtmp.test-85-12
+DoReduce: read mrtmp.test-84-13
+DoReduce: read mrtmp.test-86-12
+DoReduce: read mrtmp.test-85-13
+DoReduce: read mrtmp.test-87-12
+DoReduce: read mrtmp.test-86-13
+DoReduce: read mrtmp.test-88-12
+DoReduce: read mrtmp.test-87-13
+DoReduce: read mrtmp.test-89-12
+DoReduce: read mrtmp.test-88-13
+DoReduce: read mrtmp.test-90-12
+DoReduce: read mrtmp.test-89-13
+DoReduce: read mrtmp.test-91-12
+DoReduce: read mrtmp.test-92-12
+DoReduce: read mrtmp.test-90-13
+DoReduce: read mrtmp.test-93-12
+DoReduce: read mrtmp.test-91-13
+DoReduce: read mrtmp.test-94-12
+DoReduce: read mrtmp.test-92-13
+DoReduce: read mrtmp.test-95-12
+DoReduce: read mrtmp.test-93-13
+DoReduce: read mrtmp.test-96-12
+DoReduce: read mrtmp.test-94-13
+DoReduce: read mrtmp.test-97-12
+DoReduce: read mrtmp.test-95-13
+DoReduce: read mrtmp.test-98-12
+DoReduce: read mrtmp.test-96-13
+DoReduce: read mrtmp.test-99-12
+DoReduce: read mrtmp.test-97-13
+DoReduce: read mrtmp.test-98-13
+DoReduce: read mrtmp.test-99-13
+/var/tmp/824-501/mr24826-worker0: Reduce task #12 done
+/var/tmp/824-501/mr24826-worker1: Reduce task #13 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #14 on file 824-mrinput-14.txt (nios: 100)
+DoReduce: read mrtmp.test-0-14
+DoReduce: read mrtmp.test-1-14
+/var/tmp/824-501/mr24826-worker1: given Reduce task #15 on file 824-mrinput-15.txt (nios: 100)
+DoReduce: read mrtmp.test-0-15
+DoReduce: read mrtmp.test-2-14
+DoReduce: read mrtmp.test-3-14
+DoReduce: read mrtmp.test-1-15
+DoReduce: read mrtmp.test-4-14
+DoReduce: read mrtmp.test-2-15
+DoReduce: read mrtmp.test-5-14
+DoReduce: read mrtmp.test-3-15
+DoReduce: read mrtmp.test-6-14
+DoReduce: read mrtmp.test-4-15
+DoReduce: read mrtmp.test-5-15
+DoReduce: read mrtmp.test-7-14
+DoReduce: read mrtmp.test-8-14
+DoReduce: read mrtmp.test-6-15
+DoReduce: read mrtmp.test-9-14
+DoReduce: read mrtmp.test-7-15
+DoReduce: read mrtmp.test-8-15
+DoReduce: read mrtmp.test-10-14
+DoReduce: read mrtmp.test-9-15
+DoReduce: read mrtmp.test-11-14
+DoReduce: read mrtmp.test-10-15
+DoReduce: read mrtmp.test-12-14
+DoReduce: read mrtmp.test-13-14
+DoReduce: read mrtmp.test-11-15
+DoReduce: read mrtmp.test-14-14
+DoReduce: read mrtmp.test-12-15
+DoReduce: read mrtmp.test-13-15
+DoReduce: read mrtmp.test-15-14
+DoReduce: read mrtmp.test-14-15
+DoReduce: read mrtmp.test-16-14
+DoReduce: read mrtmp.test-15-15
+DoReduce: read mrtmp.test-17-14
+DoReduce: read mrtmp.test-16-15
+DoReduce: read mrtmp.test-18-14
+DoReduce: read mrtmp.test-17-15
+DoReduce: read mrtmp.test-19-14
+DoReduce: read mrtmp.test-18-15
+DoReduce: read mrtmp.test-20-14
+DoReduce: read mrtmp.test-19-15
+DoReduce: read mrtmp.test-21-14
+DoReduce: read mrtmp.test-20-15
+DoReduce: read mrtmp.test-21-15
+DoReduce: read mrtmp.test-22-14
+DoReduce: read mrtmp.test-22-15
+DoReduce: read mrtmp.test-23-14
+DoReduce: read mrtmp.test-23-15
+DoReduce: read mrtmp.test-24-14
+DoReduce: read mrtmp.test-24-15
+DoReduce: read mrtmp.test-25-14
+DoReduce: read mrtmp.test-25-15
+DoReduce: read mrtmp.test-26-14
+DoReduce: read mrtmp.test-26-15
+DoReduce: read mrtmp.test-27-14
+DoReduce: read mrtmp.test-27-15
+DoReduce: read mrtmp.test-28-14
+DoReduce: read mrtmp.test-28-15
+DoReduce: read mrtmp.test-29-14
+DoReduce: read mrtmp.test-29-15
+DoReduce: read mrtmp.test-30-14
+DoReduce: read mrtmp.test-30-15
+DoReduce: read mrtmp.test-31-14
+DoReduce: read mrtmp.test-31-15
+DoReduce: read mrtmp.test-32-15
+DoReduce: read mrtmp.test-32-14
+DoReduce: read mrtmp.test-33-15
+DoReduce: read mrtmp.test-33-14
+DoReduce: read mrtmp.test-34-15
+DoReduce: read mrtmp.test-34-14
+DoReduce: read mrtmp.test-35-14
+DoReduce: read mrtmp.test-35-15
+DoReduce: read mrtmp.test-36-15
+DoReduce: read mrtmp.test-36-14
+DoReduce: read mrtmp.test-37-15
+DoReduce: read mrtmp.test-37-14
+DoReduce: read mrtmp.test-38-15
+DoReduce: read mrtmp.test-38-14
+DoReduce: read mrtmp.test-39-15
+DoReduce: read mrtmp.test-39-14
+DoReduce: read mrtmp.test-40-15
+DoReduce: read mrtmp.test-40-14
+DoReduce: read mrtmp.test-41-15
+DoReduce: read mrtmp.test-42-15
+DoReduce: read mrtmp.test-41-14
+DoReduce: read mrtmp.test-43-15
+DoReduce: read mrtmp.test-42-14
+DoReduce: read mrtmp.test-44-15
+DoReduce: read mrtmp.test-43-14
+DoReduce: read mrtmp.test-45-15
+DoReduce: read mrtmp.test-44-14
+DoReduce: read mrtmp.test-46-15
+DoReduce: read mrtmp.test-45-14
+DoReduce: read mrtmp.test-47-15
+DoReduce: read mrtmp.test-46-14
+DoReduce: read mrtmp.test-48-15
+DoReduce: read mrtmp.test-47-14
+DoReduce: read mrtmp.test-49-15
+DoReduce: read mrtmp.test-48-14
+DoReduce: read mrtmp.test-50-15
+DoReduce: read mrtmp.test-49-14
+DoReduce: read mrtmp.test-51-15
+DoReduce: read mrtmp.test-50-14
+DoReduce: read mrtmp.test-52-15
+DoReduce: read mrtmp.test-51-14
+DoReduce: read mrtmp.test-53-15
+DoReduce: read mrtmp.test-52-14
+DoReduce: read mrtmp.test-54-15
+DoReduce: read mrtmp.test-53-14
+DoReduce: read mrtmp.test-55-15
+DoReduce: read mrtmp.test-54-14
+DoReduce: read mrtmp.test-56-15
+DoReduce: read mrtmp.test-55-14
+DoReduce: read mrtmp.test-57-15
+DoReduce: read mrtmp.test-56-14
+DoReduce: read mrtmp.test-58-15
+DoReduce: read mrtmp.test-57-14
+DoReduce: read mrtmp.test-59-15
+DoReduce: read mrtmp.test-58-14
+DoReduce: read mrtmp.test-60-15
+DoReduce: read mrtmp.test-59-14
+DoReduce: read mrtmp.test-61-15
+DoReduce: read mrtmp.test-60-14
+DoReduce: read mrtmp.test-62-15
+DoReduce: read mrtmp.test-61-14
+DoReduce: read mrtmp.test-63-15
+DoReduce: read mrtmp.test-62-14
+DoReduce: read mrtmp.test-64-15
+DoReduce: read mrtmp.test-63-14
+DoReduce: read mrtmp.test-65-15
+DoReduce: read mrtmp.test-64-14
+DoReduce: read mrtmp.test-66-15
+DoReduce: read mrtmp.test-65-14
+DoReduce: read mrtmp.test-67-15
+DoReduce: read mrtmp.test-68-15
+DoReduce: read mrtmp.test-66-14
+DoReduce: read mrtmp.test-69-15
+DoReduce: read mrtmp.test-67-14
+DoReduce: read mrtmp.test-70-15
+DoReduce: read mrtmp.test-71-15
+DoReduce: read mrtmp.test-68-14
+DoReduce: read mrtmp.test-72-15
+DoReduce: read mrtmp.test-69-14
+DoReduce: read mrtmp.test-73-15
+DoReduce: read mrtmp.test-70-14
+DoReduce: read mrtmp.test-74-15
+DoReduce: read mrtmp.test-75-15
+DoReduce: read mrtmp.test-71-14
+DoReduce: read mrtmp.test-76-15
+DoReduce: read mrtmp.test-77-15
+DoReduce: read mrtmp.test-72-14
+DoReduce: read mrtmp.test-73-14
+DoReduce: read mrtmp.test-78-15
+DoReduce: read mrtmp.test-74-14
+DoReduce: read mrtmp.test-79-15
+DoReduce: read mrtmp.test-75-14
+DoReduce: read mrtmp.test-76-14
+DoReduce: read mrtmp.test-80-15
+DoReduce: read mrtmp.test-77-14
+DoReduce: read mrtmp.test-78-14
+DoReduce: read mrtmp.test-81-15
+DoReduce: read mrtmp.test-79-14
+DoReduce: read mrtmp.test-82-15
+DoReduce: read mrtmp.test-83-15
+DoReduce: read mrtmp.test-80-14
+DoReduce: read mrtmp.test-84-15
+DoReduce: read mrtmp.test-81-14
+DoReduce: read mrtmp.test-85-15
+DoReduce: read mrtmp.test-82-14
+DoReduce: read mrtmp.test-86-15
+DoReduce: read mrtmp.test-83-14
+DoReduce: read mrtmp.test-87-15
+DoReduce: read mrtmp.test-84-14
+DoReduce: read mrtmp.test-88-15
+DoReduce: read mrtmp.test-85-14
+DoReduce: read mrtmp.test-89-15
+DoReduce: read mrtmp.test-86-14
+DoReduce: read mrtmp.test-90-15
+DoReduce: read mrtmp.test-87-14
+DoReduce: read mrtmp.test-88-14
+DoReduce: read mrtmp.test-91-15
+DoReduce: read mrtmp.test-89-14
+DoReduce: read mrtmp.test-92-15
+DoReduce: read mrtmp.test-90-14
+DoReduce: read mrtmp.test-93-15
+DoReduce: read mrtmp.test-91-14
+DoReduce: read mrtmp.test-94-15
+DoReduce: read mrtmp.test-92-14
+DoReduce: read mrtmp.test-95-15
+DoReduce: read mrtmp.test-93-14
+DoReduce: read mrtmp.test-96-15
+DoReduce: read mrtmp.test-94-14
+DoReduce: read mrtmp.test-97-15
+DoReduce: read mrtmp.test-95-14
+DoReduce: read mrtmp.test-98-15
+DoReduce: read mrtmp.test-96-14
+DoReduce: read mrtmp.test-99-15
+DoReduce: read mrtmp.test-97-14
+DoReduce: read mrtmp.test-98-14
+DoReduce: read mrtmp.test-99-14
+/var/tmp/824-501/mr24826-worker1: Reduce task #15 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #14 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #16 on file 824-mrinput-16.txt (nios: 100)
+DoReduce: read mrtmp.test-0-16
+DoReduce: read mrtmp.test-1-16
+/var/tmp/824-501/mr24826-worker0: given Reduce task #17 on file 824-mrinput-17.txt (nios: 100)
+DoReduce: read mrtmp.test-2-16
+DoReduce: read mrtmp.test-0-17
+DoReduce: read mrtmp.test-3-16
+DoReduce: read mrtmp.test-1-17
+DoReduce: read mrtmp.test-4-16
+DoReduce: read mrtmp.test-2-17
+DoReduce: read mrtmp.test-5-16
+DoReduce: read mrtmp.test-6-16
+DoReduce: read mrtmp.test-3-17
+DoReduce: read mrtmp.test-4-17
+DoReduce: read mrtmp.test-7-16
+DoReduce: read mrtmp.test-5-17
+DoReduce: read mrtmp.test-8-16
+DoReduce: read mrtmp.test-9-16
+DoReduce: read mrtmp.test-6-17
+DoReduce: read mrtmp.test-10-16
+DoReduce: read mrtmp.test-7-17
+DoReduce: read mrtmp.test-11-16
+DoReduce: read mrtmp.test-8-17
+DoReduce: read mrtmp.test-9-17
+DoReduce: read mrtmp.test-12-16
+DoReduce: read mrtmp.test-10-17
+DoReduce: read mrtmp.test-13-16
+DoReduce: read mrtmp.test-11-17
+DoReduce: read mrtmp.test-14-16
+DoReduce: read mrtmp.test-12-17
+DoReduce: read mrtmp.test-15-16
+DoReduce: read mrtmp.test-13-17
+DoReduce: read mrtmp.test-16-16
+DoReduce: read mrtmp.test-14-17
+DoReduce: read mrtmp.test-17-16
+DoReduce: read mrtmp.test-15-17
+DoReduce: read mrtmp.test-18-16
+DoReduce: read mrtmp.test-16-17
+DoReduce: read mrtmp.test-19-16
+DoReduce: read mrtmp.test-17-17
+DoReduce: read mrtmp.test-20-16
+DoReduce: read mrtmp.test-18-17
+DoReduce: read mrtmp.test-21-16
+DoReduce: read mrtmp.test-19-17
+DoReduce: read mrtmp.test-22-16
+DoReduce: read mrtmp.test-20-17
+DoReduce: read mrtmp.test-23-16
+DoReduce: read mrtmp.test-21-17
+DoReduce: read mrtmp.test-24-16
+DoReduce: read mrtmp.test-22-17
+DoReduce: read mrtmp.test-25-16
+DoReduce: read mrtmp.test-23-17
+DoReduce: read mrtmp.test-26-16
+DoReduce: read mrtmp.test-24-17
+DoReduce: read mrtmp.test-27-16
+DoReduce: read mrtmp.test-25-17
+DoReduce: read mrtmp.test-28-16
+DoReduce: read mrtmp.test-26-17
+DoReduce: read mrtmp.test-29-16
+DoReduce: read mrtmp.test-27-17
+DoReduce: read mrtmp.test-30-16
+DoReduce: read mrtmp.test-28-17
+DoReduce: read mrtmp.test-31-16
+DoReduce: read mrtmp.test-29-17
+DoReduce: read mrtmp.test-32-16
+DoReduce: read mrtmp.test-30-17
+DoReduce: read mrtmp.test-33-16
+DoReduce: read mrtmp.test-31-17
+DoReduce: read mrtmp.test-34-16
+DoReduce: read mrtmp.test-32-17
+DoReduce: read mrtmp.test-35-16
+DoReduce: read mrtmp.test-33-17
+DoReduce: read mrtmp.test-36-16
+DoReduce: read mrtmp.test-37-16
+DoReduce: read mrtmp.test-34-17
+DoReduce: read mrtmp.test-38-16
+DoReduce: read mrtmp.test-35-17
+DoReduce: read mrtmp.test-39-16
+DoReduce: read mrtmp.test-36-17
+DoReduce: read mrtmp.test-40-16
+DoReduce: read mrtmp.test-37-17
+DoReduce: read mrtmp.test-38-17
+DoReduce: read mrtmp.test-41-16
+DoReduce: read mrtmp.test-39-17
+DoReduce: read mrtmp.test-42-16
+DoReduce: read mrtmp.test-40-17
+DoReduce: read mrtmp.test-41-17
+DoReduce: read mrtmp.test-43-16
+DoReduce: read mrtmp.test-42-17
+DoReduce: read mrtmp.test-44-16
+DoReduce: read mrtmp.test-43-17
+DoReduce: read mrtmp.test-45-16
+DoReduce: read mrtmp.test-46-16
+DoReduce: read mrtmp.test-44-17
+DoReduce: read mrtmp.test-47-16
+DoReduce: read mrtmp.test-45-17
+DoReduce: read mrtmp.test-48-16
+DoReduce: read mrtmp.test-46-17
+DoReduce: read mrtmp.test-49-16
+DoReduce: read mrtmp.test-47-17
+DoReduce: read mrtmp.test-50-16
+DoReduce: read mrtmp.test-48-17
+DoReduce: read mrtmp.test-51-16
+DoReduce: read mrtmp.test-49-17
+DoReduce: read mrtmp.test-52-16
+DoReduce: read mrtmp.test-53-16
+DoReduce: read mrtmp.test-50-17
+DoReduce: read mrtmp.test-54-16
+DoReduce: read mrtmp.test-51-17
+DoReduce: read mrtmp.test-55-16
+DoReduce: read mrtmp.test-52-17
+DoReduce: read mrtmp.test-56-16
+DoReduce: read mrtmp.test-53-17
+DoReduce: read mrtmp.test-57-16
+DoReduce: read mrtmp.test-54-17
+DoReduce: read mrtmp.test-58-16
+DoReduce: read mrtmp.test-55-17
+DoReduce: read mrtmp.test-59-16
+DoReduce: read mrtmp.test-56-17
+DoReduce: read mrtmp.test-60-16
+DoReduce: read mrtmp.test-57-17
+DoReduce: read mrtmp.test-61-16
+DoReduce: read mrtmp.test-58-17
+DoReduce: read mrtmp.test-62-16
+DoReduce: read mrtmp.test-59-17
+DoReduce: read mrtmp.test-63-16
+DoReduce: read mrtmp.test-60-17
+DoReduce: read mrtmp.test-64-16
+DoReduce: read mrtmp.test-61-17
+DoReduce: read mrtmp.test-65-16
+DoReduce: read mrtmp.test-62-17
+DoReduce: read mrtmp.test-66-16
+DoReduce: read mrtmp.test-63-17
+DoReduce: read mrtmp.test-64-17
+DoReduce: read mrtmp.test-67-16
+DoReduce: read mrtmp.test-68-16
+DoReduce: read mrtmp.test-65-17
+DoReduce: read mrtmp.test-69-16
+DoReduce: read mrtmp.test-66-17
+DoReduce: read mrtmp.test-70-16
+DoReduce: read mrtmp.test-67-17
+DoReduce: read mrtmp.test-68-17
+DoReduce: read mrtmp.test-71-16
+DoReduce: read mrtmp.test-72-16
+DoReduce: read mrtmp.test-69-17
+DoReduce: read mrtmp.test-70-17
+DoReduce: read mrtmp.test-73-16
+DoReduce: read mrtmp.test-71-17
+DoReduce: read mrtmp.test-74-16
+DoReduce: read mrtmp.test-72-17
+DoReduce: read mrtmp.test-75-16
+DoReduce: read mrtmp.test-76-16
+DoReduce: read mrtmp.test-73-17
+DoReduce: read mrtmp.test-74-17
+DoReduce: read mrtmp.test-77-16
+DoReduce: read mrtmp.test-75-17
+DoReduce: read mrtmp.test-78-16
+DoReduce: read mrtmp.test-76-17
+DoReduce: read mrtmp.test-79-16
+DoReduce: read mrtmp.test-77-17
+DoReduce: read mrtmp.test-80-16
+DoReduce: read mrtmp.test-78-17
+DoReduce: read mrtmp.test-81-16
+DoReduce: read mrtmp.test-79-17
+DoReduce: read mrtmp.test-82-16
+DoReduce: read mrtmp.test-80-17
+DoReduce: read mrtmp.test-81-17
+DoReduce: read mrtmp.test-83-16
+DoReduce: read mrtmp.test-82-17
+DoReduce: read mrtmp.test-84-16
+DoReduce: read mrtmp.test-83-17
+DoReduce: read mrtmp.test-84-17
+DoReduce: read mrtmp.test-85-16
+DoReduce: read mrtmp.test-85-17
+DoReduce: read mrtmp.test-86-16
+DoReduce: read mrtmp.test-87-16
+DoReduce: read mrtmp.test-88-16
+DoReduce: read mrtmp.test-86-17
+DoReduce: read mrtmp.test-89-16
+DoReduce: read mrtmp.test-87-17
+DoReduce: read mrtmp.test-90-16
+DoReduce: read mrtmp.test-88-17
+DoReduce: read mrtmp.test-91-16
+DoReduce: read mrtmp.test-89-17
+DoReduce: read mrtmp.test-92-16
+DoReduce: read mrtmp.test-90-17
+DoReduce: read mrtmp.test-93-16
+DoReduce: read mrtmp.test-91-17
+DoReduce: read mrtmp.test-94-16
+DoReduce: read mrtmp.test-92-17
+DoReduce: read mrtmp.test-95-16
+DoReduce: read mrtmp.test-93-17
+DoReduce: read mrtmp.test-96-16
+DoReduce: read mrtmp.test-94-17
+DoReduce: read mrtmp.test-97-16
+DoReduce: read mrtmp.test-98-16
+DoReduce: read mrtmp.test-95-17
+DoReduce: read mrtmp.test-99-16
+DoReduce: read mrtmp.test-96-17
+DoReduce: read mrtmp.test-97-17
+DoReduce: read mrtmp.test-98-17
+DoReduce: read mrtmp.test-99-17
+/var/tmp/824-501/mr24826-worker0: Reduce task #17 done
+/var/tmp/824-501/mr24826-worker1: Reduce task #16 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #19 on file 824-mrinput-19.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker0: given Reduce task #18 on file 824-mrinput-18.txt (nios: 100)
+DoReduce: read mrtmp.test-0-19
+DoReduce: read mrtmp.test-0-18
+DoReduce: read mrtmp.test-1-19
+DoReduce: read mrtmp.test-1-18
+DoReduce: read mrtmp.test-2-18
+DoReduce: read mrtmp.test-2-19
+DoReduce: read mrtmp.test-3-18
+DoReduce: read mrtmp.test-3-19
+DoReduce: read mrtmp.test-4-18
+DoReduce: read mrtmp.test-4-19
+DoReduce: read mrtmp.test-5-19
+DoReduce: read mrtmp.test-5-18
+DoReduce: read mrtmp.test-6-19
+DoReduce: read mrtmp.test-6-18
+DoReduce: read mrtmp.test-7-19
+DoReduce: read mrtmp.test-7-18
+DoReduce: read mrtmp.test-8-19
+DoReduce: read mrtmp.test-8-18
+DoReduce: read mrtmp.test-9-19
+DoReduce: read mrtmp.test-9-18
+DoReduce: read mrtmp.test-10-19
+DoReduce: read mrtmp.test-10-18
+DoReduce: read mrtmp.test-11-19
+DoReduce: read mrtmp.test-11-18
+DoReduce: read mrtmp.test-12-19
+DoReduce: read mrtmp.test-12-18
+DoReduce: read mrtmp.test-13-19
+DoReduce: read mrtmp.test-13-18
+DoReduce: read mrtmp.test-14-19
+DoReduce: read mrtmp.test-14-18
+DoReduce: read mrtmp.test-15-19
+DoReduce: read mrtmp.test-15-18
+DoReduce: read mrtmp.test-16-19
+DoReduce: read mrtmp.test-16-18
+DoReduce: read mrtmp.test-17-19
+DoReduce: read mrtmp.test-17-18
+DoReduce: read mrtmp.test-18-19
+DoReduce: read mrtmp.test-18-18
+DoReduce: read mrtmp.test-19-19
+DoReduce: read mrtmp.test-19-18
+DoReduce: read mrtmp.test-20-19
+DoReduce: read mrtmp.test-20-18
+DoReduce: read mrtmp.test-21-19
+DoReduce: read mrtmp.test-21-18
+DoReduce: read mrtmp.test-22-19
+DoReduce: read mrtmp.test-22-18
+DoReduce: read mrtmp.test-23-19
+DoReduce: read mrtmp.test-23-18
+DoReduce: read mrtmp.test-24-19
+DoReduce: read mrtmp.test-24-18
+DoReduce: read mrtmp.test-25-19
+DoReduce: read mrtmp.test-25-18
+DoReduce: read mrtmp.test-26-19
+DoReduce: read mrtmp.test-26-18
+DoReduce: read mrtmp.test-27-19
+DoReduce: read mrtmp.test-27-18
+DoReduce: read mrtmp.test-28-19
+DoReduce: read mrtmp.test-28-18
+DoReduce: read mrtmp.test-29-19
+DoReduce: read mrtmp.test-29-18
+DoReduce: read mrtmp.test-30-19
+DoReduce: read mrtmp.test-30-18
+DoReduce: read mrtmp.test-31-19
+DoReduce: read mrtmp.test-31-18
+DoReduce: read mrtmp.test-32-19
+DoReduce: read mrtmp.test-32-18
+DoReduce: read mrtmp.test-33-19
+DoReduce: read mrtmp.test-33-18
+DoReduce: read mrtmp.test-34-19
+DoReduce: read mrtmp.test-34-18
+DoReduce: read mrtmp.test-35-19
+DoReduce: read mrtmp.test-35-18
+DoReduce: read mrtmp.test-36-19
+DoReduce: read mrtmp.test-37-19
+DoReduce: read mrtmp.test-36-18
+DoReduce: read mrtmp.test-38-19
+DoReduce: read mrtmp.test-37-18
+DoReduce: read mrtmp.test-39-19
+DoReduce: read mrtmp.test-38-18
+DoReduce: read mrtmp.test-40-19
+DoReduce: read mrtmp.test-39-18
+DoReduce: read mrtmp.test-40-18
+DoReduce: read mrtmp.test-41-19
+DoReduce: read mrtmp.test-41-18
+DoReduce: read mrtmp.test-42-19
+DoReduce: read mrtmp.test-43-19
+DoReduce: read mrtmp.test-42-18
+DoReduce: read mrtmp.test-44-19
+DoReduce: read mrtmp.test-43-18
+DoReduce: read mrtmp.test-45-19
+DoReduce: read mrtmp.test-44-18
+DoReduce: read mrtmp.test-45-18
+DoReduce: read mrtmp.test-46-19
+DoReduce: read mrtmp.test-46-18
+DoReduce: read mrtmp.test-47-19
+DoReduce: read mrtmp.test-47-18
+DoReduce: read mrtmp.test-48-19
+DoReduce: read mrtmp.test-48-18
+DoReduce: read mrtmp.test-49-19
+DoReduce: read mrtmp.test-49-18
+DoReduce: read mrtmp.test-50-19
+DoReduce: read mrtmp.test-50-18
+DoReduce: read mrtmp.test-51-19
+DoReduce: read mrtmp.test-52-19
+DoReduce: read mrtmp.test-51-18
+DoReduce: read mrtmp.test-52-18
+DoReduce: read mrtmp.test-53-19
+DoReduce: read mrtmp.test-53-18
+DoReduce: read mrtmp.test-54-19
+DoReduce: read mrtmp.test-54-18
+DoReduce: read mrtmp.test-55-19
+DoReduce: read mrtmp.test-55-18
+DoReduce: read mrtmp.test-56-19
+DoReduce: read mrtmp.test-56-18
+DoReduce: read mrtmp.test-57-19
+DoReduce: read mrtmp.test-57-18
+DoReduce: read mrtmp.test-58-19
+DoReduce: read mrtmp.test-59-19
+DoReduce: read mrtmp.test-58-18
+DoReduce: read mrtmp.test-60-19
+DoReduce: read mrtmp.test-59-18
+DoReduce: read mrtmp.test-61-19
+DoReduce: read mrtmp.test-60-18
+DoReduce: read mrtmp.test-62-19
+DoReduce: read mrtmp.test-61-18
+DoReduce: read mrtmp.test-63-19
+DoReduce: read mrtmp.test-62-18
+DoReduce: read mrtmp.test-64-19
+DoReduce: read mrtmp.test-63-18
+DoReduce: read mrtmp.test-65-19
+DoReduce: read mrtmp.test-64-18
+DoReduce: read mrtmp.test-66-19
+DoReduce: read mrtmp.test-65-18
+DoReduce: read mrtmp.test-67-19
+DoReduce: read mrtmp.test-66-18
+DoReduce: read mrtmp.test-68-19
+DoReduce: read mrtmp.test-67-18
+DoReduce: read mrtmp.test-69-19
+DoReduce: read mrtmp.test-68-18
+DoReduce: read mrtmp.test-70-19
+DoReduce: read mrtmp.test-69-18
+DoReduce: read mrtmp.test-71-19
+DoReduce: read mrtmp.test-72-19
+DoReduce: read mrtmp.test-70-18
+DoReduce: read mrtmp.test-73-19
+DoReduce: read mrtmp.test-71-18
+DoReduce: read mrtmp.test-74-19
+DoReduce: read mrtmp.test-72-18
+DoReduce: read mrtmp.test-75-19
+DoReduce: read mrtmp.test-73-18
+DoReduce: read mrtmp.test-74-18
+DoReduce: read mrtmp.test-76-19
+DoReduce: read mrtmp.test-75-18
+DoReduce: read mrtmp.test-77-19
+DoReduce: read mrtmp.test-76-18
+DoReduce: read mrtmp.test-78-19
+DoReduce: read mrtmp.test-77-18
+DoReduce: read mrtmp.test-79-19
+DoReduce: read mrtmp.test-78-18
+DoReduce: read mrtmp.test-80-19
+DoReduce: read mrtmp.test-79-18
+DoReduce: read mrtmp.test-81-19
+DoReduce: read mrtmp.test-80-18
+DoReduce: read mrtmp.test-82-19
+DoReduce: read mrtmp.test-81-18
+DoReduce: read mrtmp.test-83-19
+DoReduce: read mrtmp.test-82-18
+DoReduce: read mrtmp.test-84-19
+DoReduce: read mrtmp.test-83-18
+DoReduce: read mrtmp.test-85-19
+DoReduce: read mrtmp.test-86-19
+DoReduce: read mrtmp.test-84-18
+DoReduce: read mrtmp.test-87-19
+DoReduce: read mrtmp.test-85-18
+DoReduce: read mrtmp.test-88-19
+DoReduce: read mrtmp.test-86-18
+DoReduce: read mrtmp.test-89-19
+DoReduce: read mrtmp.test-87-18
+DoReduce: read mrtmp.test-90-19
+DoReduce: read mrtmp.test-88-18
+DoReduce: read mrtmp.test-91-19
+DoReduce: read mrtmp.test-89-18
+DoReduce: read mrtmp.test-92-19
+DoReduce: read mrtmp.test-90-18
+DoReduce: read mrtmp.test-93-19
+DoReduce: read mrtmp.test-91-18
+DoReduce: read mrtmp.test-94-19
+DoReduce: read mrtmp.test-92-18
+DoReduce: read mrtmp.test-95-19
+DoReduce: read mrtmp.test-93-18
+DoReduce: read mrtmp.test-96-19
+DoReduce: read mrtmp.test-94-18
+DoReduce: read mrtmp.test-97-19
+DoReduce: read mrtmp.test-95-18
+DoReduce: read mrtmp.test-98-19
+DoReduce: read mrtmp.test-96-18
+DoReduce: read mrtmp.test-99-19
+DoReduce: read mrtmp.test-97-18
+DoReduce: read mrtmp.test-98-18
+DoReduce: read mrtmp.test-99-18
+/var/tmp/824-501/mr24826-worker1: Reduce task #19 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: Reduce task #18 done
+/var/tmp/824-501/mr24826-worker1: given Reduce task #20 on file 824-mrinput-20.txt (nios: 100)
+DoReduce: read mrtmp.test-0-20
+DoReduce: read mrtmp.test-1-20
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-2-20
+DoReduce: read mrtmp.test-3-20
+DoReduce: read mrtmp.test-4-20
+/var/tmp/824-501/mr24826-worker0: given Reduce task #21 on file 824-mrinput-21.txt (nios: 100)
+DoReduce: read mrtmp.test-5-20
+DoReduce: read mrtmp.test-0-21
+DoReduce: read mrtmp.test-6-20
+DoReduce: read mrtmp.test-1-21
+DoReduce: read mrtmp.test-7-20
+DoReduce: read mrtmp.test-2-21
+DoReduce: read mrtmp.test-8-20
+DoReduce: read mrtmp.test-3-21
+DoReduce: read mrtmp.test-9-20
+DoReduce: read mrtmp.test-4-21
+DoReduce: read mrtmp.test-10-20
+DoReduce: read mrtmp.test-5-21
+DoReduce: read mrtmp.test-11-20
+DoReduce: read mrtmp.test-6-21
+DoReduce: read mrtmp.test-12-20
+DoReduce: read mrtmp.test-7-21
+DoReduce: read mrtmp.test-13-20
+DoReduce: read mrtmp.test-8-21
+DoReduce: read mrtmp.test-14-20
+DoReduce: read mrtmp.test-9-21
+DoReduce: read mrtmp.test-15-20
+DoReduce: read mrtmp.test-10-21
+DoReduce: read mrtmp.test-16-20
+DoReduce: read mrtmp.test-11-21
+DoReduce: read mrtmp.test-17-20
+DoReduce: read mrtmp.test-18-20
+DoReduce: read mrtmp.test-12-21
+DoReduce: read mrtmp.test-19-20
+DoReduce: read mrtmp.test-13-21
+DoReduce: read mrtmp.test-20-20
+DoReduce: read mrtmp.test-14-21
+DoReduce: read mrtmp.test-21-20
+DoReduce: read mrtmp.test-15-21
+DoReduce: read mrtmp.test-22-20
+DoReduce: read mrtmp.test-16-21
+DoReduce: read mrtmp.test-23-20
+DoReduce: read mrtmp.test-17-21
+DoReduce: read mrtmp.test-24-20
+DoReduce: read mrtmp.test-18-21
+DoReduce: read mrtmp.test-25-20
+DoReduce: read mrtmp.test-19-21
+DoReduce: read mrtmp.test-26-20
+DoReduce: read mrtmp.test-20-21
+DoReduce: read mrtmp.test-27-20
+DoReduce: read mrtmp.test-21-21
+DoReduce: read mrtmp.test-28-20
+DoReduce: read mrtmp.test-29-20
+DoReduce: read mrtmp.test-22-21
+DoReduce: read mrtmp.test-30-20
+DoReduce: read mrtmp.test-23-21
+DoReduce: read mrtmp.test-31-20
+DoReduce: read mrtmp.test-24-21
+DoReduce: read mrtmp.test-32-20
+DoReduce: read mrtmp.test-25-21
+DoReduce: read mrtmp.test-33-20
+DoReduce: read mrtmp.test-26-21
+DoReduce: read mrtmp.test-34-20
+DoReduce: read mrtmp.test-27-21
+DoReduce: read mrtmp.test-35-20
+DoReduce: read mrtmp.test-28-21
+DoReduce: read mrtmp.test-36-20
+DoReduce: read mrtmp.test-37-20
+DoReduce: read mrtmp.test-29-21
+DoReduce: read mrtmp.test-38-20
+DoReduce: read mrtmp.test-30-21
+DoReduce: read mrtmp.test-39-20
+DoReduce: read mrtmp.test-31-21
+DoReduce: read mrtmp.test-40-20
+DoReduce: read mrtmp.test-32-21
+DoReduce: read mrtmp.test-41-20
+DoReduce: read mrtmp.test-33-21
+DoReduce: read mrtmp.test-42-20
+DoReduce: read mrtmp.test-34-21
+DoReduce: read mrtmp.test-43-20
+DoReduce: read mrtmp.test-35-21
+DoReduce: read mrtmp.test-44-20
+DoReduce: read mrtmp.test-36-21
+DoReduce: read mrtmp.test-37-21
+DoReduce: read mrtmp.test-45-20
+DoReduce: read mrtmp.test-38-21
+DoReduce: read mrtmp.test-46-20
+DoReduce: read mrtmp.test-39-21
+DoReduce: read mrtmp.test-47-20
+DoReduce: read mrtmp.test-48-20
+DoReduce: read mrtmp.test-40-21
+DoReduce: read mrtmp.test-49-20
+DoReduce: read mrtmp.test-41-21
+DoReduce: read mrtmp.test-50-20
+DoReduce: read mrtmp.test-42-21
+DoReduce: read mrtmp.test-51-20
+DoReduce: read mrtmp.test-43-21
+DoReduce: read mrtmp.test-52-20
+DoReduce: read mrtmp.test-53-20
+DoReduce: read mrtmp.test-44-21
+DoReduce: read mrtmp.test-54-20
+DoReduce: read mrtmp.test-45-21
+DoReduce: read mrtmp.test-55-20
+DoReduce: read mrtmp.test-46-21
+DoReduce: read mrtmp.test-56-20
+DoReduce: read mrtmp.test-47-21
+DoReduce: read mrtmp.test-57-20
+DoReduce: read mrtmp.test-58-20
+DoReduce: read mrtmp.test-48-21
+DoReduce: read mrtmp.test-59-20
+DoReduce: read mrtmp.test-60-20
+DoReduce: read mrtmp.test-49-21
+DoReduce: read mrtmp.test-50-21
+DoReduce: read mrtmp.test-61-20
+DoReduce: read mrtmp.test-51-21
+DoReduce: read mrtmp.test-52-21
+DoReduce: read mrtmp.test-62-20
+DoReduce: read mrtmp.test-63-20
+DoReduce: read mrtmp.test-53-21
+DoReduce: read mrtmp.test-64-20
+DoReduce: read mrtmp.test-54-21
+DoReduce: read mrtmp.test-65-20
+DoReduce: read mrtmp.test-66-20
+DoReduce: read mrtmp.test-55-21
+DoReduce: read mrtmp.test-67-20
+DoReduce: read mrtmp.test-56-21
+DoReduce: read mrtmp.test-68-20
+DoReduce: read mrtmp.test-57-21
+DoReduce: read mrtmp.test-69-20
+DoReduce: read mrtmp.test-70-20
+DoReduce: read mrtmp.test-58-21
+DoReduce: read mrtmp.test-59-21
+DoReduce: read mrtmp.test-71-20
+DoReduce: read mrtmp.test-60-21
+DoReduce: read mrtmp.test-72-20
+DoReduce: read mrtmp.test-61-21
+DoReduce: read mrtmp.test-73-20
+DoReduce: read mrtmp.test-62-21
+DoReduce: read mrtmp.test-74-20
+DoReduce: read mrtmp.test-63-21
+DoReduce: read mrtmp.test-75-20
+DoReduce: read mrtmp.test-64-21
+DoReduce: read mrtmp.test-76-20
+DoReduce: read mrtmp.test-65-21
+DoReduce: read mrtmp.test-77-20
+DoReduce: read mrtmp.test-66-21
+DoReduce: read mrtmp.test-78-20
+DoReduce: read mrtmp.test-67-21
+DoReduce: read mrtmp.test-79-20
+DoReduce: read mrtmp.test-68-21
+DoReduce: read mrtmp.test-80-20
+DoReduce: read mrtmp.test-69-21
+DoReduce: read mrtmp.test-81-20
+DoReduce: read mrtmp.test-70-21
+DoReduce: read mrtmp.test-82-20
+DoReduce: read mrtmp.test-71-21
+DoReduce: read mrtmp.test-83-20
+DoReduce: read mrtmp.test-72-21
+DoReduce: read mrtmp.test-84-20
+DoReduce: read mrtmp.test-73-21
+DoReduce: read mrtmp.test-85-20
+DoReduce: read mrtmp.test-74-21
+DoReduce: read mrtmp.test-75-21
+DoReduce: read mrtmp.test-76-21
+DoReduce: read mrtmp.test-86-20
+DoReduce: read mrtmp.test-77-21
+DoReduce: read mrtmp.test-87-20
+DoReduce: read mrtmp.test-78-21
+DoReduce: read mrtmp.test-88-20
+DoReduce: read mrtmp.test-79-21
+DoReduce: read mrtmp.test-89-20
+DoReduce: read mrtmp.test-80-21
+DoReduce: read mrtmp.test-81-21
+DoReduce: read mrtmp.test-90-20
+DoReduce: read mrtmp.test-82-21
+DoReduce: read mrtmp.test-91-20
+DoReduce: read mrtmp.test-83-21
+DoReduce: read mrtmp.test-92-20
+DoReduce: read mrtmp.test-93-20
+DoReduce: read mrtmp.test-84-21
+DoReduce: read mrtmp.test-94-20
+DoReduce: read mrtmp.test-85-21
+DoReduce: read mrtmp.test-95-20
+DoReduce: read mrtmp.test-86-21
+DoReduce: read mrtmp.test-96-20
+DoReduce: read mrtmp.test-87-21
+DoReduce: read mrtmp.test-97-20
+DoReduce: read mrtmp.test-98-20
+DoReduce: read mrtmp.test-88-21
+DoReduce: read mrtmp.test-99-20
+DoReduce: read mrtmp.test-89-21
+DoReduce: read mrtmp.test-90-21
+DoReduce: read mrtmp.test-91-21
+DoReduce: read mrtmp.test-92-21
+DoReduce: read mrtmp.test-93-21
+DoReduce: read mrtmp.test-94-21
+DoReduce: read mrtmp.test-95-21
+DoReduce: read mrtmp.test-96-21
+DoReduce: read mrtmp.test-97-21
+DoReduce: read mrtmp.test-98-21
+DoReduce: read mrtmp.test-99-21
+/var/tmp/824-501/mr24826-worker1: Reduce task #20 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #22 on file 824-mrinput-22.txt (nios: 100)
+DoReduce: read mrtmp.test-0-22
+DoReduce: read mrtmp.test-1-22
+DoReduce: read mrtmp.test-2-22
+DoReduce: read mrtmp.test-3-22
+DoReduce: read mrtmp.test-4-22
+/var/tmp/824-501/mr24826-worker0: Reduce task #21 done
+DoReduce: read mrtmp.test-5-22
+DoReduce: read mrtmp.test-6-22
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-7-22
+DoReduce: read mrtmp.test-8-22
+DoReduce: read mrtmp.test-9-22
+DoReduce: read mrtmp.test-10-22
+/var/tmp/824-501/mr24826-worker0: given Reduce task #23 on file 824-mrinput-23.txt (nios: 100)
+DoReduce: read mrtmp.test-0-23
+DoReduce: read mrtmp.test-11-22
+DoReduce: read mrtmp.test-1-23
+DoReduce: read mrtmp.test-12-22
+DoReduce: read mrtmp.test-2-23
+DoReduce: read mrtmp.test-13-22
+DoReduce: read mrtmp.test-3-23
+DoReduce: read mrtmp.test-14-22
+DoReduce: read mrtmp.test-4-23
+DoReduce: read mrtmp.test-15-22
+DoReduce: read mrtmp.test-5-23
+DoReduce: read mrtmp.test-16-22
+DoReduce: read mrtmp.test-6-23
+DoReduce: read mrtmp.test-17-22
+DoReduce: read mrtmp.test-7-23
+DoReduce: read mrtmp.test-18-22
+DoReduce: read mrtmp.test-8-23
+DoReduce: read mrtmp.test-19-22
+DoReduce: read mrtmp.test-9-23
+DoReduce: read mrtmp.test-20-22
+DoReduce: read mrtmp.test-10-23
+DoReduce: read mrtmp.test-11-23
+DoReduce: read mrtmp.test-21-22
+DoReduce: read mrtmp.test-22-22
+DoReduce: read mrtmp.test-12-23
+DoReduce: read mrtmp.test-13-23
+DoReduce: read mrtmp.test-23-22
+DoReduce: read mrtmp.test-14-23
+DoReduce: read mrtmp.test-24-22
+DoReduce: read mrtmp.test-15-23
+DoReduce: read mrtmp.test-25-22
+DoReduce: read mrtmp.test-16-23
+DoReduce: read mrtmp.test-26-22
+DoReduce: read mrtmp.test-17-23
+DoReduce: read mrtmp.test-27-22
+DoReduce: read mrtmp.test-18-23
+DoReduce: read mrtmp.test-28-22
+DoReduce: read mrtmp.test-19-23
+DoReduce: read mrtmp.test-29-22
+DoReduce: read mrtmp.test-20-23
+DoReduce: read mrtmp.test-30-22
+DoReduce: read mrtmp.test-21-23
+DoReduce: read mrtmp.test-31-22
+DoReduce: read mrtmp.test-22-23
+DoReduce: read mrtmp.test-32-22
+DoReduce: read mrtmp.test-33-22
+DoReduce: read mrtmp.test-23-23
+DoReduce: read mrtmp.test-34-22
+DoReduce: read mrtmp.test-24-23
+DoReduce: read mrtmp.test-35-22
+DoReduce: read mrtmp.test-25-23
+DoReduce: read mrtmp.test-36-22
+DoReduce: read mrtmp.test-26-23
+DoReduce: read mrtmp.test-37-22
+DoReduce: read mrtmp.test-27-23
+DoReduce: read mrtmp.test-38-22
+DoReduce: read mrtmp.test-28-23
+DoReduce: read mrtmp.test-39-22
+DoReduce: read mrtmp.test-29-23
+DoReduce: read mrtmp.test-40-22
+DoReduce: read mrtmp.test-30-23
+DoReduce: read mrtmp.test-41-22
+DoReduce: read mrtmp.test-31-23
+DoReduce: read mrtmp.test-42-22
+DoReduce: read mrtmp.test-32-23
+DoReduce: read mrtmp.test-43-22
+DoReduce: read mrtmp.test-33-23
+DoReduce: read mrtmp.test-34-23
+DoReduce: read mrtmp.test-44-22
+DoReduce: read mrtmp.test-35-23
+DoReduce: read mrtmp.test-45-22
+DoReduce: read mrtmp.test-36-23
+DoReduce: read mrtmp.test-46-22
+DoReduce: read mrtmp.test-37-23
+DoReduce: read mrtmp.test-47-22
+DoReduce: read mrtmp.test-38-23
+DoReduce: read mrtmp.test-48-22
+DoReduce: read mrtmp.test-39-23
+DoReduce: read mrtmp.test-49-22
+DoReduce: read mrtmp.test-40-23
+DoReduce: read mrtmp.test-50-22
+DoReduce: read mrtmp.test-41-23
+DoReduce: read mrtmp.test-51-22
+DoReduce: read mrtmp.test-42-23
+DoReduce: read mrtmp.test-52-22
+DoReduce: read mrtmp.test-53-22
+DoReduce: read mrtmp.test-43-23
+DoReduce: read mrtmp.test-54-22
+DoReduce: read mrtmp.test-44-23
+DoReduce: read mrtmp.test-55-22
+DoReduce: read mrtmp.test-45-23
+DoReduce: read mrtmp.test-56-22
+DoReduce: read mrtmp.test-46-23
+DoReduce: read mrtmp.test-57-22
+DoReduce: read mrtmp.test-47-23
+DoReduce: read mrtmp.test-58-22
+DoReduce: read mrtmp.test-48-23
+DoReduce: read mrtmp.test-59-22
+DoReduce: read mrtmp.test-49-23
+DoReduce: read mrtmp.test-60-22
+DoReduce: read mrtmp.test-50-23
+DoReduce: read mrtmp.test-61-22
+DoReduce: read mrtmp.test-62-22
+DoReduce: read mrtmp.test-51-23
+DoReduce: read mrtmp.test-52-23
+DoReduce: read mrtmp.test-63-22
+DoReduce: read mrtmp.test-53-23
+DoReduce: read mrtmp.test-64-22
+DoReduce: read mrtmp.test-54-23
+DoReduce: read mrtmp.test-65-22
+DoReduce: read mrtmp.test-55-23
+DoReduce: read mrtmp.test-66-22
+DoReduce: read mrtmp.test-56-23
+DoReduce: read mrtmp.test-67-22
+DoReduce: read mrtmp.test-57-23
+DoReduce: read mrtmp.test-68-22
+DoReduce: read mrtmp.test-58-23
+DoReduce: read mrtmp.test-69-22
+DoReduce: read mrtmp.test-59-23
+DoReduce: read mrtmp.test-70-22
+DoReduce: read mrtmp.test-60-23
+DoReduce: read mrtmp.test-71-22
+DoReduce: read mrtmp.test-61-23
+DoReduce: read mrtmp.test-72-22
+DoReduce: read mrtmp.test-62-23
+DoReduce: read mrtmp.test-73-22
+DoReduce: read mrtmp.test-63-23
+DoReduce: read mrtmp.test-74-22
+DoReduce: read mrtmp.test-75-22
+DoReduce: read mrtmp.test-64-23
+DoReduce: read mrtmp.test-76-22
+DoReduce: read mrtmp.test-65-23
+DoReduce: read mrtmp.test-77-22
+DoReduce: read mrtmp.test-66-23
+DoReduce: read mrtmp.test-78-22
+DoReduce: read mrtmp.test-67-23
+DoReduce: read mrtmp.test-79-22
+DoReduce: read mrtmp.test-68-23
+DoReduce: read mrtmp.test-80-22
+DoReduce: read mrtmp.test-69-23
+DoReduce: read mrtmp.test-81-22
+DoReduce: read mrtmp.test-70-23
+DoReduce: read mrtmp.test-82-22
+DoReduce: read mrtmp.test-71-23
+DoReduce: read mrtmp.test-83-22
+DoReduce: read mrtmp.test-72-23
+DoReduce: read mrtmp.test-73-23
+DoReduce: read mrtmp.test-84-22
+DoReduce: read mrtmp.test-74-23
+DoReduce: read mrtmp.test-75-23
+DoReduce: read mrtmp.test-85-22
+DoReduce: read mrtmp.test-76-23
+DoReduce: read mrtmp.test-77-23
+DoReduce: read mrtmp.test-86-22
+DoReduce: read mrtmp.test-78-23
+DoReduce: read mrtmp.test-87-22
+DoReduce: read mrtmp.test-79-23
+DoReduce: read mrtmp.test-88-22
+DoReduce: read mrtmp.test-80-23
+DoReduce: read mrtmp.test-81-23
+DoReduce: read mrtmp.test-89-22
+DoReduce: read mrtmp.test-82-23
+DoReduce: read mrtmp.test-90-22
+DoReduce: read mrtmp.test-91-22
+DoReduce: read mrtmp.test-83-23
+DoReduce: read mrtmp.test-92-22
+DoReduce: read mrtmp.test-93-22
+DoReduce: read mrtmp.test-84-23
+DoReduce: read mrtmp.test-94-22
+DoReduce: read mrtmp.test-85-23
+DoReduce: read mrtmp.test-95-22
+DoReduce: read mrtmp.test-96-22
+DoReduce: read mrtmp.test-86-23
+DoReduce: read mrtmp.test-97-22
+DoReduce: read mrtmp.test-87-23
+DoReduce: read mrtmp.test-98-22
+DoReduce: read mrtmp.test-99-22
+DoReduce: read mrtmp.test-88-23
+DoReduce: read mrtmp.test-89-23
+DoReduce: read mrtmp.test-90-23
+DoReduce: read mrtmp.test-91-23
+DoReduce: read mrtmp.test-92-23
+DoReduce: read mrtmp.test-93-23
+DoReduce: read mrtmp.test-94-23
+DoReduce: read mrtmp.test-95-23
+DoReduce: read mrtmp.test-96-23
+DoReduce: read mrtmp.test-97-23
+DoReduce: read mrtmp.test-98-23
+DoReduce: read mrtmp.test-99-23
+/var/tmp/824-501/mr24826-worker1: Reduce task #22 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #24 on file 824-mrinput-24.txt (nios: 100)
+DoReduce: read mrtmp.test-0-24
+DoReduce: read mrtmp.test-1-24
+DoReduce: read mrtmp.test-2-24
+/var/tmp/824-501/mr24826-worker0: Reduce task #23 done
+DoReduce: read mrtmp.test-3-24
+DoReduce: read mrtmp.test-4-24
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-5-24
+DoReduce: read mrtmp.test-6-24
+DoReduce: read mrtmp.test-7-24
+/var/tmp/824-501/mr24826-worker0: given Reduce task #25 on file 824-mrinput-25.txt (nios: 100)
+DoReduce: read mrtmp.test-8-24
+DoReduce: read mrtmp.test-0-25
+DoReduce: read mrtmp.test-9-24
+DoReduce: read mrtmp.test-1-25
+DoReduce: read mrtmp.test-10-24
+DoReduce: read mrtmp.test-2-25
+DoReduce: read mrtmp.test-11-24
+DoReduce: read mrtmp.test-3-25
+DoReduce: read mrtmp.test-12-24
+DoReduce: read mrtmp.test-13-24
+DoReduce: read mrtmp.test-4-25
+DoReduce: read mrtmp.test-14-24
+DoReduce: read mrtmp.test-5-25
+DoReduce: read mrtmp.test-15-24
+DoReduce: read mrtmp.test-6-25
+DoReduce: read mrtmp.test-16-24
+DoReduce: read mrtmp.test-7-25
+DoReduce: read mrtmp.test-17-24
+DoReduce: read mrtmp.test-8-25
+DoReduce: read mrtmp.test-18-24
+DoReduce: read mrtmp.test-9-25
+DoReduce: read mrtmp.test-19-24
+DoReduce: read mrtmp.test-10-25
+DoReduce: read mrtmp.test-20-24
+DoReduce: read mrtmp.test-11-25
+DoReduce: read mrtmp.test-21-24
+DoReduce: read mrtmp.test-12-25
+DoReduce: read mrtmp.test-22-24
+DoReduce: read mrtmp.test-13-25
+DoReduce: read mrtmp.test-23-24
+DoReduce: read mrtmp.test-14-25
+DoReduce: read mrtmp.test-15-25
+DoReduce: read mrtmp.test-24-24
+DoReduce: read mrtmp.test-25-24
+DoReduce: read mrtmp.test-16-25
+DoReduce: read mrtmp.test-26-24
+DoReduce: read mrtmp.test-17-25
+DoReduce: read mrtmp.test-27-24
+DoReduce: read mrtmp.test-28-24
+DoReduce: read mrtmp.test-18-25
+DoReduce: read mrtmp.test-29-24
+DoReduce: read mrtmp.test-30-24
+DoReduce: read mrtmp.test-19-25
+DoReduce: read mrtmp.test-31-24
+DoReduce: read mrtmp.test-20-25
+DoReduce: read mrtmp.test-32-24
+DoReduce: read mrtmp.test-21-25
+DoReduce: read mrtmp.test-33-24
+DoReduce: read mrtmp.test-34-24
+DoReduce: read mrtmp.test-22-25
+DoReduce: read mrtmp.test-35-24
+DoReduce: read mrtmp.test-23-25
+DoReduce: read mrtmp.test-36-24
+DoReduce: read mrtmp.test-24-25
+DoReduce: read mrtmp.test-37-24
+DoReduce: read mrtmp.test-25-25
+DoReduce: read mrtmp.test-38-24
+DoReduce: read mrtmp.test-26-25
+DoReduce: read mrtmp.test-39-24
+DoReduce: read mrtmp.test-27-25
+DoReduce: read mrtmp.test-40-24
+DoReduce: read mrtmp.test-28-25
+DoReduce: read mrtmp.test-41-24
+DoReduce: read mrtmp.test-29-25
+DoReduce: read mrtmp.test-42-24
+DoReduce: read mrtmp.test-30-25
+DoReduce: read mrtmp.test-43-24
+DoReduce: read mrtmp.test-31-25
+DoReduce: read mrtmp.test-44-24
+DoReduce: read mrtmp.test-32-25
+DoReduce: read mrtmp.test-33-25
+DoReduce: read mrtmp.test-45-24
+DoReduce: read mrtmp.test-34-25
+DoReduce: read mrtmp.test-46-24
+DoReduce: read mrtmp.test-35-25
+DoReduce: read mrtmp.test-47-24
+DoReduce: read mrtmp.test-36-25
+DoReduce: read mrtmp.test-48-24
+DoReduce: read mrtmp.test-37-25
+DoReduce: read mrtmp.test-49-24
+DoReduce: read mrtmp.test-38-25
+DoReduce: read mrtmp.test-50-24
+DoReduce: read mrtmp.test-39-25
+DoReduce: read mrtmp.test-51-24
+DoReduce: read mrtmp.test-40-25
+DoReduce: read mrtmp.test-52-24
+DoReduce: read mrtmp.test-53-24
+DoReduce: read mrtmp.test-41-25
+DoReduce: read mrtmp.test-54-24
+DoReduce: read mrtmp.test-42-25
+DoReduce: read mrtmp.test-55-24
+DoReduce: read mrtmp.test-43-25
+DoReduce: read mrtmp.test-56-24
+DoReduce: read mrtmp.test-44-25
+DoReduce: read mrtmp.test-57-24
+DoReduce: read mrtmp.test-45-25
+DoReduce: read mrtmp.test-58-24
+DoReduce: read mrtmp.test-46-25
+DoReduce: read mrtmp.test-59-24
+DoReduce: read mrtmp.test-47-25
+DoReduce: read mrtmp.test-60-24
+DoReduce: read mrtmp.test-48-25
+DoReduce: read mrtmp.test-61-24
+DoReduce: read mrtmp.test-49-25
+DoReduce: read mrtmp.test-62-24
+DoReduce: read mrtmp.test-50-25
+DoReduce: read mrtmp.test-63-24
+DoReduce: read mrtmp.test-64-24
+DoReduce: read mrtmp.test-51-25
+DoReduce: read mrtmp.test-52-25
+DoReduce: read mrtmp.test-65-24
+DoReduce: read mrtmp.test-53-25
+DoReduce: read mrtmp.test-66-24
+DoReduce: read mrtmp.test-54-25
+DoReduce: read mrtmp.test-67-24
+DoReduce: read mrtmp.test-55-25
+DoReduce: read mrtmp.test-68-24
+DoReduce: read mrtmp.test-56-25
+DoReduce: read mrtmp.test-69-24
+DoReduce: read mrtmp.test-57-25
+DoReduce: read mrtmp.test-70-24
+DoReduce: read mrtmp.test-71-24
+DoReduce: read mrtmp.test-58-25
+DoReduce: read mrtmp.test-72-24
+DoReduce: read mrtmp.test-59-25
+DoReduce: read mrtmp.test-73-24
+DoReduce: read mrtmp.test-60-25
+DoReduce: read mrtmp.test-74-24
+DoReduce: read mrtmp.test-61-25
+DoReduce: read mrtmp.test-75-24
+DoReduce: read mrtmp.test-62-25
+DoReduce: read mrtmp.test-76-24
+DoReduce: read mrtmp.test-63-25
+DoReduce: read mrtmp.test-77-24
+DoReduce: read mrtmp.test-64-25
+DoReduce: read mrtmp.test-78-24
+DoReduce: read mrtmp.test-65-25
+DoReduce: read mrtmp.test-79-24
+DoReduce: read mrtmp.test-66-25
+DoReduce: read mrtmp.test-80-24
+DoReduce: read mrtmp.test-67-25
+DoReduce: read mrtmp.test-81-24
+DoReduce: read mrtmp.test-68-25
+DoReduce: read mrtmp.test-82-24
+DoReduce: read mrtmp.test-69-25
+DoReduce: read mrtmp.test-83-24
+DoReduce: read mrtmp.test-70-25
+DoReduce: read mrtmp.test-84-24
+DoReduce: read mrtmp.test-71-25
+DoReduce: read mrtmp.test-72-25
+DoReduce: read mrtmp.test-85-24
+DoReduce: read mrtmp.test-73-25
+DoReduce: read mrtmp.test-74-25
+DoReduce: read mrtmp.test-86-24
+DoReduce: read mrtmp.test-75-25
+DoReduce: read mrtmp.test-76-25
+DoReduce: read mrtmp.test-87-24
+DoReduce: read mrtmp.test-77-25
+DoReduce: read mrtmp.test-88-24
+DoReduce: read mrtmp.test-78-25
+DoReduce: read mrtmp.test-89-24
+DoReduce: read mrtmp.test-79-25
+DoReduce: read mrtmp.test-80-25
+DoReduce: read mrtmp.test-90-24
+DoReduce: read mrtmp.test-81-25
+DoReduce: read mrtmp.test-91-24
+DoReduce: read mrtmp.test-82-25
+DoReduce: read mrtmp.test-92-24
+DoReduce: read mrtmp.test-83-25
+DoReduce: read mrtmp.test-93-24
+DoReduce: read mrtmp.test-84-25
+DoReduce: read mrtmp.test-94-24
+DoReduce: read mrtmp.test-95-24
+DoReduce: read mrtmp.test-85-25
+DoReduce: read mrtmp.test-96-24
+DoReduce: read mrtmp.test-86-25
+DoReduce: read mrtmp.test-97-24
+DoReduce: read mrtmp.test-87-25
+DoReduce: read mrtmp.test-98-24
+DoReduce: read mrtmp.test-88-25
+DoReduce: read mrtmp.test-99-24
+DoReduce: read mrtmp.test-89-25
+DoReduce: read mrtmp.test-90-25
+DoReduce: read mrtmp.test-91-25
+DoReduce: read mrtmp.test-92-25
+DoReduce: read mrtmp.test-93-25
+DoReduce: read mrtmp.test-94-25
+DoReduce: read mrtmp.test-95-25
+DoReduce: read mrtmp.test-96-25
+DoReduce: read mrtmp.test-97-25
+DoReduce: read mrtmp.test-98-25
+DoReduce: read mrtmp.test-99-25
+/var/tmp/824-501/mr24826-worker1: Reduce task #24 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #26 on file 824-mrinput-26.txt (nios: 100)
+DoReduce: read mrtmp.test-0-26
+DoReduce: read mrtmp.test-1-26
+DoReduce: read mrtmp.test-2-26
+DoReduce: read mrtmp.test-3-26
+/var/tmp/824-501/mr24826-worker0: Reduce task #25 done
+DoReduce: read mrtmp.test-4-26
+DoReduce: read mrtmp.test-5-26
+DoReduce: read mrtmp.test-6-26
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-7-26
+DoReduce: read mrtmp.test-8-26
+DoReduce: read mrtmp.test-9-26
+/var/tmp/824-501/mr24826-worker0: given Reduce task #27 on file 824-mrinput-27.txt (nios: 100)
+DoReduce: read mrtmp.test-0-27
+DoReduce: read mrtmp.test-10-26
+DoReduce: read mrtmp.test-1-27
+DoReduce: read mrtmp.test-11-26
+DoReduce: read mrtmp.test-12-26
+DoReduce: read mrtmp.test-2-27
+DoReduce: read mrtmp.test-13-26
+DoReduce: read mrtmp.test-3-27
+DoReduce: read mrtmp.test-14-26
+DoReduce: read mrtmp.test-4-27
+DoReduce: read mrtmp.test-5-27
+DoReduce: read mrtmp.test-15-26
+DoReduce: read mrtmp.test-16-26
+DoReduce: read mrtmp.test-6-27
+DoReduce: read mrtmp.test-17-26
+DoReduce: read mrtmp.test-7-27
+DoReduce: read mrtmp.test-8-27
+DoReduce: read mrtmp.test-18-26
+DoReduce: read mrtmp.test-19-26
+DoReduce: read mrtmp.test-9-27
+DoReduce: read mrtmp.test-10-27
+DoReduce: read mrtmp.test-20-26
+DoReduce: read mrtmp.test-11-27
+DoReduce: read mrtmp.test-21-26
+DoReduce: read mrtmp.test-12-27
+DoReduce: read mrtmp.test-22-26
+DoReduce: read mrtmp.test-13-27
+DoReduce: read mrtmp.test-23-26
+DoReduce: read mrtmp.test-14-27
+DoReduce: read mrtmp.test-15-27
+DoReduce: read mrtmp.test-24-26
+DoReduce: read mrtmp.test-25-26
+DoReduce: read mrtmp.test-16-27
+DoReduce: read mrtmp.test-26-26
+DoReduce: read mrtmp.test-17-27
+DoReduce: read mrtmp.test-27-26
+DoReduce: read mrtmp.test-18-27
+DoReduce: read mrtmp.test-28-26
+DoReduce: read mrtmp.test-19-27
+DoReduce: read mrtmp.test-29-26
+DoReduce: read mrtmp.test-20-27
+DoReduce: read mrtmp.test-30-26
+DoReduce: read mrtmp.test-21-27
+DoReduce: read mrtmp.test-31-26
+DoReduce: read mrtmp.test-22-27
+DoReduce: read mrtmp.test-32-26
+DoReduce: read mrtmp.test-23-27
+DoReduce: read mrtmp.test-33-26
+DoReduce: read mrtmp.test-24-27
+DoReduce: read mrtmp.test-34-26
+DoReduce: read mrtmp.test-25-27
+DoReduce: read mrtmp.test-35-26
+DoReduce: read mrtmp.test-26-27
+DoReduce: read mrtmp.test-36-26
+DoReduce: read mrtmp.test-37-26
+DoReduce: read mrtmp.test-27-27
+DoReduce: read mrtmp.test-38-26
+DoReduce: read mrtmp.test-28-27
+DoReduce: read mrtmp.test-39-26
+DoReduce: read mrtmp.test-29-27
+DoReduce: read mrtmp.test-30-27
+DoReduce: read mrtmp.test-40-26
+DoReduce: read mrtmp.test-31-27
+DoReduce: read mrtmp.test-41-26
+DoReduce: read mrtmp.test-32-27
+DoReduce: read mrtmp.test-42-26
+DoReduce: read mrtmp.test-33-27
+DoReduce: read mrtmp.test-34-27
+DoReduce: read mrtmp.test-43-26
+DoReduce: read mrtmp.test-35-27
+DoReduce: read mrtmp.test-44-26
+DoReduce: read mrtmp.test-36-27
+DoReduce: read mrtmp.test-37-27
+DoReduce: read mrtmp.test-45-26
+DoReduce: read mrtmp.test-38-27
+DoReduce: read mrtmp.test-46-26
+DoReduce: read mrtmp.test-39-27
+DoReduce: read mrtmp.test-40-27
+DoReduce: read mrtmp.test-47-26
+DoReduce: read mrtmp.test-41-27
+DoReduce: read mrtmp.test-48-26
+DoReduce: read mrtmp.test-42-27
+DoReduce: read mrtmp.test-49-26
+DoReduce: read mrtmp.test-43-27
+DoReduce: read mrtmp.test-50-26
+DoReduce: read mrtmp.test-51-26
+DoReduce: read mrtmp.test-44-27
+DoReduce: read mrtmp.test-52-26
+DoReduce: read mrtmp.test-45-27
+DoReduce: read mrtmp.test-53-26
+DoReduce: read mrtmp.test-46-27
+DoReduce: read mrtmp.test-54-26
+DoReduce: read mrtmp.test-55-26
+DoReduce: read mrtmp.test-47-27
+DoReduce: read mrtmp.test-56-26
+DoReduce: read mrtmp.test-48-27
+DoReduce: read mrtmp.test-57-26
+DoReduce: read mrtmp.test-49-27
+DoReduce: read mrtmp.test-58-26
+DoReduce: read mrtmp.test-50-27
+DoReduce: read mrtmp.test-59-26
+DoReduce: read mrtmp.test-51-27
+DoReduce: read mrtmp.test-60-26
+DoReduce: read mrtmp.test-52-27
+DoReduce: read mrtmp.test-61-26
+DoReduce: read mrtmp.test-53-27
+DoReduce: read mrtmp.test-62-26
+DoReduce: read mrtmp.test-54-27
+DoReduce: read mrtmp.test-63-26
+DoReduce: read mrtmp.test-55-27
+DoReduce: read mrtmp.test-64-26
+DoReduce: read mrtmp.test-56-27
+DoReduce: read mrtmp.test-65-26
+DoReduce: read mrtmp.test-57-27
+DoReduce: read mrtmp.test-66-26
+DoReduce: read mrtmp.test-58-27
+DoReduce: read mrtmp.test-67-26
+DoReduce: read mrtmp.test-68-26
+DoReduce: read mrtmp.test-59-27
+DoReduce: read mrtmp.test-60-27
+DoReduce: read mrtmp.test-69-26
+DoReduce: read mrtmp.test-70-26
+DoReduce: read mrtmp.test-61-27
+DoReduce: read mrtmp.test-62-27
+DoReduce: read mrtmp.test-71-26
+DoReduce: read mrtmp.test-72-26
+DoReduce: read mrtmp.test-63-27
+DoReduce: read mrtmp.test-73-26
+DoReduce: read mrtmp.test-64-27
+DoReduce: read mrtmp.test-74-26
+DoReduce: read mrtmp.test-65-27
+DoReduce: read mrtmp.test-75-26
+DoReduce: read mrtmp.test-66-27
+DoReduce: read mrtmp.test-67-27
+DoReduce: read mrtmp.test-76-26
+DoReduce: read mrtmp.test-77-26
+DoReduce: read mrtmp.test-68-27
+DoReduce: read mrtmp.test-78-26
+DoReduce: read mrtmp.test-69-27
+DoReduce: read mrtmp.test-79-26
+DoReduce: read mrtmp.test-70-27
+DoReduce: read mrtmp.test-71-27
+DoReduce: read mrtmp.test-80-26
+DoReduce: read mrtmp.test-72-27
+DoReduce: read mrtmp.test-81-26
+DoReduce: read mrtmp.test-73-27
+DoReduce: read mrtmp.test-74-27
+DoReduce: read mrtmp.test-82-26
+DoReduce: read mrtmp.test-75-27
+DoReduce: read mrtmp.test-83-26
+DoReduce: read mrtmp.test-76-27
+DoReduce: read mrtmp.test-77-27
+DoReduce: read mrtmp.test-84-26
+DoReduce: read mrtmp.test-78-27
+DoReduce: read mrtmp.test-85-26
+DoReduce: read mrtmp.test-79-27
+DoReduce: read mrtmp.test-86-26
+DoReduce: read mrtmp.test-80-27
+DoReduce: read mrtmp.test-87-26
+DoReduce: read mrtmp.test-81-27
+DoReduce: read mrtmp.test-82-27
+DoReduce: read mrtmp.test-88-26
+DoReduce: read mrtmp.test-83-27
+DoReduce: read mrtmp.test-89-26
+DoReduce: read mrtmp.test-84-27
+DoReduce: read mrtmp.test-90-26
+DoReduce: read mrtmp.test-91-26
+DoReduce: read mrtmp.test-85-27
+DoReduce: read mrtmp.test-92-26
+DoReduce: read mrtmp.test-93-26
+DoReduce: read mrtmp.test-86-27
+DoReduce: read mrtmp.test-94-26
+DoReduce: read mrtmp.test-87-27
+DoReduce: read mrtmp.test-95-26
+DoReduce: read mrtmp.test-96-26
+DoReduce: read mrtmp.test-88-27
+DoReduce: read mrtmp.test-97-26
+DoReduce: read mrtmp.test-89-27
+DoReduce: read mrtmp.test-98-26
+DoReduce: read mrtmp.test-90-27
+DoReduce: read mrtmp.test-99-26
+DoReduce: read mrtmp.test-91-27
+DoReduce: read mrtmp.test-92-27
+DoReduce: read mrtmp.test-93-27
+DoReduce: read mrtmp.test-94-27
+DoReduce: read mrtmp.test-95-27
+DoReduce: read mrtmp.test-96-27
+DoReduce: read mrtmp.test-97-27
+DoReduce: read mrtmp.test-98-27
+DoReduce: read mrtmp.test-99-27
+/var/tmp/824-501/mr24826-worker1: Reduce task #26 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: Reduce task #27 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #28 on file 824-mrinput-28.txt (nios: 100)
+DoReduce: read mrtmp.test-0-28
+DoReduce: read mrtmp.test-1-28
+DoReduce: read mrtmp.test-2-28
+/var/tmp/824-501/mr24826-worker0: given Reduce task #29 on file 824-mrinput-29.txt (nios: 100)
+DoReduce: read mrtmp.test-0-29
+DoReduce: read mrtmp.test-3-28
+DoReduce: read mrtmp.test-4-28
+DoReduce: read mrtmp.test-1-29
+DoReduce: read mrtmp.test-5-28
+DoReduce: read mrtmp.test-2-29
+DoReduce: read mrtmp.test-6-28
+DoReduce: read mrtmp.test-3-29
+DoReduce: read mrtmp.test-7-28
+DoReduce: read mrtmp.test-4-29
+DoReduce: read mrtmp.test-8-28
+DoReduce: read mrtmp.test-9-28
+DoReduce: read mrtmp.test-5-29
+DoReduce: read mrtmp.test-10-28
+DoReduce: read mrtmp.test-6-29
+DoReduce: read mrtmp.test-7-29
+DoReduce: read mrtmp.test-11-28
+DoReduce: read mrtmp.test-8-29
+DoReduce: read mrtmp.test-12-28
+DoReduce: read mrtmp.test-9-29
+DoReduce: read mrtmp.test-13-28
+DoReduce: read mrtmp.test-10-29
+DoReduce: read mrtmp.test-14-28
+DoReduce: read mrtmp.test-11-29
+DoReduce: read mrtmp.test-15-28
+DoReduce: read mrtmp.test-12-29
+DoReduce: read mrtmp.test-16-28
+DoReduce: read mrtmp.test-13-29
+DoReduce: read mrtmp.test-17-28
+DoReduce: read mrtmp.test-14-29
+DoReduce: read mrtmp.test-18-28
+DoReduce: read mrtmp.test-19-28
+DoReduce: read mrtmp.test-15-29
+DoReduce: read mrtmp.test-20-28
+DoReduce: read mrtmp.test-16-29
+DoReduce: read mrtmp.test-17-29
+DoReduce: read mrtmp.test-21-28
+DoReduce: read mrtmp.test-18-29
+DoReduce: read mrtmp.test-22-28
+DoReduce: read mrtmp.test-19-29
+DoReduce: read mrtmp.test-23-28
+DoReduce: read mrtmp.test-20-29
+DoReduce: read mrtmp.test-24-28
+DoReduce: read mrtmp.test-25-28
+DoReduce: read mrtmp.test-21-29
+DoReduce: read mrtmp.test-26-28
+DoReduce: read mrtmp.test-22-29
+DoReduce: read mrtmp.test-27-28
+DoReduce: read mrtmp.test-23-29
+DoReduce: read mrtmp.test-28-28
+DoReduce: read mrtmp.test-24-29
+DoReduce: read mrtmp.test-25-29
+DoReduce: read mrtmp.test-29-28
+DoReduce: read mrtmp.test-30-28
+DoReduce: read mrtmp.test-26-29
+DoReduce: read mrtmp.test-27-29
+DoReduce: read mrtmp.test-31-28
+DoReduce: read mrtmp.test-28-29
+DoReduce: read mrtmp.test-32-28
+DoReduce: read mrtmp.test-29-29
+DoReduce: read mrtmp.test-33-28
+DoReduce: read mrtmp.test-30-29
+DoReduce: read mrtmp.test-34-28
+DoReduce: read mrtmp.test-31-29
+DoReduce: read mrtmp.test-32-29
+DoReduce: read mrtmp.test-35-28
+DoReduce: read mrtmp.test-33-29
+DoReduce: read mrtmp.test-36-28
+DoReduce: read mrtmp.test-34-29
+DoReduce: read mrtmp.test-37-28
+DoReduce: read mrtmp.test-35-29
+DoReduce: read mrtmp.test-38-28
+DoReduce: read mrtmp.test-36-29
+DoReduce: read mrtmp.test-39-28
+DoReduce: read mrtmp.test-37-29
+DoReduce: read mrtmp.test-40-28
+DoReduce: read mrtmp.test-38-29
+DoReduce: read mrtmp.test-39-29
+DoReduce: read mrtmp.test-40-29
+DoReduce: read mrtmp.test-41-28
+DoReduce: read mrtmp.test-41-29
+DoReduce: read mrtmp.test-42-28
+DoReduce: read mrtmp.test-42-29
+DoReduce: read mrtmp.test-43-28
+DoReduce: read mrtmp.test-43-29
+DoReduce: read mrtmp.test-44-28
+DoReduce: read mrtmp.test-44-29
+DoReduce: read mrtmp.test-45-28
+DoReduce: read mrtmp.test-46-28
+DoReduce: read mrtmp.test-45-29
+DoReduce: read mrtmp.test-47-28
+DoReduce: read mrtmp.test-46-29
+DoReduce: read mrtmp.test-48-28
+DoReduce: read mrtmp.test-47-29
+DoReduce: read mrtmp.test-49-28
+DoReduce: read mrtmp.test-48-29
+DoReduce: read mrtmp.test-50-28
+DoReduce: read mrtmp.test-49-29
+DoReduce: read mrtmp.test-51-28
+DoReduce: read mrtmp.test-50-29
+DoReduce: read mrtmp.test-52-28
+DoReduce: read mrtmp.test-51-29
+DoReduce: read mrtmp.test-53-28
+DoReduce: read mrtmp.test-52-29
+DoReduce: read mrtmp.test-54-28
+DoReduce: read mrtmp.test-53-29
+DoReduce: read mrtmp.test-55-28
+DoReduce: read mrtmp.test-54-29
+DoReduce: read mrtmp.test-56-28
+DoReduce: read mrtmp.test-57-28
+DoReduce: read mrtmp.test-55-29
+DoReduce: read mrtmp.test-58-28
+DoReduce: read mrtmp.test-56-29
+DoReduce: read mrtmp.test-59-28
+DoReduce: read mrtmp.test-57-29
+DoReduce: read mrtmp.test-58-29
+DoReduce: read mrtmp.test-60-28
+DoReduce: read mrtmp.test-59-29
+DoReduce: read mrtmp.test-61-28
+DoReduce: read mrtmp.test-60-29
+DoReduce: read mrtmp.test-62-28
+DoReduce: read mrtmp.test-61-29
+DoReduce: read mrtmp.test-63-28
+DoReduce: read mrtmp.test-62-29
+DoReduce: read mrtmp.test-64-28
+DoReduce: read mrtmp.test-63-29
+DoReduce: read mrtmp.test-65-28
+DoReduce: read mrtmp.test-64-29
+DoReduce: read mrtmp.test-66-28
+DoReduce: read mrtmp.test-65-29
+DoReduce: read mrtmp.test-67-28
+DoReduce: read mrtmp.test-66-29
+DoReduce: read mrtmp.test-68-28
+DoReduce: read mrtmp.test-67-29
+DoReduce: read mrtmp.test-69-28
+DoReduce: read mrtmp.test-68-29
+DoReduce: read mrtmp.test-70-28
+DoReduce: read mrtmp.test-69-29
+DoReduce: read mrtmp.test-70-29
+DoReduce: read mrtmp.test-71-28
+DoReduce: read mrtmp.test-71-29
+DoReduce: read mrtmp.test-72-28
+DoReduce: read mrtmp.test-72-29
+DoReduce: read mrtmp.test-73-28
+DoReduce: read mrtmp.test-73-29
+DoReduce: read mrtmp.test-74-28
+DoReduce: read mrtmp.test-74-29
+DoReduce: read mrtmp.test-75-28
+DoReduce: read mrtmp.test-75-29
+DoReduce: read mrtmp.test-76-28
+DoReduce: read mrtmp.test-76-29
+DoReduce: read mrtmp.test-77-28
+DoReduce: read mrtmp.test-77-29
+DoReduce: read mrtmp.test-78-28
+DoReduce: read mrtmp.test-78-29
+DoReduce: read mrtmp.test-79-29
+DoReduce: read mrtmp.test-79-28
+DoReduce: read mrtmp.test-80-29
+DoReduce: read mrtmp.test-80-28
+DoReduce: read mrtmp.test-81-29
+DoReduce: read mrtmp.test-82-29
+DoReduce: read mrtmp.test-81-28
+DoReduce: read mrtmp.test-83-29
+DoReduce: read mrtmp.test-82-28
+DoReduce: read mrtmp.test-84-29
+DoReduce: read mrtmp.test-83-28
+DoReduce: read mrtmp.test-85-29
+DoReduce: read mrtmp.test-84-28
+DoReduce: read mrtmp.test-86-29
+DoReduce: read mrtmp.test-85-28
+DoReduce: read mrtmp.test-86-28
+DoReduce: read mrtmp.test-87-29
+DoReduce: read mrtmp.test-87-28
+DoReduce: read mrtmp.test-88-29
+DoReduce: read mrtmp.test-88-28
+DoReduce: read mrtmp.test-89-28
+DoReduce: read mrtmp.test-89-29
+DoReduce: read mrtmp.test-90-28
+DoReduce: read mrtmp.test-90-29
+DoReduce: read mrtmp.test-91-28
+DoReduce: read mrtmp.test-91-29
+DoReduce: read mrtmp.test-92-28
+DoReduce: read mrtmp.test-92-29
+DoReduce: read mrtmp.test-93-28
+DoReduce: read mrtmp.test-93-29
+DoReduce: read mrtmp.test-94-28
+DoReduce: read mrtmp.test-94-29
+DoReduce: read mrtmp.test-95-28
+DoReduce: read mrtmp.test-95-29
+DoReduce: read mrtmp.test-96-28
+DoReduce: read mrtmp.test-96-29
+DoReduce: read mrtmp.test-97-28
+DoReduce: read mrtmp.test-98-28
+DoReduce: read mrtmp.test-97-29
+DoReduce: read mrtmp.test-99-28
+DoReduce: read mrtmp.test-98-29
+DoReduce: read mrtmp.test-99-29
+/var/tmp/824-501/mr24826-worker1: Reduce task #28 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #29 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #31 on file 824-mrinput-31.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker1: given Reduce task #30 on file 824-mrinput-30.txt (nios: 100)
+DoReduce: read mrtmp.test-0-31
+DoReduce: read mrtmp.test-0-30
+DoReduce: read mrtmp.test-1-31
+DoReduce: read mrtmp.test-1-30
+DoReduce: read mrtmp.test-2-30
+DoReduce: read mrtmp.test-2-31
+DoReduce: read mrtmp.test-3-30
+DoReduce: read mrtmp.test-3-31
+DoReduce: read mrtmp.test-4-30
+DoReduce: read mrtmp.test-4-31
+DoReduce: read mrtmp.test-5-30
+DoReduce: read mrtmp.test-5-31
+DoReduce: read mrtmp.test-6-30
+DoReduce: read mrtmp.test-6-31
+DoReduce: read mrtmp.test-7-30
+DoReduce: read mrtmp.test-7-31
+DoReduce: read mrtmp.test-8-30
+DoReduce: read mrtmp.test-8-31
+DoReduce: read mrtmp.test-9-30
+DoReduce: read mrtmp.test-9-31
+DoReduce: read mrtmp.test-10-30
+DoReduce: read mrtmp.test-10-31
+DoReduce: read mrtmp.test-11-30
+DoReduce: read mrtmp.test-11-31
+DoReduce: read mrtmp.test-12-30
+DoReduce: read mrtmp.test-12-31
+DoReduce: read mrtmp.test-13-30
+DoReduce: read mrtmp.test-13-31
+DoReduce: read mrtmp.test-14-30
+DoReduce: read mrtmp.test-14-31
+DoReduce: read mrtmp.test-15-30
+DoReduce: read mrtmp.test-15-31
+DoReduce: read mrtmp.test-16-30
+DoReduce: read mrtmp.test-16-31
+DoReduce: read mrtmp.test-17-30
+DoReduce: read mrtmp.test-17-31
+DoReduce: read mrtmp.test-18-30
+DoReduce: read mrtmp.test-18-31
+DoReduce: read mrtmp.test-19-30
+DoReduce: read mrtmp.test-19-31
+DoReduce: read mrtmp.test-20-30
+DoReduce: read mrtmp.test-20-31
+DoReduce: read mrtmp.test-21-30
+DoReduce: read mrtmp.test-21-31
+DoReduce: read mrtmp.test-22-30
+DoReduce: read mrtmp.test-22-31
+DoReduce: read mrtmp.test-23-30
+DoReduce: read mrtmp.test-23-31
+DoReduce: read mrtmp.test-24-30
+DoReduce: read mrtmp.test-24-31
+DoReduce: read mrtmp.test-25-30
+DoReduce: read mrtmp.test-25-31
+DoReduce: read mrtmp.test-26-30
+DoReduce: read mrtmp.test-26-31
+DoReduce: read mrtmp.test-27-30
+DoReduce: read mrtmp.test-27-31
+DoReduce: read mrtmp.test-28-30
+DoReduce: read mrtmp.test-28-31
+DoReduce: read mrtmp.test-29-30
+DoReduce: read mrtmp.test-29-31
+DoReduce: read mrtmp.test-30-30
+DoReduce: read mrtmp.test-30-31
+DoReduce: read mrtmp.test-31-30
+DoReduce: read mrtmp.test-31-31
+DoReduce: read mrtmp.test-32-30
+DoReduce: read mrtmp.test-32-31
+DoReduce: read mrtmp.test-33-30
+DoReduce: read mrtmp.test-33-31
+DoReduce: read mrtmp.test-34-31
+DoReduce: read mrtmp.test-34-30
+DoReduce: read mrtmp.test-35-31
+DoReduce: read mrtmp.test-35-30
+DoReduce: read mrtmp.test-36-31
+DoReduce: read mrtmp.test-36-30
+DoReduce: read mrtmp.test-37-31
+DoReduce: read mrtmp.test-37-30
+DoReduce: read mrtmp.test-38-31
+DoReduce: read mrtmp.test-39-31
+DoReduce: read mrtmp.test-38-30
+DoReduce: read mrtmp.test-40-31
+DoReduce: read mrtmp.test-39-30
+DoReduce: read mrtmp.test-41-31
+DoReduce: read mrtmp.test-40-30
+DoReduce: read mrtmp.test-42-31
+DoReduce: read mrtmp.test-41-30
+DoReduce: read mrtmp.test-43-31
+DoReduce: read mrtmp.test-44-31
+DoReduce: read mrtmp.test-42-30
+DoReduce: read mrtmp.test-43-30
+DoReduce: read mrtmp.test-45-31
+DoReduce: read mrtmp.test-44-30
+DoReduce: read mrtmp.test-46-31
+DoReduce: read mrtmp.test-45-30
+DoReduce: read mrtmp.test-47-31
+DoReduce: read mrtmp.test-46-30
+DoReduce: read mrtmp.test-48-31
+DoReduce: read mrtmp.test-47-30
+DoReduce: read mrtmp.test-49-31
+DoReduce: read mrtmp.test-48-30
+DoReduce: read mrtmp.test-50-31
+DoReduce: read mrtmp.test-51-31
+DoReduce: read mrtmp.test-49-30
+DoReduce: read mrtmp.test-52-31
+DoReduce: read mrtmp.test-50-30
+DoReduce: read mrtmp.test-53-31
+DoReduce: read mrtmp.test-51-30
+DoReduce: read mrtmp.test-54-31
+DoReduce: read mrtmp.test-52-30
+DoReduce: read mrtmp.test-53-30
+DoReduce: read mrtmp.test-55-31
+DoReduce: read mrtmp.test-54-30
+DoReduce: read mrtmp.test-56-31
+DoReduce: read mrtmp.test-55-30
+DoReduce: read mrtmp.test-57-31
+DoReduce: read mrtmp.test-56-30
+DoReduce: read mrtmp.test-58-31
+DoReduce: read mrtmp.test-57-30
+DoReduce: read mrtmp.test-59-31
+DoReduce: read mrtmp.test-58-30
+DoReduce: read mrtmp.test-60-31
+DoReduce: read mrtmp.test-59-30
+DoReduce: read mrtmp.test-61-31
+DoReduce: read mrtmp.test-60-30
+DoReduce: read mrtmp.test-62-31
+DoReduce: read mrtmp.test-63-31
+DoReduce: read mrtmp.test-61-30
+DoReduce: read mrtmp.test-64-31
+DoReduce: read mrtmp.test-65-31
+DoReduce: read mrtmp.test-62-30
+DoReduce: read mrtmp.test-66-31
+DoReduce: read mrtmp.test-63-30
+DoReduce: read mrtmp.test-67-31
+DoReduce: read mrtmp.test-64-30
+DoReduce: read mrtmp.test-65-30
+DoReduce: read mrtmp.test-68-31
+DoReduce: read mrtmp.test-66-30
+DoReduce: read mrtmp.test-69-31
+DoReduce: read mrtmp.test-67-30
+DoReduce: read mrtmp.test-70-31
+DoReduce: read mrtmp.test-68-30
+DoReduce: read mrtmp.test-71-31
+DoReduce: read mrtmp.test-69-30
+DoReduce: read mrtmp.test-72-31
+DoReduce: read mrtmp.test-70-30
+DoReduce: read mrtmp.test-73-31
+DoReduce: read mrtmp.test-74-31
+DoReduce: read mrtmp.test-71-30
+DoReduce: read mrtmp.test-72-30
+DoReduce: read mrtmp.test-75-31
+DoReduce: read mrtmp.test-73-30
+DoReduce: read mrtmp.test-76-31
+DoReduce: read mrtmp.test-74-30
+DoReduce: read mrtmp.test-77-31
+DoReduce: read mrtmp.test-75-30
+DoReduce: read mrtmp.test-78-31
+DoReduce: read mrtmp.test-76-30
+DoReduce: read mrtmp.test-79-31
+DoReduce: read mrtmp.test-77-30
+DoReduce: read mrtmp.test-80-31
+DoReduce: read mrtmp.test-78-30
+DoReduce: read mrtmp.test-81-31
+DoReduce: read mrtmp.test-79-30
+DoReduce: read mrtmp.test-82-31
+DoReduce: read mrtmp.test-80-30
+DoReduce: read mrtmp.test-83-31
+DoReduce: read mrtmp.test-81-30
+DoReduce: read mrtmp.test-82-30
+DoReduce: read mrtmp.test-84-31
+DoReduce: read mrtmp.test-83-30
+DoReduce: read mrtmp.test-85-31
+DoReduce: read mrtmp.test-84-30
+DoReduce: read mrtmp.test-86-31
+DoReduce: read mrtmp.test-85-30
+DoReduce: read mrtmp.test-87-31
+DoReduce: read mrtmp.test-86-30
+DoReduce: read mrtmp.test-88-31
+DoReduce: read mrtmp.test-87-30
+DoReduce: read mrtmp.test-89-31
+DoReduce: read mrtmp.test-88-30
+DoReduce: read mrtmp.test-90-31
+DoReduce: read mrtmp.test-91-31
+DoReduce: read mrtmp.test-89-30
+DoReduce: read mrtmp.test-92-31
+DoReduce: read mrtmp.test-90-30
+DoReduce: read mrtmp.test-93-31
+DoReduce: read mrtmp.test-91-30
+DoReduce: read mrtmp.test-94-31
+DoReduce: read mrtmp.test-92-30
+DoReduce: read mrtmp.test-95-31
+DoReduce: read mrtmp.test-93-30
+DoReduce: read mrtmp.test-96-31
+DoReduce: read mrtmp.test-94-30
+DoReduce: read mrtmp.test-97-31
+DoReduce: read mrtmp.test-95-30
+DoReduce: read mrtmp.test-98-31
+DoReduce: read mrtmp.test-96-30
+DoReduce: read mrtmp.test-99-31
+DoReduce: read mrtmp.test-97-30
+DoReduce: read mrtmp.test-98-30
+DoReduce: read mrtmp.test-99-30
+/var/tmp/824-501/mr24826-worker0: Reduce task #31 done
+2017/03/31 17:42:02 got worker address
+/var/tmp/824-501/mr24826-worker1: Reduce task #30 done
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #32 on file 824-mrinput-32.txt (nios: 100)
+DoReduce: read mrtmp.test-0-32
+DoReduce: read mrtmp.test-1-32
+/var/tmp/824-501/mr24826-worker1: given Reduce task #33 on file 824-mrinput-33.txt (nios: 100)
+DoReduce: read mrtmp.test-0-33
+DoReduce: read mrtmp.test-2-32
+DoReduce: read mrtmp.test-3-32
+DoReduce: read mrtmp.test-1-33
+DoReduce: read mrtmp.test-4-32
+DoReduce: read mrtmp.test-2-33
+DoReduce: read mrtmp.test-5-32
+DoReduce: read mrtmp.test-3-33
+DoReduce: read mrtmp.test-4-33
+DoReduce: read mrtmp.test-6-32
+DoReduce: read mrtmp.test-7-32
+DoReduce: read mrtmp.test-5-33
+DoReduce: read mrtmp.test-8-32
+DoReduce: read mrtmp.test-6-33
+DoReduce: read mrtmp.test-9-32
+DoReduce: read mrtmp.test-7-33
+DoReduce: read mrtmp.test-10-32
+DoReduce: read mrtmp.test-8-33
+DoReduce: read mrtmp.test-11-32
+DoReduce: read mrtmp.test-9-33
+DoReduce: read mrtmp.test-10-33
+DoReduce: read mrtmp.test-12-32
+DoReduce: read mrtmp.test-13-32
+DoReduce: read mrtmp.test-11-33
+DoReduce: read mrtmp.test-14-32
+DoReduce: read mrtmp.test-12-33
+DoReduce: read mrtmp.test-15-32
+DoReduce: read mrtmp.test-13-33
+DoReduce: read mrtmp.test-16-32
+DoReduce: read mrtmp.test-14-33
+DoReduce: read mrtmp.test-17-32
+DoReduce: read mrtmp.test-15-33
+DoReduce: read mrtmp.test-18-32
+DoReduce: read mrtmp.test-16-33
+DoReduce: read mrtmp.test-19-32
+DoReduce: read mrtmp.test-17-33
+DoReduce: read mrtmp.test-20-32
+DoReduce: read mrtmp.test-18-33
+DoReduce: read mrtmp.test-21-32
+DoReduce: read mrtmp.test-19-33
+DoReduce: read mrtmp.test-20-33
+DoReduce: read mrtmp.test-22-32
+DoReduce: read mrtmp.test-21-33
+DoReduce: read mrtmp.test-23-32
+DoReduce: read mrtmp.test-24-32
+DoReduce: read mrtmp.test-22-33
+DoReduce: read mrtmp.test-25-32
+DoReduce: read mrtmp.test-23-33
+DoReduce: read mrtmp.test-26-32
+DoReduce: read mrtmp.test-24-33
+DoReduce: read mrtmp.test-27-32
+DoReduce: read mrtmp.test-25-33
+DoReduce: read mrtmp.test-28-32
+DoReduce: read mrtmp.test-26-33
+DoReduce: read mrtmp.test-29-32
+DoReduce: read mrtmp.test-27-33
+DoReduce: read mrtmp.test-30-32
+DoReduce: read mrtmp.test-28-33
+DoReduce: read mrtmp.test-31-32
+DoReduce: read mrtmp.test-32-32
+DoReduce: read mrtmp.test-33-32
+DoReduce: read mrtmp.test-29-33
+DoReduce: read mrtmp.test-34-32
+DoReduce: read mrtmp.test-30-33
+DoReduce: read mrtmp.test-35-32
+DoReduce: read mrtmp.test-31-33
+DoReduce: read mrtmp.test-36-32
+DoReduce: read mrtmp.test-32-33
+DoReduce: read mrtmp.test-37-32
+DoReduce: read mrtmp.test-33-33
+DoReduce: read mrtmp.test-38-32
+DoReduce: read mrtmp.test-34-33
+DoReduce: read mrtmp.test-39-32
+DoReduce: read mrtmp.test-35-33
+DoReduce: read mrtmp.test-40-32
+DoReduce: read mrtmp.test-36-33
+DoReduce: read mrtmp.test-37-33
+DoReduce: read mrtmp.test-41-32
+DoReduce: read mrtmp.test-38-33
+DoReduce: read mrtmp.test-39-33
+DoReduce: read mrtmp.test-42-32
+DoReduce: read mrtmp.test-40-33
+DoReduce: read mrtmp.test-41-33
+DoReduce: read mrtmp.test-43-32
+DoReduce: read mrtmp.test-42-33
+DoReduce: read mrtmp.test-44-32
+DoReduce: read mrtmp.test-43-33
+DoReduce: read mrtmp.test-45-32
+DoReduce: read mrtmp.test-44-33
+DoReduce: read mrtmp.test-46-32
+DoReduce: read mrtmp.test-45-33
+DoReduce: read mrtmp.test-47-32
+DoReduce: read mrtmp.test-46-33
+DoReduce: read mrtmp.test-48-32
+DoReduce: read mrtmp.test-47-33
+DoReduce: read mrtmp.test-49-32
+DoReduce: read mrtmp.test-48-33
+DoReduce: read mrtmp.test-50-32
+DoReduce: read mrtmp.test-49-33
+DoReduce: read mrtmp.test-51-32
+DoReduce: read mrtmp.test-50-33
+DoReduce: read mrtmp.test-52-32
+DoReduce: read mrtmp.test-51-33
+DoReduce: read mrtmp.test-53-32
+DoReduce: read mrtmp.test-52-33
+DoReduce: read mrtmp.test-54-32
+DoReduce: read mrtmp.test-53-33
+DoReduce: read mrtmp.test-55-32
+DoReduce: read mrtmp.test-54-33
+DoReduce: read mrtmp.test-56-32
+DoReduce: read mrtmp.test-55-33
+DoReduce: read mrtmp.test-57-32
+DoReduce: read mrtmp.test-56-33
+DoReduce: read mrtmp.test-58-32
+DoReduce: read mrtmp.test-57-33
+DoReduce: read mrtmp.test-59-32
+DoReduce: read mrtmp.test-58-33
+DoReduce: read mrtmp.test-60-32
+DoReduce: read mrtmp.test-59-33
+DoReduce: read mrtmp.test-61-32
+DoReduce: read mrtmp.test-60-33
+DoReduce: read mrtmp.test-62-32
+DoReduce: read mrtmp.test-61-33
+DoReduce: read mrtmp.test-63-32
+DoReduce: read mrtmp.test-62-33
+DoReduce: read mrtmp.test-64-32
+DoReduce: read mrtmp.test-63-33
+DoReduce: read mrtmp.test-65-32
+DoReduce: read mrtmp.test-64-33
+DoReduce: read mrtmp.test-66-32
+DoReduce: read mrtmp.test-67-32
+DoReduce: read mrtmp.test-65-33
+DoReduce: read mrtmp.test-68-32
+DoReduce: read mrtmp.test-66-33
+DoReduce: read mrtmp.test-69-32
+DoReduce: read mrtmp.test-67-33
+DoReduce: read mrtmp.test-70-32
+DoReduce: read mrtmp.test-68-33
+DoReduce: read mrtmp.test-71-32
+DoReduce: read mrtmp.test-69-33
+DoReduce: read mrtmp.test-72-32
+DoReduce: read mrtmp.test-70-33
+DoReduce: read mrtmp.test-73-32
+DoReduce: read mrtmp.test-71-33
+DoReduce: read mrtmp.test-72-33
+DoReduce: read mrtmp.test-73-33
+DoReduce: read mrtmp.test-74-32
+DoReduce: read mrtmp.test-74-33
+DoReduce: read mrtmp.test-75-32
+DoReduce: read mrtmp.test-75-33
+DoReduce: read mrtmp.test-76-32
+DoReduce: read mrtmp.test-76-33
+DoReduce: read mrtmp.test-77-32
+DoReduce: read mrtmp.test-77-33
+DoReduce: read mrtmp.test-78-32
+DoReduce: read mrtmp.test-78-33
+DoReduce: read mrtmp.test-79-32
+DoReduce: read mrtmp.test-79-33
+DoReduce: read mrtmp.test-80-32
+DoReduce: read mrtmp.test-80-33
+DoReduce: read mrtmp.test-81-32
+DoReduce: read mrtmp.test-81-33
+DoReduce: read mrtmp.test-82-32
+DoReduce: read mrtmp.test-83-32
+DoReduce: read mrtmp.test-82-33
+DoReduce: read mrtmp.test-84-32
+DoReduce: read mrtmp.test-83-33
+DoReduce: read mrtmp.test-85-32
+DoReduce: read mrtmp.test-84-33
+DoReduce: read mrtmp.test-85-33
+DoReduce: read mrtmp.test-86-32
+DoReduce: read mrtmp.test-86-33
+DoReduce: read mrtmp.test-87-32
+DoReduce: read mrtmp.test-87-33
+DoReduce: read mrtmp.test-88-32
+DoReduce: read mrtmp.test-88-33
+DoReduce: read mrtmp.test-89-32
+DoReduce: read mrtmp.test-89-33
+DoReduce: read mrtmp.test-90-33
+DoReduce: read mrtmp.test-90-32
+DoReduce: read mrtmp.test-91-33
+DoReduce: read mrtmp.test-91-32
+DoReduce: read mrtmp.test-92-33
+DoReduce: read mrtmp.test-92-32
+DoReduce: read mrtmp.test-93-33
+DoReduce: read mrtmp.test-93-32
+DoReduce: read mrtmp.test-94-33
+DoReduce: read mrtmp.test-94-32
+DoReduce: read mrtmp.test-95-33
+DoReduce: read mrtmp.test-95-32
+DoReduce: read mrtmp.test-96-33
+DoReduce: read mrtmp.test-96-32
+DoReduce: read mrtmp.test-97-33
+DoReduce: read mrtmp.test-97-32
+DoReduce: read mrtmp.test-98-33
+DoReduce: read mrtmp.test-98-32
+DoReduce: read mrtmp.test-99-33
+DoReduce: read mrtmp.test-99-32
+/var/tmp/824-501/mr24826-worker1: Reduce task #33 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #32 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #35 on file 824-mrinput-35.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker1: given Reduce task #34 on file 824-mrinput-34.txt (nios: 100)
+DoReduce: read mrtmp.test-0-35
+DoReduce: read mrtmp.test-0-34
+DoReduce: read mrtmp.test-1-35
+DoReduce: read mrtmp.test-1-34
+DoReduce: read mrtmp.test-2-35
+DoReduce: read mrtmp.test-2-34
+DoReduce: read mrtmp.test-3-35
+DoReduce: read mrtmp.test-3-34
+DoReduce: read mrtmp.test-4-35
+DoReduce: read mrtmp.test-5-35
+DoReduce: read mrtmp.test-4-34
+DoReduce: read mrtmp.test-6-35
+DoReduce: read mrtmp.test-5-34
+DoReduce: read mrtmp.test-7-35
+DoReduce: read mrtmp.test-6-34
+DoReduce: read mrtmp.test-8-35
+DoReduce: read mrtmp.test-7-34
+DoReduce: read mrtmp.test-8-34
+DoReduce: read mrtmp.test-9-35
+DoReduce: read mrtmp.test-9-34
+DoReduce: read mrtmp.test-10-35
+DoReduce: read mrtmp.test-10-34
+DoReduce: read mrtmp.test-11-35
+DoReduce: read mrtmp.test-12-35
+DoReduce: read mrtmp.test-11-34
+DoReduce: read mrtmp.test-13-35
+DoReduce: read mrtmp.test-12-34
+DoReduce: read mrtmp.test-13-34
+DoReduce: read mrtmp.test-14-35
+DoReduce: read mrtmp.test-14-34
+DoReduce: read mrtmp.test-15-35
+DoReduce: read mrtmp.test-16-35
+DoReduce: read mrtmp.test-15-34
+DoReduce: read mrtmp.test-17-35
+DoReduce: read mrtmp.test-16-34
+DoReduce: read mrtmp.test-18-35
+DoReduce: read mrtmp.test-17-34
+DoReduce: read mrtmp.test-19-35
+DoReduce: read mrtmp.test-18-34
+DoReduce: read mrtmp.test-20-35
+DoReduce: read mrtmp.test-19-34
+DoReduce: read mrtmp.test-21-35
+DoReduce: read mrtmp.test-20-34
+DoReduce: read mrtmp.test-22-35
+DoReduce: read mrtmp.test-21-34
+DoReduce: read mrtmp.test-23-35
+DoReduce: read mrtmp.test-22-34
+DoReduce: read mrtmp.test-24-35
+DoReduce: read mrtmp.test-23-34
+DoReduce: read mrtmp.test-25-35
+DoReduce: read mrtmp.test-26-35
+DoReduce: read mrtmp.test-24-34
+DoReduce: read mrtmp.test-25-34
+DoReduce: read mrtmp.test-27-35
+DoReduce: read mrtmp.test-28-35
+DoReduce: read mrtmp.test-26-34
+DoReduce: read mrtmp.test-29-35
+DoReduce: read mrtmp.test-27-34
+DoReduce: read mrtmp.test-30-35
+DoReduce: read mrtmp.test-28-34
+DoReduce: read mrtmp.test-29-34
+DoReduce: read mrtmp.test-31-35
+DoReduce: read mrtmp.test-30-34
+DoReduce: read mrtmp.test-32-35
+DoReduce: read mrtmp.test-31-34
+DoReduce: read mrtmp.test-33-35
+DoReduce: read mrtmp.test-32-34
+DoReduce: read mrtmp.test-34-35
+DoReduce: read mrtmp.test-33-34
+DoReduce: read mrtmp.test-35-35
+DoReduce: read mrtmp.test-34-34
+DoReduce: read mrtmp.test-36-35
+DoReduce: read mrtmp.test-35-34
+DoReduce: read mrtmp.test-37-35
+DoReduce: read mrtmp.test-36-34
+DoReduce: read mrtmp.test-38-35
+DoReduce: read mrtmp.test-37-34
+DoReduce: read mrtmp.test-39-35
+DoReduce: read mrtmp.test-38-34
+DoReduce: read mrtmp.test-40-35
+DoReduce: read mrtmp.test-39-34
+DoReduce: read mrtmp.test-40-34
+DoReduce: read mrtmp.test-41-35
+DoReduce: read mrtmp.test-41-34
+DoReduce: read mrtmp.test-42-35
+DoReduce: read mrtmp.test-42-34
+DoReduce: read mrtmp.test-43-35
+DoReduce: read mrtmp.test-43-34
+DoReduce: read mrtmp.test-44-35
+DoReduce: read mrtmp.test-44-34
+DoReduce: read mrtmp.test-45-35
+DoReduce: read mrtmp.test-45-34
+DoReduce: read mrtmp.test-46-35
+DoReduce: read mrtmp.test-46-34
+DoReduce: read mrtmp.test-47-35
+DoReduce: read mrtmp.test-47-34
+DoReduce: read mrtmp.test-48-35
+DoReduce: read mrtmp.test-48-34
+DoReduce: read mrtmp.test-49-35
+DoReduce: read mrtmp.test-49-34
+DoReduce: read mrtmp.test-50-35
+DoReduce: read mrtmp.test-50-34
+DoReduce: read mrtmp.test-51-35
+DoReduce: read mrtmp.test-51-34
+DoReduce: read mrtmp.test-52-35
+DoReduce: read mrtmp.test-52-34
+DoReduce: read mrtmp.test-53-35
+DoReduce: read mrtmp.test-53-34
+DoReduce: read mrtmp.test-54-35
+DoReduce: read mrtmp.test-54-34
+DoReduce: read mrtmp.test-55-35
+DoReduce: read mrtmp.test-55-34
+DoReduce: read mrtmp.test-56-35
+DoReduce: read mrtmp.test-56-34
+DoReduce: read mrtmp.test-57-35
+DoReduce: read mrtmp.test-57-34
+DoReduce: read mrtmp.test-58-35
+DoReduce: read mrtmp.test-58-34
+DoReduce: read mrtmp.test-59-35
+DoReduce: read mrtmp.test-59-34
+DoReduce: read mrtmp.test-60-35
+DoReduce: read mrtmp.test-60-34
+DoReduce: read mrtmp.test-61-35
+DoReduce: read mrtmp.test-61-34
+DoReduce: read mrtmp.test-62-35
+DoReduce: read mrtmp.test-62-34
+DoReduce: read mrtmp.test-63-35
+DoReduce: read mrtmp.test-63-34
+DoReduce: read mrtmp.test-64-35
+DoReduce: read mrtmp.test-64-34
+DoReduce: read mrtmp.test-65-35
+DoReduce: read mrtmp.test-65-34
+DoReduce: read mrtmp.test-66-35
+DoReduce: read mrtmp.test-66-34
+DoReduce: read mrtmp.test-67-35
+DoReduce: read mrtmp.test-67-34
+DoReduce: read mrtmp.test-68-35
+DoReduce: read mrtmp.test-68-34
+DoReduce: read mrtmp.test-69-35
+DoReduce: read mrtmp.test-69-34
+DoReduce: read mrtmp.test-70-35
+DoReduce: read mrtmp.test-70-34
+DoReduce: read mrtmp.test-71-35
+DoReduce: read mrtmp.test-71-34
+DoReduce: read mrtmp.test-72-35
+DoReduce: read mrtmp.test-72-34
+DoReduce: read mrtmp.test-73-35
+DoReduce: read mrtmp.test-73-34
+DoReduce: read mrtmp.test-74-35
+DoReduce: read mrtmp.test-74-34
+DoReduce: read mrtmp.test-75-35
+DoReduce: read mrtmp.test-75-34
+DoReduce: read mrtmp.test-76-35
+DoReduce: read mrtmp.test-76-34
+DoReduce: read mrtmp.test-77-35
+DoReduce: read mrtmp.test-77-34
+DoReduce: read mrtmp.test-78-35
+DoReduce: read mrtmp.test-78-34
+DoReduce: read mrtmp.test-79-35
+DoReduce: read mrtmp.test-79-34
+DoReduce: read mrtmp.test-80-35
+DoReduce: read mrtmp.test-80-34
+DoReduce: read mrtmp.test-81-35
+DoReduce: read mrtmp.test-81-34
+DoReduce: read mrtmp.test-82-35
+DoReduce: read mrtmp.test-82-34
+DoReduce: read mrtmp.test-83-35
+DoReduce: read mrtmp.test-83-34
+DoReduce: read mrtmp.test-84-35
+DoReduce: read mrtmp.test-84-34
+DoReduce: read mrtmp.test-85-35
+DoReduce: read mrtmp.test-85-34
+DoReduce: read mrtmp.test-86-35
+DoReduce: read mrtmp.test-86-34
+DoReduce: read mrtmp.test-87-35
+DoReduce: read mrtmp.test-87-34
+DoReduce: read mrtmp.test-88-35
+DoReduce: read mrtmp.test-88-34
+DoReduce: read mrtmp.test-89-35
+DoReduce: read mrtmp.test-89-34
+DoReduce: read mrtmp.test-90-35
+DoReduce: read mrtmp.test-90-34
+DoReduce: read mrtmp.test-91-35
+DoReduce: read mrtmp.test-91-34
+DoReduce: read mrtmp.test-92-35
+DoReduce: read mrtmp.test-92-34
+DoReduce: read mrtmp.test-93-35
+DoReduce: read mrtmp.test-93-34
+DoReduce: read mrtmp.test-94-35
+DoReduce: read mrtmp.test-94-34
+DoReduce: read mrtmp.test-95-35
+DoReduce: read mrtmp.test-95-34
+DoReduce: read mrtmp.test-96-35
+DoReduce: read mrtmp.test-96-34
+DoReduce: read mrtmp.test-97-35
+DoReduce: read mrtmp.test-97-34
+DoReduce: read mrtmp.test-98-35
+DoReduce: read mrtmp.test-98-34
+DoReduce: read mrtmp.test-99-35
+DoReduce: read mrtmp.test-99-34
+/var/tmp/824-501/mr24826-worker1: Reduce task #34 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: Reduce task #35 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #36 on file 824-mrinput-36.txt (nios: 100)
+DoReduce: read mrtmp.test-0-36
+DoReduce: read mrtmp.test-1-36
+DoReduce: read mrtmp.test-2-36
+/var/tmp/824-501/mr24826-worker0: given Reduce task #37 on file 824-mrinput-37.txt (nios: 100)
+DoReduce: read mrtmp.test-3-36
+DoReduce: read mrtmp.test-0-37
+DoReduce: read mrtmp.test-4-36
+DoReduce: read mrtmp.test-1-37
+DoReduce: read mrtmp.test-5-36
+DoReduce: read mrtmp.test-2-37
+DoReduce: read mrtmp.test-6-36
+DoReduce: read mrtmp.test-3-37
+DoReduce: read mrtmp.test-7-36
+DoReduce: read mrtmp.test-4-37
+DoReduce: read mrtmp.test-8-36
+DoReduce: read mrtmp.test-5-37
+DoReduce: read mrtmp.test-9-36
+DoReduce: read mrtmp.test-6-37
+DoReduce: read mrtmp.test-10-36
+DoReduce: read mrtmp.test-7-37
+DoReduce: read mrtmp.test-8-37
+DoReduce: read mrtmp.test-11-36
+DoReduce: read mrtmp.test-12-36
+DoReduce: read mrtmp.test-9-37
+DoReduce: read mrtmp.test-13-36
+DoReduce: read mrtmp.test-10-37
+DoReduce: read mrtmp.test-14-36
+DoReduce: read mrtmp.test-11-37
+DoReduce: read mrtmp.test-15-36
+DoReduce: read mrtmp.test-12-37
+DoReduce: read mrtmp.test-16-36
+DoReduce: read mrtmp.test-17-36
+DoReduce: read mrtmp.test-13-37
+DoReduce: read mrtmp.test-14-37
+DoReduce: read mrtmp.test-18-36
+DoReduce: read mrtmp.test-15-37
+DoReduce: read mrtmp.test-19-36
+DoReduce: read mrtmp.test-16-37
+DoReduce: read mrtmp.test-20-36
+DoReduce: read mrtmp.test-17-37
+DoReduce: read mrtmp.test-21-36
+DoReduce: read mrtmp.test-18-37
+DoReduce: read mrtmp.test-22-36
+DoReduce: read mrtmp.test-19-37
+DoReduce: read mrtmp.test-23-36
+DoReduce: read mrtmp.test-20-37
+DoReduce: read mrtmp.test-24-36
+DoReduce: read mrtmp.test-21-37
+DoReduce: read mrtmp.test-25-36
+DoReduce: read mrtmp.test-22-37
+DoReduce: read mrtmp.test-26-36
+DoReduce: read mrtmp.test-27-36
+DoReduce: read mrtmp.test-23-37
+DoReduce: read mrtmp.test-28-36
+DoReduce: read mrtmp.test-24-37
+DoReduce: read mrtmp.test-29-36
+DoReduce: read mrtmp.test-25-37
+DoReduce: read mrtmp.test-30-36
+DoReduce: read mrtmp.test-26-37
+DoReduce: read mrtmp.test-31-36
+DoReduce: read mrtmp.test-27-37
+DoReduce: read mrtmp.test-32-36
+DoReduce: read mrtmp.test-28-37
+DoReduce: read mrtmp.test-33-36
+DoReduce: read mrtmp.test-29-37
+DoReduce: read mrtmp.test-34-36
+DoReduce: read mrtmp.test-30-37
+DoReduce: read mrtmp.test-35-36
+DoReduce: read mrtmp.test-31-37
+DoReduce: read mrtmp.test-36-36
+DoReduce: read mrtmp.test-32-37
+DoReduce: read mrtmp.test-37-36
+DoReduce: read mrtmp.test-33-37
+DoReduce: read mrtmp.test-38-36
+DoReduce: read mrtmp.test-34-37
+DoReduce: read mrtmp.test-39-36
+DoReduce: read mrtmp.test-35-37
+DoReduce: read mrtmp.test-40-36
+DoReduce: read mrtmp.test-41-36
+DoReduce: read mrtmp.test-36-37
+DoReduce: read mrtmp.test-42-36
+DoReduce: read mrtmp.test-37-37
+DoReduce: read mrtmp.test-38-37
+DoReduce: read mrtmp.test-43-36
+DoReduce: read mrtmp.test-39-37
+DoReduce: read mrtmp.test-40-37
+DoReduce: read mrtmp.test-44-36
+DoReduce: read mrtmp.test-41-37
+DoReduce: read mrtmp.test-45-36
+DoReduce: read mrtmp.test-42-37
+DoReduce: read mrtmp.test-46-36
+DoReduce: read mrtmp.test-43-37
+DoReduce: read mrtmp.test-47-36
+DoReduce: read mrtmp.test-44-37
+DoReduce: read mrtmp.test-48-36
+DoReduce: read mrtmp.test-45-37
+DoReduce: read mrtmp.test-49-36
+DoReduce: read mrtmp.test-46-37
+DoReduce: read mrtmp.test-50-36
+DoReduce: read mrtmp.test-47-37
+DoReduce: read mrtmp.test-51-36
+DoReduce: read mrtmp.test-48-37
+DoReduce: read mrtmp.test-52-36
+DoReduce: read mrtmp.test-49-37
+DoReduce: read mrtmp.test-53-36
+DoReduce: read mrtmp.test-50-37
+DoReduce: read mrtmp.test-54-36
+DoReduce: read mrtmp.test-51-37
+DoReduce: read mrtmp.test-55-36
+DoReduce: read mrtmp.test-52-37
+DoReduce: read mrtmp.test-56-36
+DoReduce: read mrtmp.test-53-37
+DoReduce: read mrtmp.test-57-36
+DoReduce: read mrtmp.test-54-37
+DoReduce: read mrtmp.test-58-36
+DoReduce: read mrtmp.test-55-37
+DoReduce: read mrtmp.test-59-36
+DoReduce: read mrtmp.test-56-37
+DoReduce: read mrtmp.test-60-36
+DoReduce: read mrtmp.test-57-37
+DoReduce: read mrtmp.test-61-36
+DoReduce: read mrtmp.test-58-37
+DoReduce: read mrtmp.test-62-36
+DoReduce: read mrtmp.test-63-36
+DoReduce: read mrtmp.test-59-37
+DoReduce: read mrtmp.test-64-36
+DoReduce: read mrtmp.test-60-37
+DoReduce: read mrtmp.test-65-36
+DoReduce: read mrtmp.test-61-37
+DoReduce: read mrtmp.test-66-36
+DoReduce: read mrtmp.test-62-37
+DoReduce: read mrtmp.test-67-36
+DoReduce: read mrtmp.test-63-37
+DoReduce: read mrtmp.test-68-36
+DoReduce: read mrtmp.test-64-37
+DoReduce: read mrtmp.test-65-37
+DoReduce: read mrtmp.test-69-36
+DoReduce: read mrtmp.test-70-36
+DoReduce: read mrtmp.test-66-37
+DoReduce: read mrtmp.test-71-36
+DoReduce: read mrtmp.test-67-37
+DoReduce: read mrtmp.test-72-36
+DoReduce: read mrtmp.test-68-37
+DoReduce: read mrtmp.test-73-36
+DoReduce: read mrtmp.test-69-37
+DoReduce: read mrtmp.test-74-36
+DoReduce: read mrtmp.test-70-37
+DoReduce: read mrtmp.test-75-36
+DoReduce: read mrtmp.test-71-37
+DoReduce: read mrtmp.test-76-36
+DoReduce: read mrtmp.test-72-37
+DoReduce: read mrtmp.test-77-36
+DoReduce: read mrtmp.test-73-37
+DoReduce: read mrtmp.test-78-36
+DoReduce: read mrtmp.test-74-37
+DoReduce: read mrtmp.test-79-36
+DoReduce: read mrtmp.test-75-37
+DoReduce: read mrtmp.test-80-36
+DoReduce: read mrtmp.test-76-37
+DoReduce: read mrtmp.test-81-36
+DoReduce: read mrtmp.test-77-37
+DoReduce: read mrtmp.test-82-36
+DoReduce: read mrtmp.test-78-37
+DoReduce: read mrtmp.test-83-36
+DoReduce: read mrtmp.test-79-37
+DoReduce: read mrtmp.test-84-36
+DoReduce: read mrtmp.test-80-37
+DoReduce: read mrtmp.test-85-36
+DoReduce: read mrtmp.test-81-37
+DoReduce: read mrtmp.test-82-37
+DoReduce: read mrtmp.test-86-36
+DoReduce: read mrtmp.test-83-37
+DoReduce: read mrtmp.test-87-36
+DoReduce: read mrtmp.test-88-36
+DoReduce: read mrtmp.test-84-37
+DoReduce: read mrtmp.test-89-36
+DoReduce: read mrtmp.test-85-37
+DoReduce: read mrtmp.test-90-36
+DoReduce: read mrtmp.test-86-37
+DoReduce: read mrtmp.test-91-36
+DoReduce: read mrtmp.test-87-37
+DoReduce: read mrtmp.test-92-36
+DoReduce: read mrtmp.test-88-37
+DoReduce: read mrtmp.test-93-36
+DoReduce: read mrtmp.test-89-37
+DoReduce: read mrtmp.test-94-36
+DoReduce: read mrtmp.test-90-37
+DoReduce: read mrtmp.test-95-36
+DoReduce: read mrtmp.test-91-37
+DoReduce: read mrtmp.test-96-36
+DoReduce: read mrtmp.test-92-37
+DoReduce: read mrtmp.test-97-36
+DoReduce: read mrtmp.test-93-37
+DoReduce: read mrtmp.test-94-37
+DoReduce: read mrtmp.test-98-36
+DoReduce: read mrtmp.test-95-37
+DoReduce: read mrtmp.test-99-36
+DoReduce: read mrtmp.test-96-37
+DoReduce: read mrtmp.test-97-37
+DoReduce: read mrtmp.test-98-37
+DoReduce: read mrtmp.test-99-37
+/var/tmp/824-501/mr24826-worker1: Reduce task #36 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #38 on file 824-mrinput-38.txt (nios: 100)
+DoReduce: read mrtmp.test-0-38
+DoReduce: read mrtmp.test-1-38
+DoReduce: read mrtmp.test-2-38
+/var/tmp/824-501/mr24826-worker0: Reduce task #37 done
+DoReduce: read mrtmp.test-3-38
+DoReduce: read mrtmp.test-4-38
+DoReduce: read mrtmp.test-5-38
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-6-38
+DoReduce: read mrtmp.test-7-38
+DoReduce: read mrtmp.test-8-38
+/var/tmp/824-501/mr24826-worker0: given Reduce task #39 on file 824-mrinput-39.txt (nios: 100)
+DoReduce: read mrtmp.test-9-38
+DoReduce: read mrtmp.test-0-39
+DoReduce: read mrtmp.test-10-38
+DoReduce: read mrtmp.test-1-39
+DoReduce: read mrtmp.test-11-38
+DoReduce: read mrtmp.test-2-39
+DoReduce: read mrtmp.test-12-38
+DoReduce: read mrtmp.test-3-39
+DoReduce: read mrtmp.test-13-38
+DoReduce: read mrtmp.test-4-39
+DoReduce: read mrtmp.test-14-38
+DoReduce: read mrtmp.test-5-39
+DoReduce: read mrtmp.test-15-38
+DoReduce: read mrtmp.test-6-39
+DoReduce: read mrtmp.test-16-38
+DoReduce: read mrtmp.test-7-39
+DoReduce: read mrtmp.test-17-38
+DoReduce: read mrtmp.test-8-39
+DoReduce: read mrtmp.test-18-38
+DoReduce: read mrtmp.test-9-39
+DoReduce: read mrtmp.test-19-38
+DoReduce: read mrtmp.test-10-39
+DoReduce: read mrtmp.test-20-38
+DoReduce: read mrtmp.test-11-39
+DoReduce: read mrtmp.test-21-38
+DoReduce: read mrtmp.test-12-39
+DoReduce: read mrtmp.test-13-39
+DoReduce: read mrtmp.test-22-38
+DoReduce: read mrtmp.test-14-39
+DoReduce: read mrtmp.test-23-38
+DoReduce: read mrtmp.test-15-39
+DoReduce: read mrtmp.test-24-38
+DoReduce: read mrtmp.test-16-39
+DoReduce: read mrtmp.test-25-38
+DoReduce: read mrtmp.test-17-39
+DoReduce: read mrtmp.test-26-38
+DoReduce: read mrtmp.test-18-39
+DoReduce: read mrtmp.test-27-38
+DoReduce: read mrtmp.test-28-38
+DoReduce: read mrtmp.test-19-39
+DoReduce: read mrtmp.test-29-38
+DoReduce: read mrtmp.test-20-39
+DoReduce: read mrtmp.test-21-39
+DoReduce: read mrtmp.test-30-38
+DoReduce: read mrtmp.test-31-38
+DoReduce: read mrtmp.test-22-39
+DoReduce: read mrtmp.test-32-38
+DoReduce: read mrtmp.test-23-39
+DoReduce: read mrtmp.test-33-38
+DoReduce: read mrtmp.test-24-39
+DoReduce: read mrtmp.test-34-38
+DoReduce: read mrtmp.test-25-39
+DoReduce: read mrtmp.test-35-38
+DoReduce: read mrtmp.test-26-39
+DoReduce: read mrtmp.test-36-38
+DoReduce: read mrtmp.test-27-39
+DoReduce: read mrtmp.test-37-38
+DoReduce: read mrtmp.test-28-39
+DoReduce: read mrtmp.test-38-38
+DoReduce: read mrtmp.test-29-39
+DoReduce: read mrtmp.test-39-38
+DoReduce: read mrtmp.test-30-39
+DoReduce: read mrtmp.test-40-38
+DoReduce: read mrtmp.test-31-39
+DoReduce: read mrtmp.test-41-38
+DoReduce: read mrtmp.test-32-39
+DoReduce: read mrtmp.test-42-38
+DoReduce: read mrtmp.test-33-39
+DoReduce: read mrtmp.test-34-39
+DoReduce: read mrtmp.test-43-38
+DoReduce: read mrtmp.test-35-39
+DoReduce: read mrtmp.test-44-38
+DoReduce: read mrtmp.test-36-39
+DoReduce: read mrtmp.test-45-38
+DoReduce: read mrtmp.test-37-39
+DoReduce: read mrtmp.test-38-39
+DoReduce: read mrtmp.test-46-38
+DoReduce: read mrtmp.test-39-39
+DoReduce: read mrtmp.test-47-38
+DoReduce: read mrtmp.test-40-39
+DoReduce: read mrtmp.test-48-38
+DoReduce: read mrtmp.test-41-39
+DoReduce: read mrtmp.test-49-38
+DoReduce: read mrtmp.test-42-39
+DoReduce: read mrtmp.test-50-38
+DoReduce: read mrtmp.test-51-38
+DoReduce: read mrtmp.test-43-39
+DoReduce: read mrtmp.test-52-38
+DoReduce: read mrtmp.test-53-38
+DoReduce: read mrtmp.test-44-39
+DoReduce: read mrtmp.test-54-38
+DoReduce: read mrtmp.test-55-38
+DoReduce: read mrtmp.test-45-39
+DoReduce: read mrtmp.test-56-38
+DoReduce: read mrtmp.test-46-39
+DoReduce: read mrtmp.test-57-38
+DoReduce: read mrtmp.test-47-39
+DoReduce: read mrtmp.test-48-39
+DoReduce: read mrtmp.test-58-38
+DoReduce: read mrtmp.test-49-39
+DoReduce: read mrtmp.test-59-38
+DoReduce: read mrtmp.test-50-39
+DoReduce: read mrtmp.test-60-38
+DoReduce: read mrtmp.test-51-39
+DoReduce: read mrtmp.test-61-38
+DoReduce: read mrtmp.test-52-39
+DoReduce: read mrtmp.test-62-38
+DoReduce: read mrtmp.test-53-39
+DoReduce: read mrtmp.test-63-38
+DoReduce: read mrtmp.test-64-38
+DoReduce: read mrtmp.test-54-39
+DoReduce: read mrtmp.test-55-39
+DoReduce: read mrtmp.test-65-38
+DoReduce: read mrtmp.test-56-39
+DoReduce: read mrtmp.test-66-38
+DoReduce: read mrtmp.test-57-39
+DoReduce: read mrtmp.test-67-38
+DoReduce: read mrtmp.test-58-39
+DoReduce: read mrtmp.test-68-38
+DoReduce: read mrtmp.test-59-39
+DoReduce: read mrtmp.test-69-38
+DoReduce: read mrtmp.test-60-39
+DoReduce: read mrtmp.test-70-38
+DoReduce: read mrtmp.test-61-39
+DoReduce: read mrtmp.test-71-38
+DoReduce: read mrtmp.test-62-39
+DoReduce: read mrtmp.test-72-38
+DoReduce: read mrtmp.test-63-39
+DoReduce: read mrtmp.test-73-38
+DoReduce: read mrtmp.test-64-39
+DoReduce: read mrtmp.test-74-38
+DoReduce: read mrtmp.test-65-39
+DoReduce: read mrtmp.test-75-38
+DoReduce: read mrtmp.test-66-39
+DoReduce: read mrtmp.test-76-38
+DoReduce: read mrtmp.test-67-39
+DoReduce: read mrtmp.test-77-38
+DoReduce: read mrtmp.test-68-39
+DoReduce: read mrtmp.test-78-38
+DoReduce: read mrtmp.test-69-39
+DoReduce: read mrtmp.test-79-38
+DoReduce: read mrtmp.test-70-39
+DoReduce: read mrtmp.test-80-38
+DoReduce: read mrtmp.test-71-39
+DoReduce: read mrtmp.test-81-38
+DoReduce: read mrtmp.test-72-39
+DoReduce: read mrtmp.test-82-38
+DoReduce: read mrtmp.test-73-39
+DoReduce: read mrtmp.test-74-39
+DoReduce: read mrtmp.test-83-38
+DoReduce: read mrtmp.test-75-39
+DoReduce: read mrtmp.test-76-39
+DoReduce: read mrtmp.test-84-38
+DoReduce: read mrtmp.test-77-39
+DoReduce: read mrtmp.test-85-38
+DoReduce: read mrtmp.test-78-39
+DoReduce: read mrtmp.test-86-38
+DoReduce: read mrtmp.test-79-39
+DoReduce: read mrtmp.test-80-39
+DoReduce: read mrtmp.test-87-38
+DoReduce: read mrtmp.test-81-39
+DoReduce: read mrtmp.test-88-38
+DoReduce: read mrtmp.test-82-39
+DoReduce: read mrtmp.test-89-38
+DoReduce: read mrtmp.test-83-39
+DoReduce: read mrtmp.test-90-38
+DoReduce: read mrtmp.test-84-39
+DoReduce: read mrtmp.test-91-38
+DoReduce: read mrtmp.test-85-39
+DoReduce: read mrtmp.test-92-38
+DoReduce: read mrtmp.test-93-38
+DoReduce: read mrtmp.test-86-39
+DoReduce: read mrtmp.test-94-38
+DoReduce: read mrtmp.test-87-39
+DoReduce: read mrtmp.test-95-38
+DoReduce: read mrtmp.test-88-39
+DoReduce: read mrtmp.test-96-38
+DoReduce: read mrtmp.test-89-39
+DoReduce: read mrtmp.test-97-38
+DoReduce: read mrtmp.test-90-39
+DoReduce: read mrtmp.test-98-38
+DoReduce: read mrtmp.test-99-38
+DoReduce: read mrtmp.test-91-39
+DoReduce: read mrtmp.test-92-39
+DoReduce: read mrtmp.test-93-39
+DoReduce: read mrtmp.test-94-39
+DoReduce: read mrtmp.test-95-39
+DoReduce: read mrtmp.test-96-39
+DoReduce: read mrtmp.test-97-39
+DoReduce: read mrtmp.test-98-39
+DoReduce: read mrtmp.test-99-39
+/var/tmp/824-501/mr24826-worker1: Reduce task #38 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #40 on file 824-mrinput-40.txt (nios: 100)
+DoReduce: read mrtmp.test-0-40
+/var/tmp/824-501/mr24826-worker0: Reduce task #39 done
+DoReduce: read mrtmp.test-1-40
+DoReduce: read mrtmp.test-2-40
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-3-40
+DoReduce: read mrtmp.test-4-40
+DoReduce: read mrtmp.test-5-40
+DoReduce: read mrtmp.test-6-40
+/var/tmp/824-501/mr24826-worker0: given Reduce task #41 on file 824-mrinput-41.txt (nios: 100)
+DoReduce: read mrtmp.test-0-41
+DoReduce: read mrtmp.test-7-40
+DoReduce: read mrtmp.test-8-40
+DoReduce: read mrtmp.test-1-41
+DoReduce: read mrtmp.test-9-40
+DoReduce: read mrtmp.test-2-41
+DoReduce: read mrtmp.test-10-40
+DoReduce: read mrtmp.test-3-41
+DoReduce: read mrtmp.test-11-40
+DoReduce: read mrtmp.test-4-41
+DoReduce: read mrtmp.test-12-40
+DoReduce: read mrtmp.test-5-41
+DoReduce: read mrtmp.test-13-40
+DoReduce: read mrtmp.test-6-41
+DoReduce: read mrtmp.test-14-40
+DoReduce: read mrtmp.test-7-41
+DoReduce: read mrtmp.test-15-40
+DoReduce: read mrtmp.test-8-41
+DoReduce: read mrtmp.test-16-40
+DoReduce: read mrtmp.test-9-41
+DoReduce: read mrtmp.test-17-40
+DoReduce: read mrtmp.test-10-41
+DoReduce: read mrtmp.test-18-40
+DoReduce: read mrtmp.test-11-41
+DoReduce: read mrtmp.test-19-40
+DoReduce: read mrtmp.test-12-41
+DoReduce: read mrtmp.test-20-40
+DoReduce: read mrtmp.test-13-41
+DoReduce: read mrtmp.test-21-40
+DoReduce: read mrtmp.test-14-41
+DoReduce: read mrtmp.test-15-41
+DoReduce: read mrtmp.test-22-40
+DoReduce: read mrtmp.test-16-41
+DoReduce: read mrtmp.test-23-40
+DoReduce: read mrtmp.test-17-41
+DoReduce: read mrtmp.test-24-40
+DoReduce: read mrtmp.test-18-41
+DoReduce: read mrtmp.test-25-40
+DoReduce: read mrtmp.test-19-41
+DoReduce: read mrtmp.test-26-40
+DoReduce: read mrtmp.test-20-41
+DoReduce: read mrtmp.test-27-40
+DoReduce: read mrtmp.test-21-41
+DoReduce: read mrtmp.test-28-40
+DoReduce: read mrtmp.test-22-41
+DoReduce: read mrtmp.test-29-40
+DoReduce: read mrtmp.test-30-40
+DoReduce: read mrtmp.test-23-41
+DoReduce: read mrtmp.test-24-41
+DoReduce: read mrtmp.test-31-40
+DoReduce: read mrtmp.test-25-41
+DoReduce: read mrtmp.test-32-40
+DoReduce: read mrtmp.test-33-40
+DoReduce: read mrtmp.test-26-41
+DoReduce: read mrtmp.test-27-41
+DoReduce: read mrtmp.test-34-40
+DoReduce: read mrtmp.test-35-40
+DoReduce: read mrtmp.test-28-41
+DoReduce: read mrtmp.test-29-41
+DoReduce: read mrtmp.test-36-40
+DoReduce: read mrtmp.test-30-41
+DoReduce: read mrtmp.test-37-40
+DoReduce: read mrtmp.test-31-41
+DoReduce: read mrtmp.test-38-40
+DoReduce: read mrtmp.test-32-41
+DoReduce: read mrtmp.test-39-40
+DoReduce: read mrtmp.test-33-41
+DoReduce: read mrtmp.test-34-41
+DoReduce: read mrtmp.test-40-40
+DoReduce: read mrtmp.test-35-41
+DoReduce: read mrtmp.test-41-40
+DoReduce: read mrtmp.test-36-41
+DoReduce: read mrtmp.test-37-41
+DoReduce: read mrtmp.test-42-40
+DoReduce: read mrtmp.test-38-41
+DoReduce: read mrtmp.test-43-40
+DoReduce: read mrtmp.test-39-41
+DoReduce: read mrtmp.test-40-41
+DoReduce: read mrtmp.test-44-40
+DoReduce: read mrtmp.test-41-41
+DoReduce: read mrtmp.test-45-40
+DoReduce: read mrtmp.test-42-41
+DoReduce: read mrtmp.test-46-40
+DoReduce: read mrtmp.test-47-40
+DoReduce: read mrtmp.test-43-41
+DoReduce: read mrtmp.test-48-40
+DoReduce: read mrtmp.test-44-41
+DoReduce: read mrtmp.test-49-40
+DoReduce: read mrtmp.test-45-41
+DoReduce: read mrtmp.test-50-40
+DoReduce: read mrtmp.test-51-40
+DoReduce: read mrtmp.test-46-41
+DoReduce: read mrtmp.test-52-40
+DoReduce: read mrtmp.test-47-41
+DoReduce: read mrtmp.test-53-40
+DoReduce: read mrtmp.test-48-41
+DoReduce: read mrtmp.test-54-40
+DoReduce: read mrtmp.test-49-41
+DoReduce: read mrtmp.test-55-40
+DoReduce: read mrtmp.test-50-41
+DoReduce: read mrtmp.test-56-40
+DoReduce: read mrtmp.test-51-41
+DoReduce: read mrtmp.test-57-40
+DoReduce: read mrtmp.test-52-41
+DoReduce: read mrtmp.test-58-40
+DoReduce: read mrtmp.test-53-41
+DoReduce: read mrtmp.test-59-40
+DoReduce: read mrtmp.test-54-41
+DoReduce: read mrtmp.test-60-40
+DoReduce: read mrtmp.test-55-41
+DoReduce: read mrtmp.test-61-40
+DoReduce: read mrtmp.test-56-41
+DoReduce: read mrtmp.test-62-40
+DoReduce: read mrtmp.test-57-41
+DoReduce: read mrtmp.test-63-40
+DoReduce: read mrtmp.test-58-41
+DoReduce: read mrtmp.test-64-40
+DoReduce: read mrtmp.test-59-41
+DoReduce: read mrtmp.test-60-41
+DoReduce: read mrtmp.test-65-40
+DoReduce: read mrtmp.test-66-40
+DoReduce: read mrtmp.test-61-41
+DoReduce: read mrtmp.test-62-41
+DoReduce: read mrtmp.test-67-40
+DoReduce: read mrtmp.test-68-40
+DoReduce: read mrtmp.test-63-41
+DoReduce: read mrtmp.test-69-40
+DoReduce: read mrtmp.test-64-41
+DoReduce: read mrtmp.test-70-40
+DoReduce: read mrtmp.test-65-41
+DoReduce: read mrtmp.test-71-40
+DoReduce: read mrtmp.test-66-41
+DoReduce: read mrtmp.test-72-40
+DoReduce: read mrtmp.test-67-41
+DoReduce: read mrtmp.test-73-40
+DoReduce: read mrtmp.test-68-41
+DoReduce: read mrtmp.test-74-40
+DoReduce: read mrtmp.test-69-41
+DoReduce: read mrtmp.test-75-40
+DoReduce: read mrtmp.test-70-41
+DoReduce: read mrtmp.test-76-40
+DoReduce: read mrtmp.test-71-41
+DoReduce: read mrtmp.test-77-40
+DoReduce: read mrtmp.test-72-41
+DoReduce: read mrtmp.test-78-40
+DoReduce: read mrtmp.test-73-41
+DoReduce: read mrtmp.test-79-40
+DoReduce: read mrtmp.test-74-41
+DoReduce: read mrtmp.test-80-40
+DoReduce: read mrtmp.test-75-41
+DoReduce: read mrtmp.test-76-41
+DoReduce: read mrtmp.test-81-40
+DoReduce: read mrtmp.test-82-40
+DoReduce: read mrtmp.test-77-41
+DoReduce: read mrtmp.test-78-41
+DoReduce: read mrtmp.test-79-41
+DoReduce: read mrtmp.test-80-41
+DoReduce: read mrtmp.test-83-40
+DoReduce: read mrtmp.test-81-41
+DoReduce: read mrtmp.test-82-41
+DoReduce: read mrtmp.test-83-41
+DoReduce: read mrtmp.test-84-40
+DoReduce: read mrtmp.test-85-40
+DoReduce: read mrtmp.test-84-41
+DoReduce: read mrtmp.test-86-40
+DoReduce: read mrtmp.test-85-41
+DoReduce: read mrtmp.test-87-40
+DoReduce: read mrtmp.test-88-40
+DoReduce: read mrtmp.test-86-41
+DoReduce: read mrtmp.test-89-40
+DoReduce: read mrtmp.test-87-41
+DoReduce: read mrtmp.test-90-40
+DoReduce: read mrtmp.test-88-41
+DoReduce: read mrtmp.test-91-40
+DoReduce: read mrtmp.test-89-41
+DoReduce: read mrtmp.test-92-40
+DoReduce: read mrtmp.test-90-41
+DoReduce: read mrtmp.test-93-40
+DoReduce: read mrtmp.test-91-41
+DoReduce: read mrtmp.test-94-40
+DoReduce: read mrtmp.test-92-41
+DoReduce: read mrtmp.test-95-40
+DoReduce: read mrtmp.test-93-41
+DoReduce: read mrtmp.test-96-40
+DoReduce: read mrtmp.test-94-41
+DoReduce: read mrtmp.test-97-40
+DoReduce: read mrtmp.test-98-40
+DoReduce: read mrtmp.test-95-41
+DoReduce: read mrtmp.test-99-40
+DoReduce: read mrtmp.test-96-41
+DoReduce: read mrtmp.test-97-41
+DoReduce: read mrtmp.test-98-41
+DoReduce: read mrtmp.test-99-41
+/var/tmp/824-501/mr24826-worker0: Reduce task #41 done
+/var/tmp/824-501/mr24826-worker1: Reduce task #40 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker0: given Reduce task #42 on file 824-mrinput-42.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker1: given Reduce task #43 on file 824-mrinput-43.txt (nios: 100)
+DoReduce: read mrtmp.test-0-42
+DoReduce: read mrtmp.test-0-43
+DoReduce: read mrtmp.test-1-42
+DoReduce: read mrtmp.test-1-43
+DoReduce: read mrtmp.test-2-42
+DoReduce: read mrtmp.test-2-43
+DoReduce: read mrtmp.test-3-42
+DoReduce: read mrtmp.test-3-43
+DoReduce: read mrtmp.test-4-42
+DoReduce: read mrtmp.test-4-43
+DoReduce: read mrtmp.test-5-42
+DoReduce: read mrtmp.test-5-43
+DoReduce: read mrtmp.test-6-42
+DoReduce: read mrtmp.test-6-43
+DoReduce: read mrtmp.test-7-42
+DoReduce: read mrtmp.test-7-43
+DoReduce: read mrtmp.test-8-42
+DoReduce: read mrtmp.test-8-43
+DoReduce: read mrtmp.test-9-42
+DoReduce: read mrtmp.test-9-43
+DoReduce: read mrtmp.test-10-42
+DoReduce: read mrtmp.test-10-43
+DoReduce: read mrtmp.test-11-43
+DoReduce: read mrtmp.test-11-42
+DoReduce: read mrtmp.test-12-43
+DoReduce: read mrtmp.test-12-42
+DoReduce: read mrtmp.test-13-43
+DoReduce: read mrtmp.test-13-42
+DoReduce: read mrtmp.test-14-43
+DoReduce: read mrtmp.test-14-42
+DoReduce: read mrtmp.test-15-43
+DoReduce: read mrtmp.test-15-42
+DoReduce: read mrtmp.test-16-43
+DoReduce: read mrtmp.test-16-42
+DoReduce: read mrtmp.test-17-43
+DoReduce: read mrtmp.test-17-42
+DoReduce: read mrtmp.test-18-43
+DoReduce: read mrtmp.test-18-42
+DoReduce: read mrtmp.test-19-43
+DoReduce: read mrtmp.test-19-42
+DoReduce: read mrtmp.test-20-43
+DoReduce: read mrtmp.test-20-42
+DoReduce: read mrtmp.test-21-43
+DoReduce: read mrtmp.test-21-42
+DoReduce: read mrtmp.test-22-43
+DoReduce: read mrtmp.test-22-42
+DoReduce: read mrtmp.test-23-43
+DoReduce: read mrtmp.test-23-42
+DoReduce: read mrtmp.test-24-43
+DoReduce: read mrtmp.test-24-42
+DoReduce: read mrtmp.test-25-43
+DoReduce: read mrtmp.test-25-42
+DoReduce: read mrtmp.test-26-43
+DoReduce: read mrtmp.test-26-42
+DoReduce: read mrtmp.test-27-43
+DoReduce: read mrtmp.test-27-42
+DoReduce: read mrtmp.test-28-43
+DoReduce: read mrtmp.test-28-42
+DoReduce: read mrtmp.test-29-43
+DoReduce: read mrtmp.test-29-42
+DoReduce: read mrtmp.test-30-43
+DoReduce: read mrtmp.test-30-42
+DoReduce: read mrtmp.test-31-43
+DoReduce: read mrtmp.test-31-42
+DoReduce: read mrtmp.test-32-43
+DoReduce: read mrtmp.test-32-42
+DoReduce: read mrtmp.test-33-43
+DoReduce: read mrtmp.test-33-42
+DoReduce: read mrtmp.test-34-43
+DoReduce: read mrtmp.test-34-42
+DoReduce: read mrtmp.test-35-43
+DoReduce: read mrtmp.test-35-42
+DoReduce: read mrtmp.test-36-43
+DoReduce: read mrtmp.test-36-42
+DoReduce: read mrtmp.test-37-43
+DoReduce: read mrtmp.test-37-42
+DoReduce: read mrtmp.test-38-43
+DoReduce: read mrtmp.test-38-42
+DoReduce: read mrtmp.test-39-43
+DoReduce: read mrtmp.test-39-42
+DoReduce: read mrtmp.test-40-43
+DoReduce: read mrtmp.test-40-42
+DoReduce: read mrtmp.test-41-43
+DoReduce: read mrtmp.test-41-42
+DoReduce: read mrtmp.test-42-43
+DoReduce: read mrtmp.test-43-43
+DoReduce: read mrtmp.test-42-42
+DoReduce: read mrtmp.test-44-43
+DoReduce: read mrtmp.test-43-42
+DoReduce: read mrtmp.test-44-42
+DoReduce: read mrtmp.test-45-43
+DoReduce: read mrtmp.test-45-42
+DoReduce: read mrtmp.test-46-43
+DoReduce: read mrtmp.test-46-42
+DoReduce: read mrtmp.test-47-43
+DoReduce: read mrtmp.test-47-42
+DoReduce: read mrtmp.test-48-42
+DoReduce: read mrtmp.test-48-43
+DoReduce: read mrtmp.test-49-42
+DoReduce: read mrtmp.test-49-43
+DoReduce: read mrtmp.test-50-42
+DoReduce: read mrtmp.test-50-43
+DoReduce: read mrtmp.test-51-43
+DoReduce: read mrtmp.test-51-42
+DoReduce: read mrtmp.test-52-43
+DoReduce: read mrtmp.test-52-42
+DoReduce: read mrtmp.test-53-42
+DoReduce: read mrtmp.test-53-43
+DoReduce: read mrtmp.test-54-42
+DoReduce: read mrtmp.test-54-43
+DoReduce: read mrtmp.test-55-42
+DoReduce: read mrtmp.test-55-43
+DoReduce: read mrtmp.test-56-42
+DoReduce: read mrtmp.test-56-43
+DoReduce: read mrtmp.test-57-42
+DoReduce: read mrtmp.test-57-43
+DoReduce: read mrtmp.test-58-42
+DoReduce: read mrtmp.test-58-43
+DoReduce: read mrtmp.test-59-42
+DoReduce: read mrtmp.test-59-43
+DoReduce: read mrtmp.test-60-42
+DoReduce: read mrtmp.test-60-43
+DoReduce: read mrtmp.test-61-42
+DoReduce: read mrtmp.test-61-43
+DoReduce: read mrtmp.test-62-43
+DoReduce: read mrtmp.test-62-42
+DoReduce: read mrtmp.test-63-43
+DoReduce: read mrtmp.test-63-42
+DoReduce: read mrtmp.test-64-43
+DoReduce: read mrtmp.test-64-42
+DoReduce: read mrtmp.test-65-43
+DoReduce: read mrtmp.test-65-42
+DoReduce: read mrtmp.test-66-42
+DoReduce: read mrtmp.test-66-43
+DoReduce: read mrtmp.test-67-42
+DoReduce: read mrtmp.test-67-43
+DoReduce: read mrtmp.test-68-42
+DoReduce: read mrtmp.test-68-43
+DoReduce: read mrtmp.test-69-42
+DoReduce: read mrtmp.test-69-43
+DoReduce: read mrtmp.test-70-42
+DoReduce: read mrtmp.test-70-43
+DoReduce: read mrtmp.test-71-42
+DoReduce: read mrtmp.test-71-43
+DoReduce: read mrtmp.test-72-42
+DoReduce: read mrtmp.test-72-43
+DoReduce: read mrtmp.test-73-42
+DoReduce: read mrtmp.test-73-43
+DoReduce: read mrtmp.test-74-42
+DoReduce: read mrtmp.test-74-43
+DoReduce: read mrtmp.test-75-42
+DoReduce: read mrtmp.test-75-43
+DoReduce: read mrtmp.test-76-42
+DoReduce: read mrtmp.test-76-43
+DoReduce: read mrtmp.test-77-42
+DoReduce: read mrtmp.test-77-43
+DoReduce: read mrtmp.test-78-42
+DoReduce: read mrtmp.test-78-43
+DoReduce: read mrtmp.test-79-42
+DoReduce: read mrtmp.test-79-43
+DoReduce: read mrtmp.test-80-42
+DoReduce: read mrtmp.test-80-43
+DoReduce: read mrtmp.test-81-42
+DoReduce: read mrtmp.test-82-42
+DoReduce: read mrtmp.test-81-43
+DoReduce: read mrtmp.test-83-42
+DoReduce: read mrtmp.test-82-43
+DoReduce: read mrtmp.test-83-43
+DoReduce: read mrtmp.test-84-43
+DoReduce: read mrtmp.test-84-42
+DoReduce: read mrtmp.test-85-43
+DoReduce: read mrtmp.test-85-42
+DoReduce: read mrtmp.test-86-43
+DoReduce: read mrtmp.test-86-42
+DoReduce: read mrtmp.test-87-43
+DoReduce: read mrtmp.test-87-42
+DoReduce: read mrtmp.test-88-42
+DoReduce: read mrtmp.test-88-43
+DoReduce: read mrtmp.test-89-42
+DoReduce: read mrtmp.test-89-43
+DoReduce: read mrtmp.test-90-42
+DoReduce: read mrtmp.test-91-42
+DoReduce: read mrtmp.test-90-43
+DoReduce: read mrtmp.test-92-42
+DoReduce: read mrtmp.test-91-43
+DoReduce: read mrtmp.test-93-42
+DoReduce: read mrtmp.test-92-43
+DoReduce: read mrtmp.test-94-42
+DoReduce: read mrtmp.test-93-43
+DoReduce: read mrtmp.test-95-42
+DoReduce: read mrtmp.test-94-43
+DoReduce: read mrtmp.test-96-42
+DoReduce: read mrtmp.test-95-43
+DoReduce: read mrtmp.test-97-42
+DoReduce: read mrtmp.test-96-43
+DoReduce: read mrtmp.test-98-42
+DoReduce: read mrtmp.test-99-42
+DoReduce: read mrtmp.test-97-43
+DoReduce: read mrtmp.test-98-43
+DoReduce: read mrtmp.test-99-43
+/var/tmp/824-501/mr24826-worker1: Reduce task #43 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #42 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #44 on file 824-mrinput-44.txt (nios: 100)
+/var/tmp/824-501/mr24826-worker0: given Reduce task #45 on file 824-mrinput-45.txt (nios: 100)
+DoReduce: read mrtmp.test-0-44
+DoReduce: read mrtmp.test-0-45
+DoReduce: read mrtmp.test-1-45
+DoReduce: read mrtmp.test-1-44
+DoReduce: read mrtmp.test-2-44
+DoReduce: read mrtmp.test-2-45
+DoReduce: read mrtmp.test-3-44
+DoReduce: read mrtmp.test-3-45
+DoReduce: read mrtmp.test-4-44
+DoReduce: read mrtmp.test-4-45
+DoReduce: read mrtmp.test-5-44
+DoReduce: read mrtmp.test-5-45
+DoReduce: read mrtmp.test-6-44
+DoReduce: read mrtmp.test-6-45
+DoReduce: read mrtmp.test-7-44
+DoReduce: read mrtmp.test-7-45
+DoReduce: read mrtmp.test-8-44
+DoReduce: read mrtmp.test-8-45
+DoReduce: read mrtmp.test-9-44
+DoReduce: read mrtmp.test-9-45
+DoReduce: read mrtmp.test-10-44
+DoReduce: read mrtmp.test-10-45
+DoReduce: read mrtmp.test-11-44
+DoReduce: read mrtmp.test-11-45
+DoReduce: read mrtmp.test-12-44
+DoReduce: read mrtmp.test-12-45
+DoReduce: read mrtmp.test-13-44
+DoReduce: read mrtmp.test-13-45
+DoReduce: read mrtmp.test-14-44
+DoReduce: read mrtmp.test-14-45
+DoReduce: read mrtmp.test-15-44
+DoReduce: read mrtmp.test-16-44
+DoReduce: read mrtmp.test-15-45
+DoReduce: read mrtmp.test-16-45
+DoReduce: read mrtmp.test-17-44
+DoReduce: read mrtmp.test-17-45
+DoReduce: read mrtmp.test-18-44
+DoReduce: read mrtmp.test-18-45
+DoReduce: read mrtmp.test-19-44
+DoReduce: read mrtmp.test-19-45
+DoReduce: read mrtmp.test-20-44
+DoReduce: read mrtmp.test-20-45
+DoReduce: read mrtmp.test-21-44
+DoReduce: read mrtmp.test-21-45
+DoReduce: read mrtmp.test-22-44
+DoReduce: read mrtmp.test-22-45
+DoReduce: read mrtmp.test-23-44
+DoReduce: read mrtmp.test-23-45
+DoReduce: read mrtmp.test-24-44
+DoReduce: read mrtmp.test-24-45
+DoReduce: read mrtmp.test-25-45
+DoReduce: read mrtmp.test-25-44
+DoReduce: read mrtmp.test-26-45
+DoReduce: read mrtmp.test-26-44
+DoReduce: read mrtmp.test-27-45
+DoReduce: read mrtmp.test-27-44
+DoReduce: read mrtmp.test-28-45
+DoReduce: read mrtmp.test-28-44
+DoReduce: read mrtmp.test-29-44
+DoReduce: read mrtmp.test-29-45
+DoReduce: read mrtmp.test-30-44
+DoReduce: read mrtmp.test-30-45
+DoReduce: read mrtmp.test-31-44
+DoReduce: read mrtmp.test-31-45
+DoReduce: read mrtmp.test-32-44
+DoReduce: read mrtmp.test-32-45
+DoReduce: read mrtmp.test-33-44
+DoReduce: read mrtmp.test-33-45
+DoReduce: read mrtmp.test-34-44
+DoReduce: read mrtmp.test-34-45
+DoReduce: read mrtmp.test-35-45
+DoReduce: read mrtmp.test-35-44
+DoReduce: read mrtmp.test-36-44
+DoReduce: read mrtmp.test-36-45
+DoReduce: read mrtmp.test-37-44
+DoReduce: read mrtmp.test-38-44
+DoReduce: read mrtmp.test-37-45
+DoReduce: read mrtmp.test-39-44
+DoReduce: read mrtmp.test-38-45
+DoReduce: read mrtmp.test-40-44
+DoReduce: read mrtmp.test-39-45
+DoReduce: read mrtmp.test-41-44
+DoReduce: read mrtmp.test-40-45
+DoReduce: read mrtmp.test-41-45
+DoReduce: read mrtmp.test-42-44
+DoReduce: read mrtmp.test-42-45
+DoReduce: read mrtmp.test-43-44
+DoReduce: read mrtmp.test-44-44
+DoReduce: read mrtmp.test-43-45
+DoReduce: read mrtmp.test-45-44
+DoReduce: read mrtmp.test-44-45
+DoReduce: read mrtmp.test-46-44
+DoReduce: read mrtmp.test-45-45
+DoReduce: read mrtmp.test-47-44
+DoReduce: read mrtmp.test-46-45
+DoReduce: read mrtmp.test-48-44
+DoReduce: read mrtmp.test-47-45
+DoReduce: read mrtmp.test-49-44
+DoReduce: read mrtmp.test-50-44
+DoReduce: read mrtmp.test-48-45
+DoReduce: read mrtmp.test-49-45
+DoReduce: read mrtmp.test-51-44
+DoReduce: read mrtmp.test-50-45
+DoReduce: read mrtmp.test-52-44
+DoReduce: read mrtmp.test-51-45
+DoReduce: read mrtmp.test-53-44
+DoReduce: read mrtmp.test-52-45
+DoReduce: read mrtmp.test-54-44
+DoReduce: read mrtmp.test-55-44
+DoReduce: read mrtmp.test-53-45
+DoReduce: read mrtmp.test-56-44
+DoReduce: read mrtmp.test-54-45
+DoReduce: read mrtmp.test-57-44
+DoReduce: read mrtmp.test-55-45
+DoReduce: read mrtmp.test-58-44
+DoReduce: read mrtmp.test-56-45
+DoReduce: read mrtmp.test-59-44
+DoReduce: read mrtmp.test-57-45
+DoReduce: read mrtmp.test-60-44
+DoReduce: read mrtmp.test-58-45
+DoReduce: read mrtmp.test-61-44
+DoReduce: read mrtmp.test-59-45
+DoReduce: read mrtmp.test-62-44
+DoReduce: read mrtmp.test-60-45
+DoReduce: read mrtmp.test-63-44
+DoReduce: read mrtmp.test-61-45
+DoReduce: read mrtmp.test-64-44
+DoReduce: read mrtmp.test-62-45
+DoReduce: read mrtmp.test-65-44
+DoReduce: read mrtmp.test-63-45
+DoReduce: read mrtmp.test-66-44
+DoReduce: read mrtmp.test-64-45
+DoReduce: read mrtmp.test-67-44
+DoReduce: read mrtmp.test-65-45
+DoReduce: read mrtmp.test-68-44
+DoReduce: read mrtmp.test-66-45
+DoReduce: read mrtmp.test-69-44
+DoReduce: read mrtmp.test-67-45
+DoReduce: read mrtmp.test-70-44
+DoReduce: read mrtmp.test-68-45
+DoReduce: read mrtmp.test-71-44
+DoReduce: read mrtmp.test-69-45
+DoReduce: read mrtmp.test-72-44
+DoReduce: read mrtmp.test-70-45
+DoReduce: read mrtmp.test-73-44
+DoReduce: read mrtmp.test-71-45
+DoReduce: read mrtmp.test-74-44
+DoReduce: read mrtmp.test-72-45
+DoReduce: read mrtmp.test-75-44
+DoReduce: read mrtmp.test-73-45
+DoReduce: read mrtmp.test-76-44
+DoReduce: read mrtmp.test-74-45
+DoReduce: read mrtmp.test-77-44
+DoReduce: read mrtmp.test-75-45
+DoReduce: read mrtmp.test-78-44
+DoReduce: read mrtmp.test-76-45
+DoReduce: read mrtmp.test-79-44
+DoReduce: read mrtmp.test-77-45
+DoReduce: read mrtmp.test-80-44
+DoReduce: read mrtmp.test-78-45
+DoReduce: read mrtmp.test-81-44
+DoReduce: read mrtmp.test-79-45
+DoReduce: read mrtmp.test-82-44
+DoReduce: read mrtmp.test-80-45
+DoReduce: read mrtmp.test-83-44
+DoReduce: read mrtmp.test-81-45
+DoReduce: read mrtmp.test-84-44
+DoReduce: read mrtmp.test-82-45
+DoReduce: read mrtmp.test-85-44
+DoReduce: read mrtmp.test-86-44
+DoReduce: read mrtmp.test-87-44
+DoReduce: read mrtmp.test-83-45
+DoReduce: read mrtmp.test-88-44
+DoReduce: read mrtmp.test-89-44
+DoReduce: read mrtmp.test-84-45
+DoReduce: read mrtmp.test-90-44
+DoReduce: read mrtmp.test-91-44
+DoReduce: read mrtmp.test-85-45
+DoReduce: read mrtmp.test-92-44
+DoReduce: read mrtmp.test-86-45
+DoReduce: read mrtmp.test-93-44
+DoReduce: read mrtmp.test-87-45
+DoReduce: read mrtmp.test-94-44
+DoReduce: read mrtmp.test-88-45
+DoReduce: read mrtmp.test-89-45
+DoReduce: read mrtmp.test-95-44
+DoReduce: read mrtmp.test-96-44
+DoReduce: read mrtmp.test-90-45
+DoReduce: read mrtmp.test-97-44
+DoReduce: read mrtmp.test-98-44
+DoReduce: read mrtmp.test-91-45
+DoReduce: read mrtmp.test-99-44
+DoReduce: read mrtmp.test-92-45
+DoReduce: read mrtmp.test-93-45
+DoReduce: read mrtmp.test-94-45
+DoReduce: read mrtmp.test-95-45
+DoReduce: read mrtmp.test-96-45
+DoReduce: read mrtmp.test-97-45
+DoReduce: read mrtmp.test-98-45
+DoReduce: read mrtmp.test-99-45
+/var/tmp/824-501/mr24826-worker1: Reduce task #44 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #46 on file 824-mrinput-46.txt (nios: 100)
+DoReduce: read mrtmp.test-0-46
+DoReduce: read mrtmp.test-1-46
+/var/tmp/824-501/mr24826-worker0: Reduce task #45 done
+DoReduce: read mrtmp.test-2-46
+DoReduce: read mrtmp.test-3-46
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+DoReduce: read mrtmp.test-4-46
+DoReduce: read mrtmp.test-5-46
+DoReduce: read mrtmp.test-6-46
+/var/tmp/824-501/mr24826-worker0: given Reduce task #47 on file 824-mrinput-47.txt (nios: 100)
+DoReduce: read mrtmp.test-7-46
+DoReduce: read mrtmp.test-0-47
+DoReduce: read mrtmp.test-8-46
+DoReduce: read mrtmp.test-1-47
+DoReduce: read mrtmp.test-9-46
+DoReduce: read mrtmp.test-2-47
+DoReduce: read mrtmp.test-10-46
+DoReduce: read mrtmp.test-3-47
+DoReduce: read mrtmp.test-4-47
+DoReduce: read mrtmp.test-11-46
+DoReduce: read mrtmp.test-5-47
+DoReduce: read mrtmp.test-12-46
+DoReduce: read mrtmp.test-6-47
+DoReduce: read mrtmp.test-13-46
+DoReduce: read mrtmp.test-14-46
+DoReduce: read mrtmp.test-7-47
+DoReduce: read mrtmp.test-15-46
+DoReduce: read mrtmp.test-8-47
+DoReduce: read mrtmp.test-16-46
+DoReduce: read mrtmp.test-9-47
+DoReduce: read mrtmp.test-17-46
+DoReduce: read mrtmp.test-10-47
+DoReduce: read mrtmp.test-18-46
+DoReduce: read mrtmp.test-11-47
+DoReduce: read mrtmp.test-19-46
+DoReduce: read mrtmp.test-12-47
+DoReduce: read mrtmp.test-20-46
+DoReduce: read mrtmp.test-13-47
+DoReduce: read mrtmp.test-21-46
+DoReduce: read mrtmp.test-14-47
+DoReduce: read mrtmp.test-22-46
+DoReduce: read mrtmp.test-15-47
+DoReduce: read mrtmp.test-16-47
+DoReduce: read mrtmp.test-23-46
+DoReduce: read mrtmp.test-17-47
+DoReduce: read mrtmp.test-24-46
+DoReduce: read mrtmp.test-18-47
+DoReduce: read mrtmp.test-25-46
+DoReduce: read mrtmp.test-19-47
+DoReduce: read mrtmp.test-26-46
+DoReduce: read mrtmp.test-20-47
+DoReduce: read mrtmp.test-27-46
+DoReduce: read mrtmp.test-21-47
+DoReduce: read mrtmp.test-28-46
+DoReduce: read mrtmp.test-29-46
+DoReduce: read mrtmp.test-22-47
+DoReduce: read mrtmp.test-30-46
+DoReduce: read mrtmp.test-23-47
+DoReduce: read mrtmp.test-31-46
+DoReduce: read mrtmp.test-24-47
+DoReduce: read mrtmp.test-32-46
+DoReduce: read mrtmp.test-25-47
+DoReduce: read mrtmp.test-33-46
+DoReduce: read mrtmp.test-26-47
+DoReduce: read mrtmp.test-34-46
+DoReduce: read mrtmp.test-27-47
+DoReduce: read mrtmp.test-35-46
+DoReduce: read mrtmp.test-28-47
+DoReduce: read mrtmp.test-36-46
+DoReduce: read mrtmp.test-37-46
+DoReduce: read mrtmp.test-29-47
+DoReduce: read mrtmp.test-38-46
+DoReduce: read mrtmp.test-30-47
+DoReduce: read mrtmp.test-39-46
+DoReduce: read mrtmp.test-31-47
+DoReduce: read mrtmp.test-40-46
+DoReduce: read mrtmp.test-32-47
+DoReduce: read mrtmp.test-41-46
+DoReduce: read mrtmp.test-33-47
+DoReduce: read mrtmp.test-42-46
+DoReduce: read mrtmp.test-34-47
+DoReduce: read mrtmp.test-43-46
+DoReduce: read mrtmp.test-35-47
+DoReduce: read mrtmp.test-44-46
+DoReduce: read mrtmp.test-36-47
+DoReduce: read mrtmp.test-45-46
+DoReduce: read mrtmp.test-37-47
+DoReduce: read mrtmp.test-38-47
+DoReduce: read mrtmp.test-46-46
+DoReduce: read mrtmp.test-39-47
+DoReduce: read mrtmp.test-47-46
+DoReduce: read mrtmp.test-40-47
+DoReduce: read mrtmp.test-48-46
+DoReduce: read mrtmp.test-49-46
+DoReduce: read mrtmp.test-41-47
+DoReduce: read mrtmp.test-50-46
+DoReduce: read mrtmp.test-42-47
+DoReduce: read mrtmp.test-51-46
+DoReduce: read mrtmp.test-52-46
+DoReduce: read mrtmp.test-43-47
+DoReduce: read mrtmp.test-53-46
+DoReduce: read mrtmp.test-44-47
+DoReduce: read mrtmp.test-54-46
+DoReduce: read mrtmp.test-45-47
+DoReduce: read mrtmp.test-55-46
+DoReduce: read mrtmp.test-46-47
+DoReduce: read mrtmp.test-56-46
+DoReduce: read mrtmp.test-47-47
+DoReduce: read mrtmp.test-57-46
+DoReduce: read mrtmp.test-48-47
+DoReduce: read mrtmp.test-58-46
+DoReduce: read mrtmp.test-49-47
+DoReduce: read mrtmp.test-59-46
+DoReduce: read mrtmp.test-50-47
+DoReduce: read mrtmp.test-60-46
+DoReduce: read mrtmp.test-51-47
+DoReduce: read mrtmp.test-61-46
+DoReduce: read mrtmp.test-52-47
+DoReduce: read mrtmp.test-62-46
+DoReduce: read mrtmp.test-53-47
+DoReduce: read mrtmp.test-63-46
+DoReduce: read mrtmp.test-54-47
+DoReduce: read mrtmp.test-64-46
+DoReduce: read mrtmp.test-55-47
+DoReduce: read mrtmp.test-65-46
+DoReduce: read mrtmp.test-56-47
+DoReduce: read mrtmp.test-66-46
+DoReduce: read mrtmp.test-57-47
+DoReduce: read mrtmp.test-67-46
+DoReduce: read mrtmp.test-58-47
+DoReduce: read mrtmp.test-68-46
+DoReduce: read mrtmp.test-59-47
+DoReduce: read mrtmp.test-60-47
+DoReduce: read mrtmp.test-69-46
+DoReduce: read mrtmp.test-61-47
+DoReduce: read mrtmp.test-70-46
+DoReduce: read mrtmp.test-71-46
+DoReduce: read mrtmp.test-62-47
+DoReduce: read mrtmp.test-63-47
+DoReduce: read mrtmp.test-72-46
+DoReduce: read mrtmp.test-64-47
+DoReduce: read mrtmp.test-73-46
+DoReduce: read mrtmp.test-65-47
+DoReduce: read mrtmp.test-74-46
+DoReduce: read mrtmp.test-66-47
+DoReduce: read mrtmp.test-75-46
+DoReduce: read mrtmp.test-67-47
+DoReduce: read mrtmp.test-76-46
+DoReduce: read mrtmp.test-68-47
+DoReduce: read mrtmp.test-77-46
+DoReduce: read mrtmp.test-69-47
+DoReduce: read mrtmp.test-78-46
+DoReduce: read mrtmp.test-70-47
+DoReduce: read mrtmp.test-79-46
+DoReduce: read mrtmp.test-71-47
+DoReduce: read mrtmp.test-80-46
+DoReduce: read mrtmp.test-72-47
+DoReduce: read mrtmp.test-81-46
+DoReduce: read mrtmp.test-73-47
+DoReduce: read mrtmp.test-82-46
+DoReduce: read mrtmp.test-74-47
+DoReduce: read mrtmp.test-83-46
+DoReduce: read mrtmp.test-75-47
+DoReduce: read mrtmp.test-84-46
+DoReduce: read mrtmp.test-76-47
+DoReduce: read mrtmp.test-77-47
+DoReduce: read mrtmp.test-85-46
+DoReduce: read mrtmp.test-78-47
+DoReduce: read mrtmp.test-86-46
+DoReduce: read mrtmp.test-79-47
+DoReduce: read mrtmp.test-80-47
+DoReduce: read mrtmp.test-87-46
+DoReduce: read mrtmp.test-88-46
+DoReduce: read mrtmp.test-81-47
+DoReduce: read mrtmp.test-89-46
+DoReduce: read mrtmp.test-82-47
+DoReduce: read mrtmp.test-90-46
+DoReduce: read mrtmp.test-83-47
+DoReduce: read mrtmp.test-91-46
+DoReduce: read mrtmp.test-84-47
+DoReduce: read mrtmp.test-92-46
+DoReduce: read mrtmp.test-85-47
+DoReduce: read mrtmp.test-93-46
+DoReduce: read mrtmp.test-86-47
+DoReduce: read mrtmp.test-94-46
+DoReduce: read mrtmp.test-87-47
+DoReduce: read mrtmp.test-95-46
+DoReduce: read mrtmp.test-88-47
+DoReduce: read mrtmp.test-96-46
+DoReduce: read mrtmp.test-89-47
+DoReduce: read mrtmp.test-97-46
+DoReduce: read mrtmp.test-90-47
+DoReduce: read mrtmp.test-98-46
+DoReduce: read mrtmp.test-91-47
+DoReduce: read mrtmp.test-99-46
+DoReduce: read mrtmp.test-92-47
+DoReduce: read mrtmp.test-93-47
+DoReduce: read mrtmp.test-94-47
+DoReduce: read mrtmp.test-95-47
+DoReduce: read mrtmp.test-96-47
+DoReduce: read mrtmp.test-97-47
+DoReduce: read mrtmp.test-98-47
+DoReduce: read mrtmp.test-99-47
+/var/tmp/824-501/mr24826-worker1: Reduce task #46 done
+2017/03/31 17:42:02 got worker address
+2017/03/31 17:42:02 get worker address
+/var/tmp/824-501/mr24826-worker1: given Reduce task #48 on file 824-mrinput-48.txt (nios: 100)
+DoReduce: read mrtmp.test-0-48
+/var/tmp/824-501/mr24826-worker0: Reduce task #47 done
+DoReduce: read mrtmp.test-1-48
+DoReduce: read mrtmp.test-2-48
+2017/03/31 17:42:02 got worker address
+DoReduce: read mrtmp.test-3-48
+DoReduce: read mrtmp.test-4-48
+DoReduce: read mrtmp.test-5-48
+/var/tmp/824-501/mr24826-worker0: given Reduce task #49 on file 824-mrinput-49.txt (nios: 100)
+DoReduce: read mrtmp.test-6-48
+DoReduce: read mrtmp.test-0-49
+DoReduce: read mrtmp.test-7-48
+DoReduce: read mrtmp.test-1-49
+DoReduce: read mrtmp.test-8-48
+DoReduce: read mrtmp.test-2-49
+DoReduce: read mrtmp.test-9-48
+DoReduce: read mrtmp.test-3-49
+DoReduce: read mrtmp.test-10-48
+DoReduce: read mrtmp.test-4-49
+DoReduce: read mrtmp.test-11-48
+DoReduce: read mrtmp.test-5-49
+DoReduce: read mrtmp.test-12-48
+DoReduce: read mrtmp.test-6-49
+DoReduce: read mrtmp.test-13-48
+DoReduce: read mrtmp.test-14-48
+DoReduce: read mrtmp.test-7-49
+DoReduce: read mrtmp.test-15-48
+DoReduce: read mrtmp.test-8-49
+DoReduce: read mrtmp.test-16-48
+DoReduce: read mrtmp.test-17-48
+DoReduce: read mrtmp.test-9-49
+DoReduce: read mrtmp.test-10-49
+DoReduce: read mrtmp.test-18-48
+DoReduce: read mrtmp.test-11-49
+DoReduce: read mrtmp.test-12-49
+DoReduce: read mrtmp.test-19-48
+DoReduce: read mrtmp.test-20-48
+DoReduce: read mrtmp.test-13-49
+DoReduce: read mrtmp.test-14-49
+DoReduce: read mrtmp.test-21-48
+DoReduce: read mrtmp.test-15-49
+DoReduce: read mrtmp.test-22-48
+DoReduce: read mrtmp.test-16-49
+DoReduce: read mrtmp.test-23-48
+DoReduce: read mrtmp.test-17-49
+DoReduce: read mrtmp.test-24-48
+DoReduce: read mrtmp.test-18-49
+DoReduce: read mrtmp.test-25-48
+DoReduce: read mrtmp.test-19-49
+DoReduce: read mrtmp.test-26-48
+DoReduce: read mrtmp.test-20-49
+DoReduce: read mrtmp.test-27-48
+DoReduce: read mrtmp.test-21-49
+DoReduce: read mrtmp.test-28-48
+DoReduce: read mrtmp.test-29-48
+DoReduce: read mrtmp.test-22-49
+DoReduce: read mrtmp.test-30-48
+DoReduce: read mrtmp.test-23-49
+DoReduce: read mrtmp.test-31-48
+DoReduce: read mrtmp.test-24-49
+DoReduce: read mrtmp.test-32-48
+DoReduce: read mrtmp.test-25-49
+DoReduce: read mrtmp.test-33-48
+DoReduce: read mrtmp.test-26-49
+DoReduce: read mrtmp.test-34-48
+DoReduce: read mrtmp.test-27-49
+DoReduce: read mrtmp.test-35-48
+DoReduce: read mrtmp.test-28-49
+DoReduce: read mrtmp.test-36-48
+DoReduce: read mrtmp.test-29-49
+DoReduce: read mrtmp.test-37-48
+DoReduce: read mrtmp.test-30-49
+DoReduce: read mrtmp.test-38-48
+DoReduce: read mrtmp.test-31-49
+DoReduce: read mrtmp.test-39-48
+DoReduce: read mrtmp.test-32-49
+DoReduce: read mrtmp.test-40-48
+DoReduce: read mrtmp.test-33-49
+DoReduce: read mrtmp.test-41-48
+DoReduce: read mrtmp.test-34-49
+DoReduce: read mrtmp.test-42-48
+DoReduce: read mrtmp.test-35-49
+DoReduce: read mrtmp.test-43-48
+DoReduce: read mrtmp.test-36-49
+DoReduce: read mrtmp.test-37-49
+DoReduce: read mrtmp.test-44-48
+DoReduce: read mrtmp.test-38-49
+DoReduce: read mrtmp.test-45-48
+DoReduce: read mrtmp.test-39-49
+DoReduce: read mrtmp.test-46-48
+DoReduce: read mrtmp.test-40-49
+DoReduce: read mrtmp.test-47-48
+DoReduce: read mrtmp.test-41-49
+DoReduce: read mrtmp.test-48-48
+DoReduce: read mrtmp.test-49-48
+DoReduce: read mrtmp.test-42-49
+DoReduce: read mrtmp.test-50-48
+DoReduce: read mrtmp.test-43-49
+DoReduce: read mrtmp.test-51-48
+DoReduce: read mrtmp.test-44-49
+DoReduce: read mrtmp.test-52-48
+DoReduce: read mrtmp.test-45-49
+DoReduce: read mrtmp.test-53-48
+DoReduce: read mrtmp.test-46-49
+DoReduce: read mrtmp.test-54-48
+DoReduce: read mrtmp.test-55-48
+DoReduce: read mrtmp.test-47-49
+DoReduce: read mrtmp.test-48-49
+DoReduce: read mrtmp.test-56-48
+DoReduce: read mrtmp.test-49-49
+DoReduce: read mrtmp.test-57-48
+DoReduce: read mrtmp.test-50-49
+DoReduce: read mrtmp.test-58-48
+DoReduce: read mrtmp.test-51-49
+DoReduce: read mrtmp.test-59-48
+DoReduce: read mrtmp.test-52-49
+DoReduce: read mrtmp.test-60-48
+DoReduce: read mrtmp.test-53-49
+DoReduce: read mrtmp.test-61-48
+DoReduce: read mrtmp.test-54-49
+DoReduce: read mrtmp.test-62-48
+DoReduce: read mrtmp.test-55-49
+DoReduce: read mrtmp.test-63-48
+DoReduce: read mrtmp.test-56-49
+DoReduce: read mrtmp.test-64-48
+DoReduce: read mrtmp.test-57-49
+DoReduce: read mrtmp.test-65-48
+DoReduce: read mrtmp.test-58-49
+DoReduce: read mrtmp.test-66-48
+DoReduce: read mrtmp.test-59-49
+DoReduce: read mrtmp.test-67-48
+DoReduce: read mrtmp.test-60-49
+DoReduce: read mrtmp.test-68-48
+DoReduce: read mrtmp.test-61-49
+DoReduce: read mrtmp.test-69-48
+DoReduce: read mrtmp.test-62-49
+DoReduce: read mrtmp.test-70-48
+DoReduce: read mrtmp.test-63-49
+DoReduce: read mrtmp.test-71-48
+DoReduce: read mrtmp.test-64-49
+DoReduce: read mrtmp.test-72-48
+DoReduce: read mrtmp.test-65-49
+DoReduce: read mrtmp.test-73-48
+DoReduce: read mrtmp.test-66-49
+DoReduce: read mrtmp.test-74-48
+DoReduce: read mrtmp.test-67-49
+DoReduce: read mrtmp.test-75-48
+DoReduce: read mrtmp.test-68-49
+DoReduce: read mrtmp.test-76-48
+DoReduce: read mrtmp.test-69-49
+DoReduce: read mrtmp.test-77-48
+DoReduce: read mrtmp.test-70-49
+DoReduce: read mrtmp.test-78-48
+DoReduce: read mrtmp.test-71-49
+DoReduce: read mrtmp.test-79-48
+DoReduce: read mrtmp.test-72-49
+DoReduce: read mrtmp.test-80-48
+DoReduce: read mrtmp.test-73-49
+DoReduce: read mrtmp.test-81-48
+DoReduce: read mrtmp.test-74-49
+DoReduce: read mrtmp.test-82-48
+DoReduce: read mrtmp.test-75-49
+DoReduce: read mrtmp.test-83-48
+DoReduce: read mrtmp.test-76-49
+DoReduce: read mrtmp.test-84-48
+DoReduce: read mrtmp.test-77-49
+DoReduce: read mrtmp.test-85-48
+DoReduce: read mrtmp.test-78-49
+DoReduce: read mrtmp.test-79-49
+DoReduce: read mrtmp.test-80-49
+DoReduce: read mrtmp.test-86-48
+DoReduce: read mrtmp.test-81-49
+DoReduce: read mrtmp.test-87-48
+DoReduce: read mrtmp.test-82-49
+DoReduce: read mrtmp.test-88-48
+DoReduce: read mrtmp.test-83-49
+DoReduce: read mrtmp.test-89-48
+DoReduce: read mrtmp.test-84-49
+DoReduce: read mrtmp.test-90-48
+DoReduce: read mrtmp.test-85-49
+DoReduce: read mrtmp.test-91-48
+DoReduce: read mrtmp.test-92-48
+DoReduce: read mrtmp.test-86-49
+DoReduce: read mrtmp.test-93-48
+DoReduce: read mrtmp.test-87-49
+DoReduce: read mrtmp.test-94-48
+DoReduce: read mrtmp.test-88-49
+DoReduce: read mrtmp.test-95-48
+DoReduce: read mrtmp.test-89-49
+DoReduce: read mrtmp.test-96-48
+DoReduce: read mrtmp.test-90-49
+DoReduce: read mrtmp.test-97-48
+DoReduce: read mrtmp.test-91-49
+DoReduce: read mrtmp.test-98-48
+DoReduce: read mrtmp.test-92-49
+DoReduce: read mrtmp.test-99-48
+DoReduce: read mrtmp.test-93-49
+DoReduce: read mrtmp.test-94-49
+DoReduce: read mrtmp.test-95-49
+DoReduce: read mrtmp.test-96-49
+DoReduce: read mrtmp.test-97-49
+DoReduce: read mrtmp.test-98-49
+DoReduce: read mrtmp.test-99-49
+/var/tmp/824-501/mr24826-worker1: Reduce task #48 done
+/var/tmp/824-501/mr24826-worker0: Reduce task #49 done
+Schedule: Reduce phase done
+Merge: read mrtmp.test-res-0
+Merge: read mrtmp.test-res-1
+Merge: read mrtmp.test-res-2
+Merge: read mrtmp.test-res-3
+Merge: read mrtmp.test-res-4
+Merge: read mrtmp.test-res-5
+Merge: read mrtmp.test-res-6
+Merge: read mrtmp.test-res-7
+Merge: read mrtmp.test-res-8
+Merge: read mrtmp.test-res-9
+Merge: read mrtmp.test-res-10
+Merge: read mrtmp.test-res-11
+Merge: read mrtmp.test-res-12
+Merge: read mrtmp.test-res-13
+Merge: read mrtmp.test-res-14
+Merge: read mrtmp.test-res-15
+Merge: read mrtmp.test-res-16
+Merge: read mrtmp.test-res-17
+Merge: read mrtmp.test-res-18
+Merge: read mrtmp.test-res-19
+Merge: read mrtmp.test-res-20
+Merge: read mrtmp.test-res-21
+Merge: read mrtmp.test-res-22
+Merge: read mrtmp.test-res-23
+Merge: read mrtmp.test-res-24
+Merge: read mrtmp.test-res-25
+Merge: read mrtmp.test-res-26
+Merge: read mrtmp.test-res-27
+Merge: read mrtmp.test-res-28
+Merge: read mrtmp.test-res-29
+Merge: read mrtmp.test-res-30
+Merge: read mrtmp.test-res-31
+Merge: read mrtmp.test-res-32
+Merge: read mrtmp.test-res-33
+Merge: read mrtmp.test-res-34
+Merge: read mrtmp.test-res-35
+Merge: read mrtmp.test-res-36
+Merge: read mrtmp.test-res-37
+Merge: read mrtmp.test-res-38
+Merge: read mrtmp.test-res-39
+Merge: read mrtmp.test-res-40
+Merge: read mrtmp.test-res-41
+Merge: read mrtmp.test-res-42
+Merge: read mrtmp.test-res-43
+Merge: read mrtmp.test-res-44
+Merge: read mrtmp.test-res-45
+Merge: read mrtmp.test-res-46
+Merge: read mrtmp.test-res-47
+Merge: read mrtmp.test-res-48
+Merge: read mrtmp.test-res-49
+/var/tmp/824-501/mr24826-master: Map/Reduce task completed
+PASS
+ok  	_/Users/aromazyl/code/mit_6.824/6.824-2017/6.824/src/mapreduce	2.382s
