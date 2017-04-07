@@ -29,6 +29,30 @@ import "time"
 // committed, the peer should send an ApplyMsg to the service (or
 // tester) on the same server, via the applyCh passed to Make().
 //
+type AppendEntryArgs struct {
+	term         int
+	leaderId     int
+	prevLogIndex int
+	prevLogTerm  int
+	entries      []LogEntry
+	leaderCommit int
+}
+
+type AppendEntryReply struct {
+	term    int
+	success bool
+}
+
+func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
+	if arg.term < rf.currentTerm {
+		reply.success = false
+		reply.term = rf.currentTerm
+		return
+	}
+  
+  if 
+}
+
 type ApplyMsg struct {
 	Index       int
 	Command     interface{}
