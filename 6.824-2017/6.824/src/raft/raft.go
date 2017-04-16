@@ -20,6 +20,7 @@ package raft
 import "sync"
 import "labrpc"
 import "time"
+import "math"
 
 // import "bytes"
 // import "encoding/gob"
@@ -49,8 +50,20 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 		reply.term = rf.currentTerm
 		return
 	}
-  
-  if 
+	if len(rf.log)-1 < args.prevLogIndex ||
+		rf.log[args.prevLogIndex].term < args.prevLogTerm {
+		reply.success = false
+		reply.term = rf.currentTerm
+		return
+	}
+	rf.log = rf.log[:args.prevLogIndex+1]
+	rf.log = append(rf.log, args.entries...)
+	if args.leaderCommit > rf.commitIndex {
+		rf.commitIndex = math.Max(args.leaderCommit, len(rf.log)-1)
+	}
+	reply.success = true
+	reply.term = rf.currentTerm
+	return
 }
 
 type ApplyMsg struct {
@@ -270,7 +283,6 @@ func (rf *Raft) Start(command interface{}) (int, int, bool) {
 	isLeader := true
 
 	// Your code here (2B).
-
 	return index, term, isLeader
 }
 
