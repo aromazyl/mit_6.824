@@ -20,10 +20,9 @@ package raft
 import "sync"
 import "labrpc"
 import "time"
-import "math"
+import "bytes"
 
-// import "bytes"
-// import "encoding/gob"
+import "encoding/gob"
 
 //
 // as each Raft peer becomes aware that successive log entries are
@@ -45,7 +44,7 @@ type AppendEntryReply struct {
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
-	if arg.term < rf.currentTerm {
+	if args.term < rf.currentTerm {
 		reply.success = false
 		reply.term = rf.currentTerm
 		return
@@ -59,7 +58,7 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	rf.log = rf.log[:args.prevLogIndex+1]
 	rf.log = append(rf.log, args.entries...)
 	if args.leaderCommit > rf.commitIndex {
-		rf.commitIndex = math.Max(args.leaderCommit, len(rf.log)-1)
+		rf.commitIndex = MaxInt(args.leaderCommit, len(rf.log)-1)
 	}
 	reply.success = true
 	reply.term = rf.currentTerm
@@ -92,7 +91,7 @@ type Raft struct {
 	persister           *Persister          // Object to hold this peer's persisted state
 	me                  int                 // this peer's index into peers[]
 	log                 []LogEntry
-	currentTerm         bool
+	currentTerm         int
 	votedFor            int
 	commitIndex         int
 	lastApplied         int
@@ -106,7 +105,7 @@ type Raft struct {
 }
 
 func (rf *Raft) resetTimer() {
-	rf.timer.reset(1)
+	rf.timer.Reset(1)
 }
 
 // return currentTerm and whether this server
@@ -114,7 +113,7 @@ func (rf *Raft) resetTimer() {
 func (rf *Raft) GetState() (int, bool) {
 
 	var term int
-	var isleader bool
+	var isLeader bool
 	// Your code here (2A).
 	term = rf.currentTerm
 	if rf.character == 2 {
@@ -122,7 +121,7 @@ func (rf *Raft) GetState() (int, bool) {
 	} else {
 		isLeader = false
 	}
-	return term, isleader
+	return term, isLeader
 }
 
 //
