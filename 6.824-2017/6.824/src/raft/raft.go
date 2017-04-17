@@ -105,7 +105,10 @@ type Raft struct {
 }
 
 func (rf *Raft) resetTimer() {
-	rf.timer.Reset(1)
+	if rf.timer == nil {
+		rf.timer = time.NewTimer(5 * time.Minute)
+	}
+	rf.timer.Reset(5 * time.Minute)
 }
 
 // return currentTerm and whether this server
@@ -314,9 +317,19 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.me = me
 
 	// Your initialization code here (2A, 2B, 2C).
-
+	rf.currentTerm = 0
+	rf.votedFor = -1
+	rf.log = make([]LogEntry, 0)
+	rf.commitIndex = -1
+	rf.lastApplied = -1
+	rf.nextIndex = make([]int, len(peers))
+	rf.matchIndex = make([]int, len(peers))
+	rf.state = "FOLLOWER"
+	rf.applyCh = applyCh
 	// initialize from state persisted before a crash
 	rf.readPersist(persister.ReadRaftState())
+	rf.persist()
+	rf.resetTimer()
 
 	return rf
 }
