@@ -106,7 +106,7 @@ type Raft struct {
 	state               string
 	applyCh             chan ApplyMsg
 	timer               *time.Timer
-	timeUpperBound      int
+	leaderTimer         *time.Timer
 	votedCount          int
 	chanCommit          chan bool
 	chanHeartBeat       chan bool
@@ -119,8 +119,7 @@ func (rf *Raft) resetTimer() {
 		rf.timer = time.NewTimer(5 * time.Minute)
 	}
 	rand.Seed(42)
-	rf.timer.Reset(5 * time.Minute)
-	rf.timeUpperBound = rand.Intn(150) + 150
+	rf.timer.Reset((randInt(150) + 150) * time.Second)
 }
 
 // return currentTerm and whether this server
@@ -295,11 +294,46 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 			rf.votedCount++
 			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
 				rf.state = "LEADER"
-				rf.chanLeader <- true
 			}
 		}
 	}
 	return ok
+}
+
+func (rf *Raft) BroadCastRequestVote() {
+	var args RequestVoteArgs
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	args.term = rf.currentTerm
+	args.candidateId = rf.me
+	if len(rf.log) != 0 {
+		args.lastLogIndex = len(rf.log) - 1
+		args.lastLogTerm = rf.log[len(rf.log)-1].term
+	} else {
+		args.lastLogIndex = -1
+		args.lastLogTerm = -1
+	}
+
+	chanB := make(chan int)
+	for i := range rf.peers {
+		if i != rf.me && rf.state == "CANDIDATE" {
+			go func(i int) {
+				var reply RequestVoteReply
+				rf.sendRequestVote(i, &args, &reply)
+				chanB <- 1
+			}(i)
+		}
+	}
+	for i := range rf.peers {
+		<-chanB
+	}
+	close(chanB)
+}
+
+func (rf *Raft) BroadCastAppendEntries() {
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	// TODO
 }
 
 //
@@ -372,14 +406,15 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.persist()
 	rf.resetTimer()
 
-	go func(raft *Raft) {
+	go func(rf *Raft) {
 		for {
-      if raft.timer.
+			switch rf.state {
+			case "FOLLOWER":
+				{
+
+				}
+			}
 		}
-	}(&rf)
-
-	go func(raft *Raft) {
-
 	}(rf)
 
 	return rf
