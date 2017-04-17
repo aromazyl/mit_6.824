@@ -21,7 +21,7 @@ import "sync"
 import "labrpc"
 import "time"
 import "bytes"
-
+import "rand"
 import "encoding/gob"
 
 //
@@ -44,6 +44,10 @@ type AppendEntryReply struct {
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	defer rf.persist()
+
 	if args.term < rf.currentTerm {
 		reply.success = false
 		reply.term = rf.currentTerm
@@ -102,13 +106,21 @@ type Raft struct {
 	state               string
 	applyCh             chan ApplyMsg
 	timer               *time.Timer
+	timeUpperBound      int
+	votedCount          int
+	chanCommit          chan bool
+	chanHeartBeat       chan bool
+	chanGrantVote       chan bool
+	chanLeader          chan bool
 }
 
 func (rf *Raft) resetTimer() {
 	if rf.timer == nil {
 		rf.timer = time.NewTimer(5 * time.Minute)
 	}
+	rand.Seed(42)
 	rf.timer.Reset(5 * time.Minute)
+	rf.timeUpperBound = rand.Intn(150) + 150
 }
 
 // return currentTerm and whether this server
@@ -263,6 +275,30 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 //
 func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *RequestVoteReply) bool {
 	ok := rf.peers[server].Call("Raft.RequestVote", args, reply)
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	if ok {
+		term := rf.currentTerm
+		if rf.state != "CANDIDATE" {
+			return ok
+		}
+		if args.term != term {
+			return ok
+		}
+		if reply.term != term {
+			rf.currentTerm = reply.term
+			rf.state = "FOLLOWER"
+			rf.votedFor = -1
+			rf.persist()
+		}
+		if reply.voteGranted {
+			rf.votedCount++
+			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
+				rf.state = "LEADER"
+				rf.chanLeader <- true
+			}
+		}
+	}
 	return ok
 }
 
@@ -326,10 +362,25 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.matchIndex = make([]int, len(peers))
 	rf.state = "FOLLOWER"
 	rf.applyCh = applyCh
+	rf.votedCount = 0
+	rf.chanCommit = make(chan bool, 100)
+	rf.chanHeartBeat = make(chan bool, 100)
+	rf.chanGrantVote = make(chan bool, 100)
+	rf.chanLeader = make(chan bool, 100)
 	// initialize from state persisted before a crash
 	rf.readPersist(persister.ReadRaftState())
 	rf.persist()
 	rf.resetTimer()
+
+	go func(raft *Raft) {
+		for {
+      if raft.timer.
+		}
+	}(&rf)
+
+	go func(raft *Raft) {
+
+	}(rf)
 
 	return rf
 }
