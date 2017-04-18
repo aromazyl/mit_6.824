@@ -43,6 +43,10 @@ type AppendEntryReply struct {
 	success bool
 }
 
+func (rf *Raft) resetLeaderTime() {
+	rf.leaderTimer.Reset(10 * time.Second)
+}
+
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
@@ -111,6 +115,7 @@ type Raft struct {
 	chanCommit          chan bool
 	chanHeartBeat       chan bool
 	chanLeader          chan bool
+	chanVoteGranted     chan bool
 	stateMachine        *StateMachine
 }
 
@@ -294,6 +299,7 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 			rf.votedCount++
 			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
 				rf.state = "LEADER"
+				rf.chanVoteGranted <- true
 			}
 		}
 	}
@@ -334,6 +340,9 @@ func (rf *Raft) BroadCastAppendEntries() {
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
 	// TODO
+	for i := rf.commitIndex + 1; i < len(rf.log); i++ {
+
+	}
 }
 
 //
@@ -433,18 +442,23 @@ func Make(peers []*labrpc.ClientEnd, me int,
 			case "CANDIDATE":
 				{
 					select {
-					case <-chanHeartBeat:
+					case <-rf.time.C:
+						rf.resetTimer()
+						go func() { rf.BroadCastRequestVote() }()
+					case <-rf.chanHeartBeat:
 						rf.resetTimer()
 						rf.state = "FOLLOWER"
-					case <-rf.time.C:
+					case <-rf.voteGranted:
+						rf.state = "LEADER"
+						rf.resetTimer()
 					}
 				}
 			case "LEADER":
 				{
 					select {
-					case <-chanLeader:
-						rf.resetTimer()
+					case <-rf.leaderTimer.C:
 						rf.BroadCastAppendEntries()
+						rf.resetLeaderTime()
 					}
 				}
 			}
