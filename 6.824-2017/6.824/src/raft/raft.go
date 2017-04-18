@@ -110,8 +110,8 @@ type Raft struct {
 	votedCount          int
 	chanCommit          chan bool
 	chanHeartBeat       chan bool
-	chanGrantVote       chan bool
 	chanLeader          chan bool
+	stateMachine        *StateMachine
 }
 
 func (rf *Raft) resetTimer() {
@@ -385,7 +385,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.peers = peers
 	rf.persister = persister
 	rf.me = me
-
+	rf.stateMachine = &StateMachine{}
 	// Your initialization code here (2A, 2B, 2C).
 	rf.currentTerm = 0
 	rf.votedFor = -1
@@ -399,7 +399,6 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.votedCount = 0
 	rf.chanCommit = make(chan bool, 100)
 	rf.chanHeartBeat = make(chan bool, 100)
-	rf.chanGrantVote = make(chan bool, 100)
 	rf.chanLeader = make(chan bool, 100)
 	// initialize from state persisted before a crash
 	rf.readPersist(persister.ReadRaftState())
@@ -408,10 +407,45 @@ func Make(peers []*labrpc.ClientEnd, me int,
 
 	go func(rf *Raft) {
 		for {
+			if rf.commitIndex > rf.lastApplied {
+				rf.lastApplied++
+				// TODO snape shot
+				applyMsg := ApplyMsg{rf.lastApplied, {}, true, make([]byte)}
+				rf.stateMachine.Update(&applyMsg)
+				go func() { rf.applyCh <- applyMsg }()
+				continue
+			}
 			switch rf.state {
 			case "FOLLOWER":
 				{
-
+					select {
+					case <-chanHeartBeat:
+						rf.resetTimer()
+					case <-rf.time.C:
+						{
+							rf.mu.Lock()
+							defer rf.mu.Unlock()
+							rf.state = "CANDIDATE"
+							go func() { rf.BroadCastRequestVote() }()
+						}
+					}
+				}
+			case "CANDIDATE":
+				{
+					select {
+					case <-chanHeartBeat:
+						rf.resetTimer()
+						rf.state = "FOLLOWER"
+					case <-rf.time.C:
+					}
+				}
+			case "LEADER":
+				{
+					select {
+					case <-chanLeader:
+						rf.resetTimer()
+						rf.BroadCastAppendEntries()
+					}
 				}
 			}
 		}
