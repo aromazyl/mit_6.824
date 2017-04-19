@@ -366,17 +366,20 @@ func (rf *Raft) BroadCastAppendEntries() {
 						args.entries = append(args.entries, rf.log[j])
 					}
 				}
-				for !ok {
-					ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
-				}
-				if len(rf.log)-1 > rf.nextIndex[i] {
-					for !reply.success {
-						rf.nextIndex[i]--
+				tmpFunc := func() {
+					for !ok {
+						ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
 					}
-
-					rf.nextIndex[i] = len(rf.log) - 1
+					if len(rf.log)-1 > rf.nextIndex[i] {
+						if !reply.success {
+							rf.nextIndex[i]--
+							tmpFunc()
+						} else {
+							rf.nextIndex[i] = len(rf.log) - 1
+						}
+					}
 				}
-				// TODO
+				tmpFunc()
 				cntChan <- 0
 			}(rf, i)
 		}
