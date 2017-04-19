@@ -359,7 +359,23 @@ func (rf *Raft) BroadCastAppendEntries() {
 				args := AppendEntryArgs{rf.currentTerm,
 					rf.me, rf.prevLogIndex, rf.prevLogTerm, nil, rf.commitIndex}
 				reply := make(AppendEntryReply)
-				rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
+				args.entries = make([]LogEntry, 0)
+				ok := rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
+				if len(rf.log)-1 > rf.nextIndex[i] {
+					for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
+						args.entries = append(args.entries, rf.log[j])
+					}
+				}
+				for !ok {
+					ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
+				}
+				if len(rf.log)-1 > rf.nextIndex[i] {
+					for !reply.success {
+						rf.nextIndex[i]--
+					}
+
+					rf.nextIndex[i] = len(rf.log) - 1
+				}
 				// TODO
 				cntChan <- 0
 			}(rf, i)
