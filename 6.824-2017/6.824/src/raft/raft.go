@@ -21,7 +21,7 @@ import "sync"
 import "labrpc"
 import "time"
 import "bytes"
-import "rand"
+import "math/rand"
 import "encoding/gob"
 
 //
@@ -124,7 +124,7 @@ func (rf *Raft) resetTimer() {
 		rf.timer = time.NewTimer(5 * time.Minute)
 	}
 	rand.Seed(42)
-	rf.timer.Reset((randInt(150) + 150) * time.Second)
+	rf.timer.Reset(time.Duration(rand.Intn(150)+150) * time.Second)
 }
 
 // return currentTerm and whether this server
@@ -331,6 +331,7 @@ func (rf *Raft) BroadCastRequestVote() {
 		}
 	}
 	for i := range rf.peers {
+		i = i
 		<-chanB
 	}
 	close(chanB)
@@ -354,11 +355,11 @@ func (rf *Raft) BroadCastAppendEntries() {
 
 	cntChan := make(chan int)
 	for i := range rf.peers {
-		if rf.log[len(rf.log)-1].index >= rf.nextIndex[i] {
+		if len(rf.log)-1 >= rf.nextIndex[i] {
 			go func(rf *Raft, i int) {
 				args := AppendEntryArgs{rf.currentTerm,
-					rf.me, rf.prevLogIndex, rf.prevLogTerm, nil, rf.commitIndex}
-				reply := make(AppendEntryReply)
+					rf.me, rf.nextIndex[i], rf.log[rf.nextIndex[i]].term, nil, rf.commitIndex}
+				reply := AppendEntryReply{}
 				args.entries = make([]LogEntry, 0)
 				ok := rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
 				if len(rf.log)-1 > rf.nextIndex[i] {
@@ -366,25 +367,28 @@ func (rf *Raft) BroadCastAppendEntries() {
 						args.entries = append(args.entries, rf.log[j])
 					}
 				}
-				tmpFunc := func() {
+				tag := false
+				for !tag {
+					ok = false
 					for !ok {
 						ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
 					}
 					if len(rf.log)-1 > rf.nextIndex[i] {
 						if !reply.success {
 							rf.nextIndex[i]--
-							tmpFunc()
+							args.entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.entries...)
 						} else {
 							rf.nextIndex[i] = len(rf.log) - 1
+							tag = true
 						}
 					}
 				}
-				tmpFunc()
 				cntChan <- 0
 			}(rf, i)
 		}
 	}
 	for i := range rf.peers {
+		i = i
 		<-cntChan
 	}
 }
@@ -463,8 +467,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
 			if rf.commitIndex > rf.lastApplied {
 				rf.lastApplied++
 				// TODO snape shot
-				applyMsg := ApplyMsg{rf.lastApplied, {}, true, make([]byte)}
-				rf.stateMachine.Update(&applyMsg)
+				applyMsg := ApplyMsg{rf.lastApplied, nil, true, make([]byte, 0)}
+				// rf.stateMachine.Update(&applyMsg)
 				go func() { rf.applyCh <- applyMsg }()
 				continue
 			}
@@ -472,9 +476,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 			case "FOLLOWER":
 				{
 					select {
-					case <-chanHeartBeat:
+					case <-rf.chanHeartBeat:
 						rf.resetTimer()
-					case <-rf.time.C:
+					case <-rf.timer.C:
 						{
 							rf.mu.Lock()
 							defer rf.mu.Unlock()
@@ -488,13 +492,13 @@ func Make(peers []*labrpc.ClientEnd, me int,
 			case "CANDIDATE":
 				{
 					select {
-					case <-rf.time.C:
+					case <-rf.timer.C:
 						go func() { rf.BroadCastRequestVote() }()
 						rf.resetTimer()
 					case <-rf.chanHeartBeat:
 						rf.resetTimer()
 						rf.state = "FOLLOWER"
-					case <-rf.voteGranted:
+					case <-rf.chanVoteGranted:
 						rf.state = "LEADER"
 						rf.resetTimer()
 					}
