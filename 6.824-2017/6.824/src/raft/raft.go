@@ -341,7 +341,32 @@ func (rf *Raft) BroadCastAppendEntries() {
 	defer rf.mu.Unlock()
 	// TODO
 	for i := rf.commitIndex + 1; i < len(rf.log); i++ {
+		num := 0
+		for j := range rf.peers {
+			if rf.matchIndex[j] >= i && rf.log[i].term == rf.currentTerm {
+				num++
+			}
+		}
+		if num*2 > len(rf.peers) {
+			rf.commitIndex = i
+		}
+	}
 
+	cntChan := make(chan int)
+	for i := range rf.peers {
+		if rf.log[len(rf.log)-1].index >= rf.nextIndex[i] {
+			go func(rf *Raft, i int) {
+				args := AppendEntryArgs{rf.currentTerm,
+					rf.me, rf.prevLogIndex, rf.prevLogTerm, nil, rf.commitIndex}
+				reply := make(AppendEntryReply)
+				rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
+				// TODO
+				cntChan <- 0
+			}(rf, i)
+		}
+	}
+	for i := range rf.peers {
+		<-cntChan
 	}
 }
 
@@ -435,7 +460,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 							rf.mu.Lock()
 							defer rf.mu.Unlock()
 							rf.state = "CANDIDATE"
+							rf.currentTerm++
 							go func() { rf.BroadCastRequestVote() }()
+							rf.resetTimer()
 						}
 					}
 				}
@@ -443,8 +470,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
 				{
 					select {
 					case <-rf.time.C:
-						rf.resetTimer()
 						go func() { rf.BroadCastRequestVote() }()
+						rf.resetTimer()
 					case <-rf.chanHeartBeat:
 						rf.resetTimer()
 						rf.state = "FOLLOWER"
