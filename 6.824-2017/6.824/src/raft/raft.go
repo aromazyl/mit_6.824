@@ -23,6 +23,7 @@ import "time"
 import "bytes"
 import "math/rand"
 import "encoding/gob"
+import "log"
 
 //
 // as each Raft peer becomes aware that successive log entries are
@@ -44,7 +45,11 @@ type AppendEntryReply struct {
 }
 
 func (rf *Raft) resetLeaderTime() {
-	rf.leaderTimer.Reset(10 * time.Second)
+	if rf.leaderTimer == nil {
+		log.Printf("raft leader timer inital...")
+		rf.leaderTimer = time.NewTimer(time.Duration(10) * time.Second)
+	}
+	rf.leaderTimer.Reset(time.Duration(10) * time.Second)
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
@@ -105,7 +110,6 @@ type Raft struct {
 	lastApplied         int
 	nextIndex           []int
 	matchIndex          []int
-	character           int
 	granted_votes_count int
 	state               string
 	applyCh             chan ApplyMsg
@@ -121,7 +125,7 @@ type Raft struct {
 
 func (rf *Raft) resetTimer() {
 	if rf.timer == nil {
-		rf.timer = time.NewTimer(5 * time.Minute)
+		rf.timer = time.NewTimer(time.Duration(rand.Intn(150)+150) * time.Second)
 	}
 	rand.Seed(42)
 	rf.timer.Reset(time.Duration(rand.Intn(150)+150) * time.Second)
@@ -135,7 +139,7 @@ func (rf *Raft) GetState() (int, bool) {
 	var isLeader bool
 	// Your code here (2A).
 	term = rf.currentTerm
-	if rf.character == 2 {
+	if rf.state == "LEADER" {
 		isLeader = true
 	} else {
 		isLeader = false
@@ -457,6 +461,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.chanCommit = make(chan bool, 100)
 	rf.chanHeartBeat = make(chan bool, 100)
 	rf.chanLeader = make(chan bool, 100)
+	rf.chanVoteGranted = make(chan bool, 100)
 	// initialize from state persisted before a crash
 	rf.readPersist(persister.ReadRaftState())
 	rf.persist()
