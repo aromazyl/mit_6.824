@@ -47,9 +47,9 @@ type AppendEntryReply struct {
 func (rf *Raft) resetLeaderTime() {
 	if rf.leaderTimer == nil {
 		log.Printf("raft leader timer inital...")
-		rf.leaderTimer = time.NewTimer(time.Duration(10) * time.Second)
+		rf.leaderTimer = time.NewTimer(time.Duration(10) * time.Millisecond)
 	}
-	rf.leaderTimer.Reset(time.Duration(10) * time.Second)
+	rf.leaderTimer.Reset(time.Duration(10) * time.Millisecond)
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
@@ -125,10 +125,10 @@ type Raft struct {
 
 func (rf *Raft) resetTimer() {
 	if rf.timer == nil {
-		rf.timer = time.NewTimer(time.Duration(rand.Intn(150)+150) * time.Second)
+		rf.timer = time.NewTimer(time.Duration(rand.Intn(150)+150) * time.Millisecond)
 	}
 	rand.Seed(42)
-	rf.timer.Reset(time.Duration(rand.Intn(150)+150) * time.Second)
+	rf.timer.Reset(time.Duration(rand.Intn(150)+150) * time.Millisecond)
 }
 
 // return currentTerm and whether this server
@@ -282,9 +282,10 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 // the struct itself.
 //
 func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *RequestVoteReply) bool {
+	log.Printf("in send request vote")
 	ok := rf.peers[server].Call("Raft.RequestVote", args, reply)
-	rf.mu.Lock()
-	defer rf.mu.Unlock()
+	// rf.mu.Lock()
+	// defer rf.mu.Unlock()
 	if ok {
 		term := rf.currentTerm
 		if rf.state != "CANDIDATE" {
@@ -301,6 +302,7 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 		}
 		if reply.voteGranted {
 			rf.votedCount++
+			log.Printf("raft votedCount:%d", rf.votedCount)
 			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
 				rf.state = "LEADER"
 				rf.chanVoteGranted <- true
@@ -311,6 +313,7 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 }
 
 func (rf *Raft) BroadCastRequestVote() {
+	log.Printf("raft:%v, broad cast request vote, peers number:%v", rf.me, len(rf.peers))
 	var args RequestVoteArgs
 	rf.mu.Lock()
 	defer rf.mu.Unlock()
@@ -477,6 +480,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 				go func() { rf.applyCh <- applyMsg }()
 				continue
 			}
+			log.Printf("state:%v", rf.state)
 			switch rf.state {
 			case "FOLLOWER":
 				{
@@ -485,8 +489,6 @@ func Make(peers []*labrpc.ClientEnd, me int,
 						rf.resetTimer()
 					case <-rf.timer.C:
 						{
-							rf.mu.Lock()
-							defer rf.mu.Unlock()
 							rf.state = "CANDIDATE"
 							rf.currentTerm++
 							go func() { rf.BroadCastRequestVote() }()
