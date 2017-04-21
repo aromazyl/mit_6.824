@@ -24,6 +24,7 @@ import "bytes"
 import "math/rand"
 import "encoding/gob"
 import "log"
+import "fmt"
 
 //
 // as each Raft peer becomes aware that successive log entries are
@@ -209,10 +210,20 @@ type RequestVoteReply struct {
 	voteGranted bool
 }
 
+func (args *RequestVoteArgs) Dump() string {
+	return fmt.Sprintf("args.term=[%v], args.candidateId=[%v], args.lastLogIndex=[%v], lastLogTerm=[%v]",
+		args.term, args.candidateId, args.lastLogIndex, args.lastLogTerm)
+}
+
+func (reply *RequestVoteReply) Dump() string {
+	return fmt.Sprintf("reply.term=[%v], reply.voteGranted=[%v]",
+		reply.term, reply.voteGranted)
+}
+
 //
 // example RequestVote RPC handler.
 //
-func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
+func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	// Your code here (2A, 2B).
 	may_granted_vote := true
 	if len(rf.log) > 0 {
@@ -254,7 +265,6 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 	rf.mu.Unlock()
 	reply.term = args.term
 	reply.voteGranted = (rf.votedFor == args.candidateId)
-	return
 }
 
 //
@@ -286,7 +296,7 @@ func (rf *Raft) RequestVote(args *RequestVoteArgs, reply *RequestVoteReply) {
 // that the caller passes the address of the reply struct with &, not
 // the struct itself.
 //
-func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *RequestVoteReply) bool {
+func (rf *Raft) sendRequestVote(server int, args RequestVoteArgs, reply *RequestVoteReply) bool {
 	log.Printf("in send request vote")
 	ok := rf.peers[server].Call("Raft.RequestVote", args, reply)
 	// rf.mu.Lock()
@@ -310,7 +320,7 @@ func (rf *Raft) sendRequestVote(server int, args *RequestVoteArgs, reply *Reques
 			rf.votedCount++
 			log.Printf("raft votedCount:%d", rf.votedCount)
 			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
-				rf.state = "LEADER"
+				// rf.state = "LEADER"
 				rf.chanVoteGranted <- true
 			}
 			rf.mu.Unlock()
@@ -323,12 +333,14 @@ func (rf *Raft) BroadCastRequestVote() {
 	log.Printf("raft:%v, broad cast request vote, peers number:%v", rf.me, len(rf.peers))
 	var args RequestVoteArgs
 	rf.mu.Lock()
-	defer rf.mu.Unlock()
 	args.term = rf.currentTerm
+	rf.mu.Unlock()
 	args.candidateId = rf.me
 	if len(rf.log) != 0 {
 		args.lastLogIndex = len(rf.log) - 1
+		rf.mu.Lock()
 		args.lastLogTerm = rf.log[len(rf.log)-1].term
+		rf.mu.Unlock()
 	} else {
 		args.lastLogIndex = -1
 		args.lastLogTerm = -1
@@ -339,7 +351,7 @@ func (rf *Raft) BroadCastRequestVote() {
 		if i != rf.me && rf.state == "CANDIDATE" {
 			go func(i int) {
 				var reply RequestVoteReply
-				rf.sendRequestVote(i, &args, &reply)
+				rf.sendRequestVote(i, args, &reply)
 				chanB <- 1
 			}(i)
 		}
@@ -519,7 +531,6 @@ func Make(peers []*labrpc.ClientEnd, me int,
 					case <-rf.timer.C:
 						log.Printf("CANDIDATE: rf.time.C, rf id:%v", rf.me)
 						go func() { rf.BroadCastRequestVote() }()
-						rf.resetTimer()
 					case <-rf.chanHeartBeat:
 						log.Printf("CANDIDATE: heartBeat, rf id:%v", rf.me)
 						rf.resetTimer()
