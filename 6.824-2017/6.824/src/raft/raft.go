@@ -32,17 +32,17 @@ import "fmt"
 // tester) on the same server, via the applyCh passed to Make().
 //
 type AppendEntryArgs struct {
-	term         int
-	leaderId     int
-	prevLogIndex int
-	prevLogTerm  int
-	entries      []LogEntry
-	leaderCommit int
+	Term         int
+	LeaderId     int
+	PrevLogIndex int
+	PrevLogTerm  int
+	Entries      []LogEntry
+	LeaderCommit int
 }
 
 type AppendEntryReply struct {
-	term    int
-	success bool
+	Term    int
+	Success bool
 }
 
 func (rf *Raft) resetLeaderTime() {
@@ -54,29 +54,31 @@ func (rf *Raft) resetLeaderTime() {
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
 	defer rf.persist()
 
-	if args.term < rf.currentTerm {
-		reply.success = false
-		reply.term = rf.currentTerm
+	if args.Term < rf.currentTerm {
+		reply.Success = false
+		reply.Term = rf.currentTerm
 		return
 	}
-	if len(rf.log)-1 < args.prevLogIndex ||
-		rf.log[args.prevLogIndex].term < args.prevLogTerm {
-		reply.success = false
-		reply.term = rf.currentTerm
+	if len(rf.log)-1 < args.PrevLogIndex ||
+		rf.log[args.PrevLogIndex].term < args.PrevLogTerm {
+		reply.Success = false
+		reply.Term = rf.currentTerm
 		return
 	}
 	rf.mu.Lock()
-	rf.log = rf.log[:args.prevLogIndex+1]
-	rf.log = append(rf.log, args.entries...)
+	rf.log = rf.log[:args.PrevLogIndex+1]
+	rf.log = append(rf.log, args.Entries...)
 
-	if args.leaderCommit > rf.commitIndex {
-		rf.commitIndex = MaxInt(args.leaderCommit, len(rf.log)-1)
+	if args.LeaderCommit > rf.commitIndex {
+		rf.commitIndex = MaxInt(args.LeaderCommit, len(rf.log)-1)
 	}
 	rf.mu.Unlock()
-	reply.success = true
-	reply.term = rf.currentTerm
+	reply.Success = true
+	reply.Term = rf.currentTerm
 	return
 }
 
@@ -194,10 +196,10 @@ func (rf *Raft) readPersist(data []byte) {
 //
 type RequestVoteArgs struct {
 	// Your data here (2A, 2B).
-	term         int
-	candidateId  int
-	lastLogIndex int
-	lastLogTerm  int
+	Term         int
+	CandidateId  int
+	LastLogIndex int
+	LastLogTerm  int
 }
 
 //
@@ -206,18 +208,18 @@ type RequestVoteArgs struct {
 //
 type RequestVoteReply struct {
 	// Your data here (2A).
-	term        int
-	voteGranted bool
+	Term        int
+	VoteGranted bool
 }
 
 func (args *RequestVoteArgs) Dump() string {
 	return fmt.Sprintf("args.term=[%v], args.candidateId=[%v], args.lastLogIndex=[%v], lastLogTerm=[%v]",
-		args.term, args.candidateId, args.lastLogIndex, args.lastLogTerm)
+		args.Term, args.CandidateId, args.LastLogIndex, args.LastLogTerm)
 }
 
 func (reply *RequestVoteReply) Dump() string {
 	return fmt.Sprintf("reply.term=[%v], reply.voteGranted=[%v]",
-		reply.term, reply.voteGranted)
+		reply.Term, reply.VoteGranted)
 }
 
 //
@@ -225,46 +227,42 @@ func (reply *RequestVoteReply) Dump() string {
 //
 func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	// Your code here (2A, 2B).
+	// rf.mu.Lock()
+	// defer rf.mu.Unlock()
+	log.Printf("request vote rf:%v, args:%v, reply:%v", rf, args, *reply)
 	may_granted_vote := true
 	if len(rf.log) > 0 {
-		if rf.log[len(rf.log)-1].term > args.lastLogTerm {
+		if rf.log[len(rf.log)-1].term > args.LastLogTerm {
 			may_granted_vote = false
 		}
-		if rf.log[len(rf.log)-1].term == args.lastLogTerm &&
-			len(rf.log) > args.lastLogIndex+1 {
+		if rf.log[len(rf.log)-1].term == args.LastLogTerm &&
+			len(rf.log) > args.LastLogIndex+1 {
 			may_granted_vote = false
 		}
 	}
-	rf.mu.Lock()
-	if rf.currentTerm > args.term {
-		reply.voteGranted = false
-		reply.term = rf.currentTerm
-		rf.mu.Unlock()
+	if rf.currentTerm > args.Term {
+		reply.VoteGranted = false
+		reply.Term = rf.currentTerm
 		return
 	}
-	rf.mu.Unlock()
-	if rf.currentTerm == args.term {
-		if (rf.votedFor == -1 || rf.votedFor == args.candidateId) && may_granted_vote {
-			rf.mu.Lock()
-			rf.votedFor = args.candidateId
+	if rf.currentTerm == args.Term {
+		if (rf.votedFor == -1 || rf.votedFor == args.CandidateId) && may_granted_vote {
+			rf.votedFor = args.CandidateId
 			rf.persist()
-			rf.mu.Unlock()
 		}
-		reply.term = rf.currentTerm
-		reply.voteGranted = (rf.votedFor == args.candidateId)
+		reply.Term = rf.currentTerm
+		reply.VoteGranted = (rf.votedFor == args.CandidateId)
 		return
 	}
-	rf.mu.Lock()
 	rf.state = "FOLLOWER"
-	rf.currentTerm = args.term
+	rf.currentTerm = args.Term
 	rf.votedFor = -1
 	if may_granted_vote {
-		rf.votedFor = args.candidateId
+		rf.votedFor = args.CandidateId
 		rf.persist()
 	}
-	rf.mu.Unlock()
-	reply.term = args.term
-	reply.voteGranted = (rf.votedFor == args.candidateId)
+	reply.Term = args.Term
+	reply.VoteGranted = (rf.votedFor == args.CandidateId)
 }
 
 //
@@ -296,9 +294,22 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 // that the caller passes the address of the reply struct with &, not
 // the struct itself.
 //
-func (rf *Raft) sendRequestVote(server int, args RequestVoteArgs, reply *RequestVoteReply) bool {
+func (rf *Raft) sendRequestVote(server int) bool {
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	var args RequestVoteArgs
+	args.Term = rf.currentTerm
+	args.CandidateId = rf.me
+	if len(rf.log) != 0 {
+		args.LastLogIndex = len(rf.log) - 1
+		args.LastLogTerm = rf.log[len(rf.log)-1].term
+	} else {
+		args.LastLogIndex = -1
+		args.LastLogTerm = -1
+	}
+	var reply RequestVoteReply
 	log.Printf("in send request vote")
-	ok := rf.peers[server].Call("Raft.RequestVote", args, reply)
+	ok := rf.peers[server].Call("Raft.RequestVote", args, &reply)
 	// rf.mu.Lock()
 	// defer rf.mu.Unlock()
 	if ok {
@@ -306,16 +317,16 @@ func (rf *Raft) sendRequestVote(server int, args RequestVoteArgs, reply *Request
 		if rf.state != "CANDIDATE" {
 			return ok
 		}
-		if args.term != term {
+		if args.Term != term {
 			return ok
 		}
-		if reply.term != term {
-			rf.currentTerm = reply.term
+		if reply.Term != term {
+			rf.currentTerm = reply.Term
 			rf.state = "FOLLOWER"
 			rf.votedFor = -1
 			rf.persist()
 		}
-		if reply.voteGranted {
+		if reply.VoteGranted {
 			rf.mu.Lock()
 			rf.votedCount++
 			log.Printf("raft votedCount:%d", rf.votedCount)
@@ -331,27 +342,11 @@ func (rf *Raft) sendRequestVote(server int, args RequestVoteArgs, reply *Request
 
 func (rf *Raft) BroadCastRequestVote() {
 	log.Printf("raft:%v, broad cast request vote, peers number:%v", rf.me, len(rf.peers))
-	var args RequestVoteArgs
-	rf.mu.Lock()
-	args.term = rf.currentTerm
-	rf.mu.Unlock()
-	args.candidateId = rf.me
-	if len(rf.log) != 0 {
-		args.lastLogIndex = len(rf.log) - 1
-		rf.mu.Lock()
-		args.lastLogTerm = rf.log[len(rf.log)-1].term
-		rf.mu.Unlock()
-	} else {
-		args.lastLogIndex = -1
-		args.lastLogTerm = -1
-	}
-
 	chanB := make(chan int)
 	for i := range rf.peers {
 		if i != rf.me && rf.state == "CANDIDATE" {
 			go func(i int) {
-				var reply RequestVoteReply
-				rf.sendRequestVote(i, args, &reply)
+				rf.sendRequestVote(i)
 				chanB <- 1
 			}(i)
 		}
@@ -386,10 +381,10 @@ func (rf *Raft) BroadCastAppendEntries() {
 				args := AppendEntryArgs{rf.currentTerm,
 					rf.me, rf.nextIndex[i], rf.log[rf.nextIndex[i]].term, nil, rf.commitIndex}
 				reply := AppendEntryReply{}
-				args.entries = make([]LogEntry, 0)
+				args.Entries = make([]LogEntry, 0)
 				if len(rf.log)-1 > rf.nextIndex[i] {
 					for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
-						args.entries = append(args.entries, rf.log[j])
+						args.Entries = append(args.Entries, rf.log[j])
 					}
 				}
 				tag := false
@@ -404,11 +399,11 @@ func (rf *Raft) BroadCastAppendEntries() {
 						}
 					}
 					if len(rf.log)-1 > rf.nextIndex[i] {
-						if !reply.success {
+						if !reply.Success {
 							rf.mu.Lock()
 							rf.nextIndex[i]--
 							rf.mu.Unlock()
-							args.entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.entries...)
+							args.Entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.Entries...)
 						} else {
 							rf.mu.Lock()
 							rf.nextIndex[i] = len(rf.log) - 1
