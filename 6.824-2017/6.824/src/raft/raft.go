@@ -229,7 +229,6 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	// Your code here (2A, 2B).
 	// rf.mu.Lock()
 	// defer rf.mu.Unlock()
-	log.Printf("request vote rf:%v, args:%v, reply:%v", rf, args, *reply)
 	may_granted_vote := true
 	if len(rf.log) > 0 {
 		if rf.log[len(rf.log)-1].term > args.LastLogTerm {
@@ -327,14 +326,12 @@ func (rf *Raft) sendRequestVote(server int) bool {
 			rf.persist()
 		}
 		if reply.VoteGranted {
-			rf.mu.Lock()
 			rf.votedCount++
 			log.Printf("raft votedCount:%d", rf.votedCount)
 			if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
 				// rf.state = "LEADER"
 				rf.chanVoteGranted <- true
 			}
-			rf.mu.Unlock()
 		}
 	}
 	return ok
@@ -538,9 +535,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 				}
 			case "LEADER":
 				{
+					log.Printf("LEADER: broad casting entries, rf:%v id:%v", rf, rf.me)
 					select {
 					case <-rf.leaderTimer.C:
-						log.Printf("LEADER: broad casting entries, rf id:%v", rf.me)
 						rf.BroadCastAppendEntries()
 						rf.resetLeaderTime()
 					}
