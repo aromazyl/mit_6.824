@@ -1,0 +1,2316 @@
+nohup: 忽略输入
+2017/05/04 08:06:18 rf id:0, state:FOLLOWER
+2017/05/04 08:06:18 rf id:1, state:FOLLOWER
+Test (2A): initial election ...
+2017/05/04 08:06:18 rf id:2, state:FOLLOWER
+2017/05/04 08:06:18 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:18 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:18 rf id:0, state:CANDIDATE
+2017/05/04 08:06:18 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:18 rf id:1, state:CANDIDATE
+2017/05/04 08:06:18 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:18 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:18 rf.me:0, in send request vote to 2
+2017/05/04 08:06:18 rf.me:1, in send request vote to 0
+2017/05/04 08:06:18 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:18 rf id:2, state:CANDIDATE
+2017/05/04 08:06:18 rf.me:2, in send request vote to 1
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rf id:2, raft votedCount:1
+2017/05/04 08:06:18 rf.me:2, in send request vote to 0
+2017/05/04 08:06:18 rf id:1, raft votedCount:1
+2017/05/04 08:06:18 rf id:0, raft votedCount:1
+2017/05/04 08:06:18 rf.me:1, in send request vote to 2
+2017/05/04 08:06:18 rf.me:0, in send request vote to 1
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:18 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:18 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:18 rf.me:0, in send request vote to 1
+2017/05/04 08:06:18 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:18 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:18 rf.me:1, in send request vote to 2
+2017/05/04 08:06:18 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:18 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:18 rf.me:2, in send request vote to 1
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:18 rf.me:0, in send request vote to 2
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:18 rf.me:1, in send request vote to 0
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rf id:2, raft votedCount:1
+2017/05/04 08:06:18 rf.me:2, in send request vote to 0
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:18 rf id:1, raft votedCount:1
+2017/05/04 08:06:18 rf id:0, raft votedCount:1
+==================
+WARNING: DATA RACE
+Read by goroutine 53:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:249 +0x317
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Previous write by goroutine 51:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:250 +0x40f
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Goroutine 53 (running) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+
+Goroutine 51 (finished) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+==================
+2017/05/04 08:06:18 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+==================
+WARNING: DATA RACE
+Read by goroutine 6:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2a0
+  raft.TestInitialElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:30 +0xab
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 10:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:517 +0xaaa
+
+Goroutine 6 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 10 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestInitialElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:24 +0x43
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 6:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2c2
+  raft.TestInitialElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:30 +0xab
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 10:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:516 +0xa5c
+
+Goroutine 6 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 10 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestInitialElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:24 +0x43
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+--- FAIL: TestInitialElection2A (5.00s)
+	config.go:293: expected one leader, got none
+2017/05/04 08:06:23 rf id:0, state:FOLLOWER
+2017/05/04 08:06:23 rf id:1, state:FOLLOWER
+Test (2A): election after network failure ...
+2017/05/04 08:06:23 rf id:2, state:FOLLOWER
+2017/05/04 08:06:23 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:23 rf id:0, state:CANDIDATE
+2017/05/04 08:06:23 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:23 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:23 rf.me:0, in send request vote to 2
+2017/05/04 08:06:23 rf id:1, state:CANDIDATE
+2017/05/04 08:06:23 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:23 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:23 rf.me:1, in send request vote to 0
+2017/05/04 08:06:23 rf id:2, state:CANDIDATE
+2017/05/04 08:06:23 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:23 rf.me:2, in send request vote to 1
+==================
+WARNING: DATA RACE
+Read by goroutine 68:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:243 +0x254
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Previous write by goroutine 61:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:517 +0xaaa
+
+Goroutine 68 (running) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+
+Goroutine 61 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestReElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:45 +0x56
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rf id:1, raft votedCount:1
+2017/05/04 08:06:23 rf.me:1, in send request vote to 2
+2017/05/04 08:06:23 rf id:0, raft votedCount:1
+2017/05/04 08:06:23 rf.me:0, in send request vote to 1
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rf id:2, raft votedCount:1
+2017/05/04 08:06:23 rf.me:2, in send request vote to 0
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:23 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:23 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:23 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:23 rf.me:0, in send request vote to 1
+2017/05/04 08:06:23 rf.me:1, in send request vote to 0
+2017/05/04 08:06:23 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:23 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:23 rf.me:2, in send request vote to 0
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rf.me:0, in send request vote to 2
+2017/05/04 08:06:23 rf id:1, raft votedCount:1
+2017/05/04 08:06:23 rf.me:1, in send request vote to 2
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 rf.me:2, in send request vote to 1
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:23 rf id:0, raft votedCount:1
+2017/05/04 08:06:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:23 rf id:2, raft votedCount:1
+==================
+WARNING: DATA RACE
+Read by goroutine 54:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2a0
+  raft.TestReElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:50 +0xbe
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 57:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:517 +0xaaa
+
+Goroutine 54 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 57 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestReElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:45 +0x56
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 54:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2c2
+  raft.TestReElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:50 +0xbe
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 57:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:516 +0xa5c
+
+Goroutine 54 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 57 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestReElection2A()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:45 +0x56
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+--- FAIL: TestReElection2A (5.00s)
+	config.go:293: expected one leader, got none
+2017/05/04 08:06:28 rf id:0, state:FOLLOWER
+2017/05/04 08:06:28 rf id:1, state:FOLLOWER
+2017/05/04 08:06:28 rf id:2, state:FOLLOWER
+2017/05/04 08:06:28 rf id:3, state:FOLLOWER
+Test (2B): basic agreement ...
+2017/05/04 08:06:28 rf id:4, state:FOLLOWER
+2017/05/04 08:06:28 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:28 rf id:0, state:CANDIDATE
+2017/05/04 08:06:28 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:28 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf id:1, state:CANDIDATE
+2017/05/04 08:06:28 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:06:28 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:28 rf.me:0, in send request vote to 1
+2017/05/04 08:06:28 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:06:28 rf id:2, state:CANDIDATE
+2017/05/04 08:06:28 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf.me:1, in send request vote to 0
+2017/05/04 08:06:28 rf id:3, state:CANDIDATE
+2017/05/04 08:06:28 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:06:28 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:06:28 rf.me:2, in send request vote to 4
+2017/05/04 08:06:28 rf.me:3, in send request vote to 4
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:4, state:CANDIDATE
+2017/05/04 08:06:28 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf id:0, raft votedCount:1
+2017/05/04 08:06:28 rf.me:0, in send request vote to 4
+2017/05/04 08:06:28 rf.me:4, in send request vote to 0
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:1, raft votedCount:1
+2017/05/04 08:06:28 rf.me:1, in send request vote to 2
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:0, raft votedCount:2
+2017/05/04 08:06:28 rf.me:0, in send request vote to 2
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:1, raft votedCount:2
+2017/05/04 08:06:28 rf.me:1, in send request vote to 3
+2017/05/04 08:06:28 rf.me:4, in send request vote to 1
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:0, in send request vote to 3
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf id:1, raft votedCount:3
+2017/05/04 08:06:28 rf.me:1, in send request vote to 4
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 1
+2017/05/04 08:06:28 rf.me:2, in send request vote to 1
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:4, in send request vote to 2
+2017/05/04 08:06:28 CANDIDATE: voteGranted, rf id:1
+2017/05/04 08:06:28 rf id:1, state:LEADER
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 LEADER: broad casting entries, rf:&{{1 0} [0xc8201ee080 0xc8201ee0a0 0xc8201ee0c0 0xc8201ee0e0 0xc8201ee100] 0xc8201f8000 1 [] 1 0 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc8201c72c0 0xc8201f8200 0xc82024a440 0 0xc8201f20d0 0xc8201f21a0 0xc8201f2270 0xc8201f2340 0x7ef4c8} id:1
+==================
+WARNING: DATA RACE
+Write by goroutine 116:
+  sync/atomic.AddInt32()
+      /usr/lib/go/src/runtime/race_amd64.s:255 +0xb
+  sync.(*Mutex).Unlock()
+      /usr/lib/go/src/sync/mutex.go:107 +0x55
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:323 +0xe87
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Previous read by goroutine 19:
+  reflect.Value.Int()
+      /usr/lib/go/src/reflect/value.go:887 +0x14f
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:865 +0x44e
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:932 +0x4aa5
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:932 +0x4aa5
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:1009 +0x4352
+  fmt.(*pp).printArg()
+      /usr/lib/go/src/fmt/print.go:810 +0x656
+  fmt.(*pp).doPrintf()
+      /usr/lib/go/src/fmt/print.go:1238 +0x2a47
+  fmt.Sprintf()
+      /usr/lib/go/src/fmt/print.go:203 +0x7c
+  log.Printf()
+      /usr/lib/go/src/log/log.go:289 +0x5a
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:545 +0x5b3
+
+Goroutine 116 (running) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+
+Goroutine 19 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestBasicAgree2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:82 +0x69
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 2
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:4, in send request vote to 3
+2017/05/04 08:06:28 rf.me:2, in send request vote to 3
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 0
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:2, in send request vote to 0
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:28 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf.me:0, in send request vote to 1
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:0, raft votedCount:1
+2017/05/04 08:06:28 rf.me:0, in send request vote to 4
+2017/05/04 08:06:28 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:28 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf.me:2, in send request vote to 0
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:28 rf id:0, raft votedCount:2
+2017/05/04 08:06:28 rf.me:0, in send request vote to 3
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:2, in send request vote to 1
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:0, in send request vote to 2
+2017/05/04 08:06:28 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:06:28 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 0
+2017/05/04 08:06:28 rf.me:2, in send request vote to 4
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 1
+2017/05/04 08:06:28 rf.me:2, in send request vote to 3
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 2
+2017/05/04 08:06:28 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:06:28 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:06:28 rf.me:4, in send request vote to 0
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:3, in send request vote to 4
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:4, in send request vote to 2
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:4, in send request vote to 1
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:28 rf.me:4, in send request vote to 3
+2017/05/04 08:06:28 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestBasicAgree2B (10.04s)
+	config.go:431: one(100) failed to reach agreement
+2017/05/04 08:06:38 rf id:0, state:FOLLOWER
+2017/05/04 08:06:38 rf id:1, state:FOLLOWER
+Test (2B): agreement despite follower disconnection ...
+2017/05/04 08:06:38 rf id:2, state:FOLLOWER
+2017/05/04 08:06:38 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:38 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:38 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:38 rf id:0, state:CANDIDATE
+2017/05/04 08:06:38 rf.me:0, in send request vote to 1
+2017/05/04 08:06:38 rf id:1, state:CANDIDATE
+2017/05/04 08:06:38 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:38 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:38 rf id:2, state:CANDIDATE
+2017/05/04 08:06:38 rf.me:1, in send request vote to 2
+2017/05/04 08:06:38 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:38 rf.me:2, in send request vote to 0
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rf id:0, raft votedCount:1
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rf.me:0, in send request vote to 2
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rf id:1, raft votedCount:1
+2017/05/04 08:06:38 rf.me:1, in send request vote to 0
+2017/05/04 08:06:38 rf id:2, raft votedCount:1
+2017/05/04 08:06:38 rf.me:2, in send request vote to 1
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:38 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:38 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:38 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:38 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:38 rf.me:0, in send request vote to 1
+2017/05/04 08:06:38 rf.me:1, in send request vote to 2
+2017/05/04 08:06:38 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:38 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:38 rf.me:2, in send request vote to 0
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rf id:0, raft votedCount:1
+2017/05/04 08:06:38 rf.me:0, in send request vote to 2
+2017/05/04 08:06:38 rf id:1, raft votedCount:1
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:38 rf.me:1, in send request vote to 0
+2017/05/04 08:06:38 rf id:2, raft votedCount:1
+2017/05/04 08:06:38 rf.me:2, in send request vote to 1
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:38 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestFailAgree2B (10.03s)
+	config.go:431: one(101) failed to reach agreement
+2017/05/04 08:06:48 rf id:0, state:FOLLOWER
+2017/05/04 08:06:48 rf id:1, state:FOLLOWER
+2017/05/04 08:06:48 rf id:2, state:FOLLOWER
+2017/05/04 08:06:48 rf id:3, state:FOLLOWER
+Test (2B): no agreement if too many followers disconnect ...
+2017/05/04 08:06:48 rf id:4, state:FOLLOWER
+2017/05/04 08:06:48 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:48 rf id:0, state:CANDIDATE
+2017/05/04 08:06:48 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:06:48 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:48 rf id:1, state:CANDIDATE
+2017/05/04 08:06:48 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:06:48 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:48 rf.me:0, in send request vote to 1
+2017/05/04 08:06:48 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:06:48 rf id:2, state:CANDIDATE
+2017/05/04 08:06:48 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rf id:3, state:CANDIDATE
+2017/05/04 08:06:48 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rf.me:1, in send request vote to 4
+2017/05/04 08:06:48 rf.me:2, in send request vote to 1
+2017/05/04 08:06:48 rf.me:3, in send request vote to 0
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:06:48 rf id:4, state:CANDIDATE
+2017/05/04 08:06:48 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rf id:0, raft votedCount:1
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rf.me:0, in send request vote to 4
+2017/05/04 08:06:48 rf id:1, raft votedCount:1
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:1, in send request vote to 0
+2017/05/04 08:06:48 rf.me:4, in send request vote to 1
+2017/05/04 08:06:48 rf.me:2, in send request vote to 0
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf id:1, raft votedCount:2
+2017/05/04 08:06:48 rf.me:1, in send request vote to 3
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:0, in send request vote to 2
+2017/05/04 08:06:48 rf.me:2, in send request vote to 3
+2017/05/04 08:06:48 rf.me:4, in send request vote to 0
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rf id:1, raft votedCount:3
+2017/05/04 08:06:48 rf.me:1, in send request vote to 2
+2017/05/04 08:06:48 CANDIDATE: voteGranted, rf id:1
+2017/05/04 08:06:48 rf id:1, state:LEADER
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf id:0, raft votedCount:2
+2017/05/04 08:06:48 LEADER: broad casting entries, rf:&{{1 0} [0xc820346020 0xc820346040 0xc820346060 0xc820346080 0xc8203460a0] 0xc820344500 1 [] 1 0 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc8203421e0 0xc820344700 0xc82036f000 0 0xc82030b860 0xc82030b930 0xc82030ba00 0xc82030bad0 0x7ef4c8} id:1
+2017/05/04 08:06:48 rf.me:0, in send request vote to 3
+2017/05/04 08:06:48 rf.me:3, in send request vote to 1
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 2
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:2, in send request vote to 4
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 3
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:3, in send request vote to 2
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:3, in send request vote to 4
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:48 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rf.me:0, in send request vote to 1
+2017/05/04 08:06:48 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:06:48 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:06:48 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:06:48 rf.me:2, in send request vote to 0
+2017/05/04 08:06:48 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rf.me:3, in send request vote to 0
+2017/05/04 08:06:48 rf id:0, raft votedCount:1
+2017/05/04 08:06:48 rf.me:0, in send request vote to 3
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:2, in send request vote to 4
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:3, in send request vote to 4
+2017/05/04 08:06:48 rf.me:0, in send request vote to 2
+2017/05/04 08:06:48 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:06:48 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 3
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:48 rf.me:3, in send request vote to 2
+2017/05/04 08:06:48 rf.me:2, in send request vote to 3
+2017/05/04 08:06:48 rf id:0, raft votedCount:2
+2017/05/04 08:06:48 rf.me:0, in send request vote to 4
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 0
+2017/05/04 08:06:48 rf.me:3, in send request vote to 1
+2017/05/04 08:06:48 rf.me:2, in send request vote to 1
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 1
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:06:48 rf.me:4, in send request vote to 2
+2017/05/04 08:06:48 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestFailNoAgree2B (10.04s)
+	config.go:431: one(10) failed to reach agreement
+2017/05/04 08:06:58 rf id:0, state:FOLLOWER
+2017/05/04 08:06:58 rf id:1, state:FOLLOWER
+Test (2B): concurrent Start()s ...
+2017/05/04 08:06:58 rf id:2, state:FOLLOWER
+2017/05/04 08:06:58 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:58 rf id:0, state:CANDIDATE
+2017/05/04 08:06:58 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:58 rf.me:0, in send request vote to 2
+2017/05/04 08:06:58 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:58 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:06:58 rf id:1, state:CANDIDATE
+2017/05/04 08:06:58 rf.me:1, in send request vote to 0
+2017/05/04 08:06:58 rf id:2, raft state turn to follower, origin:FOLLOWER
+==================
+WARNING: DATA RACE
+Write by goroutine 122:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:258 +0x5c3
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Previous read by goroutine 133:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:506 +0x3bc
+
+Goroutine 122 (running) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+
+Goroutine 133 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestConcurrentStarts2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:188 +0x74
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+2017/05/04 08:06:58 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+==================
+WARNING: DATA RACE
+Read by goroutine 133:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:517 +0xa8b
+
+Previous write by goroutine 122:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:259 +0x5f2
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Goroutine 133 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestConcurrentStarts2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:188 +0x74
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Goroutine 122 (finished) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+==================
+2017/05/04 08:06:58 rf id:0, raft votedCount:1
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:58 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:06:58 rf id:2, state:CANDIDATE
+2017/05/04 08:06:58 rf.me:0, in send request vote to 1
+2017/05/04 08:06:58 rf.me:2, in send request vote to 0
+2017/05/04 08:06:58 rf id:1, raft votedCount:1
+2017/05/04 08:06:58 rf.me:1, in send request vote to 2
+2017/05/04 08:06:58 rf id:0, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:06:58 rf id:2, raft votedCount:1
+2017/05/04 08:06:58 rf.me:2, in send request vote to 1
+==================
+WARNING: DATA RACE
+Read by goroutine 22:
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:321 +0x915
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Previous write by goroutine 40:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:259 +0x5f2
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Goroutine 22 (running) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+
+Goroutine 40 (finished) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+==================
+==================
+WARNING: DATA RACE
+Write by goroutine 33:
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:330 +0xa4d
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Previous read by goroutine 138:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:506 +0x3bc
+
+Goroutine 33 (running) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+
+Goroutine 138 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestConcurrentStarts2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:188 +0x74
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 111:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:243 +0x254
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Previous write by goroutine 33:
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:329 +0xa14
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Goroutine 111 (running) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+
+Goroutine 33 (finished) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 111:
+  raft.(*Raft).RequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:249 +0x317
+  runtime.call64()
+      /usr/lib/go/src/runtime/asm_amd64.s:473 +0x3d
+  reflect.Value.Call()
+      /usr/lib/go/src/reflect/value.go:303 +0xcd
+  labrpc.(*Service).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:445 +0x955
+  labrpc.(*Server).dispatch()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:369 +0x25a
+  labrpc.(*Network).ProcessReq.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:212 +0x52
+
+Previous write by goroutine 33:
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:331 +0xa7c
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Goroutine 111 (running) created at:
+  labrpc.(*Network).ProcessReq()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/labrpc/labrpc.go:214 +0x23a
+
+Goroutine 33 (finished) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+==================
+2017/05/04 08:06:58 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:06:58 rf id:2, raft votedCount:2
+2017/05/04 08:06:58 CANDIDATE: voteGranted, rf id:2
+2017/05/04 08:06:58 rf id:2, state:LEADER
+==================
+WARNING: DATA RACE
+Read by goroutine 133:
+  reflect.Value.Int()
+      /usr/lib/go/src/reflect/value.go:887 +0x14f
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:865 +0x44e
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:932 +0x4aa5
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:932 +0x4aa5
+  fmt.(*pp).printValue()
+      /usr/lib/go/src/fmt/print.go:848 +0x551
+  fmt.(*pp).printReflectValue()
+      /usr/lib/go/src/fmt/print.go:1009 +0x4352
+  fmt.(*pp).printArg()
+      /usr/lib/go/src/fmt/print.go:810 +0x656
+  fmt.(*pp).doPrintf()
+      /usr/lib/go/src/fmt/print.go:1238 +0x2a47
+  fmt.Sprintf()
+      /usr/lib/go/src/fmt/print.go:203 +0x7c
+  log.Printf()
+      /usr/lib/go/src/log/log.go:289 +0x5a
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:545 +0x5b3
+
+Previous write by goroutine 135:
+  sync/atomic.AddInt32()
+      /usr/lib/go/src/runtime/race_amd64.s:255 +0xb
+  sync.(*Mutex).Unlock()
+      /usr/lib/go/src/sync/mutex.go:107 +0x55
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:342 +0xe14
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Goroutine 133 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestConcurrentStarts2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:188 +0x74
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Goroutine 135 (finished) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+==================
+2017/05/04 08:06:58 LEADER: broad casting entries, rf:&{{0 0} [0xc820411cc0 0xc820411ce0 0xc820411d00] 0xc82042ab40 2 [] 2 0 -1 -1 [0 0 0] [0 0 0] 0 LEADER 0xc8203fd7a0 0xc82042ad40 0xc820429980 0 0xc82041b790 0xc82041b860 0xc82041b930 0xc82041ba00 0x7ef4c8} id:2
+2017/05/04 08:06:58 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:06:58 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:06:58 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:06:58 raft id:1, broad cast request vote, peers number:3
+--- FAIL: TestConcurrentStarts2B (14.52s)
+	test_test.go:281: term changed too often
+2017/05/04 08:07:12 rf id:0, state:FOLLOWER
+2017/05/04 08:07:12 rf id:1, state:FOLLOWER
+Test (2B): rejoin of partitioned leader ...
+2017/05/04 08:07:12 rf id:2, state:FOLLOWER
+2017/05/04 08:07:12 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:12 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:12 rf id:0, state:CANDIDATE
+2017/05/04 08:07:12 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:12 rf.me:0, in send request vote to 1
+2017/05/04 08:07:12 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:12 rf id:1, state:CANDIDATE
+2017/05/04 08:07:12 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:12 rf.me:1, in send request vote to 0
+2017/05/04 08:07:12 rf id:2, state:CANDIDATE
+2017/05/04 08:07:12 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:12 rf.me:2, in send request vote to 1
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:12 rf id:0, raft votedCount:1
+2017/05/04 08:07:12 rf.me:0, in send request vote to 2
+2017/05/04 08:07:12 rf id:1, raft votedCount:1
+2017/05/04 08:07:12 rf.me:1, in send request vote to 2
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:12 rf.me:2, in send request vote to 0
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:12 rf id:0, raft votedCount:2
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:12 CANDIDATE: voteGranted, rf id:0
+2017/05/04 08:07:12 rf id:0, state:LEADER
+2017/05/04 08:07:12 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:12 LEADER: broad casting entries, rf:&{{0 0} [0xc82043aba0 0xc82043abc0 0xc82043abe0] 0xc82042bb80 0 [] 1 1 -1 -1 [0 0 0] [0 0 0] 0 LEADER 0xc8204442a0 0xc82042bd80 0xc820455200 0 0xc82042e9c0 0xc82042ea90 0xc82042eb60 0xc82042ec30 0x7ef4c8} id:0
+2017/05/04 08:07:13 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:13 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:13 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:13 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:13 rf.me:2, in send request vote to 0
+2017/05/04 08:07:13 rf.me:1, in send request vote to 0
+2017/05/04 08:07:13 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:13 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:13 rf.me:2, in send request vote to 1
+2017/05/04 08:07:13 rf id:1, raft votedCount:1
+2017/05/04 08:07:13 rf.me:1, in send request vote to 2
+2017/05/04 08:07:13 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:13 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestRejoin2B (10.04s)
+	config.go:431: one(101) failed to reach agreement
+2017/05/04 08:07:22 rf id:0, state:FOLLOWER
+2017/05/04 08:07:22 rf id:1, state:FOLLOWER
+2017/05/04 08:07:22 rf id:2, state:FOLLOWER
+2017/05/04 08:07:22 rf id:3, state:FOLLOWER
+Test (2B): leader backs up quickly over incorrect follower logs ...
+2017/05/04 08:07:22 rf id:4, state:FOLLOWER
+2017/05/04 08:07:22 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:22 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:07:22 rf id:0, state:CANDIDATE
+2017/05/04 08:07:22 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:22 rf.me:0, in send request vote to 1
+2017/05/04 08:07:22 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:22 rf id:1, state:CANDIDATE
+2017/05/04 08:07:22 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:07:22 rf id:2, state:CANDIDATE
+2017/05/04 08:07:22 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:07:22 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:07:22 rf id:3, state:CANDIDATE
+2017/05/04 08:07:22 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:07:22 rf.me:2, in send request vote to 4
+2017/05/04 08:07:22 rf.me:1, in send request vote to 4
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:22 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:07:22 rf id:4, state:CANDIDATE
+2017/05/04 08:07:22 rf id:0, raft votedCount:1
+2017/05/04 08:07:22 rf.me:3, in send request vote to 1
+2017/05/04 08:07:22 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:07:22 rf.me:4, in send request vote to 3
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:22 rf.me:0, in send request vote to 2
+2017/05/04 08:07:22 rf id:2, raft votedCount:1
+2017/05/04 08:07:22 rf.me:2, in send request vote to 0
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:3, in send request vote to 2
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:22 rf.me:1, in send request vote to 0
+2017/05/04 08:07:22 rf id:2, raft votedCount:2
+2017/05/04 08:07:22 rf.me:2, in send request vote to 1
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:22 rf id:0, raft votedCount:2
+2017/05/04 08:07:22 rf.me:0, in send request vote to 4
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf id:4, raft votedCount:1
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:2, in send request vote to 3
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:4, in send request vote to 0
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:3, in send request vote to 0
+2017/05/04 08:07:22 rf.me:0, in send request vote to 3
+2017/05/04 08:07:22 rf.me:1, in send request vote to 2
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:4, in send request vote to 1
+2017/05/04 08:07:22 rf.me:3, in send request vote to 4
+2017/05/04 08:07:22 rf.me:1, in send request vote to 3
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:22 rf.me:4, in send request vote to 2
+2017/05/04 08:07:22 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:23 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:07:23 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:23 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:07:23 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:23 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:07:23 rf.me:0, in send request vote to 1
+2017/05/04 08:07:23 rf.me:1, in send request vote to 0
+2017/05/04 08:07:23 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:07:23 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:07:23 rf.me:2, in send request vote to 0
+2017/05/04 08:07:23 rf.me:3, in send request vote to 4
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:1, in send request vote to 2
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:23 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:07:23 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:23 rf.me:4, in send request vote to 3
+2017/05/04 08:07:23 rf id:0, raft votedCount:1
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf id:2, raft votedCount:1
+2017/05/04 08:07:23 rf.me:2, in send request vote to 3
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:0, in send request vote to 3
+2017/05/04 08:07:23 rf.me:1, in send request vote to 3
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:23 rf id:4, raft votedCount:1
+2017/05/04 08:07:23 rf.me:3, in send request vote to 0
+2017/05/04 08:07:23 rf.me:4, in send request vote to 0
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:1, in send request vote to 4
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:0, in send request vote to 2
+2017/05/04 08:07:23 rf.me:2, in send request vote to 1
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:3, in send request vote to 1
+2017/05/04 08:07:23 rf.me:4, in send request vote to 1
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:23 rf id:0, raft votedCount:2
+2017/05/04 08:07:23 rf.me:0, in send request vote to 4
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:4, in send request vote to 2
+2017/05/04 08:07:23 rf.me:2, in send request vote to 4
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf.me:3, in send request vote to 2
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:23 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:23 rf id:2, raft votedCount:2
+--- FAIL: TestBackup2B (10.03s)
+	config.go:431: one(608747136543856411) failed to reach agreement
+2017/05/04 08:07:32 rf id:0, state:FOLLOWER
+2017/05/04 08:07:32 rf id:1, state:FOLLOWER
+Test (2B): RPC counts aren't too high ...
+2017/05/04 08:07:32 rf id:2, state:FOLLOWER
+2017/05/04 08:07:33 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:33 rf id:0, state:CANDIDATE
+2017/05/04 08:07:33 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:33 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:33 rf.me:0, in send request vote to 1
+2017/05/04 08:07:33 rf id:1, state:CANDIDATE
+2017/05/04 08:07:33 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:33 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:33 rf id:2, state:CANDIDATE
+2017/05/04 08:07:33 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:33 rf.me:1, in send request vote to 0
+2017/05/04 08:07:33 rf.me:2, in send request vote to 0
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:33 rf id:0, raft votedCount:1
+2017/05/04 08:07:33 rf.me:0, in send request vote to 2
+2017/05/04 08:07:33 rf id:1, raft votedCount:1
+2017/05/04 08:07:33 rf.me:1, in send request vote to 2
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:33 rf.me:2, in send request vote to 1
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:33 rf id:0, raft votedCount:2
+2017/05/04 08:07:33 CANDIDATE: voteGranted, rf id:0
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:33 rf id:0, state:LEADER
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:33 LEADER: broad casting entries, rf:&{{0 0} [0xc82038a4e0 0xc82038a500 0xc82038a520] 0xc82045fe40 0 [] 1 1 -1 -1 [0 0 0] [0 0 0] 0 LEADER 0xc8203fc300 0xc82042a040 0xc8204a7000 0 0xc82042fba0 0xc82042fc70 0xc82042fd40 0xc82042fe10 0x7ef4c8} id:0
+2017/05/04 08:07:33 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:33 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:33 rf.me:1, in send request vote to 0
+2017/05/04 08:07:33 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:33 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:33 rf.me:2, in send request vote to 0
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:33 rf id:1, raft votedCount:1
+2017/05/04 08:07:33 rf.me:1, in send request vote to 2
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:33 rf.me:2, in send request vote to 1
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:33 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+==================
+WARNING: DATA RACE
+Read by goroutine 151:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2a0
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:411 +0x173
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 179:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:517 +0xaaa
+
+Goroutine 151 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 179 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:399 +0x7c
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 151:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2c2
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:411 +0x173
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 179:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:537 +0x10fb
+
+Goroutine 151 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 179 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:399 +0x7c
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Read by goroutine 151:
+  raft.(*config).checkOneLeader()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:273 +0x2c2
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:411 +0x173
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 35:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:516 +0xa5c
+
+Goroutine 151 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 35 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestCount2B()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:399 +0x7c
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+--- FAIL: TestCount2B (1.00s)
+	test_test.go:451: Start() failed
+2017/05/04 08:07:33 rf id:0, state:FOLLOWER
+2017/05/04 08:07:33 rf id:1, state:FOLLOWER
+Test (2C): basic persistence ...
+2017/05/04 08:07:33 rf id:2, state:FOLLOWER
+2017/05/04 08:07:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:34 rf id:0, state:CANDIDATE
+2017/05/04 08:07:34 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:34 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:34 rf id:1, state:CANDIDATE
+2017/05/04 08:07:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:34 rf.me:0, in send request vote to 1
+2017/05/04 08:07:34 rf.me:1, in send request vote to 0
+2017/05/04 08:07:34 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:34 rf id:2, state:CANDIDATE
+2017/05/04 08:07:34 rf.me:2, in send request vote to 0
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:34 rf id:1, raft votedCount:1
+2017/05/04 08:07:34 rf.me:1, in send request vote to 2
+2017/05/04 08:07:34 rf id:0, raft votedCount:1
+2017/05/04 08:07:34 rf.me:0, in send request vote to 2
+2017/05/04 08:07:34 rf.me:2, in send request vote to 1
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:34 rf id:1, raft votedCount:2
+2017/05/04 08:07:34 CANDIDATE: voteGranted, rf id:1
+2017/05/04 08:07:34 rf id:1, state:LEADER
+2017/05/04 08:07:34 LEADER: broad casting entries, rf:&{{0 0} [0xc82043bf20 0xc82043bf40 0xc82043bf60] 0xc8204a7c80 1 [] 1 0 -1 -1 [0 0 0] [0 0 0] 0 LEADER 0xc82039e3c0 0xc8204a7ec0 0xc820429300 0 0xc8202dbe10 0xc8202dbee0 0xc8201f24e0 0xc8201f31e0 0x7ef4c8} id:1
+2017/05/04 08:07:34 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:34 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:34 rf.me:0, in send request vote to 2
+2017/05/04 08:07:34 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:34 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:34 rf.me:2, in send request vote to 0
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:34 rf.me:0, in send request vote to 1
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:34 rf.me:2, in send request vote to 1
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:34 rf id:0, raft votedCount:1
+2017/05/04 08:07:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestPersist12C (10.04s)
+	config.go:431: one(11) failed to reach agreement
+2017/05/04 08:07:43 rf id:0, state:FOLLOWER
+2017/05/04 08:07:43 rf id:1, state:FOLLOWER
+2017/05/04 08:07:43 rf id:2, state:FOLLOWER
+2017/05/04 08:07:43 rf id:3, state:FOLLOWER
+2017/05/04 08:07:43 rf id:4, state:FOLLOWER
+Test (2C): more persistence ...
+2017/05/04 08:07:44 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:44 rf id:0, state:CANDIDATE
+2017/05/04 08:07:44 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:07:44 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:44 rf.me:0, in send request vote to 1
+2017/05/04 08:07:44 rf id:1, state:CANDIDATE
+2017/05/04 08:07:44 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:07:44 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:44 rf.me:1, in send request vote to 0
+2017/05/04 08:07:44 rf id:2, state:CANDIDATE
+2017/05/04 08:07:44 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:07:44 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:07:44 rf id:3, state:CANDIDATE
+2017/05/04 08:07:44 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:07:44 rf.me:2, in send request vote to 3
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:44 rf.me:3, in send request vote to 4
+2017/05/04 08:07:44 rf id:1, raft votedCount:1
+2017/05/04 08:07:44 rf.me:1, in send request vote to 2
+2017/05/04 08:07:44 rf id:0, raft votedCount:1
+2017/05/04 08:07:44 rf.me:0, in send request vote to 2
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:44 rf id:2, raft votedCount:1
+2017/05/04 08:07:44 rf.me:2, in send request vote to 0
+2017/05/04 08:07:44 rf id:4, raft state turn to follower, origin:FOLLOWER
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:44 rf id:1, raft votedCount:2
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:44 rf.me:1, in send request vote to 3
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rf id:3, raft votedCount:1
+2017/05/04 08:07:44 rf.me:2, in send request vote to 1
+2017/05/04 08:07:44 rf.me:3, in send request vote to 1
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rf.me:1, in send request vote to 4
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:07:44 rf id:4, state:CANDIDATE
+2017/05/04 08:07:44 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rf.me:2, in send request vote to 4
+2017/05/04 08:07:44 rf.me:0, in send request vote to 3
+2017/05/04 08:07:44 rf.me:4, in send request vote to 3
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:07:44 rf.me:3, in send request vote to 0
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rf id:3, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:44 rf.me:0, in send request vote to 4
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:07:44 rf id:4, raft votedCount:1
+2017/05/04 08:07:44 rf.me:4, in send request vote to 2
+2017/05/04 08:07:44 rf.me:3, in send request vote to 2
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:07:44 rf id:4, raft votedCount:2
+2017/05/04 08:07:44 rf.me:4, in send request vote to 0
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:07:44 rf id:4, raft votedCount:3
+2017/05/04 08:07:44 CANDIDATE: voteGranted, rf id:4
+2017/05/04 08:07:44 rf.me:4, in send request vote to 1
+2017/05/04 08:07:44 rf id:4, state:LEADER
+2017/05/04 08:07:44 LEADER: broad casting entries, rf:&{{1 0} [0xc82011ca40 0xc82011ca60 0xc82011ca80 0xc82011caa0 0xc82011cac0] 0xc820345480 4 [] 2 3 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc820358b40 0xc820345700 0xc82033f480 0 0xc82040ad00 0xc82040add0 0xc82040aea0 0xc82040af70 0x7ef4c8} id:4
+2017/05/04 08:07:44 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:07:44 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:44 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:07:44 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:44 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:07:44 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:44 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:07:44 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:07:44 raft id:3, broad cast request vote, peers number:5
+--- FAIL: TestPersist22C (10.04s)
+	config.go:431: one(11) failed to reach agreement
+2017/05/04 08:07:53 rf id:0, state:FOLLOWER
+2017/05/04 08:07:53 rf id:1, state:FOLLOWER
+2017/05/04 08:07:53 rf id:2, state:FOLLOWER
+Test (2C): partitioned leader and one follower crash, leader restarts ...
+2017/05/04 08:07:54 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:54 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:54 rf id:0, state:CANDIDATE
+2017/05/04 08:07:54 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:07:54 rf.me:0, in send request vote to 1
+2017/05/04 08:07:54 raft id:1, broad cast request vote, peers number:3
+2017/05/04 08:07:54 rf id:1, state:CANDIDATE
+2017/05/04 08:07:54 rf.me:1, in send request vote to 0
+2017/05/04 08:07:54 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:54 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:54 rf id:2, state:CANDIDATE
+2017/05/04 08:07:54 rf.me:2, in send request vote to 0
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:54 rf id:0, raft votedCount:1
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:54 rf.me:0, in send request vote to 2
+2017/05/04 08:07:54 rf id:1, raft votedCount:1
+2017/05/04 08:07:54 rf.me:1, in send request vote to 2
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:54 rf.me:2, in send request vote to 1
+2017/05/04 08:07:54 rf id:1, raft votedCount:2
+2017/05/04 08:07:54 CANDIDATE: voteGranted, rf id:1
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:54 rf id:1, state:LEADER
+2017/05/04 08:07:54 LEADER: broad casting entries, rf:&{{0 0} [0xc8204867a0 0xc8204867c0 0xc8204867e0] 0xc820216dc0 1 [] 1 0 -1 -1 [0 0 0] [0 0 0] 0 LEADER 0xc820272420 0xc820216fc0 0xc8202e52c0 0 0xc820474a90 0xc820474b60 0xc820474c30 0xc820474d00 0x7ef4c8} id:1
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:54 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:07:54 raft id:0, broad cast request vote, peers number:3
+2017/05/04 08:07:54 rf.me:0, in send request vote to 1
+2017/05/04 08:07:54 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:07:54 raft id:2, broad cast request vote, peers number:3
+2017/05/04 08:07:54 rf.me:2, in send request vote to 0
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:07:54 rf id:0, raft votedCount:1
+2017/05/04 08:07:54 rf.me:0, in send request vote to 2
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:54 rf.me:2, in send request vote to 1
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:07:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestPersist32C (10.05s)
+	config.go:431: one(101) failed to reach agreement
+2017/05/04 08:08:03 rf id:0, state:FOLLOWER
+2017/05/04 08:08:03 rf id:1, state:FOLLOWER
+2017/05/04 08:08:03 rf id:2, state:FOLLOWER
+2017/05/04 08:08:03 rf id:3, state:FOLLOWER
+Test (2C): Figure 8 ...
+2017/05/04 08:08:03 rf id:4, state:FOLLOWER
+2017/05/04 08:08:04 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:04 rf id:0, state:CANDIDATE
+2017/05/04 08:08:04 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:04 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:04 rf.me:0, in send request vote to 1
+2017/05/04 08:08:04 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf id:1, state:CANDIDATE
+2017/05/04 08:08:04 rf.me:1, in send request vote to 0
+2017/05/04 08:08:04 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:04 rf id:2, state:CANDIDATE
+2017/05/04 08:08:04 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:04 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:04 rf id:3, state:CANDIDATE
+2017/05/04 08:08:04 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf.me:2, in send request vote to 3
+2017/05/04 08:08:04 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:04 rf.me:3, in send request vote to 0
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf id:4, state:CANDIDATE
+2017/05/04 08:08:04 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf id:0, raft votedCount:1
+2017/05/04 08:08:04 rf id:1, raft votedCount:1
+2017/05/04 08:08:04 rf.me:1, in send request vote to 2
+2017/05/04 08:08:04 rf.me:0, in send request vote to 2
+2017/05/04 08:08:04 rf.me:4, in send request vote to 3
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf.me:3, in send request vote to 1
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf id:1, raft votedCount:2
+2017/05/04 08:08:04 rf.me:0, in send request vote to 3
+2017/05/04 08:08:04 rf.me:1, in send request vote to 3
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf id:2, raft votedCount:1
+2017/05/04 08:08:04 rf.me:4, in send request vote to 1
+2017/05/04 08:08:04 rf.me:2, in send request vote to 1
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:3, in send request vote to 2
+2017/05/04 08:08:04 rf.me:1, in send request vote to 4
+2017/05/04 08:08:04 rf.me:0, in send request vote to 4
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:2, in send request vote to 0
+2017/05/04 08:08:04 rf.me:4, in send request vote to 0
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf.me:2, in send request vote to 4
+2017/05/04 08:08:04 rf.me:3, in send request vote to 4
+2017/05/04 08:08:04 rf id:0, raft votedCount:2
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:4, in send request vote to 2
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 CANDIDATE: rf.time.C, rf id:0
+==================
+WARNING: DATA RACE
+Write by goroutine 51:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:529 +0xd93
+
+Previous read by goroutine 236:
+  raft.(*Raft).sendRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:337 +0xd95
+  raft.(*Raft).BroadCastRequestVote.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:351 +0x38
+
+Goroutine 51 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestFigure82C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:641 +0x56
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Goroutine 236 (finished) created at:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:353 +0x302
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+==================
+2017/05/04 08:08:04 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf.me:0, in send request vote to 1
+2017/05/04 08:08:04 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:04 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf.me:1, in send request vote to 0
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf id:0, raft votedCount:1
+2017/05/04 08:08:04 rf.me:0, in send request vote to 4
+2017/05/04 08:08:04 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf.me:2, in send request vote to 0
+2017/05/04 08:08:04 rf id:1, raft votedCount:1
+2017/05/04 08:08:04 rf.me:1, in send request vote to 2
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf id:0, raft votedCount:2
+2017/05/04 08:08:04 rf.me:0, in send request vote to 2
+2017/05/04 08:08:04 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:04 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf.me:3, in send request vote to 4
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf id:1, raft votedCount:2
+2017/05/04 08:08:04 rf.me:1, in send request vote to 4
+2017/05/04 08:08:04 rf.me:2, in send request vote to 1
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:3, in send request vote to 1
+2017/05/04 08:08:04 rf.me:1, in send request vote to 3
+2017/05/04 08:08:04 rf.me:0, in send request vote to 3
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:2, in send request vote to 3
+2017/05/04 08:08:04 rf.me:3, in send request vote to 0
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:04 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:04 rf.me:4, in send request vote to 0
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:04 rf.me:3, in send request vote to 2
+2017/05/04 08:08:04 rf.me:4, in send request vote to 2
+2017/05/04 08:08:04 rf id:2, raft votedCount:1
+2017/05/04 08:08:04 rf.me:2, in send request vote to 4
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:4, in send request vote to 1
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:04 rf.me:4, in send request vote to 3
+2017/05/04 08:08:04 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestFigure82C (10.04s)
+	config.go:431: one(608747136543856411) failed to reach agreement
+2017/05/04 08:08:14 rf id:0, state:FOLLOWER
+2017/05/04 08:08:14 rf id:1, state:FOLLOWER
+2017/05/04 08:08:14 rf id:2, state:FOLLOWER
+2017/05/04 08:08:14 rf id:3, state:FOLLOWER
+Test (2C): unreliable agreement ...
+2017/05/04 08:08:14 rf id:4, state:FOLLOWER
+2017/05/04 08:08:14 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:14 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf id:0, state:CANDIDATE
+2017/05/04 08:08:14 rf.me:0, in send request vote to 1
+2017/05/04 08:08:14 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:14 rf id:1, state:CANDIDATE
+2017/05/04 08:08:14 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:14 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:14 rf.me:1, in send request vote to 0
+2017/05/04 08:08:14 rf id:2, state:CANDIDATE
+2017/05/04 08:08:14 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:14 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:14 rf.me:2, in send request vote to 0
+2017/05/04 08:08:14 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf id:3, state:CANDIDATE
+2017/05/04 08:08:14 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:14 rf.me:3, in send request vote to 0
+2017/05/04 08:08:14 rf id:4, state:CANDIDATE
+2017/05/04 08:08:14 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf.me:4, in send request vote to 0
+2017/05/04 08:08:14 rf.peers[1] call failure, rf id:0
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rf id:1, raft votedCount:1
+2017/05/04 08:08:14 rf.me:1, in send request vote to 2
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:2, in send request vote to 1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:4, in send request vote to 1
+2017/05/04 08:08:14 rf.me:3, in send request vote to 1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rf id:4, raft votedCount:1
+2017/05/04 08:08:14 rf.me:4, in send request vote to 2
+2017/05/04 08:08:14 rf.peers[1] call failure, rf id:0
+2017/05/04 08:08:14 rf.peers[1] call failure, rf id:2
+2017/05/04 08:08:14 rf.peers[1] call failure, rf id:3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 2
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:2, in send request vote to 4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rf id:1, raft votedCount:2
+2017/05/04 08:08:14 rf.me:1, in send request vote to 3
+2017/05/04 08:08:14 rf.peers[3] call failure, rf id:1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:4, in send request vote to 3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rf id:1, raft votedCount:3
+2017/05/04 08:08:14 CANDIDATE: voteGranted, rf id:1
+2017/05/04 08:08:14 rf.me:1, in send request vote to 4
+==================
+WARNING: DATA RACE
+Write by goroutine 248:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:537 +0x10fb
+
+Previous read by goroutine 161:
+  raft.(*Raft).BroadCastRequestVote()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:349 +0x26c
+  raft.Make.func1.2()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0x2e
+
+Goroutine 248 (running) created at:
+  raft.Make()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:554 +0x635
+  raft.(*config).start1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:186 +0xcad
+  raft.make_config()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:70 +0x727
+  raft.TestUnreliableAgree2C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:697 +0x48
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Goroutine 161 (running) created at:
+  raft.Make.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/raft.go:518 +0xadb
+==================
+2017/05/04 08:08:14 rf id:1, state:LEADER
+2017/05/04 08:08:14 LEADER: broad casting entries, rf:&{{1 0} [0xc8203e3a40 0xc8203e3a60 0xc8203e3a80 0xc8203e3aa0 0xc8203e3ac0] 0xc8201e5600 1 [] 1 4 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc8200ed9e0 0xc8201e5800 0xc820269a40 0 0xc8202c01a0 0xc8202c0270 0xc8202c0340 0xc8202c0410 0x7ef4c8} id:1
+2017/05/04 08:08:14 rf.peers[2] call failure, rf id:0
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:3, in send request vote to 2
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rf.peers[3] call failure, rf id:4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:2, in send request vote to 3
+2017/05/04 08:08:14 rf.peers[3] call failure, rf id:4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.peers[2] call failure, rf id:3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:3, in send request vote to 4
+2017/05/04 08:08:14 rf.peers[4] call failure, rf id:0
+2017/05/04 08:08:14 rf.peers[4] call failure, rf id:0
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:14 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf.me:0, in send request vote to 2
+2017/05/04 08:08:14 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:14 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf.me:2, in send request vote to 0
+2017/05/04 08:08:14 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:14 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf.me:3, in send request vote to 0
+2017/05/04 08:08:14 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:14 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:14 rf.me:4, in send request vote to 0
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:2, in send request vote to 1
+2017/05/04 08:08:14 rf.me:4, in send request vote to 1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf id:4, raft votedCount:1
+2017/05/04 08:08:14 rf.me:4, in send request vote to 2
+2017/05/04 08:08:14 rf.me:2, in send request vote to 4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:4, in send request vote to 3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:3, in send request vote to 1
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:2, in send request vote to 3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 3
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:3, in send request vote to 2
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:0, in send request vote to 4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:14 rf.me:3, in send request vote to 4
+2017/05/04 08:08:14 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+==================
+WARNING: DATA RACE
+Write by goroutine 241:
+  testing.(*common).FailNow()
+      /usr/lib/go/src/testing/testing.go:345 +0x41
+  testing.(*common).Fatalf()
+      /usr/lib/go/src/testing/testing.go:389 +0x94
+  raft.(*config).one()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:431 +0x70c
+  raft.TestUnreliableAgree2C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:712 +0x17c
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Previous write by goroutine 193:
+  testing.(*common).FailNow()
+      /usr/lib/go/src/testing/testing.go:345 +0x41
+  testing.(*common).Fatalf()
+      /usr/lib/go/src/testing/testing.go:389 +0x94
+  raft.(*config).one()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:431 +0x70c
+  raft.TestUnreliableAgree2C.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:709 +0x78
+
+Goroutine 241 (running) created at:
+  testing.RunTests()
+      /usr/lib/go/src/testing/testing.go:582 +0xae2
+  testing.(*M).Run()
+      /usr/lib/go/src/testing/testing.go:515 +0x11d
+  main.main()
+      raft/_test/_testmain.go:86 +0x210
+
+Goroutine 193 (finished) created at:
+  raft.TestUnreliableAgree2C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:710 +0x148
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+==================
+WARNING: DATA RACE
+Write by goroutine 163:
+  testing.(*common).FailNow()
+      /usr/lib/go/src/testing/testing.go:345 +0x41
+  testing.(*common).Fatalf()
+      /usr/lib/go/src/testing/testing.go:389 +0x94
+  raft.(*config).one()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:431 +0x70c
+  raft.TestUnreliableAgree2C.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:709 +0x78
+
+Previous write by goroutine 193:
+  testing.(*common).FailNow()
+      /usr/lib/go/src/testing/testing.go:345 +0x41
+  testing.(*common).Fatalf()
+      /usr/lib/go/src/testing/testing.go:389 +0x94
+  raft.(*config).one()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/config.go:431 +0x70c
+  raft.TestUnreliableAgree2C.func1()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:709 +0x78
+
+Goroutine 163 (running) created at:
+  raft.TestUnreliableAgree2C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:710 +0x148
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+
+Goroutine 193 (finished) created at:
+  raft.TestUnreliableAgree2C()
+      /home/zhangyule/Code/001-mit-distribution-system/mit_6.824/6.824-2017/6.824/src/raft/test_test.go:710 +0x148
+  testing.tRunner()
+      /usr/lib/go/src/testing/testing.go:473 +0xdc
+==================
+--- FAIL: TestUnreliableAgree2C (10.01s)
+	config.go:431: one(103) failed to reach agreement
+	config.go:431: one(1) failed to reach agreement
+	config.go:431: one(101) failed to reach agreement
+	config.go:431: one(100) failed to reach agreement
+	config.go:431: one(102) failed to reach agreement
+2017/05/04 08:08:24 rf id:0, state:FOLLOWER
+2017/05/04 08:08:24 rf id:1, state:FOLLOWER
+2017/05/04 08:08:24 rf id:2, state:FOLLOWER
+2017/05/04 08:08:24 rf id:3, state:FOLLOWER
+Test (2C): Figure 8 (unreliable) ...
+2017/05/04 08:08:24 rf id:4, state:FOLLOWER
+2017/05/04 08:08:24 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:24 rf id:0, state:CANDIDATE
+2017/05/04 08:08:24 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:0, in send request vote to 1
+2017/05/04 08:08:24 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:24 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf id:1, state:CANDIDATE
+2017/05/04 08:08:24 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:24 rf.me:1, in send request vote to 0
+2017/05/04 08:08:24 rf id:2, state:CANDIDATE
+2017/05/04 08:08:24 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:24 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:24 rf.me:2, in send request vote to 0
+2017/05/04 08:08:24 rf id:3, state:CANDIDATE
+2017/05/04 08:08:24 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:24 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:24 rf.me:3, in send request vote to 0
+2017/05/04 08:08:24 rf id:4, state:CANDIDATE
+2017/05/04 08:08:24 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:4, in send request vote to 0
+2017/05/04 08:08:24 rf.peers[1] call failure, rf id:0
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:1, raft votedCount:1
+2017/05/04 08:08:24 rf.me:1, in send request vote to 2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 1
+2017/05/04 08:08:24 rf.me:2, in send request vote to 1
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:3, in send request vote to 1
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:2, raft votedCount:1
+2017/05/04 08:08:24 rf.me:2, in send request vote to 3
+2017/05/04 08:08:24 rf.peers[1] call failure, rf id:4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:0, in send request vote to 2
+2017/05/04 08:08:24 rf.peers[1] call failure, rf id:3
+2017/05/04 08:08:24 rf.peers[2] call failure, rf id:1
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:3, in send request vote to 2
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:2
+2017/05/04 08:08:24 rf.peers[1] call failure, rf id:4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:2, raft votedCount:2
+2017/05/04 08:08:24 rf.me:2, in send request vote to 4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf.me:0, in send request vote to 4
+2017/05/04 08:08:24 rf id:2, raft votedCount:3
+2017/05/04 08:08:24 CANDIDATE: voteGranted, rf id:2
+2017/05/04 08:08:24 rf id:2, state:LEADER
+2017/05/04 08:08:24 LEADER: broad casting entries, rf:&{{0 0} [0xc8202fc080 0xc8202fc0a0 0xc8202fc0c0 0xc8202fc0e0 0xc8202fc100] 0xc82033e680 2 [] 1 1 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc8204ff620 0xc82033e9c0 0xc8202e40c0 0 0xc8202dc0d0 0xc8202dc1a0 0xc8202dc270 0xc8202dc340 0x7ef4c8} id:2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.peers[4] call failure, rf id:0
+2017/05/04 08:08:24 rf.me:3, in send request vote to 4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:1, raft votedCount:2
+2017/05/04 08:08:24 rf.me:1, in send request vote to 3
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.peers[2] call failure, rf id:4
+2017/05/04 08:08:24 rf.me:0, in send request vote to 3
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:0
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:1, in send request vote to 4
+2017/05/04 08:08:24 rf.peers[4] call failure, rf id:3
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 3
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:0
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:0
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:4
+2017/05/04 08:08:24 rf.peers[3] call failure, rf id:4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:24 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:0, in send request vote to 1
+2017/05/04 08:08:24 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:24 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:1, in send request vote to 0
+2017/05/04 08:08:24 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:24 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:3, in send request vote to 0
+2017/05/04 08:08:24 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:24 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:24 rf.me:4, in send request vote to 0
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:1, raft votedCount:1
+2017/05/04 08:08:24 rf.me:1, in send request vote to 4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 1
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:1, in send request vote to 3
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:1, in send request vote to 2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:0, in send request vote to 2
+2017/05/04 08:08:24 rf.me:3, in send request vote to 4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:24 rf id:1, raft votedCount:2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:4, in send request vote to 3
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:0, in send request vote to 4
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:3, in send request vote to 1
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:0, in send request vote to 3
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:24 rf.me:3, in send request vote to 2
+2017/05/04 08:08:24 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+--- FAIL: TestFigure8Unreliable2C (10.04s)
+	config.go:431: one(6411) failed to reach agreement
+Test (2C): churn ...
+2017/05/04 08:08:34 rf id:0, state:FOLLOWER
+2017/05/04 08:08:34 rf id:1, state:FOLLOWER
+2017/05/04 08:08:34 rf id:2, state:FOLLOWER
+2017/05/04 08:08:34 rf id:3, state:FOLLOWER
+2017/05/04 08:08:34 rf id:4, state:FOLLOWER
+2017/05/04 08:08:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:34 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf id:0, state:CANDIDATE
+2017/05/04 08:08:34 rf.me:0, in send request vote to 1
+2017/05/04 08:08:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:34 rf id:1, state:CANDIDATE
+2017/05/04 08:08:34 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf.me:1, in send request vote to 0
+2017/05/04 08:08:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:34 rf id:2, state:CANDIDATE
+2017/05/04 08:08:34 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf id:3, state:CANDIDATE
+2017/05/04 08:08:34 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rf.me:2, in send request vote to 3
+2017/05/04 08:08:34 rf.me:3, in send request vote to 2
+2017/05/04 08:08:34 rf id:0, raft votedCount:1
+2017/05/04 08:08:34 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rf id:4, state:CANDIDATE
+2017/05/04 08:08:34 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf id:1, raft votedCount:1
+2017/05/04 08:08:34 rf.me:0, in send request vote to 2
+2017/05/04 08:08:34 rf.me:1, in send request vote to 2
+2017/05/04 08:08:34 rf.me:4, in send request vote to 1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rf id:3, raft votedCount:1
+2017/05/04 08:08:34 rf.me:3, in send request vote to 0
+2017/05/04 08:08:34 rf id:2, raft votedCount:1
+2017/05/04 08:08:34 rf.me:2, in send request vote to 4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:3, in send request vote to 1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:0, in send request vote to 3
+2017/05/04 08:08:34 rf.me:4, in send request vote to 0
+2017/05/04 08:08:34 rf.me:1, in send request vote to 3
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf id:2, raft votedCount:2
+2017/05/04 08:08:34 rf.me:3, in send request vote to 4
+2017/05/04 08:08:34 rf.me:2, in send request vote to 1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:0, in send request vote to 4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:1, in send request vote to 4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:2, in send request vote to 0
+2017/05/04 08:08:34 rf.me:4, in send request vote to 2
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:4, in send request vote to 3
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:34 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf.me:0, in send request vote to 1
+2017/05/04 08:08:34 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:08:34 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf.me:1, in send request vote to 0
+2017/05/04 08:08:34 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf.me:2, in send request vote to 0
+2017/05/04 08:08:34 rf id:0, raft votedCount:1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:08:34 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rf.me:0, in send request vote to 2
+2017/05/04 08:08:34 rf id:1, raft votedCount:1
+2017/05/04 08:08:34 rf.me:1, in send request vote to 2
+2017/05/04 08:08:34 rf.me:3, in send request vote to 2
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:1, in send request vote to 3
+2017/05/04 08:08:34 rf.me:2, in send request vote to 4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rf.me:0, in send request vote to 3
+2017/05/04 08:08:34 rf id:3, raft votedCount:1
+2017/05/04 08:08:34 rf.me:3, in send request vote to 0
+2017/05/04 08:08:34 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:08:34 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:1, in send request vote to 4
+2017/05/04 08:08:34 rf.me:4, in send request vote to 3
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf id:2, raft votedCount:1
+2017/05/04 08:08:34 rf.me:2, in send request vote to 1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:0, in send request vote to 4
+2017/05/04 08:08:34 rf.me:3, in send request vote to 1
+2017/05/04 08:08:34 rf.me:4, in send request vote to 0
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:2, in send request vote to 3
+2017/05/04 08:08:34 rf.me:4, in send request vote to 1
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf.me:3, in send request vote to 4
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rf id:2, raft votedCount:2
+2017/05/04 08:08:34 rf.me:4, in send request vote to 2
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:34 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:08:43 rf id:0, state:FOLLOWER
+2017/05/04 08:08:43 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:43 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:43 rf id:0, state:CANDIDATE
+2017/05/04 08:08:43 rf.me:0, in send request vote to 1
+2017/05/04 08:08:43 rf id:1, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:08:43 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:43 rf id:0, raft votedCount:1
+2017/05/04 08:08:43 rf.me:0, in send request vote to 2
+2017/05/04 08:08:43 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:08:43 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:08:45 rf.peers[2] call failure, rf id:0
+2017/05/04 08:08:48 rf.peers[2] call failure, rf id:0
+2017/05/04 08:08:49 rf id:2, state:FOLLOWER
+2017/05/04 08:08:49 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:49 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:49 rf id:2, state:CANDIDATE
+2017/05/04 08:08:49 rf.me:2, in send request vote to 0
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:49 rf.me:2, in send request vote to 1
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:49 rf.me:2, in send request vote to 3
+2017/05/04 08:08:49 rf id:3, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:49 rf id:2, raft votedCount:1
+2017/05/04 08:08:49 rf.me:2, in send request vote to 4
+2017/05/04 08:08:49 rf id:4, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:49 rf id:2, raft votedCount:2
+2017/05/04 08:08:49 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:08:49 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:08:49 rf.me:2, in send request vote to 0
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:49 rf.me:2, in send request vote to 1
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:49 rf.me:2, in send request vote to 3
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:49 rf id:2, raft votedCount:1
+2017/05/04 08:08:49 rf.me:2, in send request vote to 4
+2017/05/04 08:08:49 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:49 rf id:2, raft votedCount:2
+2017/05/04 08:08:54 rf.peers[2] call failure, rf id:0
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:54 rf.me:0, in send request vote to 3
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:54 rf.me:0, in send request vote to 4
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:54 rf.me:0, in send request vote to 1
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:08:54 rf id:0, raft votedCount:1
+2017/05/04 08:08:54 rf.me:0, in send request vote to 2
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:54 rf.me:0, in send request vote to 3
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:08:54 rf.me:0, in send request vote to 4
+2017/05/04 08:08:54 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+--- FAIL: TestReliableChurn2C (26.31s)
+	config.go:431: one(608747136543856411) failed to reach agreement
+Test (2C): unreliable churn ...
+2017/05/04 08:09:00 rf id:0, state:FOLLOWER
+2017/05/04 08:09:00 rf id:1, state:FOLLOWER
+2017/05/04 08:09:00 rf id:2, state:FOLLOWER
+2017/05/04 08:09:00 rf id:3, state:FOLLOWER
+2017/05/04 08:09:00 rf id:4, state:FOLLOWER
+2017/05/04 08:09:00 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:09:00 rf id:0, state:CANDIDATE
+2017/05/04 08:09:00 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:09:00 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:09:00 rf.me:0, in send request vote to 1
+2017/05/04 08:09:00 rf id:1, state:CANDIDATE
+2017/05/04 08:09:00 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:09:00 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:09:00 rf.me:1, in send request vote to 0
+2017/05/04 08:09:00 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf id:2, state:CANDIDATE
+2017/05/04 08:09:00 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:09:00 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf id:3, state:CANDIDATE
+2017/05/04 08:09:00 rf.me:2, in send request vote to 0
+2017/05/04 08:09:00 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:09:00 rf id:4, state:CANDIDATE
+2017/05/04 08:09:00 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf.me:3, in send request vote to 1
+2017/05/04 08:09:00 rf.me:4, in send request vote to 0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:0, raft votedCount:1
+2017/05/04 08:09:00 rf.me:0, in send request vote to 2
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf.peers[1] call failure, rf id:3
+2017/05/04 08:09:00 rf id:1, raft votedCount:1
+2017/05/04 08:09:00 rf.me:1, in send request vote to 3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 3
+2017/05/04 08:09:00 rf.peers[3] call failure, rf id:1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:0, raft votedCount:2
+2017/05/04 08:09:00 rf.me:0, in send request vote to 3
+2017/05/04 08:09:00 rf.peers[0] call failure, rf id:4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:1, raft votedCount:2
+2017/05/04 08:09:00 rf.me:1, in send request vote to 4
+2017/05/04 08:09:00 rf.peers[4] call failure, rf id:1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 2
+2017/05/04 08:09:00 rf.peers[1] call failure, rf id:3
+2017/05/04 08:09:00 rf.peers[3] call failure, rf id:0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:0, in send request vote to 4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:0, raft votedCount:3
+2017/05/04 08:09:00 CANDIDATE: voteGranted, rf id:0
+2017/05/04 08:09:00 rf id:0, state:LEADER
+2017/05/04 08:09:00 LEADER: broad casting entries, rf:&{{0 0} [0xc8202f7d80 0xc8202f7da0 0xc8202f7dc0 0xc8202f7de0 0xc8202f7e00] 0xc820492080 0 [] 1 1 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc820144060 0xc820492280 0xc82025b000 0 0xc8204905b0 0xc820490680 0xc820490750 0xc820490820 0x7ef4c8} id:0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:1, in send request vote to 2
+2017/05/04 08:09:00 rf.peers[2] call failure, rf id:4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.peers[0] call failure, rf id:3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.peers[2] call failure, rf id:4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 2
+2017/05/04 08:09:00 rf.peers[2] call failure, rf id:4
+2017/05/04 08:09:00 rf.peers[2] call failure, rf id:3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 3
+2017/05/04 08:09:00 rf.peers[2] call failure, rf id:3
+2017/05/04 08:09:00 rf.peers[3] call failure, rf id:4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 4
+2017/05/04 08:09:00 CANDIDATE: rf.time.C, rf id:1
+2017/05/04 08:09:00 raft id:1, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf.me:1, in send request vote to 0
+2017/05/04 08:09:00 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:09:00 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf.me:2, in send request vote to 0
+2017/05/04 08:09:00 CANDIDATE: rf.time.C, rf id:3
+2017/05/04 08:09:00 raft id:3, broad cast request vote, peers number:5
+2017/05/04 08:09:00 CANDIDATE: rf.time.C, rf id:4
+2017/05/04 08:09:00 raft id:4, broad cast request vote, peers number:5
+2017/05/04 08:09:00 rf.me:4, in send request vote to 0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:1, raft votedCount:1
+2017/05/04 08:09:00 rf.me:1, in send request vote to 4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 2
+2017/05/04 08:09:00 rf.me:1, in send request vote to 3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 0
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:4, in send request vote to 3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 2 1 1 0]
+2017/05/04 08:09:00 rf id:1, raft votedCount:2
+2017/05/04 08:09:00 rf.me:1, in send request vote to 2
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 1
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 2
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:3, in send request vote to 4
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rf.me:2, in send request vote to 3
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:00 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 2 0]
+2017/05/04 08:09:06 rf id:0, state:FOLLOWER
+2017/05/04 08:09:06 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:09:06 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:09:06 rf id:0, state:CANDIDATE
+2017/05/04 08:09:06 rf.me:0, in send request vote to 1
+2017/05/04 08:09:06 rf id:1, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:09:06 rf.peers[1] call failure, rf id:0
+2017/05/04 08:09:06 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:06 rf id:0, raft votedCount:1
+2017/05/04 08:09:06 rf.me:0, in send request vote to 2
+2017/05/04 08:09:07 CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:09:07 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:09:09 rf id:2, state:FOLLOWER
+2017/05/04 08:09:09 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:09:09 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:09:09 rf id:2, state:CANDIDATE
+2017/05/04 08:09:09 rf.me:2, in send request vote to 0
+2017/05/04 08:09:09 rf.peers[0] call failure, rf id:2
+2017/05/04 08:09:09 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:09 rf.me:2, in send request vote to 1
+2017/05/04 08:09:09 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:09 rf.me:2, in send request vote to 3
+2017/05/04 08:09:09 rf.peers[3] call failure, rf id:2
+2017/05/04 08:09:09 rf id:3, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:09:09 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:09 rf id:2, raft votedCount:1
+2017/05/04 08:09:09 rf.me:2, in send request vote to 4
+2017/05/04 08:09:09 CANDIDATE: rf.time.C, rf id:2
+2017/05/04 08:09:09 raft id:2, broad cast request vote, peers number:5
+2017/05/04 08:09:11 rf.peers[2] call failure, rf id:0
+2017/05/04 08:09:14 rf.peers[2] call failure, rf id:0
+2017/05/04 08:09:14 rf.peers[4] call failure, rf id:2
+2017/05/04 08:09:15 rf id:0, state:FOLLOWER
+2017/05/04 08:09:15 FOLLOWER turn to CANDIDATE: rf.time.C, rf id:0
+2017/05/04 08:09:15 raft id:0, broad cast request vote, peers number:5
+2017/05/04 08:09:15 rf id:0, state:CANDIDATE
+2017/05/04 08:09:15 rf.me:0, in send request vote to 1
+2017/05/04 08:09:15 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:15 rf id:0, raft votedCount:1
+2017/05/04 08:09:15 rf.me:0, in send request vote to 2
+2017/05/04 08:09:15 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:15 rf id:0, raft votedCount:2
+2017/05/04 08:09:15 rf.me:0, in send request vote to 3
+2017/05/04 08:09:15 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:15 rf.me:0, in send request vote to 4
+2017/05/04 08:09:15 rf id:4, raft state turn to follower, origin:CANDIDATE
+2017/05/04 08:09:15 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:15 rf id:0, raft votedCount:3
+2017/05/04 08:09:15 CANDIDATE: voteGranted, rf id:0
+2017/05/04 08:09:15 rf id:0, state:LEADER
+2017/05/04 08:09:15 LEADER: broad casting entries, rf:&{{0 0} [0xc82038a080 0xc82038a0a0 0xc82038a0c0 0xc82038a0e0 0xc82038a100] 0xc8203cb340 0 [] 2 1 -1 -1 [0 0 0 0 0] [0 0 0 0 0] 0 LEADER 0xc82041d680 0xc8203cb780 0xc820493280 0 0xc820309c70 0xc820309d40 0xc820309e10 0xc820309ee0 0x7ef4c8} id:0
+2017/05/04 08:09:20 rf.peers[2] call failure, rf id:0
+2017/05/04 08:09:20 rf.peers[4] call failure, rf id:2
+2017/05/04 08:09:20 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:20 rf.me:2, in send request vote to 0
+2017/05/04 08:09:20 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:20 rf.me:2, in send request vote to 1
+2017/05/04 08:09:20 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:20 rf.me:2, in send request vote to 3
+2017/05/04 08:09:20 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 7 255 136 1 4 1 1 0]
+2017/05/04 08:09:20 rf id:2, raft votedCount:1
+2017/05/04 08:09:20 rf.me:2, in send request vote to 4
+2017/05/04 08:09:20 rep.reply:[55 255 135 3 1 1 16 82 101 113 117 101 115 116 86 111 116 101 82 101 112 108 121 1 255 136 0 1 2 1 4 84 101 114 109 1 4 0 1 11 86 111 116 101 71 114 97 110 116 101 100 1 2 0 0 0 5 255 136 1 4 0]
+2017/05/04 08:09:23 rf.peers[2] call failure, rf id:0
+2017/05/04 08:09:24 rf.peers[2] call failure, rf id:0
+--- FAIL: TestUnreliableChurn2C (26.30s)
+	config.go:431: one(608747136543856411) failed to reach agreement
+FAIL
+exit status 1
+FAIL	raft	188.554s
