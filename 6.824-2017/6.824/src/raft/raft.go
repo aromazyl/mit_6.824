@@ -54,19 +54,21 @@ func (rf *Raft) resetLeaderTime() {
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
-	rf.mu.Lock()
-
+	// rf.mu.Lock()
+	log.Printf("AppendEntries called, from:%v, to:%v", args.LeaderId, rf.me)
 	if args.Term < rf.currentTerm {
+		log.Printf("args.Term:%v < rf.currentTerm:%v, rf id:%v, from:%v", args.Term, rf.currentTerm, rf.me, args.LeaderId)
 		reply.Success = false
 		reply.Term = rf.currentTerm
-		rf.mu.Unlock()
+		// rf.mu.Unlock()
 		return
 	}
-	if len(rf.log)-1 < args.PrevLogIndex ||
+	if len(rf.log)-1 < args.PrevLogIndex || len(rf.log) != 0 &&
 		rf.log[args.PrevLogIndex].term < args.PrevLogTerm {
+		log.Printf("log does not consist")
 		reply.Success = false
 		reply.Term = rf.currentTerm
-		rf.mu.Unlock()
+		// rf.mu.Unlock()
 		return
 	}
 	rf.log = rf.log[:args.PrevLogIndex+1]
@@ -77,9 +79,11 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	}
 	reply.Success = true
 	reply.Term = rf.currentTerm
+	log.Printf("heartbeat send, rf id:%v", rf.me)
 	rf.chanHeartBeat <- true
+	rf.currentTerm = args.PrevLogTerm
 	rf.persist()
-	rf.mu.Unlock()
+	// rf.mu.Unlock()
 	return
 }
 
@@ -370,44 +374,56 @@ func (rf *Raft) BroadCastAppendEntries() {
 		if i == rf.me {
 			continue
 		}
-		if len(rf.log)-1 >= rf.nextIndex[i] {
-			go func(rf *Raft, i int) {
-				args := AppendEntryArgs{rf.currentTerm,
-					rf.me, rf.nextIndex[i], rf.log[rf.nextIndex[i]].term, nil, rf.commitIndex}
-				reply := AppendEntryReply{}
-				args.Entries = make([]LogEntry, 0)
+		go func(rf *Raft, i int) {
+			var args AppendEntryArgs
+			args.Term = rf.currentTerm
+			args.LeaderId = rf.me
+			args.PrevLogIndex = -1
+			args.PrevLogTerm = -1
+			args.LeaderCommit = rf.commitIndex
+			args.Entries = make([]LogEntry, 0)
+			reply := AppendEntryReply{}
+			if len(rf.log)-1 > rf.nextIndex[i] {
+				for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
+					args.Entries = append(args.Entries, rf.log[j])
+				}
+			}
+			if len(rf.nextIndex) != 0 && len(rf.log) != 0 && rf.nextIndex[i] != -1 {
+				args.PrevLogIndex = rf.nextIndex[i]
+				args.PrevLogTerm = rf.log[rf.nextIndex[i]].term
+			}
+			tag := false
+			ok := false
+			for !tag {
+				for !ok {
+					ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
+					if !ok {
+						log.Printf("rf id:%v, raft append entries call failure, peers[%v]", rf.me, i)
+					} else {
+						log.Printf("rf id:%v, raft append entries call success, peers[%v]", rf.me, i)
+					}
+				}
 				if len(rf.log)-1 > rf.nextIndex[i] {
-					for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
-						args.Entries = append(args.Entries, rf.log[j])
-					}
-				}
-				tag := false
-				ok := false
-				for !tag {
-					for !ok {
-						ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
-						if !ok {
-							log.Printf("rf id:%v, raft append entries call failure, peers[%v]", rf.me, i)
-						} else {
-							log.Printf("rf id:%v, raft append entries call success, peers[%v]", rf.me, i)
+					if !reply.Success {
+						rf.mu.Lock()
+						rf.nextIndex[i]--
+						rf.mu.Unlock()
+						args.Entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.Entries...)
+						if len(rf.nextIndex) != 0 && rf.nextIndex[i] != -1 {
+							args.PrevLogIndex = rf.nextIndex[i]
+							args.PrevLogTerm = rf.log[rf.nextIndex[i]].term
 						}
+					} else {
+						rf.mu.Lock()
+						rf.nextIndex[i] = len(rf.log) - 1
+						rf.mu.Unlock()
+						tag = true
 					}
-					if len(rf.log)-1 > rf.nextIndex[i] {
-						if !reply.Success {
-							rf.mu.Lock()
-							rf.nextIndex[i]--
-							rf.mu.Unlock()
-							args.Entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.Entries...)
-						} else {
-							rf.mu.Lock()
-							rf.nextIndex[i] = len(rf.log) - 1
-							rf.mu.Unlock()
-							tag = true
-						}
-					}
+				} else {
+					tag = true
 				}
-			}(rf, i)
-		}
+			}
+		}(rf, i)
 	}
 }
 
@@ -505,6 +521,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 							rf.currentTerm++
 							rf.votedCount = 0
 							rf.BroadCastRequestVote()
+							rf.votedFor = -1
 							rf.resetTimer()
 						}
 					}
@@ -526,6 +543,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 						log.Printf("CANDIDATE: rf.time.C, rf id:%v", rf.me)
 						rf.votedCount = 0
 						rf.BroadCastRequestVote()
+						rf.votedFor = -1
 						rf.resetTimer()
 					}
 				}
@@ -536,6 +554,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 						rf.currentTerm++
 						log.Printf("LEADER: broad casting entries, id:%v", rf.me)
 						rf.BroadCastAppendEntries()
+						rf.votedFor = -1
 						rf.resetLeaderTime()
 						rf.resetTimer()
 					}
