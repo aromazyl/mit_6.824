@@ -81,7 +81,7 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	reply.Term = rf.currentTerm
 	log.Printf("heartbeat send, rf id:%v", rf.me)
 	rf.chanHeartBeat <- true
-	rf.currentTerm = args.PrevLogTerm
+	rf.currentTerm = args.Term
 	rf.persist()
 	// rf.mu.Unlock()
 	return
@@ -551,7 +551,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 				{
 					select {
 					case <-rf.leaderTimer.C:
-						rf.currentTerm++
+						// rf.currentTerm++
 						log.Printf("LEADER: broad casting entries, id:%v", rf.me)
 						rf.BroadCastAppendEntries()
 						rf.votedFor = -1
