@@ -58,6 +58,7 @@ import "log"
 import "strings"
 import "math/rand"
 import "time"
+import "fmt"
 
 type reqMsg struct {
 	endname  interface{} // name of sending ClientEnd
@@ -96,10 +97,11 @@ func (e *ClientEnd) Call(svcMeth string, args interface{}, reply interface{}) bo
 
 	rep := <-req.replyCh
 	if rep.ok {
+		log.Println(fmt.Sprintf("rep.reply:%v", rep.reply))
 		rb := bytes.NewBuffer(rep.reply)
 		rd := gob.NewDecoder(rb)
 		if err := rd.Decode(reply); err != nil {
-			log.Fatalf("ClientEnd.Call(): decode reply: %v\n", err)
+			log.Fatalf("ClientEnd.Call(): decode reply: %v, err:%v\n", reply, err)
 		}
 		return true
 	} else {
