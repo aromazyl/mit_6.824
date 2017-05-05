@@ -41,8 +41,9 @@ type AppendEntryArgs struct {
 }
 
 type AppendEntryReply struct {
-	Term    int
-	Success bool
+	Term         int
+	Success      bool
+	envalid_peer int
 }
 
 func (rf *Raft) resetLeaderTime() {
@@ -60,7 +61,7 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 		log.Printf("args.Term:%v < rf.currentTerm:%v, rf id:%v, from:%v", args.Term, rf.currentTerm, rf.me, args.LeaderId)
 		reply.Success = false
 		reply.Term = rf.currentTerm
-		// rf.mu.Unlock()
+		rf.enValidClientEnd(rf.peers[args.LeaderId])
 		return
 	}
 	if len(rf.log)-1 < args.PrevLogIndex || len(rf.log) != 0 &&
@@ -77,10 +78,18 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	if args.LeaderCommit > rf.commitIndex {
 		rf.commitIndex = MaxInt(args.LeaderCommit, len(rf.log)-1)
 	}
+	if rf.state == "LEADER" {
+		rf.state = "FOLLOWER"
+		rf.votedFor = -1
+		rf.leaderId = args.LeaderId
+		rf.resetTimer()
+		reply.envalid_peer = rf.me
+	}
 	reply.Success = true
 	reply.Term = rf.currentTerm
-	log.Printf("heartbeat send, rf id:%v", rf.me)
+	log.Printf("heartbeat send success, from:%v to rf id:%v", args.LeaderId, rf.me)
 	rf.chanHeartBeat <- true
+	rf.leaderId = args.LeaderId
 	rf.currentTerm = args.Term
 	rf.persist()
 	// rf.mu.Unlock()
@@ -108,13 +117,15 @@ type Raft struct {
 	// Look at the paper's Figure 2 for a description of what
 	// state a Raft server must maintain.
 
-	mu                  sync.Mutex          // Lock to protect shared access to this peer's state
-	peers               []*labrpc.ClientEnd // RPC end points of all peers
-	persister           *Persister          // Object to hold this peer's persisted state
-	me                  int                 // this peer's index into peers[]
+	mu                  sync.Mutex                 // Lock to protect shared access to this peer's state
+	peers               []*labrpc.ClientEnd        // RPC end points of all peers
+	peers_state         map[*labrpc.ClientEnd]bool // invalid peers
+	persister           *Persister                 // Object to hold this peer's persisted state
+	me                  int                        // this peer's index into peers[]
 	log                 []LogEntry
 	currentTerm         int
 	votedFor            int
+	leaderId            int
 	commitIndex         int
 	lastApplied         int
 	nextIndex           []int
@@ -130,6 +141,36 @@ type Raft struct {
 	chanLeader          chan bool
 	chanVoteGranted     chan bool
 	stateMachine        *StateMachine
+}
+
+func (rf *Raft) invalidClientEnd(clientEnd *labrpc.ClientEnd) {
+	log.Printf("invalid client end:%v, rf.id:%v", clientEnd, rf.me)
+	rf.peers_state[clientEnd] = false
+}
+
+func (rf *Raft) isValidClientEnd(clientEnd *labrpc.ClientEnd) bool {
+	return rf.peers_state[clientEnd]
+}
+
+func (rf *Raft) enValidClientEnd(clientEnd *labrpc.ClientEnd) {
+	log.Printf("enValid client end:%v, rf.id:%v", clientEnd, rf.me)
+	rf.peers_state[clientEnd] = true
+}
+
+func (rf *Raft) initClientEndState() {
+	for _, clientEnd := range rf.peers {
+		rf.enValidClientEnd(clientEnd)
+	}
+}
+
+func (rf *Raft) getValidPeerNumbers() int {
+	count := 0
+	for _, v := range rf.peers_state {
+		if v == true {
+			count += 1
+		}
+	}
+	return count
 }
 
 func (rf *Raft) resetTimer() {
@@ -235,6 +276,7 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	// rf.mu.Lock()
 	// defer rf.mu.Unlock()
 	may_granted_vote := true
+	reply.VoteGranted = false
 	if len(rf.log) > 0 {
 		if rf.log[len(rf.log)-1].term > args.LastLogTerm {
 			may_granted_vote = false
@@ -245,6 +287,8 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 		}
 	}
 	if rf.currentTerm > args.Term {
+		log.Printf("request vote, from:%v, term:%v, > to:%v term:%v, ",
+			args.CandidateId, args.Term, rf.me, rf.currentTerm)
 		reply.VoteGranted = false
 		reply.Term = rf.currentTerm
 		return
@@ -253,6 +297,7 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 		if (rf.votedFor == -1 || rf.votedFor == args.CandidateId) && may_granted_vote {
 			rf.votedFor = args.CandidateId
 			rf.persist()
+			reply.VoteGranted = true
 		}
 		reply.Term = rf.currentTerm
 		reply.VoteGranted = (rf.votedFor == args.CandidateId)
@@ -265,6 +310,7 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	if may_granted_vote {
 		rf.votedFor = args.CandidateId
 		rf.persist()
+		reply.VoteGranted = true
 	}
 	reply.Term = args.Term
 	reply.VoteGranted = (rf.votedFor == args.CandidateId)
@@ -336,7 +382,7 @@ func (rf *Raft) sendRequestVote(server int) bool {
 	if reply.VoteGranted {
 		rf.votedCount++
 		log.Printf("rf id:%v, raft votedCount:%d, rf.state:%v", rf.me, rf.votedCount, rf.state)
-		if rf.state == "CANDIDATE" && rf.votedCount > len(rf.peers)/2 {
+		if rf.state == "CANDIDATE" && rf.votedCount >= rf.getValidPeerNumbers()/2 {
 			rf.chanVoteGranted <- true
 		}
 	}
@@ -344,11 +390,12 @@ func (rf *Raft) sendRequestVote(server int) bool {
 }
 
 func (rf *Raft) BroadCastRequestVote() {
-	log.Printf("raft id:%v, broad cast request vote, peers number:%v", rf.me, len(rf.peers))
-	rf.mu.Lock()
-	defer rf.mu.Unlock()
+	log.Printf("raft id:%v, broad cast request vote, peers number:%v", rf.me, rf.getValidPeerNumbers())
 	rf.votedFor = rf.me
 	for i := range rf.peers {
+		if !rf.isValidClientEnd(rf.peers[i]) {
+			continue
+		}
 		if i != rf.me && rf.state == "CANDIDATE" {
 			rf.sendRequestVote(i)
 		}
@@ -363,10 +410,8 @@ func (rf *Raft) BroadCastAppendEntries() {
 				num++
 			}
 		}
-		if num*2 > len(rf.peers) {
-			rf.mu.Lock()
+		if num*2 >= rf.getValidPeerNumbers() {
 			rf.commitIndex = i
-			rf.mu.Unlock()
 		}
 	}
 
@@ -383,6 +428,7 @@ func (rf *Raft) BroadCastAppendEntries() {
 			args.LeaderCommit = rf.commitIndex
 			args.Entries = make([]LogEntry, 0)
 			reply := AppendEntryReply{}
+			reply.envalid_peer = -1
 			if len(rf.log)-1 > rf.nextIndex[i] {
 				for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
 					args.Entries = append(args.Entries, rf.log[j])
@@ -403,6 +449,17 @@ func (rf *Raft) BroadCastAppendEntries() {
 						log.Printf("rf id:%v, raft append entries call success, peers[%v]", rf.me, i)
 					}
 				}
+				if reply.envalid_peer != -1 {
+					rf.enValidClientEnd(rf.peers[reply.envalid_peer])
+				}
+				if reply.Term > rf.currentTerm {
+					log.Printf("reply.Term:%v>rf.currenTerm:%v, leader:%v turn to follower",
+						reply.Term, rf.currentTerm, rf.me)
+					rf.state = "FOLLOWER"
+					rf.resetTimer()
+					tag = true
+					continue
+				}
 				if len(rf.log)-1 > rf.nextIndex[i] {
 					if !reply.Success {
 						rf.mu.Lock()
@@ -414,9 +471,7 @@ func (rf *Raft) BroadCastAppendEntries() {
 							args.PrevLogTerm = rf.log[rf.nextIndex[i]].term
 						}
 					} else {
-						rf.mu.Lock()
 						rf.nextIndex[i] = len(rf.log) - 1
-						rf.mu.Unlock()
 						tag = true
 					}
 				} else {
@@ -474,6 +529,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	persister *Persister, applyCh chan ApplyMsg) *Raft {
 	rf := &Raft{}
 	rf.peers = peers
+	rf.peers_state = make(map[*labrpc.ClientEnd]bool)
+	rf.initClientEndState()
 	rf.persister = persister
 	rf.me = me
 	rf.stateMachine = &StateMachine{}
@@ -496,6 +553,7 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.readPersist(persister.ReadRaftState())
 	rf.persist()
 	rf.resetTimer()
+	rf.leaderId = -1
 
 	go func(rf *Raft) {
 		for {
@@ -517,47 +575,45 @@ func Make(peers []*labrpc.ClientEnd, me int,
 					case <-rf.timer.C:
 						{
 							log.Printf("FOLLOWER time out, turn to CANDIDATE: rf.time.C, rf id:%v", rf.me)
+							if rf.leaderId != -1 {
+								rf.invalidClientEnd(rf.peers[rf.leaderId])
+							}
 							rf.state = "CANDIDATE"
-							rf.currentTerm++
+							// rf.currentTerm++
 							rf.votedCount = 0
-							rf.BroadCastRequestVote()
-							rf.votedFor = -1
 							rf.resetTimer()
 						}
 					}
 				}
 			case "CANDIDATE":
-				{
-					select {
-					case <-rf.chanVoteGranted:
-						log.Printf("CANDIDATE: voteGranted, rf id:%v", rf.me)
-						rf.state = "LEADER"
-						rf.votedCount = 0
-						rf.resetLeaderTime()
-						rf.resetTimer()
-					case <-rf.chanHeartBeat:
-						log.Printf("CANDIDATE: heartBeat, rf id:%v", rf.me)
-						rf.resetTimer()
-						rf.state = "FOLLOWER"
-					case <-rf.timer.C:
-						log.Printf("CANDIDATE: rf.time.C, rf id:%v", rf.me)
-						rf.votedCount = 0
-						rf.BroadCastRequestVote()
-						rf.votedFor = -1
-						rf.resetTimer()
-					}
+				select {
+				case <-rf.chanVoteGranted:
+					log.Printf("CANDIDATE: voteGranted, rf id:%v", rf.me)
+					rf.state = "LEADER"
+					rf.votedCount = 0
+					rf.resetLeaderTime()
+					rf.resetTimer()
+				case <-rf.chanHeartBeat:
+					log.Printf("CANDIDATE: heartBeat, rf id:%v", rf.me)
+					rf.resetTimer()
+					rf.state = "FOLLOWER"
+					rf.votedFor = -1
+				case <-rf.timer.C:
+					log.Printf("CANDIDATE: rf.time.C, rf id:%v", rf.me)
+					rf.votedCount = 0
+					rf.currentTerm++
+					rf.BroadCastRequestVote()
+					rf.votedFor = -1
+					rf.resetTimer()
 				}
 			case "LEADER":
-				{
-					select {
-					case <-rf.leaderTimer.C:
-						// rf.currentTerm++
-						log.Printf("LEADER: broad casting entries, id:%v", rf.me)
-						rf.BroadCastAppendEntries()
-						rf.votedFor = -1
-						rf.resetLeaderTime()
-						rf.resetTimer()
-					}
+				select {
+				case <-rf.leaderTimer.C:
+					log.Printf("LEADER: broad casting entries, id:%v", rf.me)
+					rf.BroadCastAppendEntries()
+					rf.leaderId = rf.me
+					rf.resetLeaderTime()
+					rf.resetTimer()
 				}
 			}
 		}

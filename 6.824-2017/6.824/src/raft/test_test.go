@@ -20,6 +20,7 @@ import "log"
 // (much more than the paper's range of timeouts).
 const RaftElectionTimeout = 1000 * time.Millisecond
 
+/*
 func TestInitialElection2A(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false)
@@ -41,6 +42,7 @@ func TestInitialElection2A(t *testing.T) {
 	fmt.Printf("  ... Passed\n")
 }
 
+*/
 func TestReElection2A(t *testing.T) {
 	servers := 3
 	cfg := make_config(t, servers, false)
@@ -58,28 +60,39 @@ func TestReElection2A(t *testing.T) {
 
 	// if the old leader rejoins, that shouldn't
 	// disturb the old leader.
+	fmt.Printf("second check passed\n")
+	log.Printf("connect:%v", leader1)
 	cfg.connect(leader1)
 	leader2 := cfg.checkOneLeader()
+	fmt.Printf("third check passed\n")
 
 	// if there's no quorum, no leader should
 	// be elected.
+	log.Printf("disconnect:%v, %v", leader2, (leader2+1)%servers)
 	cfg.disconnect(leader2)
 	cfg.disconnect((leader2 + 1) % servers)
 	time.Sleep(2 * RaftElectionTimeout)
 	cfg.checkNoLeader()
+	fmt.Printf("fourth check passed\n")
 
 	// if a quorum arises, it should elect a leader.
+	log.Printf("connect:%v", (leader2+1)%servers)
 	cfg.connect((leader2 + 1) % servers)
+
 	cfg.checkOneLeader()
+	fmt.Printf("fiveth check passed\n")
 
 	// re-join of last node shouldn't prevent leader from existing.
+	log.Printf("connect leader:%v", leader2)
 	cfg.connect(leader2)
 	cfg.checkOneLeader()
+	fmt.Printf("sixth check passed\n")
 
 	fmt.Printf("  ... Passed\n")
 }
 
 func TestBasicAgree2B(t *testing.T) {
+	log.Printf("")
 	servers := 5
 	cfg := make_config(t, servers, false)
 	defer cfg.cleanup()
