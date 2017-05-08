@@ -55,7 +55,9 @@ func (rf *Raft) resetLeaderTime() {
 }
 
 func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
-	// rf.mu.Lock()
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
+	rf.enValidClientEnd(rf.peers[args.LeaderId])
 	log.Printf("AppendEntries called, from:%v, to:%v", args.LeaderId, rf.me)
 	if args.Term < rf.currentTerm {
 		log.Printf("args.Term:%v < rf.currentTerm:%v, rf id:%v, from:%v", args.Term, rf.currentTerm, rf.me, args.LeaderId)
@@ -144,7 +146,7 @@ type Raft struct {
 }
 
 func (rf *Raft) invalidClientEnd(clientEnd *labrpc.ClientEnd) {
-	log.Printf("invalid client end:%v, rf.id:%v", clientEnd, rf.me)
+	log.Printf("invalid client end:%v, rf.id:%v", *clientEnd, rf.me)
 	rf.peers_state[clientEnd] = false
 }
 
@@ -174,7 +176,7 @@ func (rf *Raft) getValidPeerNumbers() int {
 }
 
 func (rf *Raft) resetTimer() {
-	rand.Seed(42)
+	rand.Seed(time.Now().UnixNano())
 	if rf.timer == nil {
 		rf.timer = time.NewTimer(time.Duration(rand.Intn(150)+150) * time.Millisecond)
 	}
@@ -273,8 +275,8 @@ func (reply *RequestVoteReply) Dump() string {
 //
 func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 	// Your code here (2A, 2B).
-	// rf.mu.Lock()
-	// defer rf.mu.Unlock()
+	rf.mu.Lock()
+	defer rf.mu.Unlock()
 	may_granted_vote := true
 	reply.VoteGranted = false
 	if len(rf.log) > 0 {
@@ -378,11 +380,12 @@ func (rf *Raft) sendRequestVote(server int) bool {
 		rf.state = "FOLLOWER"
 		rf.votedFor = -1
 		rf.persist()
+		return ok
 	}
 	if reply.VoteGranted {
 		rf.votedCount++
 		log.Printf("rf id:%v, raft votedCount:%d, rf.state:%v", rf.me, rf.votedCount, rf.state)
-		if rf.state == "CANDIDATE" && rf.votedCount >= rf.getValidPeerNumbers()/2 {
+		if rf.getValidPeerNumbers() != 1 && rf.state == "CANDIDATE" && rf.votedCount >= rf.getValidPeerNumbers()/2 {
 			rf.chanVoteGranted <- true
 		}
 	}
@@ -390,19 +393,23 @@ func (rf *Raft) sendRequestVote(server int) bool {
 }
 
 func (rf *Raft) BroadCastRequestVote() {
+	// rf.mu.Lock()
+	// defer rf.mu.Unlock()
 	log.Printf("raft id:%v, broad cast request vote, peers number:%v", rf.me, rf.getValidPeerNumbers())
 	rf.votedFor = rf.me
 	for i := range rf.peers {
-		if !rf.isValidClientEnd(rf.peers[i]) {
-			continue
-		}
-		if i != rf.me && rf.state == "CANDIDATE" {
+		if i != rf.me && rf.state == "CANDIDATE" && rf.isValidClientEnd(rf.peers[i]) {
 			rf.sendRequestVote(i)
+		} else {
+			log.Printf("i[%v] != rf.me[%v] || rf.state = [%v], validClientEnd?[%v]",
+				i, rf.me, rf.state, rf.isValidClientEnd(rf.peers[i]))
 		}
 	}
 }
 
 func (rf *Raft) BroadCastAppendEntries() {
+	// rf.mu.Lock()
+	// defer rf.mu.Unlock()
 	for i := rf.commitIndex + 1; i < len(rf.log); i++ {
 		num := 0
 		for j := range rf.peers {
@@ -410,16 +417,19 @@ func (rf *Raft) BroadCastAppendEntries() {
 				num++
 			}
 		}
-		if num*2 >= rf.getValidPeerNumbers() {
+		if rf.getValidPeerNumbers() != 1 && num*2 >= rf.getValidPeerNumbers() {
 			rf.commitIndex = i
 		}
 	}
 
+	chanCount := make(chan int, 10)
 	for i := range rf.peers {
-		if i == rf.me {
-			continue
-		}
-		go func(rf *Raft, i int) {
+		go func(i int) {
+			if i == rf.me {
+				//	continue
+				chanCount <- 1
+				return
+			}
 			var args AppendEntryArgs
 			args.Term = rf.currentTerm
 			args.LeaderId = rf.me
@@ -440,13 +450,14 @@ func (rf *Raft) BroadCastAppendEntries() {
 			}
 			tag := false
 			ok := false
+			retry := 0
 			for !tag {
-				for !ok {
+				for !ok && retry != 10 {
 					ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
 					if !ok {
-						log.Printf("rf id:%v, raft append entries call failure, peers[%v]", rf.me, i)
+						log.Printf("rf id:%v, state: %v, raft append entries call failure, peers[%v]", rf.me, rf.state, i)
 					} else {
-						log.Printf("rf id:%v, raft append entries call success, peers[%v]", rf.me, i)
+						log.Printf("rf id:%v, state: %v, raft append entries call success, peers[%v]", rf.me, rf.state, i)
 					}
 				}
 				if reply.envalid_peer != -1 {
@@ -458,13 +469,13 @@ func (rf *Raft) BroadCastAppendEntries() {
 					rf.state = "FOLLOWER"
 					rf.resetTimer()
 					tag = true
-					continue
+					return
 				}
 				if len(rf.log)-1 > rf.nextIndex[i] {
 					if !reply.Success {
-						rf.mu.Lock()
+						// rf.mu.Lock()
 						rf.nextIndex[i]--
-						rf.mu.Unlock()
+						// rf.mu.Unlock()
 						args.Entries = append([]LogEntry{rf.log[rf.nextIndex[i]]}, args.Entries...)
 						if len(rf.nextIndex) != 0 && rf.nextIndex[i] != -1 {
 							args.PrevLogIndex = rf.nextIndex[i]
@@ -478,7 +489,12 @@ func (rf *Raft) BroadCastAppendEntries() {
 					tag = true
 				}
 			}
-		}(rf, i)
+			chanCount <- 1
+		}(i)
+	}
+
+	for _, _ = range rf.peers {
+		<-chanCount
 	}
 }
 
@@ -577,6 +593,8 @@ func Make(peers []*labrpc.ClientEnd, me int,
 							log.Printf("FOLLOWER time out, turn to CANDIDATE: rf.time.C, rf id:%v", rf.me)
 							if rf.leaderId != -1 {
 								rf.invalidClientEnd(rf.peers[rf.leaderId])
+								rf.leaderId = -1
+								rf.votedFor = -1
 							}
 							rf.state = "CANDIDATE"
 							// rf.currentTerm++
@@ -591,10 +609,11 @@ func Make(peers []*labrpc.ClientEnd, me int,
 					log.Printf("CANDIDATE: voteGranted, rf id:%v", rf.me)
 					rf.state = "LEADER"
 					rf.votedCount = 0
+					rf.leaderId = rf.me
 					rf.resetLeaderTime()
 					rf.resetTimer()
 				case <-rf.chanHeartBeat:
-					log.Printf("CANDIDATE: heartBeat, rf id:%v", rf.me)
+					log.Printf("CANDIDATE: heartBeat, rf id:%v turn to follower", rf.me)
 					rf.resetTimer()
 					rf.state = "FOLLOWER"
 					rf.votedFor = -1
@@ -604,14 +623,16 @@ func Make(peers []*labrpc.ClientEnd, me int,
 					rf.currentTerm++
 					rf.BroadCastRequestVote()
 					rf.votedFor = -1
+					// rf.leaderId = -1
 					rf.resetTimer()
 				}
 			case "LEADER":
+				rf.mu.Lock()
+				defer rf.mu.Unlock()
 				select {
 				case <-rf.leaderTimer.C:
 					log.Printf("LEADER: broad casting entries, id:%v", rf.me)
 					rf.BroadCastAppendEntries()
-					rf.leaderId = rf.me
 					rf.resetLeaderTime()
 					rf.resetTimer()
 				}
