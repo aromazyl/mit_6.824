@@ -463,9 +463,13 @@ func (rf *Raft) BroadCastAppendEntries() {
 					ok = rf.peers[i].Call("Raft.AppendEntries", &args, &reply)
 					if !ok {
 						log.Printf("rf id:%v, state: %v, raft append entries call failure, peers[%v]", rf.me, rf.state, i)
+						retry += 1
 					} else {
 						log.Printf("rf id:%v, state: %v, raft append entries call success, peers[%v]", rf.me, rf.state, i)
 					}
+				}
+				if retry == 10 {
+					rf.invalidClientEnd(rf.peers[i])
 				}
 				if reply.envalid_peer != -1 {
 					rf.enValidClientEnd(rf.peers[reply.envalid_peer])
@@ -626,6 +630,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 					rf.BroadCastAppendEntries()
 					rf.resetLeaderTime()
 					rf.resetTimer()
+					if rf.getValidPeerNumbers() == 1 {
+						rf.state = "FOLLOWER"
+					}
 				}
 			}
 		}
