@@ -90,7 +90,9 @@ func (rf *Raft) AppendEntries(args *AppendEntryArgs, reply *AppendEntryReply) {
 	reply.Success = true
 	reply.Term = rf.currentTerm
 	log.Printf("heartbeat send success, from:%v to rf id:%v", args.LeaderId, rf.me)
-	rf.chanHeartBeat <- true
+	// rf.chanHeartBeat <- true
+	rf.resetTimer()
+	rf.state = "FOLLOWER"
 	rf.leaderId = args.LeaderId
 	rf.currentTerm = args.Term
 	rf.persist()
@@ -139,10 +141,10 @@ type Raft struct {
 	leaderTimer         *time.Timer
 	votedCount          int
 	chanCommit          chan bool
-	chanHeartBeat       chan bool
-	chanLeader          chan bool
-	chanVoteGranted     chan bool
-	stateMachine        *StateMachine
+	// chanHeartBeat       chan bool
+	chanLeader      chan bool
+	chanVoteGranted chan bool
+	stateMachine    *StateMachine
 }
 
 func (rf *Raft) invalidClientEnd(clientEnd *labrpc.ClientEnd) {
@@ -386,7 +388,12 @@ func (rf *Raft) sendRequestVote(server int) bool {
 		rf.votedCount++
 		log.Printf("rf id:%v, raft votedCount:%d, rf.state:%v", rf.me, rf.votedCount, rf.state)
 		if rf.getValidPeerNumbers() != 1 && rf.state == "CANDIDATE" && rf.votedCount >= rf.getValidPeerNumbers()/2 {
-			rf.chanVoteGranted <- true
+			log.Printf("CANDIDATE: voteGranted, rf id:%v", rf.me)
+			rf.state = "LEADER"
+			rf.votedCount = 0
+			rf.leaderId = rf.me
+			rf.resetLeaderTime()
+			rf.resetTimer()
 		}
 	}
 	return ok
@@ -562,9 +569,9 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.applyCh = applyCh
 	rf.votedCount = 0
 	rf.chanCommit = make(chan bool, 100)
-	rf.chanHeartBeat = make(chan bool, 100)
+	// rf.chanHeartBeat = make(chan bool, 100)
 	rf.chanLeader = make(chan bool, 100)
-	rf.chanVoteGranted = make(chan bool, 100)
+	// rf.chanVoteGranted = make(chan bool, 100)
 	// initialize from state persisted before a crash
 	rf.readPersist(persister.ReadRaftState())
 	rf.persist()
@@ -583,40 +590,24 @@ func Make(peers []*labrpc.ClientEnd, me int,
 			log.Printf("rf id:%v, state:%v", rf.me, rf.state)
 			switch rf.state {
 			case "FOLLOWER":
-				{
-					select {
-					case <-rf.chanHeartBeat:
-						log.Printf("FOLLOWER: chanHeartBeat received, rf id:%v", rf.me)
-						rf.resetTimer()
-					case <-rf.timer.C:
-						{
-							log.Printf("FOLLOWER time out, turn to CANDIDATE: rf.time.C, rf id:%v", rf.me)
-							if rf.leaderId != -1 {
-								rf.invalidClientEnd(rf.peers[rf.leaderId])
-								rf.leaderId = -1
-								rf.votedFor = -1
-							}
-							rf.state = "CANDIDATE"
-							// rf.currentTerm++
-							rf.votedCount = 0
-							rf.resetTimer()
+				select {
+				case <-rf.timer.C:
+					{
+						log.Printf("FOLLOWER time out, turn to CANDIDATE: rf.time.C, rf id:%v", rf.me)
+						if rf.leaderId != -1 {
+							rf.invalidClientEnd(rf.peers[rf.leaderId])
+							rf.leaderId = -1
+							rf.votedFor = -1
 						}
+						rf.state = "CANDIDATE"
+						// rf.currentTerm++
+						rf.votedCount = 0
+						rf.resetTimer()
 					}
 				}
 			case "CANDIDATE":
 				select {
-				case <-rf.chanVoteGranted:
-					log.Printf("CANDIDATE: voteGranted, rf id:%v", rf.me)
-					rf.state = "LEADER"
-					rf.votedCount = 0
-					rf.leaderId = rf.me
-					rf.resetLeaderTime()
-					rf.resetTimer()
-				case <-rf.chanHeartBeat:
-					log.Printf("CANDIDATE: heartBeat, rf id:%v turn to follower", rf.me)
-					rf.resetTimer()
-					rf.state = "FOLLOWER"
-					rf.votedFor = -1
+				// case <-rf.chanVoteGranted:
 				case <-rf.timer.C:
 					log.Printf("CANDIDATE: rf.time.C, rf id:%v", rf.me)
 					rf.votedCount = 0
