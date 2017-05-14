@@ -318,10 +318,10 @@ func (rf *Raft) election() {
 				}
 			}
 		}
-	}
-	result = false
-	for !result {
-		result = rf.election_one_round()
+		result = false
+		for !result {
+			result = rf.election_one_round()
+		}
 	}
 }
 
