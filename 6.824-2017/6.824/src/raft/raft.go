@@ -29,21 +29,32 @@ type ApplyMsg struct {
 	Snapshot    []byte
 }
 
+type LogEntry struct {
+	Command interface{}
+	term    int
+}
+
 type Raft struct {
 	mu              sync.Mutex
 	peers           []*labrpc.ClientEnd
 	persister       *Persister
 	me              int
+	log             []LogEntry
 	currentTerm     int
 	votedFor        int
 	state           int
 	timeout         int
 	currentLeader   int
 	lastMessageTime int64
+	commitIndex     int
 	message         chan bool
 	electCh         chan bool
 	heartbeat       chan bool
 	heartbeatRe     chan bool
+	lastApplied     int
+	applyCh         chan ApplyMsg
+	nextIndex       []int
+	matchIndex      []int
 }
 
 func (rf *Raft) GetState() (int, bool) {
@@ -110,8 +121,10 @@ type RequestVoteReply struct {
 }
 
 type AppendEntriesArgs struct {
-	Term     int
-	LeaderId int
+	Term         int
+	LeaderId     int
+	Entries      []Log
+	LeaderCommit int
 }
 
 type AppendEntriesReply struct {
@@ -120,8 +133,17 @@ type AppendEntriesReply struct {
 }
 
 func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
+	if len(rf.log) > 0 {
+		if rf.log[len(rf.log)-1].term > args.LastLogTerm {
+			may_granted_vote = false
+		}
+		if rf.log[len(rf.log)-1].term == args.LastLogTerm &&
+			len(rf.log) > args.LastLogIndex+1 {
+			may_granted_vote = false
+		}
+	}
 	currentTerm, _ := rf.GetState()
-	if args.Term < currentTerm {
+	if args.Term < currentTerm || !may_granted_vote {
 		reply.Term = currentTerm
 		reply.VoteGranted = false
 		return
@@ -142,19 +164,34 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 }
 
 func (rf *Raft) AppendEntries(args AppendEntriesArgs, reply *AppendEntriesReply) {
+	if len(rf.log)-1 < args.PrevLogIndex || len(rf.log) != 0 &&
+		rf.log[args.PrevLogIndex].term < args.PrevLogTerm {
+		log.Printf("log does not consist")
+		reply.Success = false
+		reply.Term = rf.currentTerm
+		return
+	}
 	if args.Term < rf.currentTerm {
 		reply.Success = false
 		reply.Term = rf.currentTerm
-	} else {
-		reply.Success = true
-		reply.Term = rf.currentTerm
-		rf.mu.Lock()
-		rf.currentLeader = args.LeaderId
-		rf.votedFor = args.LeaderId
-		rf.state = 0
-		rf.setMessageTime(milliseconds())
-		rf.mu.Unlock()
+		return
 	}
+
+	if args.LeaderCommit > rf.commitIndex {
+		rf.commitIndex = MinInt(args.LeaderCommit, len(rf.log)-1)
+	}
+
+	rf.log = rf.log[:args.PrevLogIndex+1]
+	rf.log = append(rf.log, args.Entries...)
+
+	reply.Success = true
+	reply.Term = rf.currentTerm
+	rf.mu.Lock()
+	rf.currentLeader = args.LeaderId
+	rf.votedFor = args.LeaderId
+	rf.state = 0
+	rf.setMessageTime(milliseconds())
+	rf.mu.Unlock()
 }
 
 func (rf *Raft) sendRequestVote(server int, args RequestVoteArgs, reply *RequestVoteReply) bool {
