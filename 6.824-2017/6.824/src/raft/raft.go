@@ -21,6 +21,7 @@ import "sync"
 import "labrpc"
 import "math/rand"
 import "time"
+import "log"
 
 type ApplyMsg struct {
 	Index       int
@@ -112,7 +113,7 @@ type RequestVoteArgs struct {
 	Term         int
 	CandidateId  int
 	LastLogIndex int
-	LastLogterm  int
+	LastLogTerm  int
 }
 
 type RequestVoteReply struct {
@@ -123,8 +124,10 @@ type RequestVoteReply struct {
 type AppendEntriesArgs struct {
 	Term         int
 	LeaderId     int
-	Entries      []Log
+	Entries      []LogEntry
 	LeaderCommit int
+	PrevLogIndex int
+	PrevLogTerm  int
 }
 
 type AppendEntriesReply struct {
@@ -133,6 +136,7 @@ type AppendEntriesReply struct {
 }
 
 func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
+	var may_granted_vote bool = true
 	if len(rf.log) > 0 {
 		if rf.log[len(rf.log)-1].term > args.LastLogTerm {
 			may_granted_vote = false
