@@ -250,10 +250,24 @@ func (rf *Raft) sendAppendEntriesImpl() {
 		timeout := 20
 		args.LeaderId = rf.me
 		args.Term = rf.currentTerm
+		args.PrevLogIndex = -1
+		args.PrevLogTerm = -1
+		args.LeaderCommit = rf.commitIndex
+		args.Entries = make([]LogEntry, 0)
 		for i := 0; i < len(rf.peers); i++ {
 			if i != rf.me {
 				var reply AppendEntriesReply
+				if len(rf.log)-1 > rf.nextIndex[i] {
+					for j := rf.nextIndex[i]; j < len(rf.log)-1; j++ {
+						args.Entries = append(args.Entries, rf.log[j])
+					}
+				}
+				if len(rf.nextIndex) != 0 && len(rf.log) != 0 && rf.nextIndex[i] != -1 {
+					args.PrevLogIndex = rf.nextIndex[i]
+					args.PrevLogTerm = rf.log[rf.nextIndex[i]].term
+				}
 				go rf.sendHeartBeat(i, args, &reply, timeout)
+				args.Entries = make([]LogEntry, 0)
 			}
 		}
 		for i := 0; i < len(rf.peers)-1; i++ {
@@ -391,6 +405,10 @@ func Make(peers []*labrpc.ClientEnd, me int,
 	rf.heartbeat = make(chan bool)
 	rf.heartbeatRe = make(chan bool)
 	rand.Seed(time.Now().UnixNano())
+	rf.log = make([]LogEntry, 0)
+	rf.nextIndex = make([]int, len(peers))
+	rf.matchIndex = make([]int, len(peers))
+	rf.applyCh = applyCh
 
 	go rf.election()
 	go rf.sendLeaderHeartBeat()
