@@ -153,7 +153,9 @@ func (rf *Raft) RequestVote(args RequestVoteArgs, reply *RequestVoteReply) {
 		return
 	}
 
-	if rf.votedFor != -1 && args.Term <= rf.currentTerm {
+	if (rf.votedFor != -1 && rf.votedFor != args.CandidateId) ||
+		args.LastLogIndex < len(rf.log)-1 || len(rf.log) != 0 &&
+		args.LastLogTerm < rf.log[len(rf.log)-1].term {
 		reply.VoteGranted = false
 		rf.mu.Lock()
 		rf.setTerm(max(args.Term, currentTerm))
@@ -185,9 +187,21 @@ func (rf *Raft) AppendEntries(args AppendEntriesArgs, reply *AppendEntriesReply)
 		rf.commitIndex = MinInt(args.LeaderCommit, len(rf.log)-1)
 	}
 
-	rf.log = rf.log[:args.PrevLogIndex+1]
-	rf.log = append(rf.log, args.Entries...)
-
+	conflict_index := 0
+	for conflict_index = 0; conflict_index < len(rf.log); conflict_index++ {
+		if rf.log[conflict_index].term != args.Entries[conflict_index].term {
+			break
+		}
+	}
+	if conflict_index != 0 || len(rf.log) != 0 && rf.log[conflict_index].term != args.Entries[conflict_index].term {
+		rf.log = rf.log[:conflict_index]
+	}
+	for _, item := range args.Entries[conflict_index:] {
+		rf.log = append(rf.log, item)
+	}
+	if args.LeaderCommit > rf.commitIndex {
+		rf.commitIndex = min(args.LeaderCommit, len(rf.log)-1)
+	}
 	reply.Success = true
 	reply.Term = rf.currentTerm
 	rf.mu.Lock()
